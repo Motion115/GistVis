@@ -87,10 +87,13 @@ const PublicityPage = () => {
             >
               GistVis
             </Text>
-            <div>
+            <div
+              style={{ fontSize: "24px", padding: "2%", fontWeight: "bold" }}
+            >
               <Button href="/" type="link">Home</Button>
               <Button href="/interactive" type="link">User study interface</Button>
               <Button href="/llm_setting" type="link">Setting</Button>
+              <Button href="/playground" type="link">Playground</Button>
             </div>
           </Flex>
         </Header>

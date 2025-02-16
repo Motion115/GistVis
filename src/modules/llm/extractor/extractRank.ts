@@ -36,7 +36,7 @@ const extrRank = async (
         The user intends to use a bar chart to represent the rank. Please find the most suitable location for placing the bar chart and output the previous word in the recommended location.
         \n{format_instructions}\n{insightType}\n{paragraph}
         `),
-    model,
+    model as any,
     parser,
   ]);
 

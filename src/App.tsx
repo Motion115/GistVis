@@ -4,6 +4,7 @@ import HomePage from "./userstudy/homePage";
 import InteractivePage from "./userstudy/articlePage";
 import PublicityPage from "./demo/Demo"; 
 import LLMConfigurationPage from "./components/LLMConf";
+import PlaygroundPage from "./components/playground/playgroundPage";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             element={<InteractivePage />}
           />
           <Route path="/llm_setting" element={<LLMConfigurationPage />} />
+          <Route path="/playground" element={<PlaygroundPage />} />
         </Routes>
       </Router>
     </>

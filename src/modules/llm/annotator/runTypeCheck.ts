@@ -34,7 +34,7 @@ const runTypeCheck = async (
 
       \n{format_instructions}\n{paragraph}
       `),
-    model,
+    model as any,
     parser,
   ]);
 

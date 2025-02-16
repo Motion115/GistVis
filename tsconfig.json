@@ -10,9 +10,14 @@
       "moduleResolution": "node",  
       "outDir": "./dist",         
       "rootDir": "./src",
+      "baseUrl": ".",
+      "paths": {
+        "@src/*": ["src/*"]
+      }
     },
     "include": [
-      "src/**/*"    
+      "src/**/*",
+      "__tests__/**/*"  
     ],
     "exclude": [
       "node_modules",   

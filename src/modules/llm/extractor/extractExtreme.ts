@@ -38,7 +38,7 @@ const extrExtreme = async (
         The user intends to highlight the value of extreme. Please output the position of the extreme.
         \n{format_instructions}\n{insightType}\n{paragraph}
         `),
-    model,
+    model as any,
     parser,
   ]);
 

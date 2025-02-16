@@ -46,7 +46,7 @@ const extrVal = async (
         For 'value_key', specify the exact context of the value being compared, e.g., "the GDP growth rate" instead of just "value". But the 'category_key' of all data items should keep the same.
         \n{format_instructions}\n{insightType}\n{paragraph}
         `),
-    model,
+    model as any,
     parser,
   ]);
 

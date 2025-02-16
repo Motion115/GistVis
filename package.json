@@ -6,7 +6,9 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@langchain/community": "^0.0.44",
+    "@langchain/community": "0.3.30",
+    "@langchain/core": "0.3.40",
+    "@langchain/openai": "0.4.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -24,9 +26,10 @@
     "fuse.js": "^7.0.0",
     "gatsby-plugin-google-analytics": "^5.13.1",
     "html-to-text": "^9.0.5",
+    "jest": "29.7.0",
     "jotai": "^2.9.3",
     "jsonwebtoken": "8.5.1",
-    "langchain": "^0.1.31",
+    "langchain": "0.3.15",
     "lodash": "^4.17.21",
     "node-polyfill-webpack-plugin": "^3.0.0",
     "numeral": "^2.0.6",
@@ -37,6 +40,7 @@
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
     "stream-browserify": "^3.0.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.5.4",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
@@ -44,7 +48,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "jest test",
     "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
@@ -66,7 +70,11 @@
     ]
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.6"
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "babel-jest": "^29.7.0"
   },
   "browser": {
     "jsonwebtoken": false

@@ -37,7 +37,7 @@ const extrTrend = async (
         The user intends to use a line chart to represent the trend. Please find the most suitable location for placing the line chart and output the previous word in the recommended location.
         \n{format_instructions}\n{insightType}\n{paragraph}
         `),
-    model,
+    model as any,
     parser,
   ]);
 

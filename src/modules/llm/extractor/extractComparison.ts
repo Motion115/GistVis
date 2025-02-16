@@ -36,7 +36,7 @@ const extrComp = async (
         The user intends to use a bar chart to represent the comparison. Please find the most suitable location for placing the bar chart and output the previous word in the recommended location.
         \n{format_instructions}\n{insightType}\n{paragraph}
         `),
-    model,
+    model as any,
     parser,
   ]);
   // Categorize all data entities and data values  Extract dynamic key-value pairs representing objectives and their corresponding values with detailed content from the text blocks as required.
