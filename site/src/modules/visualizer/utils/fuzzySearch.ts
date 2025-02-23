@@ -6,13 +6,15 @@ export const fuzzySearch = (queryString: string, context: string, isFuzzy: boole
   // const queryString = "the rest of the top 5 companies";
   if (!isFuzzy) {
     // use direct match to find all matches, case insensitive
-    const regex = new RegExp(`\\b${queryString}\\b`, 'i');
-    const matches = context.match(regex);
-    if (matches) {
-      return matches.map((match) => [matches.index, matches.index ? matches.index + match.length : 0]);
-    }
-    return [];
+    const regex = new RegExp(`\\b${queryString}\\b`, 'gi');
+    const matches = Array.from(context.matchAll(regex), (match) => {
+      const startIndex = match.index;
+      const endIndex = startIndex + match[0].length;
+      return [startIndex, endIndex];
+    });
+    return matches;
   }
+
   const options = {
     shouldSort: true,
     includeMatches: true,
