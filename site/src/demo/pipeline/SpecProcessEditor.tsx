@@ -139,19 +139,19 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
         };
 
         if (i === 2) {  // 1->2: call annotator
-          const [processedParagraph] = await processParagraphs([mockParagraphSpec], model);
-          if (processedParagraph.paragraphContent[0]) {
-            console.log('Annotator output:', processedParagraph.paragraphContent[0].unitSegmentSpec.insightType);
-            internalSave(processedParagraph.paragraphContent[0], newTaskId);
+          const processedParagraphs = await processParagraphs([mockParagraphSpec], model);
+          if (processedParagraphs[0].paragraphContent[0]) {
+            console.log('Annotator output:', processedParagraphs[0].paragraphContent[0].unitSegmentSpec.insightType);
+            internalSave(processedParagraphs[0].paragraphContent[0], newTaskId);
             if (newTaskId === taskIdRef.current) {
               setProcess(i);
             }
           }
         } else if (i === 3) {  // 2->3: call extractor
-          const [processedParagraph] = await extractDataForParagraphs([mockParagraphSpec], model);
-          if (processedParagraph.paragraphContent[0]) {
-            console.log('Extractor output:', processedParagraph.paragraphContent[0].dataSpec);
-            internalSave(processedParagraph.paragraphContent[0], newTaskId);
+          const processedParagraphs = await extractDataForParagraphs([mockParagraphSpec], model);
+          if (processedParagraphs[0].paragraphContent[0]) {
+            console.log('Extractor output:', processedParagraphs[0].paragraphContent[0].dataSpec);
+            internalSave(processedParagraphs[0].paragraphContent[0], newTaskId);
             if (newTaskId === taskIdRef.current) {
               setProcess(i);
             }
