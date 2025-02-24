@@ -36,6 +36,9 @@ interface SpecEditorProps {
   spec: GistvisSpec;
   onSave: (updatedSpec: GistvisSpec) => void;
   stage?: number;
+  width?: number | string;
+  height?: number;
+  extra?: React.ReactNode[];
 }
 
 type StageContentType = {
@@ -48,7 +51,14 @@ type StageContentType = {
   rawJson?: Record<string, unknown>;
 };
 
-export const SpecEditor: React.FC<SpecEditorProps> = ({ spec, onSave, stage = 0 }) => {
+export const SpecEditor: React.FC<SpecEditorProps> = ({
+  spec,
+  onSave,
+  stage = 0,
+  width = 400,
+  height = 250,
+  extra = [],
+}) => {
   const [editingSpec, setEditingSpec] = useState<GistvisSpec>(spec);
   const [isOutdated, setIsOutdated] = useState(false);
   const [originalSpec, setOriginalSpec] = useState<GistvisSpec>(spec);
@@ -97,7 +107,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({ spec, onSave, stage = 0 
   const renderContent = (stageContent: StageContentType) => {
     if (stageContent.dataList && stageContent.rawData) {
       return (
-        <Space direction="vertical" style={{ width: '100%' }}>
+        <Space direction="vertical" style={{ width: '100%', textAlign:'start'}}>
           {stageContent.rawData.map((item, index) => (
             <Card key={index} size="small">
               <Text strong>{`#${index+1}`}</Text>
@@ -118,7 +128,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({ spec, onSave, stage = 0 
     if (stageContent.json && stageContent.rawJson) {
       const data = stageContent.rawJson;
       return (
-        <Space direction="vertical" style={{ width: '100%' }}>
+        <Space direction="vertical" style={{ width: '100%', textAlign:'center'}}>
             <Card size="small">
               <Text style={{ whiteSpace: 'pre-wrap' }}>
                 {Object.keys(data).map(key => (
@@ -271,12 +281,15 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({ spec, onSave, stage = 0 
       <Card
         title={stageContent.title}
         extra={
-          <Button type="default" onClick={() => setIsEditing(true)}>
-            Edit
-          </Button>
+          <Row>
+            {extra}
+            <Button type="default" onClick={() => setIsEditing(true)}>
+              Edit
+            </Button>
+          </Row>
         }
-        style={{ width: 400 }}
-        bodyStyle={{ height: 250, overflow: 'auto' }}
+        style={{ width }}
+        bodyStyle={{ height, overflow: 'auto' }}
       >
         {renderContent(stageContent)}
       </Card>
