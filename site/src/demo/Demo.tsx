@@ -4,6 +4,7 @@ import THEME from '../style/theme';
 import ArtcleProcess from '../modules/visualizer/renderer/renderer';
 // import Editor from "./editor";
 import { DemoPage } from './demoPage';
+import DemoPipeline from './pipeline/DemoPipeline';
 import React, { useState } from 'react';
 import { paragraphSpec } from '../modules/visualizer/types';
 import { processStageAtom } from '../globalState';
@@ -86,6 +87,12 @@ const PublicityPage = () => {
         </Header>
         <Content style={{ padding: '2%', margin: '0 auto' }}>
           <Layout dir="vertical">
+            <Row gutter={[16, 16]}>
+              <Col span={24}>
+                <DemoPipeline />
+              </Col>
+            </Row>
+            <Divider />
             <Row gutter={[16, 16]}>
               <Col span={24}>
                 <DemoPage />

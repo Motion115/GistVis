@@ -65,7 +65,7 @@ const exampleAnswer: GistvisSpec = {
 const processes = ['Discoverer','Annotator','Extractor','Visualizer']
 
 const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, example=false, style }) => {
-  const [process, setProcess] = useState(3);
+  const [process, setProcess] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
   const [taskId, setTaskId] = useState(0);
   const taskIdRef = useRef(0);
