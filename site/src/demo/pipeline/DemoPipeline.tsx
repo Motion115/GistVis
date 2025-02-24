@@ -1,11 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Typography, Card, ConfigProvider, Space } from 'antd';
 import THEME from '../../style/theme';
 import PipelineExplorer from './PipelineExplorer';
+import SpecProcessEditor from './SpecProcessEditor';
+import {
+  GistvisSpec,
+} from '../../modules/visualizer/types';
 
 const { Title, Paragraph } = Typography;
-
+const initialSpec: GistvisSpec = {
+  "id": "p0s0",
+  "unitSegmentSpec": {
+    "insightType": "trend",
+    "segmentIdx": 0,
+    "context": "I will be 18 years old in 2025 and I was 16 years old in 2023.",
+    "inSituPosition": [],
+    "attribute": "positive"
+  },
+  "dataSpec": [
+    {
+      "categoryKey": "time segment",
+      "categoryValue": "2023",
+      "valueKey": "I",
+      "valueValue": 16
+    },
+    {
+      "categoryKey": "time segment",
+      "categoryValue": "2025",
+      "valueKey": "I",
+      "valueValue": 18
+    }
+  ]
+};
 const DemoPipeline: React.FC = () => {
+  
+  const [spec, setSpec] = useState<GistvisSpec>({...initialSpec});
   return (
     <ConfigProvider theme={THEME}>
       <Space direction="vertical" style={{ width: '100%', padding: '24px' }}>
@@ -26,6 +55,7 @@ const DemoPipeline: React.FC = () => {
         
         <PipelineExplorer />
       </Space>
+      <SpecProcessEditor spec={spec} onSave={setSpec} example={false}/>
     </ConfigProvider>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import { Card, Input, Button, List, Typography, Space, ConfigProvider } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
@@ -17,6 +17,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
   const [inputText, setInputText] = useState('');
   const [specs, setSpecs] = useState<GistvisSpec[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
+  const [, forceUpdate] = useReducer(x => x + 1, 0);
 
   const handleTextSubmit = async () => {
     if (!inputText.trim()) return;
@@ -54,6 +55,9 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
       newSpecs[index] = updatedSpec;
       return newSpecs;
     });
+    console.log('Updated spec:', updatedSpec);
+    console.log('Result spec:', specs[index]);
+    forceUpdate();
   };
 
   return (

@@ -74,7 +74,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
     taskIdRef.current = taskId;
   }, [taskId]);
 
-  const internalSave = (updatedSpec: GistvisSpec, currentTaskId: number) => {
+  const internalSave = (updatedSpec: GistvisSpec, currentTaskId: number) => {    
     if (currentTaskId === taskIdRef.current) {
       onSave(updatedSpec);
     }
@@ -121,7 +121,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
         }
 
         if (example) {
-          await new Promise(resolve => setTimeout(resolve, 3000));
+          await new Promise(resolve => setTimeout(resolve, 500));
           if (i === 2 || i === 3) {
             internalSave({...exampleAnswer}, newTaskId);
             if (newTaskId === taskIdRef.current) {
@@ -141,6 +141,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
         if (i === 2) {  // 1->2: call annotator
           const [processedParagraph] = await processParagraphs([mockParagraphSpec], model);
           if (processedParagraph.paragraphContent[0]) {
+            console.log('Annotator output:', processedParagraph.paragraphContent[0].unitSegmentSpec.insightType);
             internalSave(processedParagraph.paragraphContent[0], newTaskId);
             if (newTaskId === taskIdRef.current) {
               setProcess(i);
@@ -149,6 +150,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
         } else if (i === 3) {  // 2->3: call extractor
           const [processedParagraph] = await extractDataForParagraphs([mockParagraphSpec], model);
           if (processedParagraph.paragraphContent[0]) {
+            console.log('Extractor output:', processedParagraph.paragraphContent[0].dataSpec);
             internalSave(processedParagraph.paragraphContent[0], newTaskId);
             if (newTaskId === taskIdRef.current) {
               setProcess(i);
@@ -194,6 +196,8 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
         break;
     }
     setProcess(stage);
+    console.log('Back to process:', stage);
+    
   }
 
   const renderVisualizer = (spec: GistvisSpec) => {
