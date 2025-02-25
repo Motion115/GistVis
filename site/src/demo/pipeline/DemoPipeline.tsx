@@ -25,11 +25,11 @@ const pipelineSteps = [
 ];
 
 const stageMap: { [key: number]: number } = {
-  0:-1,
-  1:0,
-  2:2,
-  3:3
-}
+  0: -1,
+  1: 0,
+  2: 2,
+  3: 3,
+};
 
 const DemoPipeline: React.FC = () => {
   const [currentStage, setCurrentStage] = React.useState(stageMap[0]);
