@@ -1,5 +1,5 @@
 import React, { useState, useReducer, useRef } from 'react';
-import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row } from 'antd';
+import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row, Tooltip } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
 import SpecProcessEditor from './SpecProcessEditor';
@@ -8,6 +8,8 @@ import { GistvisSpec, paragraphSpec } from '../../modules/visualizer/types';
 import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
 
 const { TextArea } = Input;
+
+const EXAMPLE_INPUT = 'The number of Americans ages 100 and older is projected to more than quadruple over the next three decades, from an estimated 101,000 in 2024 to about 422,000 in 2054, according to projections from the U.S. Census Bureau. Centenarians currently make up just 0.03% of the overall U.S. population, and they are expected to reach 0.1% in 2054.';
 
 interface PipelineExplorerProps {
   style?: React.CSSProperties;
@@ -113,21 +115,25 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
                     {isProcessing ? 'Cancel' : 'Clear'}
                   </Button>
                 </Flex>
-                {import.meta.env.VITE_DINP_PIPELINEEXAMPLE ? (
-                  <Button
-                    type="default"
-                    onClick={() => {
-                      setInputText(import.meta.env.VITE_DINP_PIPELINEEXAMPLE);
-                    }}
-                    // loading={isProcessing}
-                  >
-                    Load env input
-                  </Button>
-                ) : null}
               </Row>
             </Space>
           </Flex>
         </Card>
+        {!showVisualization() ? (
+          <Card title="Example Input" style={{ marginTop: '16px' }}>
+            <Space direction="vertical" style={{ width: '100%' }}>
+              <TextArea rows={4} value={EXAMPLE_INPUT} readOnly />
+              <Button
+                type="default"
+                onClick={() => {
+                  setInputText(EXAMPLE_INPUT);
+                }}
+              >
+                Copy to Input
+              </Button>
+            </Space>
+          </Card>
+        ) : null}
         {showVisualization() ? (
           <Card title="Visualization" loading={isProcessing}>
             <Space direction="vertical" style={{ width: '100%' }}>
