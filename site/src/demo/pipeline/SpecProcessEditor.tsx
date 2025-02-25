@@ -21,8 +21,10 @@ const { Text } = Typography;
 interface SpecProcessEditorProps {
   spec: GistvisSpec;
   onSave: (updatedSpec: GistvisSpec) => void;
+  onProcessingChange?: (isProcessing: boolean) => void;
   example?: boolean;
   style?: React.CSSProperties;
+  autoPlay?: boolean;
 }
 
 const exampleAnswer: GistvisSpec = {
@@ -52,14 +54,14 @@ const exampleAnswer: GistvisSpec = {
 
 const processes = ['Discoverer', 'Annotator', 'Extractor', 'Visualizer'];
 
-const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, example = false, style }) => {
+const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, onProcessingChange, example = false, style, autoPlay=true}) => {
   const [process, setProcess] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
   const [taskId, setTaskId] = useState(0);
   const taskIdRef = useRef(0);
   const specRef = useRef(spec);
 
-  const launchTrigger = useRef(true);
+  const launchTrigger = useRef(autoPlay);
   const close = useRef(false);
 
   useEffect(() => {
@@ -68,6 +70,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
 
   useEffect(() => {
     if (!launchTrigger.current) {
+      renewStage();
       return;
     }
     handleRefresh(1);
@@ -125,6 +128,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
 
   const handleStop = () => {
     setIsProcessing(false);
+    onProcessingChange?.(false);
     const newTaskId = taskIdRef.current + 1;
     taskIdRef.current = newTaskId;
     setTaskId(newTaskId);
@@ -132,6 +136,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
 
   const handleRefresh = async (stage: number) => {
     setIsProcessing(true);
+    onProcessingChange?.(true);
 
     const newTaskId = taskIdRef.current + 1;
     taskIdRef.current = newTaskId;
@@ -154,7 +159,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
           if (i === 2 || i === 3) {
             internalSave({ ...exampleAnswer }, newTaskId);
             if (newTaskId === taskIdRef.current) {
-              // handleBack(i);
+              handleBack(i);
               setProcess(i);
               console.log('stage:', i);
             } else {
@@ -204,7 +209,16 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
 
     if (newTaskId === taskIdRef.current) {
       setIsProcessing(false);
+      onProcessingChange?.(false);
     }
+  };
+
+  const renewStage = () => {
+    if (spec.dataSpec) {
+      setProcess(3);
+      return;
+    }
+    setProcess(1);
   };
 
   const handleBack = (stage: number) => {
@@ -266,7 +280,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
           {
             key: '1',
             label: (
-              <Space align="center" wrap={false}>
+              <Row wrap={false} justify={'space-between'} align={'middle'} style={{ width: '100%' }}>
                 <div style={{ whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: 8 }}>
                   <Text code style={{ padding: '2px 6px' }}>
                     {insightType}
@@ -275,7 +289,8 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
                     {spec.unitSegmentSpec.context}
                   </Text>
                 </div>
-              </Space>
+                <Button loading={isProcessing} type='text'/>
+              </Row>
             ),
             children: (
               <div>
@@ -293,7 +308,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, exa
                             extra={[
                               <Tooltip key={`tooltip-${i}`} title={`Refresh ${processes[i]}`}>
                                 <Button
-                                  onClick={() => handleRefresh(i)}
+                                  onClick={() => {close.current=false;handleRefresh(i)}}
                                   disabled={isProcessing}
                                   type="default"
                                   style={{ marginLeft: 8, marginRight: 8 }}
