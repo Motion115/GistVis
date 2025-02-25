@@ -43,6 +43,12 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
     if (!inputText.trim()) return;
     const taskId = taskIdRef.current;
     setIsProcessing(true);
+
+    // Timeout Promise
+    const timeoutPromise = new Promise((_, reject) => {
+      setTimeout(() => reject(new Error('Request timeout')), 2 * 60 * 1000);
+    });
+
     try {
       const model = new ChatOpenAI({
         temperature: 0.7,
@@ -70,14 +76,22 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
         verbose: false,
       });
 
-      const results: paragraphSpec[] = await splitInsight(model, [inputText]);
-      if (taskId === taskIdRef.current && results.length > 0) {
-        setSpecs(results[0].paragraphContent);
+      const results: paragraphSpec[] = await Promise.race([
+        splitInsight(model, [inputText]),
+        timeoutPromise
+      ]) as paragraphSpec[];
+
+      if (taskId === taskIdRef.current) {
+        if (results.length > 0) {
+          setSpecs(results[0].paragraphContent);
+        }
+        setIsProcessing(false);
       }
     } catch (error) {
-      console.error('Error processing text:', error);
-    } finally {
-      setIsProcessing(false);
+      if (taskId === taskIdRef.current) {
+        console.error('Error processing text:', error);
+        setIsProcessing(false);
+      }
     }
   };
 
