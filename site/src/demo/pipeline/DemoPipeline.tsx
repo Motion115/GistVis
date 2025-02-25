@@ -1,9 +1,29 @@
 import React from 'react';
-import { Typography, Card, ConfigProvider, Space, Layout, Divider } from 'antd';
+import { Typography, Steps, ConfigProvider, Space, Layout, Divider } from 'antd';
 import THEME from '../../style/theme';
 import PipelineExplorer from './PipelineExplorer';
 
-const { Title, Paragraph, Text } = Typography;
+const { Text } = Typography;
+
+const pipelineSteps = [
+  {
+    title: 'Discoverer',
+    description: 'Splits text into segments and generates initial specs',
+  },
+  {
+    title: 'Annotator',
+    description: 'Analyzes and labels insight types',
+  },
+  {
+    title: 'Extractor',
+    description: 'Extracts structured data from text',
+  },
+  {
+    title: 'Visualizer',
+    description: 'Displays the final visualization',
+  },
+];
+
 const DemoPipeline: React.FC = () => {
   return (
     <ConfigProvider theme={THEME}>
@@ -15,36 +35,14 @@ const DemoPipeline: React.FC = () => {
         <Divider style={{ margin: '0 0 0 0' }} />
       </Layout>
       <Space direction="vertical" style={{ width: '100%', padding: '24px' }}>
-        <Card>
-          <Paragraph>
-            <Layout dir="vertical" style={{ gap: '10px', justifyContent: 'center' }}>
-              <li>
-                <Text italic>Discoverer</Text> <br />{' '}
-                <Text italic type="secondary">
-                  Splits text into segments and generates initial specs
-                </Text>
-              </li>
-              <li>
-                <Text italic>Annotator</Text> <br />{' '}
-                <Text italic type="secondary">
-                  Analyzes and labels insight types
-                </Text>
-              </li>
-              <li>
-                <Text italic>Extractor</Text> <br />{' '}
-                <Text italic type="secondary">
-                  Extracts structured data from text
-                </Text>
-              </li>
-              <li>
-                <Text italic>Visualizer</Text> <br />{' '}
-                <Text italic type="secondary">
-                  Displays the final visualization
-                </Text>
-              </li>
-            </Layout>
-          </Paragraph>
-        </Card>
+        <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', marginBottom: '16px' }}>
+          <Steps
+            items={pipelineSteps}
+            progressDot
+            size="small"
+            style={{ maxWidth: '800px', margin: '0 auto' }}
+          />
+        </div>
         <PipelineExplorer />
       </Space>
     </ConfigProvider>
