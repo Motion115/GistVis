@@ -1,5 +1,5 @@
 import React, { useState, useReducer, useRef, useEffect } from 'react';
-import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row, Tooltip, Divider, Typography, Layout } from 'antd';
+import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row, Divider, Typography, Layout } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
 import SpecProcessEditor from './SpecProcessEditor';
@@ -10,7 +10,8 @@ import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
 const { TextArea } = Input;
 const { Text } = Typography;
 
-const EXAMPLE_INPUT = 'The number of Americans ages 100 and older is projected to more than quadruple over the next three decades, from an estimated 101,000 in 2024 to about 422,000 in 2054, according to projections from the U.S. Census Bureau. Centenarians currently make up just 0.03% of the overall U.S. population, and they are expected to reach 0.1% in 2054.';
+const EXAMPLE_INPUT =
+  'The number of Americans ages 100 and older is projected to more than quadruple over the next three decades, from an estimated 101,000 in 2024 to about 422,000 in 2054, according to projections from the U.S. Census Bureau. Centenarians currently make up just 0.03% of the overall U.S. population, and they are expected to reach 0.1% in 2054.';
 const EXAMPLE_SPECS: GistvisSpec[] = [
   {
     id: 'p0s0',
@@ -87,7 +88,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
       }
     } else {
       // if any editor is processing
-      const hasProcessingEditor = Object.values(processingEditors).some(isProcessing => isProcessing);
+      const hasProcessingEditor = Object.values(processingEditors).some((isProcessing) => isProcessing);
       if (hasProcessingEditor) {
         setStage(2); // annotator or extractor
       } else {
@@ -156,10 +157,10 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
         verbose: false,
       });
 
-      const results: paragraphSpec[] = await Promise.race([
+      const results: paragraphSpec[] = (await Promise.race([
         splitInsight(model, [inputText]),
-        timeoutPromise
-      ]) as paragraphSpec[];
+        timeoutPromise,
+      ])) as paragraphSpec[];
 
       if (taskId === taskIdRef.current) {
         if (results.length > 0) {
@@ -185,9 +186,9 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
   };
 
   const handleProcessingChange = (index: number, isProcessing: boolean) => {
-    setProcessingEditors(prev => ({
+    setProcessingEditors((prev) => ({
       ...prev,
-      [index]: isProcessing
+      [index]: isProcessing,
     }));
   };
 
@@ -199,33 +200,29 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
         </Divider>
         <div style={{ width: '68%', margin: '0 auto' }}>
           {isDiscoverProcessing ? (
-            <Button type="text" loading style={{margin:'30px'}}/>
-          ) : (
-              specs.length>0 ? (
-                <ArtcleProcess llmarticle={[{ paragraphIdx: 0, paragraphContent: specs }]} />
-              ) : null
-          )}
+            <Button type="text" loading style={{ margin: '30px' }} />
+          ) : specs.length > 0 ? (
+            <ArtcleProcess llmarticle={[{ paragraphIdx: 0, paragraphContent: specs }]} />
+          ) : null}
         </div>
         <Divider>
-        <Text italic type='secondary'>
-          {stage === 0 && 'No visualization generated yet, press Launch to try our pipeline'}
-          {stage === 1 && 'Discovering insights, please wait...'}
-          {stage === 2 && 'Annotating or extracting data, please wait...'}
-          {stage === 3 && 'Visualization completed!'}
-        </Text>
+          <Text italic type="secondary">
+            {stage === 0 && 'No visualization generated yet, press Launch to try our pipeline'}
+            {stage === 1 && 'Discovering insights, please wait...'}
+            {stage === 2 && 'Annotating or extracting data, please wait...'}
+            {stage === 3 && 'Visualization completed!'}
+          </Text>
         </Divider>
       </Layout>
       <Space direction="vertical" style={{ width: '100%', ...style }}>
         <Card
-            title={
-              <Row justify='space-between'>
-                <Text strong>
-                  Text Input
-                </Text>
-              </Row>
-            }
-            style={{ marginTop: '16px' }}
-          >
+          title={
+            <Row justify="space-between">
+              <Text strong>Text Input</Text>
+            </Row>
+          }
+          style={{ marginTop: '16px' }}
+        >
           <Flex style={{ width: '100%', gap: '10px' }}>
             <Space direction="vertical" style={{ width: '100%' }}>
               <TextArea
@@ -236,7 +233,12 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
               />
               <Row style={{ gap: '10px' }} justify="space-between">
                 <Flex style={{ gap: '10px' }}>
-                  <Button type="default" onClick={handleTextSubmit} loading={isDiscoverProcessing} disabled={!inputText.trim()}>
+                  <Button
+                    type="default"
+                    onClick={handleTextSubmit}
+                    loading={isDiscoverProcessing}
+                    disabled={!inputText.trim()}
+                  >
                     Launch Pipeline
                   </Button>
                   <Button
@@ -254,11 +256,9 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
         {showEditor() ? (
           <Card
             title={
-              <Row justify='space-between'>
-                <Text strong>
-                  Specification Editor
-                </Text>
-                <Button loading={isDiscoverProcessing} type='text' />
+              <Row justify="space-between">
+                <Text strong>Specification Editor</Text>
+                <Button loading={isDiscoverProcessing} type="text" />
               </Row>
             }
             style={{ marginTop: '16px' }}
@@ -276,7 +276,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
                 <List
                   dataSource={specs}
                   renderItem={(spec, index) => {
-                    const autoPlay = !inputtingExampleRef.current
+                    const autoPlay = !inputtingExampleRef.current;
                     return (
                       <List.Item>
                         <SpecProcessEditor
@@ -288,7 +288,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
                           autoPlay={autoPlay}
                         />
                       </List.Item>
-                    )
+                    );
                   }}
                 />
               )}
@@ -297,17 +297,15 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
         ) : null}
         <Card
           title={
-            <Row justify='space-between'>
-              <Text strong>
-                Example
-              </Text>
+            <Row justify="space-between">
+              <Text strong>Example</Text>
             </Row>
           }
           style={{ marginTop: '16px' }}
         >
           <Space direction="vertical" style={{ width: '100%' }}>
             <TextArea rows={4} value={EXAMPLE_INPUT} readOnly />
-            <Row justify='space-between'>
+            <Row justify="space-between">
               <Button
                 type="default"
                 onClick={() => {

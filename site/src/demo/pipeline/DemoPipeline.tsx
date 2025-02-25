@@ -36,12 +36,7 @@ const DemoPipeline: React.FC = () => {
       </Layout>
       <Space direction="vertical" style={{ width: '100%', padding: '24px' }}>
         <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', marginBottom: '16px' }}>
-          <Steps
-            items={pipelineSteps}
-            progressDot
-            size="small"
-            style={{ maxWidth: '800px', margin: '0 auto' }}
-          />
+          <Steps items={pipelineSteps} progressDot size="small" style={{ maxWidth: '800px', margin: '0 auto' }} />
         </div>
         <PipelineExplorer />
       </Space>

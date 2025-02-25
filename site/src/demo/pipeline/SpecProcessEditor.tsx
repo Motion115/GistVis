@@ -4,7 +4,7 @@ import THEME from '../../style/theme';
 import { ChatOpenAI } from '@langchain/openai';
 import { processParagraphs } from '../../modules/llm/annotator/annotator';
 import { extractDataForParagraphs } from '../../modules/llm/extractor/extractor';
-import { Card, Button, Space, Typography, ConfigProvider, Row, Col, Tooltip, Collapse } from 'antd';
+import { Card, Button, Typography, ConfigProvider, Row, Col, Tooltip, Collapse } from 'antd';
 import {
   ComparisonTextRenderer,
   ExtremeTextRenderer,
@@ -54,7 +54,14 @@ const exampleAnswer: GistvisSpec = {
 
 const processes = ['Discoverer', 'Annotator', 'Extractor', 'Visualizer'];
 
-const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, onProcessingChange, example = false, style, autoPlay=true}) => {
+const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({
+  spec,
+  onSave,
+  onProcessingChange,
+  example = false,
+  style,
+  autoPlay = true,
+}) => {
   const [process, setProcess] = useState(1);
   const [isProcessing, setIsProcessing] = useState(false);
   const [taskId, setTaskId] = useState(0);
@@ -289,7 +296,7 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, onP
                     {spec.unitSegmentSpec.context}
                   </Text>
                 </div>
-                <Button loading={isProcessing} type='text'/>
+                <Button loading={isProcessing} type="text" />
               </Row>
             ),
             children: (
@@ -308,7 +315,10 @@ const SpecProcessEditor: React.FC<SpecProcessEditorProps> = ({ spec, onSave, onP
                             extra={[
                               <Tooltip key={`tooltip-${i}`} title={`Refresh ${processes[i]}`}>
                                 <Button
-                                  onClick={() => {close.current=false;handleRefresh(i)}}
+                                  onClick={() => {
+                                    close.current = false;
+                                    handleRefresh(i);
+                                  }}
                                   disabled={isProcessing}
                                   type="default"
                                   style={{ marginLeft: 8, marginRight: 8 }}
