@@ -67,9 +67,10 @@ const EXAMPLE_SPECS: GistvisSpec[] = [
 
 interface PipelineExplorerProps {
   style?: React.CSSProperties;
+  onStageChange?: (stage: number) => void;
 }
 
-const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
+const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style, onStageChange }) => {
   const [inputText, setInputText] = useState('');
   const [specs, setSpecs] = useState<GistvisSpec[]>([]);
   const [isDiscoverProcessing, setIsDiscoverProcessing] = useState(false);
@@ -80,21 +81,24 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
   const inputtingExampleRef = useRef(false);
 
   const updateStage = () => {
+    let newStage = 0;
     if (specs.length === 0) {
       if (isDiscoverProcessing) {
-        setStage(1); // discoverer
+        newStage = 1; // discoverer
       } else {
-        setStage(0); // empty
+        newStage = 0; // empty
       }
     } else {
       // if any editor is processing
       const hasProcessingEditor = Object.values(processingEditors).some((isProcessing) => isProcessing);
       if (hasProcessingEditor) {
-        setStage(2); // annotator or extractor
+        newStage = 2; // annotator or extractor
       } else {
-        setStage(3); // completed
+        newStage = 3; // completed
       }
     }
+    setStage(newStage);
+    onStageChange?.(newStage);
   };
 
   const handleCancel = () => {
@@ -284,7 +288,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style }) => {
                           onSave={(updatedSpec) => handleSpecUpdate(index, updatedSpec)}
                           onProcessingChange={(isProcessing) => handleProcessingChange(index, isProcessing)}
                           style={{ width: '100%' }}
-                          example={true}
+                          example={false}
                           autoPlay={autoPlay}
                         />
                       </List.Item>
