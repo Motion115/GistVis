@@ -4,9 +4,21 @@ export const fuzzySearch = (queryString: string, context: string, isFuzzy: boole
   // const context =
   //   "The percentage of the sales of BYD is 30%, while the rest of the top 5 companies only consist of 25%. BYD";
   // const queryString = "the rest of the top 5 companies";
+
   if (!isFuzzy) {
     // use direct match to find all matches, case insensitive
-    const regex = new RegExp(`\\b${queryString}\\b`, 'gi');
+
+    // Escape special characters in a string to safely insert it into a regular expression
+    const escapeRegExp = (text: string) => {
+      return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    };
+
+    const escapedQuery = escapeRegExp(queryString);
+    // Determine if word boundaries should be applied based on the first and last character
+    const startBoundary = /^\w/.test(queryString) ? '\\b' : '';
+    const endBoundary = /\w$/.test(queryString) ? '\\b' : '';
+    const regex = new RegExp(`${startBoundary}${escapedQuery}${endBoundary}`, 'gi');
+
     const matches = Array.from(context.matchAll(regex), (match) => {
       const startIndex = match.index;
       const endIndex = startIndex + match[0].length;
