@@ -152,9 +152,9 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         ? 'green'
         : 'red'
       : colorScale(dataSpec[0].categoryValue);
-  console.log('lineColor', lineColor);
-  
-  const uid = gistvisSpec.unitSegmentSpec.insightType+'-'+gistvisSpec.unitSegmentSpec.attribute+'-'+gistvisSpec.id;
+
+  const uid =
+    gistvisSpec.unitSegmentSpec.insightType + '-' + gistvisSpec.unitSegmentSpec.attribute + '-' + gistvisSpec.id;
   return (
     <Tooltip title={tooltip != null ? getTooltipContnet(tooltip.value) : ''} placement="bottom" color="#ffffff">
       <svg
@@ -182,8 +182,8 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fill="none"
             stroke={lineColor}
             strokeWidth={1}
-            markerStart={lineColor=='green'?"url(#arrow-start-green)":"url(#arrow-start-red)"}
-            markerEnd={lineColor=='green'?"url(#arrow-end-green)":"url(#arrow-end-red)"}
+            markerStart={lineColor == 'green' ? 'url(#arrow-start-green)' : 'url(#arrow-start-red)'}
+            markerEnd={lineColor == 'green' ? 'url(#arrow-end-green)' : 'url(#arrow-end-red)'}
           />
         )}
 
@@ -211,7 +211,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             orient="auto"
             markerUnits="strokeWidth"
           >
-          <path d="M4,0 L4,4 L0,2 z" fill={lineColor} />
+            <path d="M4,0 L4,4 L0,2 z" fill={lineColor} />
           </marker>
         </defs>
 
@@ -238,7 +238,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             orient="auto"
             markerUnits="strokeWidth"
           >
-          <path d="M4,0 L4,4 L0,2 z" fill={'green'} />
+            <path d="M4,0 L4,4 L0,2 z" fill={'green'} />
           </marker>
         </defs>
         <defs>
@@ -265,7 +265,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             orient="auto"
             markerUnits="strokeWidth"
           >
-          <path d="M4,0 L4,4 L0,2 z" fill={'red'} />
+            <path d="M4,0 L4,4 L0,2 z" fill={'red'} />
           </marker>
         </defs>
 
