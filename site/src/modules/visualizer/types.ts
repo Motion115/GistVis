@@ -3,7 +3,7 @@ export type VisInsightType = 'comparison' | 'trend' | 'rank' | 'proportion' | 'e
 export type InsightType = VisInsightType | 'noType';
 
 export type ExtremeAttribute = 'maximum' | 'minimum';
-export type TrendAttribute = 'positive' | 'negative';
+export type TrendAttribute = 'positive' | 'negative' | 'invariable';
 export type Attribute = ExtremeAttribute | TrendAttribute;
 
 export type DataSpec = {

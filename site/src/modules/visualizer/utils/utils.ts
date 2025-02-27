@@ -1,5 +1,5 @@
 import { gistKB } from '../../llm/visKB';
-import { GistvisSpec, InsightType } from '../types';
+import { GistvisSpec, InsightType, DataSpec } from '../types';
 
 export const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -26,7 +26,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
 
   // Task 3: check attribute string
   const attribute = unitSegmentSpec.attribute ?? '';
-  const validForNominalTrend = attribute === 'negative' || attribute === 'positive';
+  const validForNominalTrend = attribute === 'negative' || attribute === 'positive' || attribute === 'invariable';
   const validForExtreme = attribute === 'maximum' || attribute === 'minimum';
 
   // Task 4: valueValue attribute
@@ -49,8 +49,22 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   if (!validForExtreme || inSituPositionList.length > 1) {
     notValidTypes.push('extreme');
   }
+
+  const checkInvariableTrend = (dataSpec: DataSpec[]): boolean => {
+    if (dataSpec.length < 2) return false;
+    const variations = dataSpec.slice(1).map((curr, idx) => {
+      const prev = dataSpec[idx].valueValue;
+      const change = Math.abs(curr.valueValue - prev) / prev;
+      return change;
+    });
+    const VARIATION_THRESHOLD = 0.10; 
+    return variations.every(v => v <= VARIATION_THRESHOLD);
+  };
+  
   // not negative/positive, while there exist empty value, or less than 2 data points, not valid for trend
   if (!validForNominalTrend && (valueValueHasNaN || dataSpecLength < 2)) {
+    notValidTypes.push('trend');
+  }else if (attribute === 'invariable' && !checkInvariableTrend(dataSpec)) {
     notValidTypes.push('trend');
   }
   // if the sum of valueValue is greater than 1, than not a proportion

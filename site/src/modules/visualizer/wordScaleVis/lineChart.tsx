@@ -38,7 +38,10 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
   const lineGenerator = d3
     .line<{ x: number; y: number }>()
     .x((d) => xScale(d.x))
-    .y((d) => yScale(d.y));
+    .y((d) => yScale(d.y))
+    .curve(gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
+      ? d3.curveMonotoneX 
+      : d3.curveLinear); 
 
   const lineGeneratorDifference = d3
     .line<{ x: number; y: number }>()
@@ -62,7 +65,11 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increasing' : '↘ decreasing'}
+          {gistvisSpec.unitSegmentSpec.attribute === 'positive' 
+          ? '↗ increasing' 
+          : gistvisSpec.unitSegmentSpec.attribute === 'negative'
+            ? '↘ decreasing'
+            : '→ stable'}
         </div>
       );
     } else if (type === 'trending') {
@@ -94,8 +101,11 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             dataSpec.find((d) => d.valueValue === selectionVal)?.categoryValue +
             ': ' +
             selectionVal}
-          . The {gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increase' : '↘ decrease'} is{' '}
-          {Math.abs(dataSpec[1].valueValue - dataSpec[0].valueValue)}.
+          {gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
+            ? '. The value remains stable.'
+            : `. The ${gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increase' : '↘ decrease'} is ${
+                Math.abs(dataSpec[1].valueValue - dataSpec[0].valueValue)
+              }.`}
         </div>
       );
     } else {
@@ -150,7 +160,9 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
     type === 'nominal' || type === 'trending' || type === 'start-end'
       ? gistvisSpec.unitSegmentSpec.attribute === 'positive'
         ? 'green'
-        : 'red'
+        : gistvisSpec.unitSegmentSpec.attribute === 'negative'
+        ? 'red'
+        : 'grey'
       : colorScale(dataSpec[0].categoryValue);
 
   return (
@@ -173,6 +185,20 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             <stop offset="100%" stopColor={lineColor} stopOpacity="0.2" />
           </linearGradient>
         </defs>
+
+        {gistvisSpec.unitSegmentSpec.attribute === 'invariable' && (
+          <g>
+            <line
+              x1={SVG_PADDING}
+              y1={lineChartHeight / 2}
+              x2={lineChartWidth - SVG_PADDING}
+              y2={lineChartHeight / 2}
+              stroke="grey"
+              strokeWidth={1}
+              strokeDasharray="4,4"
+            />
+          </g>
+        )}
 
         {type === 'trending' && (
           <path
