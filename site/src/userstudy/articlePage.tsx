@@ -26,6 +26,7 @@ const InteractivePage: React.FC = () => {
   const [timeUp, setTimeUp] = useState<boolean>(false);
   const timerInterval = useRef<NodeJS.Timeout | null>(null);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(true);
+  const [isTimerVisible, setIsTimerVisible] = useState<boolean>(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -53,6 +54,9 @@ const InteractivePage: React.FC = () => {
     }
   };
 
+  const toggleTimerVisibility = () => {
+    setIsTimerVisible(!isTimerVisible);
+  };
   useEffect(() => {
     startTimer();
     return () => {
@@ -223,13 +227,19 @@ const InteractivePage: React.FC = () => {
           </button>
         </div>
       </div>
+
       <div style={{ flex: 1, padding: '20px' }}>
-        <h3>
-          Timer: {Math.floor(timer / 60)}:{timer % 60 < 10 ? '0' + (timer % 60) : timer % 60}
-        </h3>
-        <button onClick={() => setIsTimerRunning(!isTimerRunning)}>{isTimerRunning ? 'Pause' : 'Start'}</button>
-        <Space />
+        {isTimerVisible && (
+          <>
+            <h3>
+              Timer: {Math.floor(timer / 60)}:{timer % 60 < 10 ? '0' + (timer % 60) : timer % 60}
+            </h3>
+            <button onClick={() => setIsTimerRunning(!isTimerRunning)}>{isTimerRunning ? 'Pause' : 'Start'}</button>
+            <Space />
+          </>
+        )}
         <button onClick={submitAnswers}>Submit</button>
+        <button onClick={toggleTimerVisibility}>{isTimerVisible ? 'Hide Timer' : 'Show Timer'}</button>
       </div>
     </div>
   );
