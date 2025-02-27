@@ -25,9 +25,7 @@ const dummyDataMap: { [key in TrendAttribute]: DataPoint[] } = {
 
 const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
   const id = gistvisSpec.id;
-  const trendId = gistvisSpec.unitSegmentSpec.attribute + id;
-
-  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('trend-' + trendId);
+  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('trend-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
   const dataSpec = gistvisSpec.dataSpec ?? [];
   const attribute = (gistvisSpec.unitSegmentSpec.attribute as TrendAttribute) ?? '';
