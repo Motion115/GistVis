@@ -5,7 +5,7 @@ import { ChartProps, DataSpec, InsightType } from '../types';
 import { Tooltip } from 'antd';
 
 const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
-  const [hoveredUniqueId, setHoveredUniqueId] = useState<string | null>(null); // 跟踪悬停条形
+  const [hoveredUniqueId, setHoveredUniqueId] = useState<string | null>(null);
   const dataSpec = gistvisSpec.dataSpec ?? [];
 
   const verticalBarChartWidth = SVG_UNIT_WIDTH * dataSpec.length;
@@ -24,24 +24,24 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
     .range([SVG_HEIGHT, 0]);
 
   const knownCategories = dataSpec.map((d: DataSpec, i: number) => {
-    const uniqueId = `${d.categoryValue}-${d.valueKey}-${d.valueValue}`; // 包含valueValue的唯一标识符
-    const isHovered = uniqueId === hoveredUniqueId; // 检查是否悬停
+    const uniqueId = `${d.categoryValue}-${d.valueKey}-${d.valueValue}`;
+    const isHovered = uniqueId === hoveredUniqueId;
     const hoverStyle = {
-      opacity: isHovered ? 1 : 0.5, // 仅高亮悬停的条形
+      opacity: isHovered ? 1 : 0.5,
       transition: 'opacity 0.3s',
     };
     return (
       <rect
-        key={uniqueId} // 唯一key
+        key={uniqueId}
         x={xScale(i)}
         y={yScale(dataset[i])}
         width={SVG_UNIT_WIDTH}
         height={SVG_HEIGHT - yScale(dataset[i])}
-        fill={d.categoryValue !== 'placeholder' ? colorScale(d.categoryValue) : 'grey'} // 颜色基于categoryValue
+        fill={d.categoryValue !== 'placeholder' ? colorScale(d.categoryValue) : 'grey'}
         style={hoverStyle}
         onMouseOver={() => {
-          setSelectedEntity(d.categoryValue); // 设置为categoryValue
-          setHoveredUniqueId(uniqueId); // 设置悬停标识符
+          setSelectedEntity(d.categoryValue);
+          setHoveredUniqueId(uniqueId);
         }}
         onMouseOut={() => {
           setSelectedEntity('');
