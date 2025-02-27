@@ -152,7 +152,9 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         ? 'green'
         : 'red'
       : colorScale(dataSpec[0].categoryValue);
-
+  console.log('lineColor', lineColor);
+  
+  const uid = gistvisSpec.unitSegmentSpec.insightType+'-'+gistvisSpec.unitSegmentSpec.attribute+'-'+gistvisSpec.id;
   return (
     <Tooltip title={tooltip != null ? getTooltipContnet(tooltip.value) : ''} placement="bottom" color="#ffffff">
       <svg
@@ -165,10 +167,10 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         onMouseMove={handleMouseMove}
         onMouseOut={handleMouseOut}
       >
-        <path d={areaGenerator(dataset) || undefined} fill={`url(#${gistvisSpec.id}-areaGradient`} />
+        <path d={areaGenerator(dataset) || undefined} fill={`url(#${uid}-areaGradient`} />
         <path d={lineGenerator(dataset) || undefined} fill="none" strokeWidth={1.5} />
         <defs>
-          <linearGradient id={`${gistvisSpec.id}-areaGradient`} x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id={`${uid}-areaGradient`} x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" stopColor={lineColor} stopOpacity="1" />
             <stop offset="100%" stopColor={lineColor} stopOpacity="0.2" />
           </linearGradient>
@@ -180,8 +182,8 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fill="none"
             stroke={lineColor}
             strokeWidth={1}
-            markerStart="url(#arrow-start)"
-            markerEnd="url(#arrow-end)"
+            markerStart={lineColor=='green'?"url(#arrow-start-green)":"url(#arrow-start-red)"}
+            markerEnd={lineColor=='green'?"url(#arrow-end-green)":"url(#arrow-end-red)"}
           />
         )}
 
@@ -209,7 +211,61 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             orient="auto"
             markerUnits="strokeWidth"
           >
-            <path d="M4,0 L4,4 L0,2 z" fill={lineColor} />
+          <path d="M4,0 L4,4 L0,2 z" fill={lineColor} />
+          </marker>
+        </defs>
+
+        <defs>
+          <marker
+            id="arrow-end-green"
+            markerWidth="4"
+            markerHeight="4"
+            refX="3"
+            refY="2"
+            orient="auto"
+            markerUnits="strokeWidth"
+          >
+            <path d="M0,0 L0,4 L4,2 z" fill={'green'} />
+          </marker>
+        </defs>
+        <defs>
+          <marker
+            id="arrow-start-green"
+            markerWidth="4"
+            markerHeight="4"
+            refX="1"
+            refY="2"
+            orient="auto"
+            markerUnits="strokeWidth"
+          >
+          <path d="M4,0 L4,4 L0,2 z" fill={'green'} />
+          </marker>
+        </defs>
+        <defs>
+          <marker
+            id="arrow-end-red"
+            markerWidth="4"
+            markerHeight="4"
+            refX="3"
+            refY="2"
+            orient="auto"
+            markerUnits="strokeWidth"
+          >
+            <path d="M0,0 L0,4 L4,2 z" fill={'red'} />
+          </marker>
+        </defs>
+
+        <defs>
+          <marker
+            id="arrow-start-red"
+            markerWidth="4"
+            markerHeight="4"
+            refX="1"
+            refY="2"
+            orient="auto"
+            markerUnits="strokeWidth"
+          >
+          <path d="M4,0 L4,4 L0,2 z" fill={'red'} />
           </marker>
         </defs>
 

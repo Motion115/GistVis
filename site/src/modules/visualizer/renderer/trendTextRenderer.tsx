@@ -24,13 +24,17 @@ const dummyDataMap: { [key in TrendAttribute]: DataPoint[] } = {
 };
 
 const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+
   const id = gistvisSpec.id;
-  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('trend-' + id);
+  const trendId = gistvisSpec.unitSegmentSpec.attribute+id;
+  
+  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('trend-' + trendId);
   const [currentEntity, setCurrentEntity] = useState<string>('');
   const dataSpec = gistvisSpec.dataSpec ?? [];
   const attribute = (gistvisSpec.unitSegmentSpec.attribute as TrendAttribute) ?? '';
 
   const entityPos: EntitySpec[] = getHighlightPos(gistvisSpec, 'entity');
+  
   const uniqueEntities = getUniqueEntities(entityPos);
 
   const vis = getProductionVisSpec(gistvisSpec.unitSegmentSpec.context, entityPos);
@@ -38,8 +42,13 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
   const colorScale = d3.scaleOrdinal(d3.schemeCategory10).domain(uniqueEntities);
 
   const hasNaN = dataSpec.some((d) => isNaN(d.valueValue));
+  // console.log('hasNaN',hasNaN);
   const numEntries = dataSpec.length;
+  // console.log('numEntries',numEntries);
+  
   const validForNominalTrend = attribute === 'negative' || attribute === 'positive';
+  // console.log('validForNominalTrend',validForNominalTrend);
+  
   const lineChartType: TrendOptions =
     validForNominalTrend && (hasNaN || numEntries === 0)
       ? 'nominal'
@@ -48,6 +57,8 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
         : validForNominalTrend && !hasNaN && numEntries === 2
           ? 'start-end'
           : 'actual';
+  // console.log('lineChartType',lineChartType);
+  
 
   const transformData = (): DataPoint[] => {
     if (lineChartType === 'nominal' || lineChartType === 'trending') {
