@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as d3 from 'd3';
 import { SVG_HEIGHT, SVG_UNIT_WIDTH } from '../constants';
 import { ChartProps, DataSpec, InsightType } from '../types';
 import { Tooltip } from 'antd';
 
 const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
+  const [hoveredUniqueId, setHoveredUniqueId] = useState<string | null>(null); // 跟踪悬停条形
   const dataSpec = gistvisSpec.dataSpec ?? [];
 
   const verticalBarChartWidth = SVG_UNIT_WIDTH * dataSpec.length;
@@ -23,87 +24,79 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
     .range([SVG_HEIGHT, 0]);
 
   const knownCategories = dataSpec.map((d: DataSpec, i: number) => {
+    const uniqueId = `${d.categoryValue}-${d.valueKey}-${d.valueValue}`; // 包含valueValue的唯一标识符
+    const isHovered = uniqueId === hoveredUniqueId; // 检查是否悬停
     const hoverStyle = {
-      opacity: d.categoryValue === selectedEntity ? 1 : 0.5,
+      opacity: isHovered ? 1 : 0.5, // 仅高亮悬停的条形
       transition: 'opacity 0.3s',
     };
     return (
       <rect
-        key={d.categoryValue}
+        key={uniqueId} // 唯一key
         x={xScale(i)}
         y={yScale(dataset[i])}
         width={SVG_UNIT_WIDTH}
         height={SVG_HEIGHT - yScale(dataset[i])}
-        fill={d.categoryValue !== 'placeholder' ? colorScale(d.categoryValue) : 'grey'}
+        fill={d.categoryValue !== 'placeholder' ? colorScale(d.categoryValue) : 'grey'} // 颜色基于categoryValue
         style={hoverStyle}
         onMouseOver={() => {
-          setSelectedEntity(d.categoryValue);
+          setSelectedEntity(d.categoryValue); // 设置为categoryValue
+          setHoveredUniqueId(uniqueId); // 设置悬停标识符
         }}
         onMouseOut={() => {
           setSelectedEntity('');
+          setHoveredUniqueId(null);
         }}
       />
     );
   });
 
   const getToolTipContent = () => {
-    if (selectedEntity === 'placeholder') {
-      return (
-        <div
-          style={{
-            lineHeight: 1.1,
-            fontSize: '14px',
-            color: 'grey',
-            fontWeight: 'bold',
-          }}
-        >
-          Rank
-        </div>
-      );
-    } else if (gistvisSpec.unitSegmentSpec.insightType === 'rank') {
-      const rank = dataSpec.filter((d) => d.categoryValue === selectedEntity)[0]?.valueValue;
-      if (rank === undefined) {
+    if (!selectedEntity || selectedEntity === 'placeholder') {
+      return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Comparison</div>;
+    }
+
+    if (gistvisSpec.unitSegmentSpec.insightType === 'comparison') {
+      const currentCase = dataSpec.find((d) => `${d.categoryValue}-${d.valueKey}-${d.valueValue}` === hoveredUniqueId);
+      if (!currentCase) {
+        return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Comparison</div>;
+      }
+      const refCase = dataSpec.find((d) => d !== currentCase) || dataSpec[0];
+      const diff = Math.abs(currentCase.valueValue - refCase.valueValue);
+      if (refCase.categoryValue === selectedEntity) {
         return (
-          <div
-            style={{
-              lineHeight: 1.1,
-              fontSize: '14px',
-              color: 'grey',
-              fontWeight: 'bold',
-            }}
-          >
-            Rank
+          <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+            The difference between{' '}
+            <span style={{ color: colorScale(refCase.categoryValue) }}>
+              {refCase.categoryValue} ({refCase.valueValue}%)
+            </span>{' '}
+            and {selectedEntity} ({currentCase.valueValue}%) is {diff}.
+          </div>
+        );
+      } else {
+        return (
+          <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+            The difference between{' '}
+            <span style={{ color: colorScale(refCase.categoryValue) }}>
+              {refCase.categoryValue} ({refCase.valueValue}%)
+            </span>{' '}
+            and{' '}
+            <span style={{ color: colorScale(selectedEntity) }}>
+              {selectedEntity} ({currentCase.valueValue}%)
+            </span>{' '}
+            is {diff}.
           </div>
         );
       }
+    } else if (gistvisSpec.unitSegmentSpec.insightType === 'rank') {
+      const rankData = dataSpec.find((d) => `${d.categoryValue}-${d.valueKey}-${d.valueValue}` === hoveredUniqueId);
+      const rank = rankData?.valueValue;
+      if (!rankData || rank === undefined) {
+        return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Rank</div>;
+      }
       return (
-        <div
-          style={{
-            lineHeight: 1.1,
-            fontSize: '14px',
-            color: colorScale(selectedEntity),
-            fontWeight: 'bold',
-          }}
-        >
-          {'Rank ' + dataSpec.filter((d) => d.categoryValue === selectedEntity)[0]?.valueValue + ': ' + selectedEntity}
-        </div>
-      );
-    } else if (gistvisSpec.unitSegmentSpec.insightType === 'comparison') {
-      const refCase = dataSpec[0];
-      const currentCase = dataSpec.find((d) => d.categoryValue === selectedEntity) ?? refCase;
-      const diff = parseFloat(Math.abs(refCase.valueValue - currentCase.valueValue).toFixed(2));
-      return (
-        <div
-          style={{
-            lineHeight: 1.1,
-            fontSize: '14px',
-            color: 'black',
-            fontWeight: 'bold',
-          }}
-        >
-          The difference between{' '}
-          <span style={{ color: colorScale(refCase.categoryValue) }}>{refCase.categoryValue}</span> and{' '}
-          <span style={{ color: colorScale(selectedEntity) }}>{selectedEntity}</span> is {diff}.
+        <div style={{ lineHeight: 1.1, fontSize: '14px', color: colorScale(selectedEntity), fontWeight: 'bold' }}>
+          {rankData.valueKey + ' Rank ' + rank + ': ' + selectedEntity}
         </div>
       );
     }
