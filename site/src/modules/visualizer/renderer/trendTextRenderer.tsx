@@ -21,6 +21,13 @@ const dummyDataMap: { [key in TrendAttribute]: DataPoint[] } = {
     { x: 4, y: 6 },
     { x: 5, y: 1 },
   ],
+  invariable: [
+    { x: 1, y: 20 },
+    { x: 2, y: 25 },
+    { x: 3, y: 20 },
+    { x: 4, y: 15 },
+    { x: 5, y: 20 },
+  ],
 };
 
 const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
@@ -39,7 +46,7 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
 
   const hasNaN = dataSpec.some((d) => isNaN(d.valueValue));
   const numEntries = dataSpec.length;
-  const validForNominalTrend = attribute === 'negative' || attribute === 'positive';
+  const validForNominalTrend = attribute === 'negative' || attribute === 'positive' || attribute === 'invariable';
   const lineChartType: TrendOptions =
     validForNominalTrend && (hasNaN || numEntries === 0)
       ? 'nominal'
@@ -64,6 +71,13 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
         return [
           { x: 0, y: low },
           { x: 1, y: high },
+        ];
+      } else if (attribute === 'invariable') {
+        // use average value
+        const avg = (high + low) / 2;
+        return [
+          { x: 0, y: avg },
+          { x: 1, y: avg },
         ];
       } else {
         // actual
