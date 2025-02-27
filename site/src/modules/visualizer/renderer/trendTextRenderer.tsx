@@ -48,7 +48,7 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
         : validForNominalTrend && !hasNaN && numEntries === 2
           ? 'start-end'
           : 'actual';
-          
+
   const transformData = (): DataPoint[] => {
     if (lineChartType === 'nominal' || lineChartType === 'trending') {
       return dummyDataMap[attribute];
