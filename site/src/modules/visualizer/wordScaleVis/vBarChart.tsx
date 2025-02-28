@@ -52,7 +52,11 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
   });
 
   const getToolTipContent = () => {
-    if (!selectedEntity || selectedEntity === 'placeholder') {
+    if (hoveredUniqueId === null) {
+      return null;
+    }
+
+    if (selectedEntity === 'placeholder') {
       return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Comparison</div>;
     }
 
@@ -68,9 +72,9 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
           <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
             The difference between{' '}
             <span style={{ color: colorScale(refCase.categoryValue) }}>
-              {refCase.categoryValue} ({refCase.valueValue}%)
+              {refCase.categoryValue} ({refCase.valueValue})
             </span>{' '}
-            and {selectedEntity} ({currentCase.valueValue}%) is {diff}.
+            and {selectedEntity} ({currentCase.valueValue}) is {diff}.
           </div>
         );
       } else {
@@ -78,11 +82,11 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
           <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
             The difference between{' '}
             <span style={{ color: colorScale(refCase.categoryValue) }}>
-              {refCase.categoryValue} ({refCase.valueValue}%)
+              {refCase.categoryValue} ({refCase.valueValue})
             </span>{' '}
             and{' '}
             <span style={{ color: colorScale(selectedEntity) }}>
-              {selectedEntity} ({currentCase.valueValue}%)
+              {selectedEntity} ({currentCase.valueValue})
             </span>{' '}
             is {diff}.
           </div>
@@ -96,7 +100,7 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
       }
       return (
         <div style={{ lineHeight: 1.1, fontSize: '14px', color: colorScale(selectedEntity), fontWeight: 'bold' }}>
-          {rankData.valueKey + ' Rank ' + rank + ': ' + selectedEntity}
+          {rankData.valueKey + ' ' + rank + ': ' + selectedEntity}
         </div>
       );
     }
