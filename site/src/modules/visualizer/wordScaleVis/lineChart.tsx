@@ -182,14 +182,14 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fill="none"
             stroke={lineColor}
             strokeWidth={1}
-            markerStart={lineColor == 'green' ? 'url(#arrow-start-green)' : 'url(#arrow-start-red)'}
-            markerEnd={lineColor == 'green' ? 'url(#arrow-end-green)' : 'url(#arrow-end-red)'}
+            markerStart={`url(#arrow-start-${lineColor})`}
+            markerEnd={`url(#arrow-end-${lineColor})`}
           />
         )}
 
         <defs>
           <marker
-            id="arrow-end"
+            id={`arrow-end-${lineColor}`}
             markerWidth="4"
             markerHeight="4"
             refX="3"
@@ -203,7 +203,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
 
         <defs>
           <marker
-            id="arrow-start"
+            id={`arrow-start-${lineColor}`}
             markerWidth="4"
             markerHeight="4"
             refX="1"
@@ -212,60 +212,6 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             markerUnits="strokeWidth"
           >
             <path d="M4,0 L4,4 L0,2 z" fill={lineColor} />
-          </marker>
-        </defs>
-
-        <defs>
-          <marker
-            id="arrow-end-green"
-            markerWidth="4"
-            markerHeight="4"
-            refX="3"
-            refY="2"
-            orient="auto"
-            markerUnits="strokeWidth"
-          >
-            <path d="M0,0 L0,4 L4,2 z" fill={'green'} />
-          </marker>
-        </defs>
-        <defs>
-          <marker
-            id="arrow-start-green"
-            markerWidth="4"
-            markerHeight="4"
-            refX="1"
-            refY="2"
-            orient="auto"
-            markerUnits="strokeWidth"
-          >
-            <path d="M4,0 L4,4 L0,2 z" fill={'green'} />
-          </marker>
-        </defs>
-        <defs>
-          <marker
-            id="arrow-end-red"
-            markerWidth="4"
-            markerHeight="4"
-            refX="3"
-            refY="2"
-            orient="auto"
-            markerUnits="strokeWidth"
-          >
-            <path d="M0,0 L0,4 L4,2 z" fill={'red'} />
-          </marker>
-        </defs>
-
-        <defs>
-          <marker
-            id="arrow-start-red"
-            markerWidth="4"
-            markerHeight="4"
-            refX="1"
-            refY="2"
-            orient="auto"
-            markerUnits="strokeWidth"
-          >
-            <path d="M4,0 L4,4 L0,2 z" fill={'red'} />
           </marker>
         </defs>
 
