@@ -7,9 +7,16 @@ import { GistFactTypeAnnotation } from '../types';
 import lodash from 'lodash';
 
 const getInsightType = async (model: ChatOpenAI<ChatOpenAICallOptions>, gistvisSpec: GistvisSpec): Promise<string> => {
-  const candidateTypeProposals = await Promise.all(
+  // const candidateTypeProposals = await Promise.all(
+  //   Object.keys(gistKB).map((typeKey) => {
+  //     return runTypeCheck(model, gistvisSpec.unitSegmentSpec.context, typeKey as VisInsightType);
+  //   })
+  // );
+  const candidateTypeProposals : GistFactTypeAnnotation[] = await Promise.all(
     Object.keys(gistKB).map((typeKey) => {
-      return runTypeCheck(model, gistvisSpec.unitSegmentSpec.context, typeKey as VisInsightType);
+      return {
+        type: typeKey as VisInsightType
+      }
     })
   );
 

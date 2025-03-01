@@ -1,11 +1,14 @@
 import React, { useState, useReducer, useRef, useEffect } from 'react';
-import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row, Divider, Typography, Layout } from 'antd';
+import { Card, Input, Button, List, Flex, Space, ConfigProvider, Row, Divider, Typography, Layout, Modal } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
 import SpecProcessEditor from './SpecProcessEditor';
 import splitInsight from '../../modules/llm/discoverer/discoverer';
 import { GistvisSpec, paragraphSpec } from '../../modules/visualizer/types';
 import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
+
+import {articles} from '../../userstudy/articles/articledata';
+import { ProcessedArticle } from '../../userstudy/articles/articleTypes';
 
 const { TextArea } = Input;
 const { Text } = Typography;
@@ -80,6 +83,8 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style, onStageChang
   const taskIdRef = useRef<number>(0);
   const inputtingExampleRef = useRef(false);
 
+  const [selectingExampleArticle, setSelectingExampleArticle] = useState(false);
+
   const updateStage = () => {
     let newStage = 0;
     if (specs.length === 0) {
@@ -136,7 +141,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style, onStageChang
 
     try {
       const model = new ChatOpenAI({
-        temperature: 0.7,
+        temperature: 0,
         topP: 1,
         n: 1,
         streaming: false,
@@ -318,20 +323,69 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style, onStageChang
               >
                 Copy to Input
               </Button>
-              <Button
-                type="default"
-                onClick={() => {
-                  inputtingExampleRef.current = true;
-                  setInputText(EXAMPLE_INPUT);
-                  setSpecs(EXAMPLE_SPECS);
-                }}
-              >
-                Show Example Visualization
-              </Button>
+              <div style={{ display:'flex', gap: '10px' }}>  
+                <Button
+                  type="default"
+                  onClick={() => {
+                    setSelectingExampleArticle(true);
+                  }}
+                >
+                  Example Articles
+                </Button>
+                <Button
+                  type="default"
+                  onClick={() => {
+                    inputtingExampleRef.current = true;
+                    setInputText(EXAMPLE_INPUT);
+                    setSpecs(EXAMPLE_SPECS);
+                  }}
+                >
+                  Show Example Visualization
+                </Button>
+              </div>
             </Row>
           </Space>
         </Card>
       </Space>
+      <Modal
+        title="Select Example Article"
+        open={selectingExampleArticle}
+        onCancel={() => setSelectingExampleArticle(false)}
+        footer={[
+          <Button key="cancel" onClick={() => setSelectingExampleArticle(false)}>
+            Cancel
+          </Button>,
+          <Button key="save" onClick={() => {}}>
+            Save
+          </Button>,
+        ]}
+      >
+        <List
+          dataSource={articles.slice(6,12) as ProcessedArticle[]}
+          renderItem={(article, index) => {
+            // const specs = article.content[0].paragraphContent;
+            const specs = article.content.map((content) => content.paragraphContent).flat();
+            return (
+              <List.Item>
+                <Card
+                  title={`Example Article ${index + 1}`}
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => {
+                    inputtingExampleRef.current = true;
+                    setInputText(EXAMPLE_INPUT);
+                    setSpecs(specs);
+                    setSelectingExampleArticle(false);
+                  }}
+                >
+                  <Text style={{ maxWidth: '420px' }} ellipsis={{ tooltip: specs[0].unitSegmentSpec.context }}>
+                    {specs[0].unitSegmentSpec.context}
+                  </Text>
+                </Card>
+              </List.Item>
+            );
+          }}
+        />        
+      </Modal>
     </ConfigProvider>
   );
 };
