@@ -1,7 +1,7 @@
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
 import runTypeCheck from './runTypeCheck';
 import runMatch from './typeModerator';
-import { GistvisSpec, paragraphSpec, UnitSegmentSpec, VisInsightType } from '../../visualizer/types';
+import { GistvisSpec, InsightType, paragraphSpec, UnitSegmentSpec, VisInsightType } from '../../visualizer/types';
 import { gistKB } from '../visKB';
 import { GistFactTypeAnnotation } from '../types';
 import lodash from 'lodash';
@@ -15,7 +15,7 @@ const getInsightType = async (model: ChatOpenAI<ChatOpenAICallOptions>, gistvisS
   const candidateTypeProposals : GistFactTypeAnnotation[] = await Promise.all(
     Object.keys(gistKB).map((typeKey) => {
       return {
-        type: typeKey as VisInsightType
+        type: typeKey as InsightType
       }
     })
   );

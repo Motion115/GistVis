@@ -23,6 +23,7 @@ type TrendAttribute = {
 
 const TestPage: React.FC = () => { 
   const [result, setResult] = useState<string>("");
+  const [success, setSuccess] = useState<number>(0);
   const [input, setInput] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const stop = useRef<boolean>(false);
@@ -95,7 +96,6 @@ const TestPage: React.FC = () => {
       model as ChatOpenAI<ChatOpenAICallOptions>,
       parser,
     ]);
-    console.log(parser.getFormatInstructions());
     
     const response = await extrtrendchain.invoke({
       formatInstructions: parser.getFormatInstructions(),
@@ -204,6 +204,7 @@ const TestPage: React.FC = () => {
           </Button>
           <Button
             onClick={async () => {
+              setSuccess(0);
               setProgress(0);
               setProgressing(true);
               for (const [index, item] of testData.entries()) {
@@ -212,12 +213,16 @@ const TestPage: React.FC = () => {
                   const { attribute } = res;
                   setTestDataResult(index, attribute);
                   setProgress((index + 1));
+                  if (attribute === item.attribute) {
+                    setSuccess((prev) => prev + 1);
+                  }
                 } catch (error) {
                   break;
                 }
                 if (stop.current) {
                   stop.current = false;
                   setProgress(0);
+                  setSuccess(0);
                   break;
                 }
               }
@@ -235,7 +240,9 @@ const TestPage: React.FC = () => {
           >
             {`stop${stop.current?': stopping...':''}`}
           </Button>
-          <Text>{`${progress}/${testData.length} ${progressing?'progressing...':''}`}</Text>
+          <Text>{`Progress: ${progress}/${testData.length} ${progressing?'progressing...':''}`}</Text>
+          <Text>{`Success: ${success}/${progress}`}</Text>
+
           {
             testData.map((item, index) => {
               return (
