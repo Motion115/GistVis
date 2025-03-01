@@ -5,6 +5,8 @@ import PublicityPage from './demo/Demo';
 import LLMConfigurationPage from './demo/LLMConf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import TestPage from './demo/pipeline/TestPage';
+
 const App = () => {
   return (
     <>
@@ -16,6 +18,7 @@ const App = () => {
           <Route path="/interactive" element={<HomePage />} />
           <Route path="/interactive/:pageType/:pageId" element={<InteractivePage />} />
           <Route path="/llm_setting" element={<LLMConfigurationPage />} />
+          <Route path="/test" element={<TestPage />} />
         </Routes>
       </Router>
     </>
