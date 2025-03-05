@@ -22,9 +22,9 @@ const LLMConfigurationPage = () => {
   const [messages, setMessages] = useState<string[]>([]);
   const [langchainMessages, setLangchainMessages] = useState<string[]>([]);
 
-  const FETCH_FLAG = 1;
+  // const FETCH_FLAG = 1;
+  // const [useFetch, setUseFetch] = useState(true);
   const LANGCHIAN_FLAG = 10;
-  const [useFetch, setUseFetch] = useState(true);
   const [useLangchain, setUseLangchain] = useState(true);
   const [waiting, setWaiting] = useState(false);
   const [chatState, setChatState] = useState(0);
@@ -49,6 +49,7 @@ const LLMConfigurationPage = () => {
         VITE_LLM_MODEL_NAME: import.meta.env.VITE_LLM_MODEL_NAME,
       });
     }
+    console.log('envVariables:', envVariables);
   }, []);
 
   useEffect(() => {
@@ -76,65 +77,68 @@ const LLMConfigurationPage = () => {
     setWaiting(true);
     const inp = chatInput.trim();
     setChatInput('');
-    const res = sendMessageToBoth(inp);
-    const fetchRes = await res[0];
-    const langchainRes = await res[1];
-    setChatState(fetchRes + langchainRes);
+
+    const res = await handleLangchainSendMessage(LANGCHIAN_FLAG, inp);
+    setChatState(res);
+    // const res = sendMessageToBoth(inp);
+    // const fetchRes = await res[0];
+    // const langchainRes = await res[1];
+    // setChatState(fetchRes + langchainRes);
     setWaiting(false);
   };
-  const sendMessageToBoth = (inp: string) => {
-    // send message to both fetch and langchain
-    const fetchRes = handleSendFetchMessage(FETCH_FLAG, inp);
-    const langchainRes = handleLangchainSendMessage(LANGCHIAN_FLAG, inp);
-    return [fetchRes, langchainRes];
-  };
-  const handleSendFetchMessage = async (flag: number, inp: string) => {
-    // return flag if success, -flag if failed, 0 if not using fetch
-    if (!useFetch) {
-      return 0;
-    }
-    const newMessages = [...messages, inp];
-    setMessages(newMessages);
-    // call LLM API to get AI reply
-    if (!envVariables.VITE_LLM_URL_BASE) {
-      console.error('VITE_LLM_URL_BASE is not defined');
-      return -flag;
-    }
-    try {
-      const url = envVariables.VITE_LLM_URL_BASE + `/chat/completions`;
-      console.log(`url=${url}`);
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${envVariables.VITE_LLM_API_KEY}`,
-        },
-        body: JSON.stringify({
-          model: envVariables.VITE_LLM_MODEL_NAME,
-          messages: [
-            {
-              role: 'system',
-              content: 'You are a helpful assistant.',
-            },
-            {
-              role: 'user',
-              content: inp,
-            },
-          ],
-        }),
-      });
-      const data = await response.json();
-      console.log(`response.json:`);
-      console.log(data);
-      const aiReply = data.choices[0].message.content.trim();
-      setMessages([...newMessages, aiReply]);
-      return flag;
-    } catch (error) {
-      console.error('Failed:', error);
-      setMessages([...newMessages, '[ERROR] FAILED TO FETCH']);
-      return -flag;
-    }
-  };
+  // const sendMessageToBoth = (inp: string) => {
+  //   // send message to both fetch and langchain
+  //   const fetchRes = handleSendFetchMessage(FETCH_FLAG, inp);
+  //   const langchainRes = handleLangchainSendMessage(LANGCHIAN_FLAG, inp);
+  //   return [fetchRes, langchainRes];
+  // };
+  // const handleSendFetchMessage = async (flag: number, inp: string) => {
+  //   // return flag if success, -flag if failed, 0 if not using fetch
+  //   if (!useFetch) {
+  //     return 0;
+  //   }
+  //   const newMessages = [...messages, inp];
+  //   setMessages(newMessages);
+  //   // call LLM API to get AI reply
+  //   if (!envVariables.VITE_LLM_URL_BASE) {
+  //     console.error('VITE_LLM_URL_BASE is not defined');
+  //     return -flag;
+  //   }
+  //   try {
+  //     const url = envVariables.VITE_LLM_URL_BASE + `/chat/completions`;
+  //     console.log(`url=${url}`);
+  //     const response = await fetch(url, {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         Authorization: `Bearer ${envVariables.VITE_LLM_API_KEY}`,
+  //       },
+  //       body: JSON.stringify({
+  //         model: envVariables.VITE_LLM_MODEL_NAME,
+  //         messages: [
+  //           {
+  //             role: 'system',
+  //             content: 'You are a helpful assistant.',
+  //           },
+  //           {
+  //             role: 'user',
+  //             content: inp,
+  //           },
+  //         ],
+  //       }),
+  //     });
+  //     const data = await response.json();
+  //     console.log(`response.json:`);
+  //     console.log(data);
+  //     const aiReply = data.choices[0].message.content.trim();
+  //     setMessages([...newMessages, aiReply]);
+  //     return flag;
+  //   } catch (error) {
+  //     console.error('Failed:', error);
+  //     setMessages([...newMessages, '[ERROR] FAILED TO FETCH']);
+  //     return -flag;
+  //   }
+  // };
 
   const handleLangchainSendMessage = async (flag: number, inp: string) => {
     // return flag if success, -flag if failed, 0 if not using langchain
@@ -200,9 +204,9 @@ const LLMConfigurationPage = () => {
     }
   };
 
-  const handleToggleFetch = () => {
-    setUseFetch(!useFetch);
-  };
+  // const handleToggleFetch = () => {
+  //   setUseFetch(!useFetch);
+  // };
 
   const handleToggleLangchain = () => {
     setUseLangchain(!useLangchain);
@@ -279,6 +283,7 @@ const LLMConfigurationPage = () => {
         </Flex>
       </Header>
       {/* start-content */}
+
       <Content style={{ padding: '2%', margin: '0 auto' }}>
         {/* start-subtitle */}
         <Layout dir="verticle">
@@ -288,37 +293,18 @@ const LLMConfigurationPage = () => {
           <Text style={{ fontSize: '16px', fontStyle: 'italic' }}>
             {waiting
               ? '(Wait for the result...)'
-              : useFetch
-                ? useLangchain
-                  ? // 1,1
-                    chatState === +FETCH_FLAG + LANGCHIAN_FLAG
-                    ? '(Both Suceess)'
-                    : chatState === -FETCH_FLAG - LANGCHIAN_FLAG
-                      ? '(Both Failed)'
-                      : chatState === +FETCH_FLAG - LANGCHIAN_FLAG
-                        ? '(Fetch ✔, Langchain ✘)'
-                        : chatState === +FETCH_FLAG - LANGCHIAN_FLAG
-                          ? '(Fetch ✘, Langchain ✔)'
-                          : 'ready' //first time
-                  : // 1,0
-                    chatState === +FETCH_FLAG
-                    ? '(Fetch Suceess)'
-                    : chatState === -FETCH_FLAG
-                      ? '(Fetch Failed)'
-                      : 'ready' //first time
-                : useLangchain
-                  ? // 0,1
-                    chatState === +LANGCHIAN_FLAG
-                    ? '(Langchain Suceess)'
-                    : chatState === -LANGCHIAN_FLAG
-                      ? '(Langchain Failed)'
-                      : 'ready' //first time
-                  : // 0,0
-                    'both closed'}
+              : useLangchain
+                ? chatState === +LANGCHIAN_FLAG
+                  ? '(API Available Langchain Success)'
+                  : chatState === -LANGCHIAN_FLAG
+                    ? '(API Not Available Langchain Failed)'
+                    : 'ready'
+                : 'Test closed'}
           </Text>
           <Divider style={{ margin: '0 0 0 0' }} />
         </Layout>
         {/* end-subtitle */}
+
         {/* start-chat-box */}
         {/* 2 chat windows in a row*/}
         <Flex
@@ -328,7 +314,7 @@ const LLMConfigurationPage = () => {
             paddingTop: '25px',
           }}
         >
-          {/* fetch-window */}
+          {/* fetch-window 
           <Layout style={{ width: '45%', gap: '10px' }}>
             <Button style={{ backgroundColor: `${useFetch ? '#4caf50' : '#aaa'}` }} onClick={handleToggleFetch}>
               {useFetch ? 'Chat using Fetch' : 'Chat using Fetch (Closed)'}
@@ -361,6 +347,8 @@ const LLMConfigurationPage = () => {
               ))}
             </Content>
           </Layout>
+          fetch-window */}
+
           {/* langchain-window */}
           <Layout style={{ width: '45%', gap: '10px' }}>
             <Button
@@ -371,7 +359,7 @@ const LLMConfigurationPage = () => {
             >
               {useLangchain ? 'Chat using Langchain' : 'Chat using Langchain (Closed)'}
             </Button>
-            <Text style={{ textAlign: 'center' }}>Check Langchain Supportable</Text>
+            <Text style={{ textAlign: 'center' }}>Check Langchain supportable and API available</Text>
             <Content
               style={{
                 padding: '12px 12px 20px',
