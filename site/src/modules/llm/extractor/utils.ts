@@ -18,7 +18,7 @@ export const SpecDescriptions = {
       'The value of proportion (already converted into decimals). If it does not exist or is uncertain, return NAN',
     rank: 'The ranking of the entity (already converted into numbers).  If it does not exist or is uncertain, return NAN',
     trend:
-      'The definition of the value of the data item according to the context. If it does not exist or is uncertain, return an empty string',
+      'The definition of the value of the data item according to the context. For invariable trends, use consistent values across points. If it does not exist or is uncertain, return an empty string',
     value: 'The numeric word(value). If it does not exist or is uncertain, return an empty string',
   } as { [key in InsightType]: string },
   POS_DESCRIPTION: 'The words containing the value. Do not split the words if it only has one position.',

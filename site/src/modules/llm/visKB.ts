@@ -68,13 +68,24 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
 
   trend: {
     definition: `
-      Trend is deﬁned on a 6-tuple (Xi, Dj, T, t1, t2, R). R describes the movement feature of VDj(Xi) on T in the segment deﬁned by t1 and t2. T is usually a temporal attribute.
-      Temporal changes usually consist of an entity and a phrase with changing semantics such as "increase", "decrease" or "rise", sometimes with numerical values.`,
+      Trend is defined on a 6-tuple (Xi, Dj, T, t1, t2, R). R describes the movement feature of VDj(Xi) on T in the segment defined by t1 and t2. T is usually a temporal attribute.
+      Temporal changes usually consist of an entity and a phrase with changing semantics such as:
+       "increase", "rise", "grow" for positive trends
+       "decrease", "fall", "decline" for negative trends
+       For invariable trends: 
+       Keywords like "unchanged", "stable", "remain constant", "virtually unchanged"
+       Variation within ±10% of the average value
+       No significant directional change indicated.`,
     examples: [
       `China's population decreased by 2.08 million people in 2023 to 1.40967 billion.`,
       `The budget for the Border Patrol Program has been rising from 1990 to 2013.`,
+      `The unemployment rate has remained stable at around 5% throughout 2023.`, 
+      `The average temperature in this region has stayed constant at 25°C.` 
     ],
-    negativeExamples: [`The little boy was careful enough to come first in the exam.`],
+    negativeExamples: [
+      `The little boy was careful enough to come first in the exam.`,
+      `There are more blocked beds in the Royal London Hospital compared with the UK average.`
+    ],
   },
   // association:
   //   "Association refers to the useful relationship between two data attributes or among multiple attributes and can be categorized as positive, negative, or neutral sentiment.",
