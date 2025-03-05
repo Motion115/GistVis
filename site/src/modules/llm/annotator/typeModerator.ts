@@ -31,7 +31,11 @@ const runMatch = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent: s
     model as ChatOpenAI<ChatOpenAICallOptions>,
     parser,
   ]);
-
+  // console.log(parser.getFormatInstructions());
+  
+  // return {
+  //   type: 'noType',
+  // }
   const response = await matchain.invoke({
     formatInstructions: parser.getFormatInstructions(),
     paragraph: 'User:' + textContent,

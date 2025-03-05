@@ -5,7 +5,7 @@ import PublicityPage from './demo/Demo';
 import LLMConfigurationPage from './demo/LLMConf';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import TestPage from './demo/testPages/TrendAttribute';
+import TestPage from './demo/testPages/Annotator';
 
 const App = () => {
   return (
