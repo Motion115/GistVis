@@ -8,7 +8,7 @@ export const SystemInstruction = `You are a professional text preprocessing assi
   `;
 
 export const ExtractorSystemInstruction = `
-  You must extract entities, numerical values, and other content from text blocks as requested.
+  You must extract entities, numerical values, and other content from text blocks as requested. The entity is will be filled in 'category_value' filed. You must write the category_value using exact words from the text, there will be a forced match on the category_value. You can cut out unnecessary modifiers before and after, but if you take the liberty of using synonym substitutions for the category_value or cut from middle which causes failures in force matching, there will be a serious penalty and you will be punished! use token strictly same to input context instead of last token, no synonym substitutions, NO TOLERANCE!
   `;
 
 export function getTypeCheckerSystemInstruction(type: InsightType) {

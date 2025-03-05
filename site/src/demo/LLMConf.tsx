@@ -3,6 +3,7 @@ import { ChatOpenAI } from '@langchain/openai';
 import { ConfigProvider, Layout, Typography, Button, Flex, Divider, Tooltip, Input } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import THEME from '../style/theme';
+import GistVisHeader from './GistVisHeader';
 
 const { Header, Content } = Layout;
 const { Text } = Typography;
@@ -262,22 +263,7 @@ const LLMConfigurationPage = () => {
   return (
     <ConfigProvider theme={THEME}>
       {/* start-header */}
-      <Header>
-        <Flex align="center" justify="space-between">
-          <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
-          <div>
-            <Button href="/" type="link">
-              Home
-            </Button>
-            <Button href="/interactive" type="link">
-              User study interface
-            </Button>
-            <Button href="/llm_setting" type="link">
-              Setting
-            </Button>
-          </div>
-        </Flex>
-      </Header>
+      <GistVisHeader></GistVisHeader>
       {/* start-content */}
       <Content style={{ padding: '2%', margin: '0 auto' }}>
         {/* start-subtitle */}
