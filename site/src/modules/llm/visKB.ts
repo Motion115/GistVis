@@ -21,8 +21,8 @@ export function getTypeCheckerSystemInstruction(type: InsightType) {
 // not used because it is not producing effective few-shot examples (for some reason)
 export function generateFewShotExample(
   type: VisInsightType,
-  positiveExample: number = 2,
-  nullExample: number = 1,
+  positiveExample: number = 3,
+  nullExample: number = 3,
   isRandomSample: boolean = false
 ) {
   const getExample = (sentence: string, type: string) => {
@@ -37,7 +37,7 @@ export function generateFewShotExample(
   let nullExamples: string[] = [];
   if (!isRandomSample) {
     nullExamples = lodash
-      .sampleSize(gistKB[type]?.negativeExamples || [])
+      .sampleSize(gistKB[type]?.negativeExamples || [], nullExample)
       .map((sentence) => getExample(sentence, 'null'));
   } else {
     const otherTypes = Object.keys(gistKB).filter((key) => key !== type);
@@ -61,8 +61,13 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `China on Wednesday posted a robust GDP growth of 5.2 percent for 2023, successfully beating the government's pre-set yearly target of around 5 percent.`,
       `There are more blocked beds in the Royal London Hospital compared with the UK average.`,
+      `The average salary in tech companies is 30% higher than in traditional industries.`,
     ],
-    negativeExamples: [`The little boy was careful enough to come first in the exam.`],
+    negativeExamples: [
+      `The little boy was careful enough to come first in the exam.`,
+      `The temperature reached 30 degrees today.`,
+      `Annual revenue grew by 12% last quarter.`
+    ],
   },
   // Trend presents a general tendency over a time segment.
 
@@ -79,12 +84,12 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `China's population decreased by 2.08 million people in 2023 to 1.40967 billion.`,
       `The budget for the Border Patrol Program has been rising from 1990 to 2013.`,
-      `The unemployment rate has remained stable at around 5% throughout 2023.`, 
-      `The average temperature in this region has stayed constant at 25°C.` 
+      `The unemployment rate has remained stable at around 5% throughout 2023.`,
     ],
     negativeExamples: [
       `The little boy was careful enough to come first in the exam.`,
-      `There are more blocked beds in the Royal London Hospital compared with the UK average.`
+      `There are more blocked beds in the Royal London Hospital compared with the UK average.`,
+      `The average salary in tech companies is 30% higher than in traditional industries.`,
     ],
   },
   // association:
@@ -97,8 +102,13 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `The little boy was careful enough to come first in the exam.`,
       `The top reason for consumers to engage in showrooming is (the) price (is) better online.`,
+      `Japan ranks third globally in GDP.`,
     ],
-    negativeExamples: [`China's population decreased by 2.08 million people in 2023 to 1.40967 billion.`],
+    negativeExamples: [
+      `China's population decreased by 2.08 million people in 2023 to 1.40967 billion.`,
+      `The average temperature is 25 degrees.`,
+      `There are 500 students in the school.`
+    ],
   },
   proportion: {
     definition: `
@@ -107,8 +117,13 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `Traffic is one of the biggest sources of carbon pollution in the country and accounts for 28% of the nation's greenhouse gas emissions.`,
       `Protein takes 66% of the diet on Sunday.`,
+      `Renewable energy makes up 40% of total power generation.`,
     ],
-    negativeExamples: [`The little boy was careful enough to come first in the exam.`],
+    negativeExamples: [
+      `The little boy was careful enough to come first in the exam.`,
+      `The company's revenue increased by 20% last year.`,
+      `Beijing has more subway lines than Shanghai.`
+    ],
   },
   extreme: {
     definition: `
@@ -117,8 +132,13 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `The character with the most epigrams in the collected dataset is Oscar Wilde himself, who has 12.`,
       `The minimum wage is just $7.25.`,
+      `Mount Everest is the highest peak in the world at 8,848 meters.`,
     ],
-    negativeExamples: [`The little boy was careful enough to come first in the exam.`],
+    negativeExamples: [
+      `The little boy was careful enough to come first in the exam.`,
+      `The average temperature in summer is 30 degrees.`,
+      `Sales have increased by 15% this quarter.`
+    ],
   },
   // anomaly:
   //   "Anomalies are usually data points that are significantly different from expected patterns.",
@@ -130,7 +150,12 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     examples: [
       `46 horses have won two out of three Triple Crown Races.`,
       `40 cities and counties also are hiking their minimum wages.`,
+      `The human body contains about 37.2 trillion cells.`,
     ],
-    negativeExamples: [`The little boy was careful enough to come first in the exam.`],
+    negativeExamples: [
+      `The little boy was careful enough to come first in the exam.`,
+      `The company ranks first in customer satisfaction.`,
+      `Sales grew faster than expected.`
+    ],
   },
 };
