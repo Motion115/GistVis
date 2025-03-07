@@ -113,9 +113,9 @@ const data = [
 // 3. using
 <SimpleLine 
   data={data}
-  type="trending"  // 可选: actual | nominal | trending | start-end
-  attribute="positive"  // 可选: positive | negative | invariable
-  color="#1890ff"  // 可选
+  type="trending"  // actual | nominal | trending | start-end
+  attribute="positive"  // positive | negative | invariable
+  color="#1890ff"
 />
 
 <SimpleBar
