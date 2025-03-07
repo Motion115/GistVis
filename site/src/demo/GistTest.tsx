@@ -1,7 +1,13 @@
 import React from 'react';
 import { SimpleLine, SimpleBar, SimpleStackedBar, SimpleMaxMin } from 'gist-wsv';
+import { Layout, Typography, Card, Space, theme } from 'antd';
+
+const { Content } = Layout;
+const { Title, Text, Paragraph } = Typography;
 
 export const GistTest: React.FC = () => {
+  const { token } = theme.useToken();
+  
   const lineData = [
     { x: 0, y: 0.5, label: 'Jan' },
     { x: 1, y: 0.8, label: 'Feb' },
@@ -20,86 +26,112 @@ export const GistTest: React.FC = () => {
   ];
 
   return (
-    <div style={{ margin: '20px' }}>
-      <h2>Gist WSV Test</h2>
-      
-      <div style={{ marginBottom: '30px' }}>
-        <h3>1. SimpleLine</h3>
-        <div style={{ marginBottom: '10px' }}>Trend-upward</div>
-        <SimpleLine 
-          data={lineData}
-          type="trending"
-          attribute="positive"
-          color="#1890ff"
-        />
-        <div style={{ marginBottom: '10px' }}>Trend-downward</div>
-        <SimpleLine 
-          data={lineData}
-          type="trending"
-          attribute="negative"
-          color="#1890ff"
-        />
+    <Layout>
+      <Content style={{ padding: '24px', maxWidth: 1200, margin: '0 auto' }}>
+        <Space direction="vertical" size="large" style={{ width: '100%' }}>
+          <Title level={2}>Gist WSV Test</Title>
+          
+          <Card title={<Title level={3} style={{ margin: 0 }}>1. SimpleLine</Title>}>
+            <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+              <Layout>
+                <Text>Trend-upward</Text>
+                <SimpleLine 
+                  data={lineData}
+                  type="trending"
+                  attribute="positive"
+                  color="#1890ff"
+                />
+              </Layout>
+              
+              <Layout>
+                <Text>Trend-downward</Text>
+                <SimpleLine 
+                  data={lineData}
+                  type="trending"
+                  attribute="negative"
+                  color="#1890ff"
+                />
+              </Layout>
 
-        <div style={{ marginBottom: '10px' }}>common</div>
-        <SimpleLine 
-          data={lineData}
-          type="actual"
-          color="#52c41a"
-        />
-      </div>
+              <Layout>
+                <Text>common</Text>
+                <SimpleLine 
+                  data={lineData}
+                  type="actual"
+                  color="#52c41a"
+                />
+              </Layout>
+            </Space>
+          </Card>
 
-      <div style={{ marginBottom: '30px' }}>
-        <h3>2. SimpleBar</h3>
-        <div style={{ marginBottom: '10px' }}>comparison - monocolor</div>
-        <SimpleBar
-          data={barData}
-          type="comparison"
-          color="#1890ff"
-        />
+          <Card title={<Title level={3} style={{ margin: 0 }}>2. SimpleBar</Title>}>
+            <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+              <Layout>
+                <Text>comparison - monocolor</Text>
+                <SimpleBar
+                  data={barData}
+                  type="comparison"
+                  color="#1890ff"
+                />
+              </Layout>
 
-        <div style={{ marginBottom: '10px' }}>comparison - multicolors</div>
-        <SimpleBar
-          data={barData}
-          type="comparison"
-          colors={['#1890ff', '#13c2c2', '#52c41a']}
-        />
+              <Layout>
+                <Text>comparison - multicolors</Text>
+                <SimpleBar
+                  data={barData}
+                  type="comparison"
+                  colors={['#1890ff', '#13c2c2', '#52c41a']}
+                />
+              </Layout>
 
-        <div style={{ marginBottom: '10px' }}>rank - gradient</div>
-        <SimpleBar
-          data={barData}
-          type="rank"
-          colors={['#722ed1', '#2f54eb', '#1890ff']}
-        />
-      </div>
+              <Layout>
+                <Text>rank - gradient</Text>
+                <SimpleBar
+                  data={barData}
+                  type="rank"
+                  colors={['#722ed1', '#2f54eb', '#1890ff']}
+                />
+              </Layout>
+            </Space>
+          </Card>
 
-      <div style={{ marginBottom: '30px' }}>
-        <h3>3. SimpleStackedBar</h3>
-        <SimpleStackedBar
-          data={stackedData}
-          colors={['#1890ff', '#13c2c2']}
-        />
-      </div>
+          <Card title={<Title level={3} style={{ margin: 0 }}>3. SimpleStackedBar</Title>}>
+            <SimpleStackedBar
+              data={stackedData}
+              colors={['#1890ff', '#13c2c2']}
+            />
+          </Card>
 
-      <div style={{ marginBottom: '30px' }}>
-        <h3>4. SimpleMaxMin</h3>
-        <div style={{ marginBottom: '10px' }}>maximum</div>
-        <SimpleMaxMin
-          min={0}
-          max={100}
-          current={80}
-        />
+          <Card title={<Title level={3} style={{ margin: 0 }}>4. SimpleMaxMin</Title>}>
+            <Space direction="vertical" size="middle" style={{ width: '100%' }}>
+              <Layout>
+                <Text>maximum</Text>
+                <SimpleMaxMin
+                  min={0}
+                  max={100}
+                  current={80}
+                />
+              </Layout>
 
-        <div style={{ marginBottom: '10px' }}>minimum</div>
-        <SimpleMaxMin
-          min={0}
-          max={100}
-          current={20}
-        />
-      </div>
+              <Layout>
+                <Text>minimum</Text>
+                <SimpleMaxMin
+                  min={0}
+                  max={100}
+                  current={20}
+                />
+              </Layout>
+            </Space>
+          </Card>
 
-      <div>
-        <h3>README</h3>
-        <pre style={{ background: '#f5f5f5', padding: '15px', borderRadius: '4px' }}>
+          <Card title={<Title level={3} style={{ margin: 0 }}>README</Title>}>
+            <Paragraph>
+              <pre style={{ 
+                background: token.colorFillTertiary,
+                padding: token.padding,
+                borderRadius: token.borderRadius,
+                margin: 0
+              }}>
 {`// 1. import
 import { SimpleLine, SimpleBar, SimpleStackedBar, SimpleMaxMin } from 'gist-wsv';
 
@@ -123,11 +155,13 @@ const data = [
   type="comparison"  // comparison | rank
   color="#1890ff"
   colors={['#1890ff', '#13c2c2', '#52c41a']}
-/>
-`}
-        </pre>
-      </div>
-    </div>
+/>`}
+              </pre>
+            </Paragraph>
+          </Card>
+        </Space>
+      </Content>
+    </Layout>
   );
 };
 
