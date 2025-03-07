@@ -3,6 +3,7 @@ import HomePage from './userstudy/homePage';
 import InteractivePage from './userstudy/articlePage';
 import PublicityPage from './demo/Demo';
 import LLMConfigurationPage from './demo/LLMConf';
+import GistTest from './demo/GistTest';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           {/* <Route path="/" element={<HomePage />} /> */}
           <Route path="/" element={<PublicityPage />} />
+          <Route path="/gisttest" element={<GistTest />} />
           {/* <Route path="/publicity" element={<PublicityPage />} /> */}
           <Route path="/interactive" element={<HomePage />} />
           <Route path="/interactive/:pageType/:pageId" element={<InteractivePage />} />
