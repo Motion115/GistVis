@@ -166,7 +166,7 @@ importers:
         specifier: ^7.0.0
         version: 7.1.0
       gist-wsv:
-        specifier: workspace:*
+        specifier: file:../packages/gist-wsv
         version: link:../packages/gist-wsv
       html-to-text:
         specifier: ^9.0.5
