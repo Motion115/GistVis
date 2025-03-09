@@ -62,7 +62,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   };
   
   // not negative/positive, while there exist empty value, or less than 2 data points, not valid for trend
-  if (!validForNominalTrend && (valueValueHasNaN || dataSpecLength < 2)) {
+  if (!validForNominalTrend && (valueValueHasNaN || categoryValueHasEmpty || dataSpecLength < 2)) {
     notValidTypes.push('trend');
   }else if (attribute === 'invariable' && !checkInvariableTrend(dataSpec)) {
     notValidTypes.push('trend');
