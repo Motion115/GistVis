@@ -30,7 +30,19 @@ const InteractivePage: React.FC = () => {
 
   useEffect(() => {
     const loadArticle = () => {
-      const articleData = articles.find((article) => article.id === pageId);
+      let articleData: ArticleData | undefined;
+      // Check if the pageType is 'processed' or 'unprocessed'
+      if (pageType === 'processed') {
+        // Filter processed articles and sort them by id (as number)
+        const processedArticles = articles.filter((a) => a.processed).sort((a, b) => Number(a.id) - Number(b.id));
+        // Get the article based on the rank (pageId) from the sorted list
+        articleData = processedArticles[Number(pageId) - 1];
+      } else if (pageType === 'unprocessed') {
+        // Filter unprocessed articles and sort them by id (as number)
+        const unprocessedArticles = articles.filter((a) => !a.processed).sort((a, b) => Number(a.id) - Number(b.id));
+        // Get the article based on the rank (pageId) from the sorted list
+        articleData = unprocessedArticles[Number(pageId) - 1];
+      }
       if (articleData) {
         setArticle(articleData);
         setQuestions(articleData.questions);
@@ -41,7 +53,7 @@ const InteractivePage: React.FC = () => {
     };
 
     loadArticle();
-  }, [pageId]);
+  }, [pageId, pageType]);
 
   const startTimer = () => {
     if (!timerInterval.current) {
@@ -118,7 +130,6 @@ const InteractivePage: React.FC = () => {
     return (
       <div>
         <h2>Unprocessed Article {pageId}: </h2>
-        <h2>{article.title}</h2>
         <div className="content-wrapper">
           <p className="pre-wrap">{article.content}</p>
         </div>

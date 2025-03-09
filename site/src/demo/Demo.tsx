@@ -58,7 +58,7 @@ const PublicityPage = () => {
     }
     return (
       <div style={{ padding: '20px', minHeight: '200px' }}>
-        <div className="content-wrapper1">
+        <div>
           <p className="pre-wrap">{article.content}</p>
         </div>
       </div>

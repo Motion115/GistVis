@@ -78,8 +78,8 @@ const HomePage = () => {
             'Processed article 6',
           ].map((article, index) => (
             <Link
-              key={index + 3}
-              to={`/interactive/processed/${index + 7}`}
+              key={index}
+              to={`/interactive/processed/${index + 1}`}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <button
