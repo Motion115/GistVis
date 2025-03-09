@@ -419,7 +419,7 @@ export const DemoPage = () => {
         <Text style={{ fontSize: '16px', fontStyle: 'italic' }}>Word-scale in situ visualization</Text>
         <Divider style={{ margin: '0 0 0 0' }} />
         <div style={{ width: '50%', margin: '0 auto' }}>
-          <ArtcleProcess llmarticle={sampleArticle} />
+          {/* <ArtcleProcess llmarticle={sampleArticle} /> */}
           <ArtcleProcess llmarticle={sampleArticle2} />
         </div>
       </Layout>

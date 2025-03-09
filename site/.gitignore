@@ -8,7 +8,7 @@
 # .prettierrc
 .env
 yarn.lock*
-
+/dist
 
 # testing
 /coverage

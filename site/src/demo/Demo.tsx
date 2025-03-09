@@ -15,6 +15,7 @@ const { Header, Content, Footer } = Layout;
 const { Title, Text } = Typography;
 
 const PublicityPage = () => {
+  const rootRoute = import.meta.env.VITE_SITE_BASE_URL;
   const [processStage, setProcessStage] = useAtom(processStageAtom);
   const [llmarticle, setLlmArticle] = useState<paragraphSpec[]>([]);
   const [currentArticleIndex, setCurrentArticleIndex] = useState(1);
@@ -72,13 +73,13 @@ const PublicityPage = () => {
           <Flex align="center" justify="space-between">
             <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
             <div>
-              <Button href="/" type="link">
+              <Button href={rootRoute} type="link">
                 Home
               </Button>
-              <Button href="/interactive" type="link">
+              <Button href={`${rootRoute}/interactive`} type="link">
                 User study interface
               </Button>
-              <Button href="/llm_setting" type="link">
+              <Button href={`${rootRoute}/llm_setting`} type="link">
                 Setting
               </Button>
             </div>

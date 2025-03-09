@@ -185,7 +185,7 @@ const InteractivePage: React.FC = () => {
           <textarea
             value={selectedAnswers[question.id] || ''}
             onChange={(e) => handleAnswerChange(e.target.value)}
-            placeholder="请输入你的答案"
+            placeholder="Please input your answer"
             style={{
               width: '100%',
               minHeight: '400px',
