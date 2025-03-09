@@ -1,9 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAtom } from 'jotai';
 import { articleIdAtom } from '../globalState';
 
 const HomePage = () => {
+  const rootRoute = import.meta.env.VITE_SITE_BASE_URL;
   const width = window.innerHeight;
   const [, setArticleId] = useAtom(articleIdAtom);
   const handleButtonClick = (articleNumber: string) => {
@@ -44,7 +44,7 @@ const HomePage = () => {
           ].map((article, index) => (
             <Link
               key={index}
-              to={`/interactive/unprocessed/${index + 1}`}
+              to={`${rootRoute}/interactive/unprocessed/${index + 1}`}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <button
@@ -78,8 +78,8 @@ const HomePage = () => {
             'Processed article 6',
           ].map((article, index) => (
             <Link
-              key={index + 3}
-              to={`/interactive/processed/${index + 7}`}
+              key={index}
+              to={`${rootRoute}/interactive/processed/${index + 1}`}
               style={{ textDecoration: 'none', color: 'black' }}
             >
               <button

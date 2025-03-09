@@ -4,7 +4,14 @@ export const articles: ArticleData[] = [
   {
     id: '1',
     title: 'U.S. centenarian population is projected to quadruple over the next 30 years',
-    content: article1,
+    content: article1
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -67,12 +74,19 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '2',
     title: 'Most Americans think U.S. K-12 STEM education isn’t above average, but test results paint a mixed picture',
-    content: article2,
+    content: article2
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -139,12 +153,19 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '3',
     title: 'A growing share of U.S. husbands and wives are roughly the same age',
-    content: article3,
+    content: article3
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -202,12 +223,19 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '4',
     title: 'Online shopping has grown rapidly in U.S., but most sales are still in stores',
-    content: article4,
+    content: article4
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -265,12 +293,19 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '5',
     title: '71% of Asian restaurants in the U.S. serve Chinese, Japanese or Thai food',
-    content: article5,
+    content: article5
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -328,12 +363,19 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '6',
     title: 'Black voters support Harris over Trump and Kennedy by a wide margin',
-    content: article6,
+    content: article6
+      .map((paragraph) =>
+        paragraph.paragraphContent
+          .sort((a, b) => a.unitSegmentSpec.segmentIdx - b.unitSegmentSpec.segmentIdx)
+          .map((segment) => segment.unitSegmentSpec.context)
+          .join(' ')
+      )
+      .join('\n\n'),
     questions: [
       {
         id: '1',
@@ -403,7 +445,7 @@ export const articles: ArticleData[] = [
         questionType: 'open',
       },
     ],
-    processed: true,
+    processed: false,
   },
   {
     id: '7',

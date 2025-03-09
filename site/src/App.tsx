@@ -7,17 +7,18 @@ import GistTest from './demo/GistTest';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
+  const rootRoute = import.meta.env.VITE_SITE_BASE_URL as string
   return (
     <>
       <Router>
         <Routes>
           {/* <Route path="/" element={<HomePage />} /> */}
-          <Route path="/" element={<PublicityPage />} />
-          <Route path="/gisttest" element={<GistTest />} />
+          <Route path={rootRoute} element={<PublicityPage />} />
+          <Route path={`${rootRoute}/gisttest`} element={<GistTest />} />
           {/* <Route path="/publicity" element={<PublicityPage />} /> */}
-          <Route path="/interactive" element={<HomePage />} />
-          <Route path="/interactive/:pageType/:pageId" element={<InteractivePage />} />
-          <Route path="/llm_setting" element={<LLMConfigurationPage />} />
+          <Route path={`${rootRoute}/interactive`} element={<HomePage />} />
+          <Route path={`${rootRoute}/interactive/:pageType/:pageId`} element={<InteractivePage />} />
+          <Route path={`${rootRoute}/llm_setting`} element={<LLMConfigurationPage />} />
         </Routes>
       </Router>
     </>
