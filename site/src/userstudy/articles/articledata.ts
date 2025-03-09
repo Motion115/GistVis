@@ -1849,7 +1849,7 @@ export const articles: ArticleData[] = [
               segmentIdx: 2,
               context: 'The U.S average science score was virtually unchanged since 2018.',
               inSituPosition: [],
-              attribute: undefined,
+              attribute: 'invariable',
             },
             dataSpec: [
               {

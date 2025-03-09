@@ -48,16 +48,22 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
   const numEntries = dataSpec.length;
   const validForNominalTrend = attribute === 'negative' || attribute === 'positive' || attribute === 'invariable';
   const lineChartType: TrendOptions =
-    validForNominalTrend && (hasNaN || numEntries === 0)
-      ? 'nominal'
-      : validForNominalTrend && !hasNaN && numEntries === 1
-        ? 'trending'
-        : validForNominalTrend && !hasNaN && numEntries === 2
-          ? 'start-end'
-          : 'actual';
+    (attribute === 'invariable' && (hasNaN || numEntries === 0))
+      ? 'trending' 
+      : (attribute === 'invariable')
+        ? 'start-end'
+        : validForNominalTrend && (hasNaN || numEntries === 0)
+          ? 'nominal'
+          : validForNominalTrend && !hasNaN && numEntries === 1
+            ? 'trending'
+            : validForNominalTrend && !hasNaN && numEntries === 2
+              ? 'start-end'
+              : 'actual';
 
   const transformData = (): DataPoint[] => {
-    if (lineChartType === 'nominal' || lineChartType === 'trending') {
+    if (lineChartType === 'trending' && attribute === 'invariable') {
+      return dummyDataMap['invariable'];
+    } else if (lineChartType === 'nominal' || lineChartType === 'trending') {
       return dummyDataMap[attribute];
     } else if (lineChartType === 'start-end') {
       const low = d3.min(dataSpec, (d) => d.valueValue) as number;
@@ -73,12 +79,22 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
           { x: 1, y: high },
         ];
       } else if (attribute === 'invariable') {
-        // use average value
-        const avg = (high + low) / 2;
-        return [
-          { x: 0, y: avg },
-          { x: 1, y: avg },
-        ];
+        const isInvariantText = gistvisSpec.unitSegmentSpec.context.toLowerCase()
+          .includes('virtually unchanged');
+        if (isInvariantText) {
+          // use average value
+          const avg = (high + low) / 2;
+          return [
+            { x: 0, y: avg },
+            { x: 1, y: avg },
+          ];
+        } else{
+          return [
+            { x: 0, y: low },
+            { x: 1, y: high },
+          ];
+        }
+        
       } else {
         // actual
         return dataSpec.map((d, i) => {
