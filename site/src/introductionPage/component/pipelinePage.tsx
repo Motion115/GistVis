@@ -363,7 +363,10 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
             style={{ width: '1200px', marginTop: '10px' }}
           />
           <Flex vertical style={{ marginLeft: '50px', width: '340px' }}>
-            <h2 style={{ fontSize: '36px', margin: '0' }}>Extractor</h2>
+            <Flex>
+              <h2 style={{ fontSize: '36px', margin: '0' }}>Extractor</h2>
+              <DisplayPrompt module="Extractor" />
+            </Flex>
             <div
               style={{
                 width: '100%',

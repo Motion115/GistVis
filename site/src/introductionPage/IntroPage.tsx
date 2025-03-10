@@ -46,6 +46,9 @@ const IntroPage = () => {
   const handlePrevious = () => {
     if (stepsCurrent > 0) {
       setStepsCurrent(stepsCurrent - 1);
+      if (buttonPreviousRef.current) {
+        buttonPreviousRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
     }
   };
 
@@ -53,15 +56,12 @@ const IntroPage = () => {
   const handleNext = () => {
     if (stepsCurrent < 5) {
       setStepsCurrent(stepsCurrent + 1);
+      if (buttonNextRef.current) {
+        buttonNextRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      }
     }
   };
-  // Effect to scroll to the button when stepsCurrent changes
-  useEffect(() => {
-    // Check if the Next button exists and scroll it into view if needed
-    if (buttonNextRef.current) {
-      buttonNextRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-    }
-  }, [stepsCurrent]);
+
   const openButtonStyle = {
     ...buttonOpen,
     backgroundColor: hoverOpenButton ? 'rgba(36, 140, 168, 1)' : 'rgba(48, 176, 199, 1)',
@@ -131,7 +131,7 @@ const IntroPage = () => {
           <div style={buttonContainer}>
             <Button
               style={openButtonStyle}
-              href="\GistVis"
+              href="/GistVis/"
               onMouseEnter={() => sethoverOpenButton(true)}
               onMouseLeave={() => sethoverOpenButton(false)}
             >
