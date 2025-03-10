@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image, Flex, Table, Tag, Button, Modal, Tooltip } from 'antd';
-import { DataSpec, GistvisSpec, InsightType, UnitSegmentSpec, VisInsightType } from '../modules/visualizer/types';
-import { annotatorData, discovererData, extractorData } from './introData';
-import designSpaceImage from '../../static/design-space.jpg';
-import ArtcleProcess from '../modules/visualizer/renderer/renderer';
-import { gistKB } from '../modules/llm/visKB';
+import { DataSpec, InsightType, UnitSegmentSpec } from '../../modules/visualizer/types';
+import { annotatorData, discovererData, extractorData } from '../introData';
+import designSpaceImage from '../../../static/design-space.jpg';
+import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
+import { gistKB } from '../../modules/llm/visKB';
+import DisplayPrompt from './displayPrompt';
 
 const insightColorMap: Record<InsightType, string> = {
   comparison: 'blue',
@@ -23,7 +24,7 @@ interface NestedRow extends UnitSegmentSpec {
 
 // Component to display DataSpec in a popup modal using Antd components
 const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
-  const [visible, setVisible] = React.useState(false);
+  const [visible, setVisible] = useState(false);
 
   const showModal = () => setVisible(true);
   const handleCancel = () => setVisible(false);
@@ -297,7 +298,10 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
             style={{ width: '800px', marginTop: '10px' }}
           />
           <Flex vertical style={{ marginLeft: '50px', width: '340px' }}>
-            <h2 style={{ fontSize: '36px', margin: '0' }}>Discoverer</h2>
+            <Flex>
+              <h2 style={{ fontSize: '36px', margin: '0' }}>Discoverer</h2>
+              <DisplayPrompt module="Discoverer" />
+            </Flex>
             <div
               style={{
                 width: '100%',
@@ -319,7 +323,10 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
       return (
         <>
           <Flex vertical style={{ marginRight: '50px', width: '340px' }}>
-            <h2 style={{ fontSize: '36px', margin: '0' }}>Annotator</h2>
+            <Flex>
+              <h2 style={{ fontSize: '36px', margin: '0' }}>Annotator</h2>
+              <DisplayPrompt module="Annotator" />
+            </Flex>
             <div
               style={{
                 width: '100%',

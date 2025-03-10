@@ -26,10 +26,10 @@ import {
 import teaserImage from '../../static/teaser.png';
 import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
 import pipelineImage from '../../static/GistVis-Pipeline.jpg';
-import PipelinePage from './pipelinePage.tsx';
+import PipelinePage from './component/pipelinePage.tsx';
 import { articles } from '../userstudy/articles/articledata.ts';
 import ArtcleProcess from '../modules/visualizer/renderer/renderer.tsx';
-import BibtexCard from './bibtex.tsx';
+import BibtexCard from './component/bibtex.tsx';
 const { Header, Content } = Layout;
 
 const IntroPage = () => {

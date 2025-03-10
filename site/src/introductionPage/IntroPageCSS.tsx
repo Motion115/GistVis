@@ -175,3 +175,37 @@ export const bibtexContainer: React.CSSProperties = {
   margin: '0 auto',
   width: '1200px',
 };
+
+export const bibtexCardContainer: React.CSSProperties = {
+  width: '100%',
+  maxWidth: 1100,
+  margin: '20px auto',
+  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+  borderRadius: '10px',
+  backgroundColor: '#ffffff',
+};
+
+export const bibtexCardHeader: React.CSSProperties = {
+  margin: 0,
+  color: '#007acc',
+};
+
+export const bibtexCardExtraButton: React.CSSProperties = {
+  borderRadius: '6px',
+  backgroundColor: '#007acc',
+  color: '#fff',
+  fontWeight: 'bold',
+  border: 'none',
+};
+
+export const bibtexPreStyle: React.CSSProperties = {
+  whiteSpace: 'pre-wrap',
+  wordBreak: 'break-word',
+  background: '#282C34',
+  padding: '20px',
+  borderRadius: '8px',
+  fontSize: '15px',
+  fontFamily: 'Consolas, "Courier New", monospace',
+  color: '#AB9EAB',
+  margin: 0,
+};

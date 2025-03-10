@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Typography, Button, message } from 'antd';
 import { CopyOutlined } from '@ant-design/icons';
+import { bibtexCardContainer, bibtexCardHeader, bibtexCardExtraButton, bibtexPreStyle } from '../IntroPageCSS';
 
 const { Title } = Typography;
 
@@ -24,49 +25,19 @@ const BibtexCard: React.FC = () => {
   return (
     <Card
       title={
-        <Title level={4} style={{ margin: 0, color: '#007acc' }}>
+        <Title level={4} style={bibtexCardHeader}>
           Citation
         </Title>
       }
       bordered={false}
-      style={{
-        width: '100%',
-        maxWidth: 1100,
-        margin: '20px auto',
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-        borderRadius: '10px',
-        backgroundColor: '#ffffff',
-      }}
+      style={bibtexCardContainer}
       extra={
-        <Button
-          icon={<CopyOutlined />}
-          onClick={copyToClipboard}
-          style={{
-            borderRadius: '6px',
-            backgroundColor: '#007acc',
-            color: '#fff',
-            fontWeight: 'bold',
-            border: 'none',
-          }}
-        >
+        <Button icon={<CopyOutlined />} onClick={copyToClipboard} style={bibtexCardExtraButton}>
           Copy
         </Button>
       }
     >
-      <pre
-        style={{
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word',
-          background: '#282C34',
-          padding: '20px',
-          borderRadius: '8px',
-          fontSize: '15px',
-          fontFamily: 'Consolas, "Courier New", monospace',
-          color: '#AB9EAB',
-          margin: 0,
-        }}
-        dangerouslySetInnerHTML={{ __html: bibtex }}
-      />
+      <pre style={bibtexPreStyle} dangerouslySetInnerHTML={{ __html: bibtex }} />
     </Card>
   );
 };
