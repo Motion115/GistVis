@@ -76,7 +76,7 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
             dataSource={dataSpec}
             pagination={false}
             size="small"
-            rowKey={(_, index) => index.toString()}
+            rowKey={(_, index = 0) => index.toString()}
           />
         </div>
       </Modal>
@@ -136,12 +136,12 @@ const nestedColumns = [
   },
   {
     title: 'DataSpec',
+    dataIndex: 'dataSpec',
     key: 'dataSpec',
     width: 140,
     onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
-    render: (_: any, record: any) => {
-      // record contains dataSpec passed from the outer render
-      return <DataSpecDisplay dataSpec={record.dataSpec} />;
+    render: (dataSpec: DataSpec[]) => {
+      return <DataSpecDisplay dataSpec={dataSpec} />;
     },
   },
 ];
@@ -161,7 +161,7 @@ const extractorColumns = [
     key: 'unitSegmentSpec',
     onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
     // Using record to get access to both unitSegmentSpec and dataSpec
-    render: (unitSegmentSpec: UnitSegmentSpec, record: any) => {
+    render: (unitSegmentSpec: UnitSegmentSpec, record: { dataSpec: DataSpec[] }) => {
       // Merge dataSpec into the unitSegmentSpec object for nested table display
       const nestedRow: NestedRow = { ...unitSegmentSpec, dataSpec: record.dataSpec };
       return (
