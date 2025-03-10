@@ -157,3 +157,21 @@ export const buttonNext: React.CSSProperties = {
   bottom: '0',
   right: '0',
 };
+
+export const visContainer: React.CSSProperties = {
+  marginTop: '2rem',
+  margin: '0 auto',
+  width: '1200px',
+};
+
+export const sampleContainer: React.CSSProperties = {
+  padding: '10px 0',
+  background: '#ffffff',
+  width: '1000px',
+};
+
+export const bibtexContainer: React.CSSProperties = {
+  marginTop: '2rem',
+  margin: '0 auto',
+  width: '1200px',
+};
