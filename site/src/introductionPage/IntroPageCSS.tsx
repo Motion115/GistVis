@@ -1,3 +1,38 @@
+// Extract common base button styles
+const commonButton: React.CSSProperties = {
+  border: 'none',
+  borderRadius: '8px',
+  fontWeight: 600,
+  cursor: 'pointer',
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+};
+
+// Extend styles for buttons that use flex layout
+const commonFlexButton: React.CSSProperties = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '8px',
+  transition: 'background-color 0.3s ease, transform 0.3s ease',
+  padding: '12px 24px',
+  fontSize: '1rem',
+};
+
+// Common container style (shared margin and width for multiple containers)
+const commonContainer: React.CSSProperties = {
+  marginTop: '2rem',
+  margin: '0 auto',
+  width: '1200px',
+};
+
+// Common div style (shared by divHead and divContent)
+const commonDiv: React.CSSProperties = {
+  marginTop: '0px',
+  marginBottom: '0px',
+  marginLeft: '40px',
+  textAlign: 'left',
+};
+
 export const headerStyle: React.CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
@@ -39,15 +74,12 @@ export const buttonContainer: React.CSSProperties = {
   gap: '30px',
 };
 
+// Inherit common button styles
 export const buttonOpen: React.CSSProperties = {
+  ...commonButton,
   color: 'rgba(255, 255, 255, 1)',
-  border: 'none',
-  borderRadius: '8px',
   padding: '16px 40px',
   fontSize: '1.5rem',
-  fontWeight: 600,
-  cursor: 'pointer',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   height: '4rem',
 };
 
@@ -58,38 +90,19 @@ export const bottomButtonRow: React.CSSProperties = {
   maxWidth: '300px',
 };
 
+// For buttons with flex layout (Pdf and Github), inherit both common button and common flex styles
 export const buttonPdf: React.CSSProperties = {
+  ...commonButton,
+  ...commonFlexButton,
   backgroundColor: 'rgba(255, 76, 76, 1)',
   color: 'rgba(255, 255, 255, 1)',
-  border: 'none',
-  borderRadius: '8px',
-  padding: '12px 24px',
-  fontSize: '1rem',
-  fontWeight: 600,
-  cursor: 'pointer',
-  transition: 'background-color 0.3s ease, transform 0.3s ease',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '8px',
 };
 
 export const buttonGithub: React.CSSProperties = {
+  ...commonButton,
+  ...commonFlexButton,
   backgroundColor: 'rgba(51, 51, 51, 1)',
   color: 'rgba(255, 255, 255, 1)',
-  border: 'none',
-  borderRadius: '8px',
-  padding: '12px 24px',
-  fontSize: '1rem',
-  fontWeight: 600,
-  cursor: 'pointer',
-  transition: 'background-color 0.3s ease, transform 0.3s ease',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '8px',
 };
 
 export const introductionContent: React.CSSProperties = {
@@ -104,27 +117,21 @@ export const introductionContent: React.CSSProperties = {
   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
 };
 
+// Inherit common div style and extend with specific attributes
 export const divHead: React.CSSProperties = {
-  marginTop: '0px',
-  marginBottom: '0px',
-  marginLeft: '40px',
-  textAlign: 'left',
+  ...commonDiv,
   fontSize: '32px',
 };
 
 export const divContent: React.CSSProperties = {
-  marginTop: '0px',
-  marginBottom: '0px',
-  marginLeft: '40px',
-  textAlign: 'left',
+  ...commonDiv,
   fontSize: '15px',
   color: 'rgb(142, 141, 141)',
 };
 
+// Containers that inherit common container styles
 export const overviewContainer: React.CSSProperties = {
-  marginTop: '2rem',
-  margin: '0 auto',
-  width: '1200px',
+  ...commonContainer,
 };
 
 export const overviewVideo: React.CSSProperties = {
@@ -135,10 +142,9 @@ export const overviewVideo: React.CSSProperties = {
 };
 
 export const pipelineContainer: React.CSSProperties = {
-  marginTop: '2rem',
-  margin: '0 auto',
-  width: '1200px',
+  ...commonContainer,
 };
+
 export const stepsContainer: React.CSSProperties = {
   position: 'relative',
   marginTop: '1rem',
@@ -159,9 +165,7 @@ export const buttonNext: React.CSSProperties = {
 };
 
 export const visContainer: React.CSSProperties = {
-  marginTop: '2rem',
-  margin: '0 auto',
-  width: '1200px',
+  ...commonContainer,
 };
 
 export const sampleContainer: React.CSSProperties = {
@@ -171,9 +175,7 @@ export const sampleContainer: React.CSSProperties = {
 };
 
 export const bibtexContainer: React.CSSProperties = {
-  marginTop: '2rem',
-  margin: '0 auto',
-  width: '1200px',
+  ...commonContainer,
 };
 
 export const bibtexCardContainer: React.CSSProperties = {
@@ -191,7 +193,7 @@ export const bibtexCardHeader: React.CSSProperties = {
 };
 
 export const bibtexCardExtraButton: React.CSSProperties = {
-  borderRadius: '6px',
+  borderRadius: '6px', // Note: This value is different from commonButton's 8px, so it is set separately.
   backgroundColor: '#007acc',
   color: '#fff',
   fontWeight: 'bold',
