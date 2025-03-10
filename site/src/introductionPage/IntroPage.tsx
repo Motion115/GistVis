@@ -46,9 +46,6 @@ const IntroPage = () => {
   const handlePrevious = () => {
     if (stepsCurrent > 0) {
       setStepsCurrent(stepsCurrent - 1);
-      if (buttonPreviousRef.current) {
-        buttonPreviousRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
     }
   };
 
@@ -56,9 +53,6 @@ const IntroPage = () => {
   const handleNext = () => {
     if (stepsCurrent < 5) {
       setStepsCurrent(stepsCurrent + 1);
-      if (buttonNextRef.current) {
-        buttonNextRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
-      }
     }
   };
 
