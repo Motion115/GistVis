@@ -1,9 +1,10 @@
 import React from 'react';
-import { Image, Flex, Table, Tag, Button, Modal } from 'antd';
-import { DataSpec, GistvisSpec, InsightType, UnitSegmentSpec } from '../modules/visualizer/types';
+import { Image, Flex, Table, Tag, Button, Modal, Tooltip } from 'antd';
+import { DataSpec, GistvisSpec, InsightType, UnitSegmentSpec, VisInsightType } from '../modules/visualizer/types';
 import { annotatorData, discovererData, extractorData } from './introData';
 import designSpaceImage from '../../static/design-space.jpg';
 import ArtcleProcess from '../modules/visualizer/renderer/renderer';
+import { gistKB } from '../modules/llm/visKB';
 
 const insightColorMap: Record<InsightType, string> = {
   comparison: 'blue',
@@ -90,10 +91,14 @@ const nestedColumns = [
     key: 'insightType',
     width: 100,
     onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
-    render: (text: string) => {
-      const insightType = (text as InsightType) || 'noType';
-      const color = insightColorMap[insightType] ?? insightColorMap.noType;
-      return <Tag color={color}>{text}</Tag>;
+    render: (text: InsightType) => {
+      return text === 'noType' ? (
+        <Tag color={insightColorMap.noType}>{text}</Tag>
+      ) : (
+        <Tooltip placement="top" title={gistKB[text].definition}>
+          <Tag color={insightColorMap[text] ?? insightColorMap.noType}>{text}</Tag>
+        </Tooltip>
+      );
     },
   },
   {
@@ -199,10 +204,14 @@ const columns = [
             key: 'insightType',
             width: 100,
             onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
-            render: (text: string) => {
-              const insightType = (text as InsightType) || 'noType';
-              const color = insightColorMap[insightType] ?? insightColorMap.noType;
-              return <Tag color={color}>{text}</Tag>;
+            render: (text: InsightType) => {
+              return text === 'noType' ? (
+                <Tag color={insightColorMap.noType}>{text}</Tag>
+              ) : (
+                <Tooltip placement="top" title={gistKB[text].definition}>
+                  <Tag color={insightColorMap[text] ?? insightColorMap.noType}>{text}</Tag>
+                </Tooltip>
+              );
             },
           },
           {

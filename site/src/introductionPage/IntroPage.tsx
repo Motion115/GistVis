@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Descriptions } from 'antd';
-import { GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col } from 'antd';
+import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons';
 import {
   buttonGithub,
   buttonOpen,
@@ -19,11 +19,17 @@ import {
   stepsContainer,
   buttonPrevious,
   buttonNext,
+  visContainer,
+  sampleContainer,
+  bibtexContainer,
 } from './IntroPageCSS.tsx';
 import teaserImage from '../../static/teaser.png';
 import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
 import pipelineImage from '../../static/GistVis-Pipeline.jpg';
 import PipelinePage from './pipelinePage.tsx';
+import { articles } from '../userstudy/articles/articledata.ts';
+import ArtcleProcess from '../modules/visualizer/renderer/renderer.tsx';
+import BibtexCard from './bibtex.tsx';
 const { Header, Content } = Layout;
 
 const IntroPage = () => {
@@ -31,6 +37,7 @@ const IntroPage = () => {
   const [hoverPdfButton, sethoverPdfButton] = useState(false);
   const [hoverGithubButton, sethoverGithubButton] = useState(false);
   const [stepsCurrent, setStepsCurrent] = useState(0);
+  const [currentArticleIndex, setCurrentArticleIndex] = useState(1);
   // Refs for Previous and Next buttons
   const buttonPreviousRef = useRef<HTMLButtonElement>(null);
   const buttonNextRef = useRef<HTMLButtonElement>(null);
@@ -86,6 +93,29 @@ const IntroPage = () => {
     console.log(current);
   };
 
+  const renderArticleContent = (index: number) => {
+    const article = articles[index - 1];
+    if (!article) return null;
+
+    if (article.processed) {
+      return (
+        <div style={{ padding: '20px', minHeight: '200px' }}>
+          <div>
+            <p className="pre-wrap">
+              <ArtcleProcess llmarticle={article.content} />
+            </p>
+          </div>
+        </div>
+      );
+    }
+    return (
+      <div style={{ padding: '20px', minHeight: '200px' }}>
+        <div>
+          <p className="pre-wrap">{article.content}</p>
+        </div>
+      </div>
+    );
+  };
   return (
     <ConfigProvider
       theme={{
@@ -188,7 +218,7 @@ const IntroPage = () => {
           {/* Pipeline */}
           <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
           {/* Article Visualization */}
-          <Flex vertical style={VisContainer} gap={20}>
+          <Flex vertical style={visContainer} gap={20}>
             <div style={{ alignSelf: 'flex-start' }}>
               <h1 style={divHead}>Article Visualization with GistVis: Bringing Insights to Life</h1>
               <p style={divContent}>
@@ -196,7 +226,76 @@ const IntroPage = () => {
                 deeper insights at a glance.
               </p>
             </div>
+            <div style={{ margin: '0 auto' }}>
+              <ConfigProvider
+                theme={{
+                  token: {
+                    colorBgContainer: ' rgba(76, 144, 226, 0.8)',
+                  },
+                }}
+              >
+                <Carousel
+                  autoplay
+                  arrows
+                  infinite={true}
+                  dotPosition="top"
+                  style={sampleContainer}
+                  prevArrow={<LeftOutlined />}
+                  nextArrow={<RightOutlined />}
+                  effect="fade"
+                  autoplaySpeed={5000}
+                >
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 6)}</Col>
+                    </Row>
+                  </div>
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 1)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 7)}</Col>
+                    </Row>
+                  </div>
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 2)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 8)}</Col>
+                    </Row>
+                  </div>
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 3)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 9)}</Col>
+                    </Row>
+                  </div>
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 4)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 10)}</Col>
+                    </Row>
+                  </div>
+                  <div>
+                    <Row gutter={[16, 16]} className="content-wrapper1">
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 5)}</Col>
+                      <Col span={12}>{renderArticleContent(currentArticleIndex + 11)}</Col>
+                    </Row>
+                  </div>
+                </Carousel>
+              </ConfigProvider>
+            </div>
           </Flex>
+          {/* Article Visualization */}
+          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
+          {/* Bibtex */}
+          <Flex vertical style={bibtexContainer} gap={20}>
+            <div style={{ alignSelf: 'flex-start' }}>
+              <h1 style={divHead}>BibTex</h1>
+              <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
+            </div>
+            <BibtexCard />
+          </Flex>
+          {/* Bibtex */}
         </Content>
       </Layout>
     </ConfigProvider>
