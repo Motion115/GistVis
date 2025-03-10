@@ -125,7 +125,7 @@ const IntroPage = () => {
           <div style={buttonContainer}>
             <Button
               style={openButtonStyle}
-              href="/GistVis/"
+              href="/GistVis/home"
               onMouseEnter={() => sethoverOpenButton(true)}
               onMouseLeave={() => sethoverOpenButton(false)}
             >
