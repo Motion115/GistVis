@@ -1,3 +1,6 @@
+import { faMagic } from '@fortawesome/free-solid-svg-icons';
+import DisplayPrompt from './component/displayPrompt';
+
 // Extract common base button styles
 const commonButton: React.CSSProperties = {
   border: 'none',
@@ -134,10 +137,20 @@ export const overviewContainer: React.CSSProperties = {
   ...commonContainer,
 };
 
+export const buttonYtb = {
+  padding: '8px 12px',
+  fontSize: '1rem',
+  backgroundColor: '#FF0000',
+  color: '#FFFFFF',
+  border: 'none',
+  borderRadius: '4px',
+  cursor: 'pointer',
+  margin: 'auto 0',
+};
+
 export const overviewVideo: React.CSSProperties = {
   width: '935px',
   height: '526px',
-  marginTop: '20px',
   alignSelf: 'center',
 };
 

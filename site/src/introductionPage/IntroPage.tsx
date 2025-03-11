@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col } from 'antd';
-import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
 import {
   buttonGithub,
   buttonOpen,
@@ -22,6 +22,7 @@ import {
   visContainer,
   sampleContainer,
   bibtexContainer,
+  buttonYtb,
 } from './IntroPageCSS.tsx';
 import teaserImage from '../../static/teaser.png';
 import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
@@ -171,12 +172,25 @@ const IntroPage = () => {
           </Flex>
           <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
           {/* Overview */}
-          <Flex vertical style={overviewContainer} gap={20}>
+          <Flex vertical style={overviewContainer} gap={10}>
             <div style={{ alignSelf: 'flex-start' }}>
               <h1 style={divHead}>Overview - Explore the Potential of GistVis</h1>
               <p style={divContent}>Click to watch the video and quickly discover the features of GistVis.</p>
+              <Flex style={{ marginTop: '5px' }} gap={20}>
+                <p style={{ ...divContent, lineHeight: '1.6', marginTop: '3px', marginBottom: '5px' }}>
+                  For more details, click our Talk Video 👉
+                </p>
+                <Button
+                  style={buttonYtb}
+                  href="https://www.youtube.com/watch?v=OIjAvoWdVCo"
+                  target="_blank"
+                  size="small"
+                >
+                  <YoutubeOutlined />
+                </Button>
+              </Flex>
             </div>
-            <video style={overviewVideo} controls>
+            <video style={overviewVideo} controls autoPlay muted>
               <source src={GistVisVideo} type="video/mp4" />
             </video>
           </Flex>
