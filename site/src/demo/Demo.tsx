@@ -10,37 +10,13 @@ import { paragraphSpec } from '../modules/visualizer/types';
 import { processStageAtom } from '../globalState';
 import { useAtom } from 'jotai';
 import { articles } from '../userstudy/articles/articledata';
+import { Link } from 'react-router-dom';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text } = Typography;
 
 const PublicityPage = () => {
-  const rootRoute = import.meta.env.VITE_SITE_BASE_URL;
-  const [processStage, setProcessStage] = useAtom(processStageAtom);
-  const [llmarticle, setLlmArticle] = useState<paragraphSpec[]>([]);
   const [currentArticleIndex, setCurrentArticleIndex] = useState(1);
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentArticleIndex((prevIndex) => {
-  //       return prevIndex === 6 ? 1 : prevIndex + 1;
-  //     });
-  //   }, 5000);
-
-  //   return () => clearInterval(intervalId);
-  // }, []);
-
-  // const nextArticle = () => {
-  //   setCurrentArticleIndex((prevIndex) => {
-  //     return prevIndex === 6 ? 1 : prevIndex + 1;
-  //   });
-  // };
-
-  // const prevArticle = () => {
-  //   setCurrentArticleIndex((prevIndex) => {
-  //     return prevIndex === 1 ? 6 : prevIndex - 1;
-  //   });
-  // };
 
   const renderArticleContent = (index: number) => {
     const article = articles[index - 1];
@@ -73,15 +49,15 @@ const PublicityPage = () => {
           <Flex align="center" justify="space-between">
             <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
             <div>
-              <Button href={rootRoute} type="link">
-                Home
-              </Button>
-              <Button href={`${rootRoute}/interactive`} type="link">
-                User study interface
-              </Button>
-              <Button href={`${rootRoute}/llm_setting`} type="link">
-                Setting
-              </Button>
+              <Link to="/">
+                <Button type="link">Home</Button>
+              </Link>
+              <Link to="/interactive">
+                <Button type="link">User study interface</Button>
+              </Link>
+              <Link to={`/llm_setting`}>
+                <Button type="link">Setting</Button>
+              </Link>
             </div>
           </Flex>
         </Header>
