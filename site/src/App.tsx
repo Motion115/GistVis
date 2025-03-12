@@ -5,6 +5,7 @@ import PublicityPage from './demo/Demo';
 import LLMConfigurationPage from './demo/LLMConf';
 import GistTest from './demo/GistTest';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import IntroPage from './introductionPage/IntroPage';
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <Router>
         <Routes>
           {/* <Route path="/" element={<HomePage />} /> */}
-          <Route path="/" element={<PublicityPage />} />
+          <Route path="/" element={<IntroPage />} />
+          <Route path={`/home`} element={<PublicityPage />} />
           <Route path={`/gisttest`} element={<GistTest />} />
           {/* <Route path="/publicity" element={<PublicityPage />} /> */}
           <Route path={`/interactive`} element={<HomePage />} />
