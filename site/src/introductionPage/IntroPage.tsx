@@ -31,6 +31,7 @@ import PipelinePage from './component/pipelinePage.tsx';
 import { articles } from '../userstudy/articles/articledata.ts';
 import ArtcleProcess from '../modules/visualizer/renderer/renderer.tsx';
 import BibtexCard from './component/bibtex.tsx';
+import { Link } from 'react-router-dom';
 const { Header, Content } = Layout;
 
 const IntroPage = () => {
@@ -119,19 +120,20 @@ const IntroPage = () => {
         },
       }}
     >
-      <Layout>
+      <Layout style={{ alignContent: "center", margin: "auto" }}>
         <Header style={headerStyle}>
           <h1 style={GistVis}>GistVis</h1>
           <p style={headerContent}>Automatic Generation of Word-scale Visualizations from Data-rich Documents</p>
           <div style={buttonContainer}>
-            <Button
-              style={openButtonStyle}
-              href="/GistVis/home"
-              onMouseEnter={() => sethoverOpenButton(true)}
-              onMouseLeave={() => sethoverOpenButton(false)}
-            >
-              open GistVis
-            </Button>
+            <Link to="/home">
+              <Button
+                style={openButtonStyle}
+                onMouseEnter={() => sethoverOpenButton(true)}
+                onMouseLeave={() => sethoverOpenButton(false)}
+              >
+                open GistVis
+              </Button>
+            </Link>
             <div style={bottomButtonRow}>
               <Button
                 style={pdfButtonStyle}
@@ -159,7 +161,7 @@ const IntroPage = () => {
         <Content style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
           {/* Introduction */}
           <Flex vertical align="center" style={{ marginTop: '2rem' }}>
-            <Image src={teaserImage} alt="teaser image" width={1156} height={348} />
+            <Image src={teaserImage} alt="teaser image" width={1156} height={348} preview={false} />
             <p style={introductionContent}>
               GistVis is an innovative system that automatically generates word-scale visualizations to augment
               data-rich documents, thereby enhancing document-centric analysis. By leveraging large language models and
@@ -203,7 +205,7 @@ const IntroPage = () => {
               <p style={divContent}>Click on the interactive components to dive deeper into the core processes.</p>
             </div>
             <div style={{ alignSelf: 'center' }}>
-              <Image src={pipelineImage} alt="pipelineImage" width={1000} height={355} />
+              <Image src={pipelineImage} alt="pipelineImage" width={1000} height={355} preview={false} />
             </div>
             <div style={stepsContainer}>
               <Steps current={stepsCurrent} onChange={pipelineChange} items={items}></Steps>
