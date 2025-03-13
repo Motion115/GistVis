@@ -7,12 +7,18 @@ const MenuBar = () => {
   return (
     <Header>
       <Flex align="center" justify="space-between">
-        <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
+        <Link to={`/`} style={{ fontSize: '24px', padding: '0 2%', fontWeight: 'bold', margin: 'auto 0' }}>
+          GistVis
+        </Link>
+        {/* <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text> */}
         <div>
-          <Link to="/">
+          <Link to={`/home`}>
             <Button type="link">Home</Button>
           </Link>
-          <Link to="/interactive">
+          <Link to={`/Pipeline`}>
+            <Button type="link">Pipeline explorer</Button>
+          </Link>
+          <Link to={`/interactive`}>
             <Button type="link">User study interface</Button>
           </Link>
           <Link to={`/llm_setting`}>
