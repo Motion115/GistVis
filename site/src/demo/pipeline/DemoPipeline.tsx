@@ -2,6 +2,8 @@ import React from 'react';
 import { Typography, Steps, ConfigProvider, Space, Layout, Divider } from 'antd';
 import THEME from '../../style/theme';
 import PipelineExplorer from './PipelineExplorer';
+import MenuBar from '../commonElement/menuBar';
+import { BaseMessageStringPromptTemplate } from '@langchain/core/prompts';
 
 const { Text } = Typography;
 
@@ -40,7 +42,8 @@ const DemoPipeline: React.FC = () => {
 
   return (
     <ConfigProvider theme={THEME}>
-      <Layout dir="vertical">
+      <MenuBar />
+      <Layout dir="vertical" style={{ marginTop: '20px' }}>
         <Text style={{ fontSize: '20px', fontWeight: 'bold' }}>Pipeline Explorer</Text>
         <Text style={{ fontSize: '16px', fontStyle: 'italic' }}>
           Enter text to analyze and generate visualization specifications through the pipeline:

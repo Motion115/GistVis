@@ -6,11 +6,8 @@ import ArtcleProcess from '../modules/visualizer/renderer/renderer';
 import { DemoPage } from './demoPage';
 import DemoPipeline from './pipeline/DemoPipeline';
 import React, { useState } from 'react';
-import { paragraphSpec } from '../modules/visualizer/types';
-import { processStageAtom } from '../globalState';
-import { useAtom } from 'jotai';
 import { articles } from '../userstudy/articles/articledata';
-import { Link } from 'react-router-dom';
+import MenuBar from './commonElement/menuBar';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Text } = Typography;
@@ -45,22 +42,7 @@ const PublicityPage = () => {
   return (
     <div className="App">
       <ConfigProvider theme={THEME}>
-        <Header>
-          <Flex align="center" justify="space-between">
-            <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
-            <div>
-              <Link to="/">
-                <Button type="link">Home</Button>
-              </Link>
-              <Link to="/interactive">
-                <Button type="link">User study interface</Button>
-              </Link>
-              <Link to={`/llm_setting`}>
-                <Button type="link">Setting</Button>
-              </Link>
-            </div>
-          </Flex>
-        </Header>
+        <MenuBar />
         <Content style={{ padding: '2%', margin: '0 auto' }}>
           <Layout dir="vertical">
             <Row gutter={[16, 16]}>
@@ -143,12 +125,12 @@ const PublicityPage = () => {
             </Row> */}
           </Layout>
 
-          <Divider />
+          {/* <Divider />
           <Row gutter={[16, 16]}>
             <Col span={24}>
               <DemoPipeline />
             </Col>
-          </Row>
+          </Row> */}
 
           {/* <Layout dir="vertical">
             <Row gutter={[16, 16]}>

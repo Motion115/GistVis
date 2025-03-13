@@ -4,6 +4,7 @@ import { ConfigProvider, Layout, Typography, Button, Flex, Divider, Tooltip, Inp
 import TextArea from 'antd/es/input/TextArea';
 import THEME from '../style/theme';
 import { Link } from 'react-router-dom';
+import MenuBar from './commonElement/menuBar';
 
 const { Header, Content } = Layout;
 const { Text } = Typography;
@@ -263,22 +264,7 @@ const LLMConfigurationPage = () => {
   return (
     <ConfigProvider theme={THEME}>
       {/* start-header */}
-      <Header>
-        <Flex align="center" justify="space-between">
-          <Text style={{ fontSize: '24px', padding: '2%', fontWeight: 'bold' }}>GistVis</Text>
-          <div>
-            <Link to="/">
-              <Button type="link">Home</Button>
-            </Link>
-            <Link to="/interactive">
-              <Button type='link'>User study interface</Button>
-            </Link>
-            <Link to={`/llm_setting`}>
-              <Button type='link'>Setting</Button>
-            </Link>
-          </div>
-        </Flex>
-      </Header>
+      <MenuBar />
       {/* start-content */}
       <Content style={{ padding: '2%', margin: '0 auto' }}>
         {/* start-subtitle */}
