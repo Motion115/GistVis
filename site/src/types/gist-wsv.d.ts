@@ -90,15 +90,15 @@ declare module 'gist-wsv' {
   export const SimpleStackedBar: FC<SimpleStackedBarChartProps>;
   export const SimpleMaxMin: FC<SimpleMaxMinProps>;
 
-  const ComparisonTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const ExtremeTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const PlainTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const ProportionTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const RankTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const ValueTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
-  const TrendTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const ComparisonTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const ExtremeTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const PlainTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const ProportionTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const RankTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const ValueTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
+  const TrendTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => JSX.Element;
 
-  const ArtcleProcess: ({ llmarticle }: { llmarticle: paragraphSpec[]; }) => JSX.Element
+  const ArtcleProcess: ({ llmarticle }: { llmarticle: paragraphSpec[] }) => JSX.Element;
 
   export interface paragraphSpec {
     paragraphIdx: number;

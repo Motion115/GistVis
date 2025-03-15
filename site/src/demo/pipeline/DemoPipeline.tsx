@@ -3,7 +3,6 @@ import { Typography, Steps, ConfigProvider, Space, Layout, Divider } from 'antd'
 import THEME from '../../style/theme';
 import PipelineExplorer from './PipelineExplorer';
 import MenuBar from '../commonElement/menuBar';
-import { BaseMessageStringPromptTemplate } from '@langchain/core/prompts';
 
 const { Text } = Typography;
 

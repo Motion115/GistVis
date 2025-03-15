@@ -7,7 +7,7 @@ const { Title, Text, Paragraph } = Typography;
 
 export const GistTest: React.FC = () => {
   const { token } = theme.useToken();
-  
+
   const lineData = [
     { x: 0, y: 0.5, label: 'Jan' },
     { x: 1, y: 0.8, label: 'Feb' },
@@ -30,109 +30,104 @@ export const GistTest: React.FC = () => {
       <Content style={{ padding: '24px', maxWidth: 1200, margin: '0 auto' }}>
         <Space direction="vertical" size="large" style={{ width: '100%' }}>
           <Title level={2}>Gist WSV Test</Title>
-          
-          <Card title={<Title level={3} style={{ margin: 0 }}>1. SimpleLine</Title>}>
+
+          <Card
+            title={
+              <Title level={3} style={{ margin: 0 }}>
+                1. SimpleLine
+              </Title>
+            }
+          >
             <Space direction="vertical" size="middle" style={{ width: '100%' }}>
               <Layout>
                 <Text>Trend-upward</Text>
-                <SimpleLine 
-                  data={lineData}
-                  type="trending"
-                  attribute="positive"
-                  color="#1890ff"
-                />
+                <SimpleLine data={lineData} type="trending" attribute="positive" color="#1890ff" />
               </Layout>
-              
+
               <Layout>
                 <Text>Trend-downward</Text>
-                <SimpleLine 
-                  data={lineData}
-                  type="trending"
-                  attribute="negative"
-                  color="#1890ff"
-                />
+                <SimpleLine data={lineData} type="trending" attribute="negative" color="#1890ff" />
               </Layout>
 
               <Layout>
                 <Text>common</Text>
-                <SimpleLine 
-                  data={lineData}
-                  type="actual"
-                  color="#52c41a"
-                />
+                <SimpleLine data={lineData} type="actual" color="#52c41a" />
               </Layout>
             </Space>
           </Card>
 
-          <Card title={<Title level={3} style={{ margin: 0 }}>2. SimpleBar</Title>}>
+          <Card
+            title={
+              <Title level={3} style={{ margin: 0 }}>
+                2. SimpleBar
+              </Title>
+            }
+          >
             <Space direction="vertical" size="middle" style={{ width: '100%' }}>
               <Layout>
                 <Text>comparison - monocolor</Text>
-                <SimpleBar
-                  data={barData}
-                  type="comparison"
-                  color="#1890ff"
-                />
+                <SimpleBar data={barData} type="comparison" color="#1890ff" />
               </Layout>
 
               <Layout>
                 <Text>comparison - multicolors</Text>
-                <SimpleBar
-                  data={barData}
-                  type="comparison"
-                  colors={['#1890ff', '#13c2c2', '#52c41a']}
-                />
+                <SimpleBar data={barData} type="comparison" colors={['#1890ff', '#13c2c2', '#52c41a']} />
               </Layout>
 
               <Layout>
                 <Text>rank - gradient</Text>
-                <SimpleBar
-                  data={barData}
-                  type="rank"
-                  colors={['#722ed1', '#2f54eb', '#1890ff']}
-                />
+                <SimpleBar data={barData} type="rank" colors={['#722ed1', '#2f54eb', '#1890ff']} />
               </Layout>
             </Space>
           </Card>
 
-          <Card title={<Title level={3} style={{ margin: 0 }}>3. SimpleStackedBar</Title>}>
-            <SimpleStackedBar
-              data={stackedData}
-              colors={['#1890ff', '#13c2c2']}
-            />
+          <Card
+            title={
+              <Title level={3} style={{ margin: 0 }}>
+                3. SimpleStackedBar
+              </Title>
+            }
+          >
+            <SimpleStackedBar data={stackedData} colors={['#1890ff', '#13c2c2']} />
           </Card>
 
-          <Card title={<Title level={3} style={{ margin: 0 }}>4. SimpleMaxMin</Title>}>
+          <Card
+            title={
+              <Title level={3} style={{ margin: 0 }}>
+                4. SimpleMaxMin
+              </Title>
+            }
+          >
             <Space direction="vertical" size="middle" style={{ width: '100%' }}>
               <Layout>
                 <Text>maximum</Text>
-                <SimpleMaxMin
-                  min={0}
-                  max={100}
-                  current={80}
-                />
+                <SimpleMaxMin min={0} max={100} current={80} />
               </Layout>
 
               <Layout>
                 <Text>minimum</Text>
-                <SimpleMaxMin
-                  min={0}
-                  max={100}
-                  current={20}
-                />
+                <SimpleMaxMin min={0} max={100} current={20} />
               </Layout>
             </Space>
           </Card>
 
-          <Card title={<Title level={3} style={{ margin: 0 }}>README</Title>}>
+          <Card
+            title={
+              <Title level={3} style={{ margin: 0 }}>
+                README
+              </Title>
+            }
+          >
             <Paragraph>
-              <pre style={{ 
-                background: token.colorFillTertiary,
-                padding: token.padding,
-                borderRadius: token.borderRadius,
-                margin: 0
-              }}>
-{`// 1. import
+              <pre
+                style={{
+                  background: token.colorFillTertiary,
+                  padding: token.padding,
+                  borderRadius: token.borderRadius,
+                  margin: 0,
+                }}
+              >
+                {`// 1. import
 import { SimpleLine, SimpleBar, SimpleStackedBar, SimpleMaxMin } from 'gist-wsv';
 
 // 2. prepare data

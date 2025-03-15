@@ -13,7 +13,7 @@ import {
   RankTextRenderer,
   ValueTextRenderer,
   TrendTextRenderer,
-  GistvisSpec
+  GistvisSpec,
 } from 'gist-wsv';
 
 const { Text } = Typography;

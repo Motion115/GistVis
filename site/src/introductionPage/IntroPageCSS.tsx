@@ -1,6 +1,3 @@
-import { faMagic } from '@fortawesome/free-solid-svg-icons';
-import DisplayPrompt from './component/displayPrompt';
-
 // Extract common base button styles
 const commonButton: React.CSSProperties = {
   border: 'none',

@@ -3,7 +3,6 @@ import { ChatOpenAI } from '@langchain/openai';
 import { ConfigProvider, Layout, Typography, Button, Flex, Divider, Tooltip, Input } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 import THEME from '../style/theme';
-import { Link } from 'react-router-dom';
 import MenuBar from './commonElement/menuBar';
 
 const { Header, Content } = Layout;

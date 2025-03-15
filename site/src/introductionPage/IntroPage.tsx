@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col } from 'antd';
 import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
 import {
@@ -120,7 +120,7 @@ const IntroPage = () => {
         },
       }}
     >
-      <Layout style={{ alignContent: "center", margin: "auto" }}>
+      <Layout style={{ alignContent: 'center', margin: 'auto' }}>
         <Header style={headerStyle}>
           <h1 style={GistVis}>GistVis</h1>
           <p style={headerContent}>Automatic Generation of Word-scale Visualizations from Data-rich Documents</p>
