@@ -1,4 +1,4 @@
-import { DataSpec, DisplayPosition, DisplaySpec, EntitySpec, GistvisSpec } from '../types';
+import { DataSpec, DisplayPosition, DisplaySpec, EntitySpec, GistvisSpec } from '../components/types';
 import { fuzzySearch } from './fuzzySearch';
 import lodash from 'lodash';
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { DataSpec, EntitySpec, GistvisSpec } from '../types';
+import { DataSpec, EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
-import HoverText from '../widgets/hoverText';
-import { VerticalBarChart } from '../wordScaleVis/chartList';
+import HoverText from '../components/widgets/hoverText';
+import { VerticalBarChart } from '../components/wordScaleVis/chartList';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
 import useTrackVisit from '../utils/useTrack';
 
