@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import { SVG_HEIGHT, SVG_PADDING, SVG_UNIT_WIDTH, SVG_INTERVAL } from '../constants';
 import { DataPoint, LineChartProps } from '../types';
 import { Tooltip } from 'antd';
-import { capitalizeFirstLetter } from '../utils/utils';
+import { capitalizeFirstLetter } from '../../utils/utils';
 
 interface LineChartTooltipProps {
   x: number;

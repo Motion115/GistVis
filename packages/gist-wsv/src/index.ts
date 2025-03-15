@@ -1,13 +1,13 @@
 export { GistViewer } from './App';
-export * from './components/visualizer/renderer/rendererList';
-export * from './components/visualizer/wordScaleVis/chartList';
+export * from './renderer/rendererList';
+export * from './components/wordScaleVis/chartList';
 export type { GistViewerProps } from './App';
 
 // Export Line Chart component
-export { default as LineChart } from './components/visualizer/wordScaleVis/lineChart';
+export { default as LineChart } from './components/wordScaleVis/lineChart';
 
 // Export Article Process component
-export { ArtcleProcess } from './components/visualizer/renderer/renderer';
+export { ArtcleProcess } from './renderer/renderer';
 
 // Export simplified interface components
 export {
@@ -15,7 +15,7 @@ export {
   SimpleBar,
   SimpleStackedBar,
   SimpleMaxMin,
-} from './components/visualizer/wordScaleVis/interface';
+} from './components/wordScaleVis/interface';
 
 // Export types for simplified interface
 export type {
@@ -26,7 +26,7 @@ export type {
   DataPoint,
   TrendType,
   BarType,
-} from './components/visualizer/wordScaleVis/interface';
+} from './components/wordScaleVis/interface';
 
 // Export types from visualizer
 export type {
@@ -40,4 +40,4 @@ export type {
   UnitSegmentSpec,
   paragraphSpec,
   DataSpec,
-} from './components/visualizer/types';
+} from './components/types';

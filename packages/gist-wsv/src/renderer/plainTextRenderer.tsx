@@ -1,5 +1,5 @@
 import React from 'react';
-import { GistvisSpec } from '../types';
+import { GistvisSpec } from '../components/types';
 
 const PlainTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
   const endingPunctuation = gistvisSpec.unitSegmentSpec.context[gistvisSpec.unitSegmentSpec.context.length - 1] + ' ';
