@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Image, Flex, Table, Tag, Button, Modal, Tooltip } from 'antd';
-import { DataSpec, InsightType, UnitSegmentSpec } from '../../modules/visualizer/types';
+import { DataSpec, InsightType, UnitSegmentSpec } from 'gist-wsv';
 import { annotatorData, discovererData, extractorData } from '../introData';
 import designSpaceImage from '../../../static/design-space.jpg';
-import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
+import { ArtcleProcess } from 'gist-wsv';
 import { gistKB } from '../../modules/llm/visKB';
 import DisplayPrompt from './displayPrompt';
 
