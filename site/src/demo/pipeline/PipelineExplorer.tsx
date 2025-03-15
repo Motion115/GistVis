@@ -4,8 +4,7 @@ import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
 import SpecProcessEditor from './SpecProcessEditor';
 import splitInsight from '../../modules/llm/discoverer/discoverer';
-import { GistvisSpec, paragraphSpec } from '../../modules/visualizer/types';
-import ArtcleProcess from '../../modules/visualizer/renderer/renderer';
+import { GistvisSpec, paragraphSpec, ArtcleProcess } from 'gist-wsv';
 
 const { TextArea } = Input;
 const { Text } = Typography;
