@@ -98,7 +98,7 @@ declare module 'gist-wsv' {
   const ValueTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
   const TrendTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
 
-  const ArtcleProcess: FC<{ llmarticle: paragraphSpec[] }>;
+  const ArtcleProcess: ({ llmarticle }: { llmarticle: paragraphSpec[]; }) => JSX.Element
 
   export interface paragraphSpec {
     paragraphIdx: number;
