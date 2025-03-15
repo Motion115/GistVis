@@ -1,5 +1,4 @@
-import { gistKB } from '../../llm/visKB';
-import { GistvisSpec, InsightType, DataSpec } from '../types';
+import { GistvisSpec, InsightType, DataSpec, VIS_INSIGHT_TYPES } from '../types';
 
 export const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
@@ -76,7 +75,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
     notValidTypes.push('rank');
   }
 
-  const validTypes = Object.keys(gistKB).filter((type) => !notValidTypes.includes(type as InsightType));
+  const validTypes = VIS_INSIGHT_TYPES.filter((type) => !notValidTypes.includes(type as InsightType));
   // noType is always welcome
   validTypes.push('noType');
 
