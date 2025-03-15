@@ -1,4 +1,4 @@
-import { DataSpec, InsightType } from '../visualizer/types';
+import { DataSpec, InsightType } from 'gist-wsv';
 
 export type GistFactTypeAnnotation = {
   id?: string;

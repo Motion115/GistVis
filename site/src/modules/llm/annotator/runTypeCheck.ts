@@ -4,7 +4,7 @@ import { RunnableSequence } from '@langchain/core/runnables';
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
 import { GistFactTypeAnnotation } from '../types';
 import { generateFewShotExample, getTypeCheckerSystemInstruction, gistKB, SystemInstruction } from '../visKB';
-import { VisInsightType } from '../../visualizer/types';
+import { VisInsightType } from 'gist-wsv';
 
 const runTypeCheck = async (
   model: ChatOpenAI<ChatOpenAICallOptions>,

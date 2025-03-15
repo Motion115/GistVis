@@ -2,8 +2,8 @@ import { CustomListOutputParser } from 'langchain/output_parsers';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { RunnableSequence } from '@langchain/core/runnables';
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
+import { paragraphSpec, UnitSegmentSpec, GistvisSpec } from 'gist-wsv';
 import { gistKB } from '../visKB';
-import { paragraphSpec, UnitSegmentSpec, GistvisSpec } from '../../visualizer/types';
 
 const splitInsight = async (model: ChatOpenAI<ChatOpenAICallOptions>, paragraphList: string[]) => {
   const parser = new CustomListOutputParser({ separator: '<section>' });

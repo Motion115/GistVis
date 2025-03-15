@@ -29,7 +29,7 @@ import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
 import pipelineImage from '../../static/GistVis-Pipeline.jpg';
 import PipelinePage from './component/pipelinePage.tsx';
 import { articles } from '../userstudy/articles/articledata.ts';
-import ArtcleProcess from '../modules/visualizer/renderer/renderer.tsx';
+import { ArtcleProcess } from 'gist-wsv';
 import BibtexCard from './component/bibtex.tsx';
 import { Link } from 'react-router-dom';
 const { Header, Content } = Layout;

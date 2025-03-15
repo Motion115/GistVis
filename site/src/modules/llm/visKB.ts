@@ -1,4 +1,4 @@
-import { InsightType, VisInsightType } from '../visualizer/types';
+import { InsightType, VisInsightType } from 'gist-wsv';
 import { GistFactKnowledgeBase } from './types';
 import lodash from 'lodash';
 

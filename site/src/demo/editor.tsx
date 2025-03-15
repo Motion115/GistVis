@@ -5,7 +5,7 @@ import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
 import generateGistVisMarkup from '../modules/llm/llm';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import { paragraphSpec } from '../modules/visualizer/types';
+import { paragraphSpec } from 'gist-wsv';
 import { useAtom } from 'jotai';
 import { processStageAtom } from '../globalState';
 
