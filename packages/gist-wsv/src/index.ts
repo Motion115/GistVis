@@ -9,6 +9,12 @@ export { default as LineChart } from './components/visualizer/wordScaleVis/lineC
 // Export Article Process component
 export { ArtcleProcess } from './components/visualizer/renderer/renderer';
 
+// Export Line Chart component
+export { default as LineChart } from './components/visualizer/wordScaleVis/lineChart';
+
+// Export Article Process component
+export { ArtcleProcess } from './components/visualizer/renderer/renderer';
+
 // Export simplified interface components
 export {
   SimpleLine,
@@ -41,3 +47,12 @@ export type {
   paragraphSpec,
   DataSpec,
 } from './components/visualizer/types';
+
+// Export knowledge base and system instructions
+export {
+  SystemInstruction,
+  ExtractorSystemInstruction,
+  getTypeCheckerSystemInstruction,
+  generateFewShotExample,
+  gistKB,
+} from './components/llm/visKB';

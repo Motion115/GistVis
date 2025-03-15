@@ -98,10 +98,29 @@ declare module 'gist-wsv' {
   const ValueTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
   const TrendTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
 
-  const ArtcleProcess: ({ llmarticle }: { llmarticle: paragraphSpec[]; }) => JSX.Element
+  const ArtcleProcess: FC<{ llmarticle: paragraphSpec[] }>;
 
+  // Knowledge Base Types
   export interface paragraphSpec {
     paragraphIdx: number;
     paragraphContent: GistvisSpec[];
   }
+
+  export interface GistFactKnowledgeBase {
+    definition: string;
+    examples: string[];
+    negativeExamples?: string[];
+  }
+
+  // Export knowledge base and system instructions
+  export const SystemInstruction: string;
+  export const ExtractorSystemInstruction: string;
+  export function getTypeCheckerSystemInstruction(type: InsightType): string;
+  export function generateFewShotExample(
+    type: VisInsightType,
+    positiveExample?: number,
+    nullExample?: number,
+    isRandomSample?: boolean
+  ): string;
+  export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase };
 }

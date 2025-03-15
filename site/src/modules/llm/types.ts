@@ -11,9 +11,3 @@ export interface ExtractorType {
   pos?: string[];
   attribute?: string;
 }
-
-export type GistFactKnowledgeBase = {
-  definition: string;
-  examples: string[];
-  negativeExamples: string[];
-};

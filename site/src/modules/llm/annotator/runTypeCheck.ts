@@ -3,8 +3,7 @@ import { PromptTemplate } from '@langchain/core/prompts';
 import { RunnableSequence } from '@langchain/core/runnables';
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
 import { GistFactTypeAnnotation } from '../types';
-import { generateFewShotExample, getTypeCheckerSystemInstruction, gistKB, SystemInstruction } from '../visKB';
-import { VisInsightType } from 'gist-wsv';
+import { generateFewShotExample, getTypeCheckerSystemInstruction, gistKB, SystemInstruction, VisInsightType } from 'gist-wsv';
 
 const runTypeCheck = async (
   model: ChatOpenAI<ChatOpenAICallOptions>,
