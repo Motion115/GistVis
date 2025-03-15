@@ -1,5 +1,5 @@
-import { InsightType, VisInsightType } from '../visualizer/types';
-import { GistFactKnowledgeBase } from './types';
+import { InsightType, VisInsightType } from 'gist-wsv';
+import { GistFactKnowledgeBase } from 'gist-wsv';
 import lodash from 'lodash';
 
 export const SystemInstruction = `You are a professional text preprocessing assistant specializing in text visualization.

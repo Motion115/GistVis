@@ -1,4 +1,4 @@
-import { DataSpec, InsightType } from '../visualizer/types';
+import { DataSpec, InsightType, GistFactKnowledgeBase } from 'gist-wsv';
 
 export type GistFactTypeAnnotation = {
   id?: string;
@@ -11,9 +11,3 @@ export interface ExtractorType {
   pos?: string[];
   attribute?: string;
 }
-
-export type GistFactKnowledgeBase = {
-  definition: string;
-  examples: string[];
-  negativeExamples: string[];
-};

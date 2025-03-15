@@ -1,5 +1,4 @@
-import { gistKB } from '../../llm/visKB';
-import { GistvisSpec, InsightType, DataSpec } from '../types';
+import { gistKB, GistvisSpec, InsightType, DataSpec } from 'gist-wsv';
 
 export const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);

@@ -1,5 +1,5 @@
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
-import { paragraphSpec, GistvisSpec } from '../../visualizer/types'; // Import your types
+import { paragraphSpec, GistvisSpec } from 'gist-wsv';
 import { GistFactTypeAnnotation } from '../types';
 import {
   specComparison,

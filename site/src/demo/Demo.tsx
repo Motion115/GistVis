@@ -6,6 +6,9 @@ import ArtcleProcess from '../modules/visualizer/renderer/renderer';
 import { DemoPage } from './demoPage';
 import DemoPipeline from './pipeline/DemoPipeline';
 import React, { useState } from 'react';
+import { paragraphSpec } from 'gist-wsv';
+import { processStageAtom } from '../globalState';
+import { useAtom } from 'jotai';
 import { articles } from '../userstudy/articles/articledata';
 import MenuBar from './commonElement/menuBar';
 

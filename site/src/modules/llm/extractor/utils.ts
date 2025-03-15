@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { InsightType } from '../../visualizer/types';
+import { InsightType } from 'gist-wsv';
 import numeral from 'numeral';
 
 export const SpecDescriptions = {
