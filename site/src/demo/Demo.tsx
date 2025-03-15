@@ -1,12 +1,11 @@
 import { ConfigProvider, Layout, Typography, Row, Col, Divider, Flex, Button, Carousel } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import THEME from '../style/theme';
-import ArtcleProcess from '../modules/visualizer/renderer/renderer';
 // import Editor from "./editor";
 import { DemoPage } from './demoPage';
 import DemoPipeline from './pipeline/DemoPipeline';
 import React, { useState } from 'react';
-import { paragraphSpec } from 'gist-wsv';
+import { paragraphSpec, ArtcleProcess } from 'gist-wsv';
 import { processStageAtom } from '../globalState';
 import { useAtom } from 'jotai';
 import { articles } from '../userstudy/articles/articledata';

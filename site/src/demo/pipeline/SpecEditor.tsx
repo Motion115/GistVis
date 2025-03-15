@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import THEME from '../../style/theme';
 import { Card, Button, Input, Select, Modal, Space, Typography, Form, ConfigProvider, Row } from 'antd';
-import { GistvisSpec, DataSpec, InsightType, Attribute } from '../../modules/visualizer/types';
+import { GistvisSpec, DataSpec, InsightType, Attribute } from 'gist-wsv';
 
 type FieldValue<T extends string> = T extends 'insightType'
   ? InsightType
