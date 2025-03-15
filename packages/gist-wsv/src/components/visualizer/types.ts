@@ -1,4 +1,12 @@
 // Intermediate representation for GistVis
+export const VIS_INSIGHT_TYPES = [
+  'comparison',
+  'trend',
+  'rank',
+  'proportion',
+  'extreme',
+  'value',
+];
 export type VisInsightType = 'comparison' | 'trend' | 'rank' | 'proportion' | 'extreme' | 'value';
 export type InsightType = VisInsightType | 'noType';
 

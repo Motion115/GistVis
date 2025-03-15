@@ -41,12 +41,3 @@ export type {
   paragraphSpec,
   DataSpec,
 } from './components/visualizer/types';
-
-// Export knowledge base and system instructions
-export {
-  SystemInstruction,
-  ExtractorSystemInstruction,
-  getTypeCheckerSystemInstruction,
-  generateFewShotExample,
-  gistKB,
-} from './components/llm/visKB';
