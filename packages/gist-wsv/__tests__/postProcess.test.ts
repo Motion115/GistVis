@@ -1,5 +1,10 @@
-import { getHighlightPos, getUniqueEntities, getNonOverlappingEntities, getProductionVisSpec } from '../postProcess';
-import { GistvisSpec, EntitySpec } from '../../types';
+import {
+  getHighlightPos,
+  getUniqueEntities,
+  getNonOverlappingEntities,
+  getProductionVisSpec,
+} from '../src/utils/postProcess';
+import { GistvisSpec, EntitySpec } from '../src/components/types';
 
 describe('getHighlightPos', () => {
   const mockGistVisSpec: GistvisSpec = {

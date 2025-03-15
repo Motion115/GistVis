@@ -1,4 +1,4 @@
-import { GistvisSpec, InsightType, DataSpec, VIS_INSIGHT_TYPES } from '../types';
+import { GistvisSpec, InsightType, DataSpec, VIS_INSIGHT_TYPES } from '../components/types';
 
 export const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);

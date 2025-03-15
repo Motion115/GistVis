@@ -1,5 +1,5 @@
 import '../../../style/page.css';
-import { GistvisSpec, InsightType, paragraphSpec } from '../types';
+import { GistvisSpec, InsightType, paragraphSpec } from '../components/types';
 import {
   ComparisonTextRenderer,
   ExtremeTextRenderer,
@@ -10,7 +10,7 @@ import {
   TrendTextRenderer,
 } from './rendererList';
 import { recommendValidTypes } from '../utils/utils';
-import FallBackCase from '../widgets/fallbackVis';
+import FallBackCase from '../components/widgets/fallbackVis';
 
 import React from 'react';
 

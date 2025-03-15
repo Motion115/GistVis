@@ -1,7 +1,7 @@
 /// <reference types="jest" />
 
-import { capitalizeFirstLetter, recommendValidTypes } from '../utils';
-import { GistvisSpec, InsightType, DataSpec } from '../../types';
+import { capitalizeFirstLetter, recommendValidTypes } from '../src/utils/utils';
+import { GistvisSpec, InsightType, DataSpec } from '../src/components/types';
 import '@testing-library/jest-dom';
 
 describe('capitalizeFirstLetter', () => {

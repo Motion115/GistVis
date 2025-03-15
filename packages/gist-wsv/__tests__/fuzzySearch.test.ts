@@ -1,4 +1,4 @@
-import { fuzzySearch } from '../fuzzySearch';
+import { fuzzySearch } from '../src/utils/fuzzySearch';
 
 describe('fuzzySearch', () => {
   describe('Direct matching (isFuzzy=false)', () => {

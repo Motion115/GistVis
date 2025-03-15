@@ -1,24 +1,27 @@
 import React, { useState } from 'react';
-import { EntitySpec, GistvisSpec } from '../types';
+import { EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
-import HoverText from '../widgets/hoverText';
-import { HorizontalStackedBarChart } from '../wordScaleVis/chartList';
+import HoverText from '../components/widgets/hoverText';
+import GlyphText from '../components/wordScaleVis/glyphText';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
 import useTrackVisit from '../utils/useTrack';
 
-const ProportionTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const ValueTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
   const id = gistvisSpec.id;
-  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('prop-' + id);
+  const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('value-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
   const dataSpec = gistvisSpec.dataSpec ?? [];
 
+  // const inSituPos: EntitySpec[] = getHighlightPos(gistvisSpec, "phrase");
   const entityPos: EntitySpec[] = getHighlightPos(gistvisSpec, 'entity');
   const uniqueEntities = getUniqueEntities(entityPos);
-  const vis = getProductionVisSpec(gistvisSpec.unitSegmentSpec.context, entityPos);
+
+  const vis = getProductionVisSpec(gistvisSpec.unitSegmentSpec.context, entityPos, 'right');
+
   const colorScale = d3.scaleOrdinal(d3.schemeCategory10).domain(uniqueEntities);
 
-  const proportionVis = (
-    <HorizontalStackedBarChart
+  const valueVis = (
+    <GlyphText
       gistvisSpec={gistvisSpec}
       colorScale={colorScale}
       selectedEntity={currentEntity}
@@ -53,7 +56,7 @@ const ProportionTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) =
             <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <span key={index}>
                 {content.content}
-                {proportionVis}
+                {valueVis}
               </span>
             </span>
           );
@@ -63,4 +66,4 @@ const ProportionTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) =
   );
 };
 
-export default ProportionTextRenderer;
+export default ValueTextRenderer;
