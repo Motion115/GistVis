@@ -12,7 +12,9 @@ import {
 import { recommendValidTypes } from '../utils/utils';
 import FallBackCase from '../widgets/fallbackVis';
 
-const ArtcleProcess = ({ llmarticle }: { llmarticle: paragraphSpec[] }) => {
+import React from 'react';
+
+export const ArtcleProcess: React.FC<{ llmarticle: paragraphSpec[] }> = ({ llmarticle }) => {
   const renderMap = {
     noType: (item: GistvisSpec) => <PlainTextRenderer gistvisSpec={item} />,
     trend: (item: GistvisSpec) => <TrendTextRenderer gistvisSpec={item} />,
@@ -67,4 +69,3 @@ const ArtcleProcess = ({ llmarticle }: { llmarticle: paragraphSpec[] }) => {
   );
 };
 
-export default ArtcleProcess;

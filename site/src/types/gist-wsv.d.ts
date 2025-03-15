@@ -89,4 +89,38 @@ declare module 'gist-wsv' {
   export const SimpleBar: FC<SimpleBarChartProps>;
   export const SimpleStackedBar: FC<SimpleStackedBarChartProps>;
   export const SimpleMaxMin: FC<SimpleMaxMinProps>;
+
+  const ComparisonTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const ExtremeTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const PlainTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const ProportionTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const RankTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const ValueTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+  const TrendTextRenderer: ({ gistvisSpec }: { gistvisSpec: GistvisSpec; }) => JSX.Element
+
+  const ArtcleProcess: FC<{ llmarticle: paragraphSpec[] }>;
+
+  // Knowledge Base Types
+  export interface paragraphSpec {
+    paragraphIdx: number;
+    paragraphContent: GistvisSpec[];
+  }
+
+  export interface GistFactKnowledgeBase {
+    definition: string;
+    examples: string[];
+    negativeExamples?: string[];
+  }
+
+  // Export knowledge base and system instructions
+  export const SystemInstruction: string;
+  export const ExtractorSystemInstruction: string;
+  export function getTypeCheckerSystemInstruction(type: InsightType): string;
+  export function generateFewShotExample(
+    type: VisInsightType,
+    positiveExample?: number,
+    nullExample?: number,
+    isRandomSample?: boolean
+  ): string;
+  export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase };
 }

@@ -1,4 +1,4 @@
-import { paragraphSpec } from '../../modules/visualizer/types';
+import { paragraphSpec } from 'gist-wsv';
 
 export interface IQuestion {
   id: string;

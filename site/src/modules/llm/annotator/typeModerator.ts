@@ -3,8 +3,7 @@ import { PromptTemplate } from '@langchain/core/prompts';
 import { RunnableSequence } from '@langchain/core/runnables';
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
 import { GistFactTypeAnnotation } from '../types';
-import { SystemInstruction, gistKB } from '../visKB';
-import { VisInsightType } from '../../visualizer/types';
+import { SystemInstruction, gistKB, VisInsightType } from 'gist-wsv';
 
 const runMatch = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent: string, candidateTypes: string[]) => {
   const candidateTypesRegex = candidateTypes.join('|');

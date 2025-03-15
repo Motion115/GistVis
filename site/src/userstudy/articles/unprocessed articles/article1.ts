@@ -1,4 +1,4 @@
-import { paragraphSpec } from '../../../modules/visualizer/types';
+import { paragraphSpec } from 'gist-wsv';
 
 const article1: paragraphSpec[] = [
   {

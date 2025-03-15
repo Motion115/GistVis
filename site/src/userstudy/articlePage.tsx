@@ -1,7 +1,7 @@
 // src/InteractivePage.js
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import ArtcleProcess from '../modules/visualizer/renderer/renderer';
+import { ArtcleProcess } from 'gist-wsv';
 import { ArticleData, IQuestion } from './articles/articleTypes';
 import { articles } from './articles/articledata';
 import './us.css';
