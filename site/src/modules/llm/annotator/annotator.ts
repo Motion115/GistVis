@@ -1,7 +1,8 @@
 import { ChatOpenAI, ChatOpenAICallOptions } from '@langchain/openai';
 import runTypeCheck from './runTypeCheck';
 import runMatch from './typeModerator';
-import { GistvisSpec, VisInsightType, gistKB, paragraphSpec, UnitSegmentSpec } from 'gist-wsv';
+import { GistvisSpec, VisInsightType, paragraphSpec, UnitSegmentSpec } from 'gist-wsv';
+import { gistKB } from '../visKB';
 import { GistFactTypeAnnotation } from '../types';
 import lodash from 'lodash';
 
