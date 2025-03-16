@@ -15,7 +15,8 @@ const BibtexCard: React.FC = () => {
 
   const copyToClipboard = async () => {
     try {
-      await navigator.clipboard.writeText(bibtex);
+      const plainBibtex = bibtex.replace(/<[^>]*>/g, '');
+      await navigator.clipboard.writeText(plainBibtex);
       message.success('BibTeX copied to clipboard!');
     } catch (err) {
       message.error('Copy failed, please copy manually.');
