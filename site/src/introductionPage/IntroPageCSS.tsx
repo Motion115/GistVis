@@ -1,27 +1,17 @@
-// Extract common base button styles
-const commonButton: React.CSSProperties = {
-  border: 'none',
-  borderRadius: '8px',
-  fontWeight: 600,
-  cursor: 'pointer',
-  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-};
-
 // Extend styles for buttons that use flex layout
-const commonFlexButton: React.CSSProperties = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  gap: '8px',
-  transition: 'background-color 0.3s ease, transform 0.3s ease',
-  padding: '12px 24px',
-  fontSize: '1rem',
-};
+// const commonFlexButton: React.CSSProperties = {
+//   display: 'flex',
+//   alignItems: 'center',
+//   justifyContent: 'center',
+//   gap: '8px',
+//   padding: '12px 24px',
+//   fontSize: '1rem',
+// };
 
 // Common container style (shared margin and width for multiple containers)
 const commonContainer: React.CSSProperties = {
-  marginTop: '2rem',
   margin: '0 auto',
+  padding: '30px 0 20px 0',
   width: '1200px',
 };
 
@@ -31,6 +21,22 @@ const commonDiv: React.CSSProperties = {
   marginBottom: '0px',
   marginLeft: '40px',
   textAlign: 'left',
+};
+
+// Extract common base button styles
+export const commonButton: React.CSSProperties = {
+  border: 'none',
+  borderRadius: '8px',
+  fontWeight: 600,
+  cursor: 'pointer',
+  color: 'rgba(255, 255, 255, 1)',
+  padding: '16px 25px',
+  fontSize: '1.25rem',
+  height: '2.5rem',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '16px',
 };
 
 export const headerStyle: React.CSSProperties = {
@@ -45,7 +51,7 @@ export const headerStyle: React.CSSProperties = {
 };
 
 export const GistVis: React.CSSProperties = {
-  margin: 0,
+  margin: '1.5rem auto',
   color: 'rgba(48, 176, 199, 1)',
   fontSize: '6rem',
   fontWeight: 'bold',
@@ -54,34 +60,45 @@ export const GistVis: React.CSSProperties = {
   textAlign: 'center',
 };
 
-export const headerContent: React.CSSProperties = {
+export const titleContent: React.CSSProperties = {
   marginTop: '1rem',
   marginBottom: '0',
-  color: 'rgba(255, 255, 255, 1)',
-  fontSize: '2.25rem',
+  color: 'rgba(230,244,241,1)',
+  fontSize: '2rem',
+  fontWeight: 'bold',
+  lineHeight: 1.4,
+  textAlign: 'center',
+};
+
+export const authors: React.CSSProperties = {
+  marginTop: '0',
+  marginBottom: '0',
+  color: 'rgba(230,244,241,1)',
+  fontSize: '1.5rem',
   fontWeight: 'bold',
   lineHeight: 1.4,
   textAlign: 'center',
 };
 
 export const buttonContainer: React.CSSProperties = {
-  marginTop: '1rem',
+  marginTop: '2rem',
   width: '100%',
   maxWidth: '600px',
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
   alignItems: 'center',
+  justifyContent: 'space-evenly',
   gap: '30px',
 };
 
-// Inherit common button styles
-export const buttonOpen: React.CSSProperties = {
-  ...commonButton,
-  color: 'rgba(255, 255, 255, 1)',
-  padding: '16px 40px',
-  fontSize: '1.5rem',
-  height: '4rem',
-};
+// // Inherit common button styles
+// export const buttonOpen: React.CSSProperties = {
+//   ...commonButton,
+//   color: 'rgba(255, 255, 255, 1)',
+//   padding: '16px 40px',
+//   fontSize: '1.5rem',
+//   height: '4rem',
+// };
 
 export const bottomButtonRow: React.CSSProperties = {
   display: 'flex',
@@ -90,31 +107,28 @@ export const bottomButtonRow: React.CSSProperties = {
   maxWidth: '300px',
 };
 
-// For buttons with flex layout (Pdf and Github), inherit both common button and common flex styles
-export const buttonPdf: React.CSSProperties = {
-  ...commonButton,
-  ...commonFlexButton,
-  backgroundColor: 'rgba(255, 76, 76, 1)',
-  color: 'rgba(255, 255, 255, 1)',
-};
+// // For buttons with flex layout (Pdf and Github), inherit both common button and common flex styles
+// export const buttonPdf: React.CSSProperties = {
+//   ...commonButton,
+//   ...commonFlexButton,
+//   color: 'rgba(255, 255, 255, 1)',
+// };
 
-export const buttonGithub: React.CSSProperties = {
-  ...commonButton,
-  ...commonFlexButton,
-  backgroundColor: 'rgba(51, 51, 51, 1)',
-  color: 'rgba(255, 255, 255, 1)',
-};
+// export const buttonGithub: React.CSSProperties = {
+//   ...commonButton,
+//   ...commonFlexButton,
+//   color: 'rgba(255, 255, 255, 1)',
+// };
 
 export const introductionContent: React.CSSProperties = {
-  marginTop: '1.5rem',
+  margin: '1.5rem 0',
   maxWidth: '1350px',
   fontSize: '16px',
   lineHeight: '1.6',
   color: 'rgba(51, 51, 51, 1)',
   textAlign: 'justify',
-  padding: '0 1rem',
+  padding: '0 2rem',
   fontFamily: "'Open Sans', sans-serif",
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.05)',
 };
 
 // Inherit common div style and extend with specific attributes
@@ -137,9 +151,8 @@ export const overviewContainer: React.CSSProperties = {
 export const buttonYtb = {
   padding: '8px 12px',
   fontSize: '1rem',
-  backgroundColor: '#FF0000',
-  color: '#FFFFFF',
-  border: 'none',
+  backgroundColor: '#FFFFFF',
+  color: '#FF0000',
   borderRadius: '4px',
   cursor: 'pointer',
   margin: 'auto 0',
@@ -182,6 +195,7 @@ export const sampleContainer: React.CSSProperties = {
   padding: '10px 0',
   background: '#ffffff',
   width: '1000px',
+  borderRadius: '5px',
 };
 
 export const bibtexContainer: React.CSSProperties = {
@@ -203,7 +217,7 @@ export const bibtexCardHeader: React.CSSProperties = {
 };
 
 export const bibtexCardExtraButton: React.CSSProperties = {
-  borderRadius: '6px', // Note: This value is different from commonButton's 8px, so it is set separately.
+  borderRadius: '6px',
   backgroundColor: '#007acc',
   color: '#fff',
   fontWeight: 'bold',

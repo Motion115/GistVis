@@ -1,12 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col } from 'antd';
+import React, { useEffect, useRef, useState } from 'react';
+import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col, BackTop } from 'antd';
 import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
 import {
-  buttonGithub,
-  buttonOpen,
-  buttonPdf,
   GistVis,
-  headerContent,
   headerStyle,
   buttonContainer,
   bottomButtonRow,
@@ -23,6 +19,9 @@ import {
   sampleContainer,
   bibtexContainer,
   buttonYtb,
+  titleContent,
+  authors,
+  commonButton,
 } from './IntroPageCSS.tsx';
 import teaserImage from '../../static/teaser.png';
 import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
@@ -43,6 +42,36 @@ const IntroPage = () => {
   // Refs for Previous and Next buttons
   const buttonPreviousRef = useRef<HTMLButtonElement>(null);
   const buttonNextRef = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleLoadedData = () => {
+      video.currentTime = 1;
+    };
+
+    const handleSeeked = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        video.poster = canvas.toDataURL();
+      }
+      video.removeEventListener('seeked', handleSeeked);
+    };
+
+    video.addEventListener('loadeddata', handleLoadedData);
+    video.addEventListener('seeked', handleSeeked);
+
+    return () => {
+      video.removeEventListener('loadeddata', handleLoadedData);
+      video.removeEventListener('seeked', handleSeeked);
+    };
+  }, []);
 
   // Handle Previous button click
   const handlePrevious = () => {
@@ -59,19 +88,20 @@ const IntroPage = () => {
   };
 
   const openButtonStyle = {
-    ...buttonOpen,
-    backgroundColor: hoverOpenButton ? 'rgba(36, 140, 168, 1)' : 'rgba(48, 176, 199, 1)',
+    ...commonButton,
+    backgroundColor: hoverOpenButton ? 'rgba(0,185,251,1)' : 'rgba(14, 178, 237,1)',
+    transform: hoverOpenButton ? 'scale(1.05)' : 'scale(1)',
   };
 
   const pdfButtonStyle = {
-    ...buttonPdf,
-    backgroundColor: hoverPdfButton ? 'rgba(224, 67, 67, 1)' : 'rgba(255, 76, 76, 1)',
+    ...commonButton,
+    backgroundColor: hoverPdfButton ? 'rgba(0,185,251,1)' : 'rgba(14, 178, 237,1)',
     transform: hoverPdfButton ? 'scale(1.05)' : 'scale(1)',
   };
 
   const githubButtonStyle = {
-    ...buttonGithub,
-    backgroundColor: hoverGithubButton ? 'rgba(74, 74, 74, 1)' : 'rgba(51, 51, 51, 1)',
+    ...commonButton,
+    backgroundColor: hoverGithubButton ? 'rgba(0,185,251,1)' : 'rgba(14, 178, 237,1)',
     transform: hoverGithubButton ? 'scale(1.05)' : 'scale(1)',
   };
 
@@ -112,6 +142,7 @@ const IntroPage = () => {
       </div>
     );
   };
+
   return (
     <ConfigProvider
       theme={{
@@ -123,39 +154,38 @@ const IntroPage = () => {
       <Layout style={{ alignContent: 'center', margin: 'auto' }}>
         <Header style={headerStyle}>
           <h1 style={GistVis}>GistVis</h1>
-          <p style={headerContent}>Automatic Generation of Word-scale Visualizations from Data-rich Documents</p>
+          <p style={titleContent}>Automatic Generation of Word-scale Visualizations from Data-rich Documents</p>
+          <p style={authors}>Zou Ruishi , Tang Yinqi , Chen Jingzhu , Lu Siyu , Lu Yan , Yang Yingfan , Ye Chen</p>
           <div style={buttonContainer}>
-            <Link to="/home">
-              <Button
-                style={openButtonStyle}
-                onMouseEnter={() => sethoverOpenButton(true)}
-                onMouseLeave={() => sethoverOpenButton(false)}
-              >
-                open GistVis
-              </Button>
-            </Link>
-            <div style={bottomButtonRow}>
+            <Link to="https://doi.org/10.48550/arXiv.2502.03784" target="_blank">
               <Button
                 style={pdfButtonStyle}
-                target="_blank"
-                href="https://doi.org/10.48550/arXiv.2502.03784"
                 onMouseEnter={() => sethoverPdfButton(true)}
                 onMouseLeave={() => sethoverPdfButton(false)}
               >
                 <FilePdfOutlined style={{ fontSize: 20 }} />
                 Paper
               </Button>
+            </Link>
+            <Link to="/home">
+              <Button
+                style={openButtonStyle}
+                onMouseEnter={() => sethoverOpenButton(true)}
+                onMouseLeave={() => sethoverOpenButton(false)}
+              >
+                Open GistVis
+              </Button>
+            </Link>
+            <Link to="https://github.com/Motion115/GistVis" target="_blank">
               <Button
                 style={githubButtonStyle}
-                target="_blank"
-                href="https://github.com/Motion115/GistVis"
                 onMouseEnter={() => sethoverGithubButton(true)}
                 onMouseLeave={() => sethoverGithubButton(false)}
               >
                 <GithubOutlined style={{ fontSize: 20 }} />
                 GitHub
               </Button>
-            </div>
+            </Link>
           </div>
         </Header>
         <Content style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
@@ -172,32 +202,29 @@ const IntroPage = () => {
               elements into the document to improve user comprehension and reduce cognitive load.
             </p>
           </Flex>
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
+          {/* Introduction */}
+          {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
           {/* Overview */}
-          <Flex vertical style={overviewContainer} gap={10}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>Overview - Explore the Potential of GistVis</h1>
-              <p style={divContent}>Click to watch the video and quickly discover the features of GistVis.</p>
-              <Flex style={{ marginTop: '5px' }} gap={20}>
-                <p style={{ ...divContent, lineHeight: '1.6', marginTop: '3px', marginBottom: '5px' }}>
-                  For more details, click our Talk Video 👉
-                </p>
-                <Button
-                  style={buttonYtb}
-                  href="https://www.youtube.com/watch?v=OIjAvoWdVCo"
-                  target="_blank"
-                  size="small"
-                >
-                  <YoutubeOutlined />
-                </Button>
-              </Flex>
-            </div>
-            <video style={overviewVideo} controls autoPlay muted>
-              <source src={GistVisVideo} type="video/mp4" />
-            </video>
-          </Flex>
+          <div style={{ backgroundColor: 'rgba(236,252,255,1)' }}>
+            <Flex vertical style={overviewContainer} gap={10}>
+              <div style={{ width: '100%', alignSelf: 'flex-start' }}>
+                <h1 style={divHead}>Overview - Explore the Potential of GistVis</h1>
+                <p style={divContent}>Click to watch the video and quickly discover the features of GistVis.</p>
+                <Flex gap={5}>
+                  <p style={{ ...divContent, lineHeight: '1.6' }}>For more details, click our Talk Video 👉</p>
+                  <Link to="https://www.youtube.com/watch?v=OIjAvoWdVCo" target="_blank"></Link>
+                  <Button style={buttonYtb} size="small">
+                    <YoutubeOutlined />
+                  </Button>
+                </Flex>
+              </div>
+              <video ref={videoRef} style={overviewVideo} controls muted>
+                <source src={GistVisVideo} type="video/mp4" />
+              </video>
+            </Flex>
+          </div>
           {/* Overview */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
+          {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
           {/* Pipeline */}
           <Flex vertical style={pipelineContainer}>
             <div style={{ alignSelf: 'flex-start' }}>
@@ -218,85 +245,89 @@ const IntroPage = () => {
                 onClick={handlePrevious}
                 disabled={stepsCurrent === 0}
               >
+                <LeftOutlined />
                 Previous
               </Button>
               <Button ref={buttonNextRef} style={buttonNext} onClick={handleNext} disabled={stepsCurrent === 5}>
                 Next
+                <RightOutlined />
               </Button>
             </div>
           </Flex>
           {/* Pipeline */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
+          {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
           {/* Article Visualization */}
-          <Flex vertical style={visContainer} gap={20}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>Article Visualization with GistVis: Bringing Insights to Life</h1>
-              <p style={divContent}>
-                Experience how GistVis transforms complex articles into intuitive visual representations, revealing
-                deeper insights at a glance.
-              </p>
-            </div>
-            <div style={{ margin: '0 auto' }}>
-              <ConfigProvider
-                theme={{
-                  token: {
-                    colorBgContainer: ' rgba(76, 144, 226, 0.8)',
-                  },
-                }}
-              >
-                <Carousel
-                  autoplay
-                  arrows
-                  infinite={true}
-                  dotPosition="top"
-                  style={sampleContainer}
-                  prevArrow={<LeftOutlined />}
-                  nextArrow={<RightOutlined />}
-                  effect="fade"
-                  autoplaySpeed={5000}
+          <div style={{ backgroundColor: 'rgba(236,252,255,1)' }}>
+            <Flex vertical style={visContainer} gap={20}>
+              <div style={{ alignSelf: 'flex-start' }}>
+                <h1 style={divHead}>Article Visualization with GistVis: Bringing Insights to Life</h1>
+                <p style={divContent}>
+                  Experience how GistVis transforms complex articles into intuitive visual representations, revealing
+                  deeper insights at a glance.
+                </p>
+              </div>
+              <div style={{ margin: '0 auto' }}>
+                <ConfigProvider
+                  theme={{
+                    token: {
+                      colorBgContainer: ' rgba(76, 144, 226, 0.8)',
+                    },
+                  }}
                 >
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 6)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 1)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 7)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 2)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 8)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 3)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 9)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 4)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 10)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 5)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 11)}</Col>
-                    </Row>
-                  </div>
-                </Carousel>
-              </ConfigProvider>
-            </div>
-          </Flex>
+                  <Carousel
+                    autoplay
+                    arrows
+                    infinite={true}
+                    dotPosition="top"
+                    style={sampleContainer}
+                    prevArrow={<LeftOutlined />}
+                    nextArrow={<RightOutlined />}
+                    effect="fade"
+                    autoplaySpeed={5000}
+                  >
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 6)}</Col>
+                      </Row>
+                    </div>
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 1)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 7)}</Col>
+                      </Row>
+                    </div>
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 2)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 8)}</Col>
+                      </Row>
+                    </div>
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 3)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 9)}</Col>
+                      </Row>
+                    </div>
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 4)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 10)}</Col>
+                      </Row>
+                    </div>
+                    <div>
+                      <Row gutter={[16, 16]} className="content-wrapper1">
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 5)}</Col>
+                        <Col span={12}>{renderArticleContent(currentArticleIndex + 11)}</Col>
+                      </Row>
+                    </div>
+                  </Carousel>
+                </ConfigProvider>
+              </div>
+            </Flex>
+          </div>
           {/* Article Visualization */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
+          {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
           {/* Bibtex */}
           <Flex vertical style={bibtexContainer} gap={20}>
             <div style={{ alignSelf: 'flex-start' }}>
