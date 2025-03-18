@@ -280,8 +280,6 @@ const IntroPage = () => {
                     infinite={true}
                     dotPosition="top"
                     style={sampleContainer}
-                    prevArrow={<LeftOutlined />}
-                    nextArrow={<RightOutlined />}
                     effect="fade"
                     autoplaySpeed={5000}
                   >
