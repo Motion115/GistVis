@@ -45,28 +45,28 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
           <Table
             columns={[
               {
-                title: 'Category Key',
+                title: 'space',
                 dataIndex: 'space',
                 key: 'space',
                 width: 150,
                 onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
               },
               {
-                title: 'Category Value',
+                title: 'breakdown',
                 dataIndex: 'breakdown',
                 key: 'breakdown',
                 width: 150,
                 onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
               },
               {
-                title: 'Value Key',
+                title: 'feature',
                 dataIndex: 'feature',
                 key: 'feature',
                 width: 150,
                 onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
               },
               {
-                title: 'Value Value',
+                title: 'value',
                 dataIndex: 'value',
                 key: 'value',
                 width: 100,

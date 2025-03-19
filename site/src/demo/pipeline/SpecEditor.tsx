@@ -431,19 +431,19 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                 }
               >
                 <Form layout="vertical">
-                  <Item label="Category Key">
+                  <Item label="space">
                     <Input
                       value={data.space}
                       onChange={(e) => handleDataSpecChange(index, 'space', e.target.value)}
                     />
                   </Item>
-                  <Item label="Category Value">
+                  <Item label="breakdown">
                     <Input
                       value={data.breakdown}
                       onChange={(e) => handleDataSpecChange(index, 'breakdown', e.target.value)}
                     />
                   </Item>
-                  <Item label="Value Key">
+                  <Item label="feature">
                     <Input
                       value={data.feature}
                       onChange={(e) => handleDataSpecChange(index, 'feature', e.target.value)}

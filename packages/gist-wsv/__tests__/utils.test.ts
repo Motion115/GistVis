@@ -124,7 +124,7 @@ describe('recommendValidTypes', () => {
     expect(result).toEqual(['noType']);
   });
 
-  it('handles invalid data with empty category values', () => {
+  it('handles invalid data with empty breakdowns', () => {
     const data = createMockDataSpec([1, 2], ['A', '']);
     const spec = createBaseSpec(data);
     const result = recommendValidTypes(spec);
