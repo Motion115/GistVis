@@ -203,10 +203,10 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
     setIsOutdated(true);
     setEditingSpec((prev) => {
       const newDataSpec = [...(prev.dataSpec || [])];
-      if (field === 'valueValue') {
+      if (field === 'value') {
         newDataSpec[index] = {
           ...newDataSpec[index],
-          valueValue: Number(value),
+          value: Number(value),
         };
       } else {
         newDataSpec[index] = {
@@ -231,7 +231,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
           space: '',
           breakdown: '',
           feature: '',
-          valueValue: 0,
+          value: 0,
         },
       ],
     }));
@@ -406,7 +406,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                             space: '',
                             breakdown: '',
                             feature: '',
-                            valueValue: 0,
+                            value: 0,
                           },
                         ],
                       }))
@@ -452,8 +452,8 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                   <Item label="Value">
                     <Input
                       type="number"
-                      value={data.valueValue}
-                      onChange={(e) => handleDataSpecChange(index, 'valueValue', e.target.value)}
+                      value={data.value}
+                      onChange={(e) => handleDataSpecChange(index, 'value', e.target.value)}
                     />
                   </Item>
                 </Form>

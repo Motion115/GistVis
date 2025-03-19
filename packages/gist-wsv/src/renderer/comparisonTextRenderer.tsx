@@ -11,17 +11,17 @@ const ComparisonTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) =
   const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('comp-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
 
-  // check entity counts in the dataSpec, if 2 and one valueValue is 0, transform data for better visualization
+  // check entity counts in the dataSpec, if 2 and one value is 0, transform data for better visualization
   let dataSpec: DataSpec[] = gistvisSpec.dataSpec ?? [];
   if (dataSpec.length < 2) {
     console.warn('Not enough data entities to perform transformation.');
   } else if (dataSpec.length === 2) {
-    const hasZeroValue = dataSpec.some((d) => d.valueValue === 0);
+    const hasZeroValue = dataSpec.some((d) => d.value === 0);
     if (hasZeroValue) {
-      const maxValue = Math.max(...dataSpec.map((d) => d.valueValue));
+      const maxValue = Math.max(...dataSpec.map((d) => d.value));
       dataSpec = dataSpec.map((d) => ({
         ...d,
-        valueValue: maxValue + d.valueValue,
+        value: maxValue + d.value,
       }));
     }
   }

@@ -24,7 +24,7 @@ const SimpleBar: React.FC<SimpleBarChartProps> = ({
       space: 'category',
       breakdown: point.label || `Item ${index + 1}`,
       feature: 'value',
-      valueValue: point.y,
+      value: point.y,
     })),
   };
 

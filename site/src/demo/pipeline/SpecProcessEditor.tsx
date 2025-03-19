@@ -41,13 +41,13 @@ const exampleAnswer: GistvisSpec = {
       space: 'time segment',
       breakdown: '2023',
       feature: 'I',
-      valueValue: 16,
+      value: 16,
     },
     {
       space: 'time segment',
       breakdown: '2025',
       feature: 'I',
-      valueValue: 18,
+      value: 18,
     },
   ],
 };

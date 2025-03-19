@@ -8,7 +8,7 @@ import { SearchOutlined } from '@ant-design/icons';
 const GlyphText = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
   const dataSpec = gistvisSpec.dataSpec ?? [];
   // process cases with one value only
-  const value = dataSpec.map((d: DataSpec) => d.valueValue)[0];
+  const value = dataSpec.map((d: DataSpec) => d.value)[0];
   const inSituPosition = gistvisSpec.unitSegmentSpec.inSituPosition ?? [];
 
   const targetEntity = dataSpec.map((d: DataSpec) => d.breakdown)[0];
@@ -90,8 +90,8 @@ const GlyphText = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity 
       transition: 'opacity 0.3s',
     };
     return (
-      <Tooltip title={getToolTipContent(d.valueValue, d.breakdown)} placement="bottom" color="#ffffff">
-        {getVisElement(d.valueValue, d.breakdown)}
+      <Tooltip title={getToolTipContent(d.value, d.breakdown)} placement="bottom" color="#ffffff">
+        {getVisElement(d.value, d.breakdown)}
       </Tooltip>
     );
   });

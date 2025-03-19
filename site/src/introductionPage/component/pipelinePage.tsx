@@ -67,8 +67,8 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
               },
               {
                 title: 'Value Value',
-                dataIndex: 'valueValue',
-                key: 'valueValue',
+                dataIndex: 'value',
+                key: 'value',
                 width: 100,
                 onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
               },

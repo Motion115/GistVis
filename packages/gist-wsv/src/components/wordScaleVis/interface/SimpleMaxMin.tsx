@@ -31,7 +31,7 @@ const SimpleMaxMin: React.FC<SimpleMaxMinProps> = ({
       space: 'value',
       breakdown: 'current',
       feature: `${attribute} value`,
-      valueValue: current,
+      value: current,
     }],
   };
 

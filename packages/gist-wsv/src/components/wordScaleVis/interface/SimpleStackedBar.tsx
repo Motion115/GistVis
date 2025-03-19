@@ -31,7 +31,7 @@ const SimpleStackedBar: React.FC<SimpleStackedBarChartProps> = ({
         space: 'category',
         breakdown: item.category,
         feature: 'proportion',
-        valueValue: value,
+        value: value,
       }))
     ),
   };

@@ -26,7 +26,7 @@ const SimpleLine: React.FC<SimpleLineChartProps> = ({
       space: 'time',
       breakdown: point.label || index.toString(),
       feature: 'value',
-      valueValue: point.y,
+      value: point.y,
     })),
   };
 

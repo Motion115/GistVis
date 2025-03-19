@@ -18,7 +18,7 @@ export type DataSpec = {
   space: string;
   breakdown: string;
   feature: string;
-  valueValue: number;
+  value: number;
 };
 
 export type UnitSegmentSpec = {

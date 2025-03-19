@@ -15,8 +15,8 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
 
   const dataSpecLength = dataSpec.length;
 
-  // Task 1: check valueValue isNaN
-  const valueValueHasNaN = dataSpec.some((d) => isNaN(d.valueValue));
+  // Task 1: check value isNaN
+  const valueHasNaN = dataSpec.some((d) => isNaN(d.value));
   const breakdownHasEmpty = dataSpec.some((d) => d.breakdown === '');
 
   // Task 2: check insituPos
@@ -28,12 +28,12 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   const validForNominalTrend = attribute === 'negative' || attribute === 'positive' || attribute === 'invariable';
   const validForExtreme = attribute === 'maximum' || attribute === 'minimum';
 
-  // Task 4: valueValue attribute
-  const sumOfValueValue = dataSpec.reduce((sum, d) => sum + d.valueValue, 0);
-  const isInOneToTenRange = dataSpec.every((d) => d.valueValue >= 1 && d.valueValue <= 10);
+  // Task 4: value attribute
+  const sumOfValueValue = dataSpec.reduce((sum, d) => sum + d.value, 0);
+  const isInOneToTenRange = dataSpec.every((d) => d.value >= 1 && d.value <= 10);
 
   const notValidTypes: InsightType[] = [];
-  if (valueValueHasNaN || breakdownHasEmpty || dataSpecLength < 2) {
+  if (valueHasNaN || breakdownHasEmpty || dataSpecLength < 2) {
     notValidTypes.push('comparison');
   }
   // value/extreme must have inSitu position
@@ -41,7 +41,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
     notValidTypes.push('value');
     notValidTypes.push('extreme');
   }
-  if (valueValueHasNaN || breakdownHasEmpty) {
+  if (valueHasNaN || breakdownHasEmpty) {
     notValidTypes.push('value');
   }
   // extreme must have attribute
@@ -52,8 +52,8 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   const checkInvariableTrend = (dataSpec: DataSpec[]): boolean => {
     if (dataSpec.length < 2) return false;
     const variations = dataSpec.slice(1).map((curr, idx) => {
-      const prev = dataSpec[idx].valueValue;
-      const change = Math.abs(curr.valueValue - prev) / prev;
+      const prev = dataSpec[idx].value;
+      const change = Math.abs(curr.value - prev) / prev;
       return change;
     });
     const VARIATION_THRESHOLD = 0.10; 
@@ -61,17 +61,17 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   };
   
   // not negative/positive, while there exist empty value, or less than 2 data points, not valid for trend
-  if (!validForNominalTrend && (valueValueHasNaN || breakdownHasEmpty || dataSpecLength < 2)) {
+  if (!validForNominalTrend && (valueHasNaN || breakdownHasEmpty || dataSpecLength < 2)) {
     notValidTypes.push('trend');
   }else if (attribute === 'invariable' && !checkInvariableTrend(dataSpec)) {
     notValidTypes.push('trend');
   }
-  // if the sum of valueValue is greater than 1, than not a proportion
-  if (valueValueHasNaN || breakdownHasEmpty || sumOfValueValue > 1) {
+  // if the sum of value is greater than 1, than not a proportion
+  if (valueHasNaN || breakdownHasEmpty || sumOfValueValue > 1) {
     notValidTypes.push('proportion');
   }
-  // if valueValue is not in 1-10 range, should not be a rank
-  if (!isInOneToTenRange || valueValueHasNaN || breakdownHasEmpty) {
+  // if value is not in 1-10 range, should not be a rank
+  if (!isInOneToTenRange || valueHasNaN || breakdownHasEmpty) {
     notValidTypes.push('rank');
   }
 

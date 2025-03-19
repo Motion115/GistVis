@@ -13,7 +13,7 @@ declare module 'gist-wsv' {
     space: string;
     breakdown: string;
     feature: string;
-    valueValue: number;
+    value: number;
   };
 
   export type UnitSegmentSpec = {

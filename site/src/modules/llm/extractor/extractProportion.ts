@@ -38,7 +38,7 @@ const extrProp = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent: G
   // const newResponse = TransformData(response);
   // {
   //   ...response,
-  //   dataSpec: response.dataSpec.map(({ space, breakdown, feature, valueValue }) => {
+  //   dataSpec: response.dataSpec.map(({ space, breakdown, feature, value }) => {
   //     return {
   //       [category_key]: category_value,
   //       [value_key]: value_value

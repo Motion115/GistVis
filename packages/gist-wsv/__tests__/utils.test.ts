@@ -20,9 +20,9 @@ describe('capitalizeFirstLetter', () => {
 });
 
 describe('recommendValidTypes', () => {
-  const createMockDataSpec = (valueValues: number[], breakdowns: string[]): DataSpec[] => {
-    return valueValues.map((value, index) => ({
-      valueValue: value,
+  const createMockDataSpec = (values: number[], breakdowns: string[]): DataSpec[] => {
+    return values.map((value, index) => ({
+      value: value,
       breakdown: breakdowns[index] || '',
       space: 'category',
       feature: 'value'
