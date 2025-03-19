@@ -16,13 +16,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of restaurants in the United States',
-            categoryValue: 'Asian food serving restaurants',
+            breakdown: 'Asian food serving restaurants',
             valueKey: 'proportion of all restaurants',
             valueValue: 0.12,
           },
           {
             space: 'category of restaurants in the United States',
-            categoryValue: 'Other restaurants',
+            breakdown: 'Other restaurants',
             valueKey: 'proportion of all restaurants',
             valueValue: 0.88,
           },
@@ -39,13 +39,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of population',
-            categoryValue: 'Asian American',
+            breakdown: 'Asian American',
             valueKey: 'percentage of population',
             valueValue: 7,
           },
           {
             space: 'category of population',
-            categoryValue: 'other population',
+            breakdown: 'other population',
             valueKey: 'percentage of population',
             valueValue: 0,
           },
@@ -68,19 +68,19 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Type of Food',
-            categoryValue: 'Chinese',
+            breakdown: 'Chinese',
             valueKey: 'Proportion of Asian Restaurants',
             valueValue: 0.71,
           },
           {
             space: 'Type of Food',
-            categoryValue: 'Japanese',
+            breakdown: 'Japanese',
             valueKey: 'Proportion of Asian Restaurants',
             valueValue: 0.71,
           },
           {
             space: 'Type of Food',
-            categoryValue: 'Thai',
+            breakdown: 'Thai',
             valueKey: 'Proportion of Asian Restaurants',
             valueValue: 0.71,
           },
@@ -103,25 +103,25 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Asian origin groups',
-            categoryValue: 'Chinese',
+            breakdown: 'Chinese',
             valueKey: 'Proportion of Asian restaurants',
             valueValue: 0.3,
           },
           {
             space: 'Asian origin groups',
-            categoryValue: 'Japanese',
+            breakdown: 'Japanese',
             valueKey: 'Proportion of Asian restaurants',
             valueValue: 0.3,
           },
           {
             space: 'Asian origin groups',
-            categoryValue: 'Thai',
+            breakdown: 'Thai',
             valueKey: 'Proportion of Asian restaurants',
             valueValue: 0.3,
           },
           {
             space: 'Asian origin groups',
-            categoryValue: 'Other',
+            breakdown: 'Other',
             valueKey: 'Proportion of Asian restaurants',
             valueValue: 0.1,
           },
@@ -138,7 +138,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'the category of U.S. Asian population',
-            categoryValue: 'These groups',
+            breakdown: 'These groups',
             valueKey: 'the proportion of U.S. Asian population',
             valueValue: 0.33,
           },
@@ -175,13 +175,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of Asian restaurant',
-            categoryValue: 'Chinese food',
+            breakdown: 'Chinese food',
             valueKey: 'proportion of Asian restaurants serving Chinese food',
             valueValue: 0.39,
           },
           {
             space: 'type of Asian restaurant',
-            categoryValue: 'Other Asian food',
+            breakdown: 'Other Asian food',
             valueKey: 'proportion of Asian restaurants serving other Asian food',
             valueValue: 0.61,
           },
@@ -198,7 +198,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of Asians living in the U.S.',
-            categoryValue: 'Chinese Americans',
+            breakdown: 'Chinese Americans',
             valueKey: 'proportion of Asians living in the U.S.',
             valueValue: 0.24,
           },
@@ -221,13 +221,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of food',
-            categoryValue: 'Japanese food',
+            breakdown: 'Japanese food',
             valueKey: 'share of U.S. population',
             valueValue: 0,
           },
           {
             space: 'type of food',
-            categoryValue: 'Thai food',
+            breakdown: 'Thai food',
             valueKey: 'share of U.S. population',
             valueValue: 0,
           },
@@ -245,7 +245,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: '',
-            categoryValue: '',
+            breakdown: '',
             valueKey: '',
             valueValue: NaN,
           },
@@ -263,7 +263,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of Asian restaurants in the U.S.',
-            categoryValue: 'Japanese food',
+            breakdown: 'Japanese food',
             valueKey: 'proportion of Asian restaurants',
             valueValue: 0.28,
           },
@@ -281,7 +281,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'population category',
-            categoryValue: 'Japanese Americans',
+            breakdown: 'Japanese Americans',
             valueKey: 'proportion of U.S. Asian population',
             valueValue: 0.07,
           },
@@ -304,13 +304,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'cuisine type',
-            categoryValue: 'Thai',
+            breakdown: 'Thai',
             valueKey: 'proportion of all Asian restaurants',
             valueValue: 0.11,
           },
           {
             space: 'ethnicity',
-            categoryValue: 'Thai',
+            breakdown: 'Thai',
             valueKey: 'proportion of Asian Americans',
             valueValue: 0.02,
           },
@@ -329,7 +329,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of diplomacy',
-            categoryValue: 'Thai restaurants',
+            breakdown: 'Thai restaurants',
             valueKey: 'number of Thai restaurants',
             valueValue: NaN,
           },
@@ -352,13 +352,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of Asian restaurants',
-            categoryValue: 'Indian restaurants',
+            breakdown: 'Indian restaurants',
             valueKey: 'proportion of Asian restaurants in the U.S.',
             valueValue: 0.07,
           },
           {
             space: 'category of Asian restaurants',
-            categoryValue: 'Filipino restaurants',
+            breakdown: 'Filipino restaurants',
             valueKey: 'proportion of Asian restaurants in the U.S.',
             valueValue: 0.01,
           },
@@ -381,31 +381,31 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'state',
-            categoryValue: 'California',
+            breakdown: 'California',
             valueKey: 'Asian American population proportion',
             valueValue: 0.11,
           },
           {
             space: 'state',
-            categoryValue: 'New York',
+            breakdown: 'New York',
             valueKey: 'Asian American population proportion',
             valueValue: 0.11,
           },
           {
             space: 'state',
-            categoryValue: 'Texas',
+            breakdown: 'Texas',
             valueKey: 'Asian American population proportion',
             valueValue: 0.11,
           },
           {
             space: 'state',
-            categoryValue: 'New Jersey',
+            breakdown: 'New Jersey',
             valueKey: 'Asian American population proportion',
             valueValue: 0.11,
           },
           {
             space: 'state',
-            categoryValue: 'Washington',
+            breakdown: 'Washington',
             valueKey: 'Asian American population proportion',
             valueValue: 0.11,
           },
@@ -422,13 +422,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'location category',
-            categoryValue: 'five states',
+            breakdown: 'five states',
             valueKey: 'proportion of Asian restaurants',
             valueValue: 0.45,
           },
           {
             space: 'location category',
-            categoryValue: 'other states',
+            breakdown: 'other states',
             valueKey: 'proportion of Asian restaurants',
             valueValue: 0.55,
           },
@@ -451,7 +451,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'State',
-            categoryValue: 'Hawaii, California, Washington, Nevada, New York',
+            breakdown: 'Hawaii, California, Washington, Nevada, New York',
             valueKey: 'Proportion of Restaurants Serving Asian Food',
             valueValue: 0.15,
           },
@@ -469,13 +469,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of restaurants',
-            categoryValue: 'Asian restaurants',
+            breakdown: 'Asian restaurants',
             valueKey: 'proportion of all restaurants',
             valueValue: 0.06,
           },
           {
             space: 'category of restaurants',
-            categoryValue: 'Other restaurants',
+            breakdown: 'Other restaurants',
             valueKey: 'proportion of all restaurants',
             valueValue: 0.94,
           },
@@ -498,13 +498,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of counties in the U.S.',
-            categoryValue: 'counties with at least one Asian restaurant',
+            breakdown: 'counties with at least one Asian restaurant',
             valueKey: 'proportion of counties with at least one Asian restaurant',
             valueValue: 0.73,
           },
           {
             space: 'category of counties in the U.S.',
-            categoryValue: 'counties without any Asian restaurant',
+            breakdown: 'counties without any Asian restaurant',
             valueKey: 'proportion of counties without any Asian restaurant',
             valueValue: 0.27,
           },
@@ -522,13 +522,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of restaurant',
-            categoryValue: 'Asian restaurants',
+            breakdown: 'Asian restaurants',
             valueKey: 'proportion of food establishments',
             valueValue: 0.25,
           },
           {
             space: 'location',
-            categoryValue: 'California',
+            breakdown: 'California',
             valueKey: 'proportion of counties',
             valueValue: 0.5,
           },
@@ -550,7 +550,7 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of restaurants',
-            categoryValue: 'Asian food',
+            breakdown: 'Asian food',
             valueKey: 'proportion of restaurants serving Asian food',
             valueValue: 0.25,
           },
@@ -572,13 +572,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of U.S. counties',
-            categoryValue: 'Chinese restaurants',
+            breakdown: 'Chinese restaurants',
             valueKey: 'proportion of U.S. counties',
             valueValue: 0.7,
           },
           {
             space: 'category of U.S. counties',
-            categoryValue: 'Other restaurants',
+            breakdown: 'Other restaurants',
             valueKey: 'proportion of U.S. counties',
             valueValue: 0.3,
           },
@@ -596,13 +596,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'restaurant type',
-            categoryValue: 'Japanese',
+            breakdown: 'Japanese',
             valueKey: 'proportion of restaurants',
             valueValue: 0.45,
           },
           {
             space: 'restaurant type',
-            categoryValue: 'Thai',
+            breakdown: 'Thai',
             valueKey: 'proportion of restaurants',
             valueValue: 0.33,
           },
@@ -625,13 +625,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of Asian food',
-            categoryValue: 'Vietnamese and Indian',
+            breakdown: 'Vietnamese and Indian',
             valueKey: 'percentage of U.S. counties',
             valueValue: 20,
           },
           {
             space: 'type of Asian food',
-            categoryValue: 'Filipino, Pakistani, Mongolian, Burmese',
+            breakdown: 'Filipino, Pakistani, Mongolian, Burmese',
             valueKey: 'percentage of U.S. counties',
             valueValue: 10,
           },
@@ -667,13 +667,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of Asian restaurants in the U.S.',
-            categoryValue: 'Asian restaurants offering cuisines from multiple origin groups',
+            breakdown: 'Asian restaurants offering cuisines from multiple origin groups',
             valueKey: 'proportion of Asian restaurants in the U.S. offering cuisines from multiple origin groups',
             valueValue: 0.09,
           },
           {
             space: 'category of Asian restaurants in the U.S.',
-            categoryValue: 'Asian restaurants not offering cuisines from multiple origin groups',
+            breakdown: 'Asian restaurants not offering cuisines from multiple origin groups',
             valueKey: 'proportion of Asian restaurants in the U.S. not offering cuisines from multiple origin groups',
             valueValue: 0.91,
           },
@@ -691,25 +691,25 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Type of Establishment',
-            categoryValue: 'Chinese and Japanese food combinations',
+            breakdown: 'Chinese and Japanese food combinations',
             valueKey: 'Percentage of Establishments',
             valueValue: 36,
           },
           {
             space: 'Type of Establishment',
-            categoryValue: 'Chinese and Thai food',
+            breakdown: 'Chinese and Thai food',
             valueKey: 'Percentage of Establishments',
             valueValue: 18,
           },
           {
             space: 'Type of Establishment',
-            categoryValue: 'Japanese and Thai food',
+            breakdown: 'Japanese and Thai food',
             valueKey: 'Percentage of Establishments',
             valueValue: 15,
           },
           {
             space: 'Type of Establishment',
-            categoryValue: 'Japanese and Korean food',
+            breakdown: 'Japanese and Korean food',
             valueKey: 'Percentage of Establishments',
             valueValue: 10,
           },
@@ -740,13 +740,13 @@ const article5: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of restaurant',
-            categoryValue: 'Pakistani restaurants in the U.S.',
+            breakdown: 'Pakistani restaurants in the U.S.',
             valueKey: 'proportion serving Indian food',
             valueValue: 0.78,
           },
           {
             space: 'type of restaurant',
-            categoryValue: 'Indian restaurants in the U.S.',
+            breakdown: 'Indian restaurants in the U.S.',
             valueKey: 'proportion serving Pakistani food',
             valueValue: 0.1,
           },

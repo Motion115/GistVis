@@ -85,7 +85,7 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
           return {
             x: i,
             y: d.valueValue,
-            xLegend: d.categoryValue,
+            xLegend: d.breakdown,
           };
         });
       }
@@ -94,7 +94,7 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
         return {
           x: i,
           y: d.valueValue,
-          xLegend: d.categoryValue,
+          xLegend: d.breakdown,
         };
       });
     }

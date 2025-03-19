@@ -229,7 +229,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
         ...(prev.dataSpec || []),
         {
           space: '',
-          categoryValue: '',
+          breakdown: '',
           valueKey: '',
           valueValue: 0,
         },
@@ -404,7 +404,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                         dataSpec: [
                           {
                             space: '',
-                            categoryValue: '',
+                            breakdown: '',
                             valueKey: '',
                             valueValue: 0,
                           },
@@ -439,8 +439,8 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                   </Item>
                   <Item label="Category Value">
                     <Input
-                      value={data.categoryValue}
-                      onChange={(e) => handleDataSpecChange(index, 'categoryValue', e.target.value)}
+                      value={data.breakdown}
+                      onChange={(e) => handleDataSpecChange(index, 'breakdown', e.target.value)}
                     />
                   </Item>
                   <Item label="Value Key">

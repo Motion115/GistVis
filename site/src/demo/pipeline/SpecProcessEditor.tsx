@@ -39,13 +39,13 @@ const exampleAnswer: GistvisSpec = {
   dataSpec: [
     {
       space: 'time segment',
-      categoryValue: '2023',
+      breakdown: '2023',
       valueKey: 'I',
       valueValue: 16,
     },
     {
       space: 'time segment',
-      categoryValue: '2025',
+      breakdown: '2025',
       valueKey: 'I',
       valueValue: 18,
     },

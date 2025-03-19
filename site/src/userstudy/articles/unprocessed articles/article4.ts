@@ -40,7 +40,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of online sales',
-            categoryValue: 'retail e-commerce sales',
+            breakdown: 'retail e-commerce sales',
             valueKey: 'total online sales in the fourth quarter',
             valueValue: 303.1,
           },
@@ -58,13 +58,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'quarterly average',
-            categoryValue: 'first nine months of the year',
+            breakdown: 'first nine months of the year',
             valueKey: 'value in billion USD',
             valueValue: 245.6,
           },
           {
             space: 'current quarter',
-            categoryValue: 'current quarter',
+            breakdown: 'current quarter',
             valueKey: 'value in billion USD',
             valueValue: 302.1704,
           },
@@ -88,7 +88,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'online share',
+            breakdown: 'online share',
             valueKey: 'share of all retail sales',
             valueValue: NaN,
           },
@@ -106,13 +106,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'proportion of retail sales',
             valueValue: 0.163,
           },
           {
             space: 'category of retail sales',
-            categoryValue: 'other retail sales',
+            breakdown: 'other retail sales',
             valueKey: 'proportion of retail sales',
             valueValue: 0.837,
           },
@@ -135,7 +135,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of online shopping',
-            categoryValue: 'online shopping',
+            breakdown: 'online shopping',
             valueKey: 'growth in the fourth quarter of 2023',
             valueValue: 100,
           },
@@ -153,13 +153,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'retail e-commerce',
+            breakdown: 'retail e-commerce',
             valueKey: 'proportion of all retail sales',
             valueValue: 0.149,
           },
           {
             space: 'category of retail sales',
-            categoryValue: 'other retail sales',
+            breakdown: 'other retail sales',
             valueKey: 'proportion of all retail sales',
             valueValue: 0.851,
           },
@@ -182,7 +182,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of online sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'growth rate of online sales',
             valueValue: 100,
           },
@@ -206,7 +206,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'year',
-            categoryValue: '2000-2020',
+            breakdown: '2000-2020',
             valueKey: 'online share of retail sales',
             valueValue: NaN,
           },
@@ -230,13 +230,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'sales during pandemic',
             valueValue: NaN,
           },
           {
             space: 'category of sales',
-            categoryValue: 'online share of total sales',
+            breakdown: 'online share of total sales',
             valueKey: 'share during pandemic',
             valueValue: NaN,
           },
@@ -260,13 +260,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'online share of total retail sales',
-            categoryValue: 'online share of total retail sales',
+            breakdown: 'online share of total retail sales',
             valueKey: 'percentage of online sales',
             valueValue: 0.7,
           },
           {
             space: 'online share of total retail sales',
-            categoryValue: 'online share of total retail sales',
+            breakdown: 'online share of total retail sales',
             valueKey: 'percentage of online sales',
             valueValue: 12.4,
           },
@@ -290,7 +290,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of online sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'online sales rate',
             valueValue: NaN,
           },
@@ -309,13 +309,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'time segment',
-            categoryValue: 'second quarter of 2020',
+            breakdown: 'second quarter of 2020',
             valueKey: 'e-commerce sales',
             valueValue: 205.3,
           },
           {
             space: 'time segment',
-            categoryValue: 'second quarter of 2019',
+            breakdown: 'second quarter of 2019',
             valueKey: 'e-commerce sales',
             valueValue: 132.3,
           },
@@ -333,13 +333,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'e-commerce',
+            breakdown: 'e-commerce',
             valueKey: 'proportion of retail sales',
             valueValue: 0.167,
           },
           {
             space: 'category of retail sales',
-            categoryValue: 'other retail sales',
+            breakdown: 'other retail sales',
             valueKey: 'proportion of retail sales',
             valueValue: 0.833,
           },
@@ -363,7 +363,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'e-commerce share',
+            breakdown: 'e-commerce share',
             valueKey: 'e-commerce share value',
             valueValue: NaN,
           },
@@ -380,13 +380,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retail sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'percentage of retail sales',
             valueValue: 16.3,
           },
           {
             space: 'category of retail sales',
-            categoryValue: 'online sales',
+            breakdown: 'online sales',
             valueKey: 'percentage of retail sales',
             valueValue: 16.1,
           },
@@ -408,7 +408,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'retailer category',
-            categoryValue: 'retailer',
+            breakdown: 'retailer',
             valueKey: 'online sales benefit',
             valueValue: NaN,
           },
@@ -432,7 +432,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of retailers',
-            categoryValue: 'retailers without physical stores',
+            breakdown: 'retailers without physical stores',
             valueKey: 'share of online sales',
             valueValue: 0,
           },
@@ -455,13 +455,13 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Retail Category',
-            categoryValue: 'Nonstore retailers',
+            breakdown: 'Nonstore retailers',
             valueKey: 'E-commerce Sales Proportion',
             valueValue: 0.62,
           },
           {
             space: 'Retail Category',
-            categoryValue: 'Other retailers',
+            breakdown: 'Other retailers',
             valueKey: 'E-commerce Sales Proportion',
             valueValue: 0.38,
           },
@@ -480,7 +480,7 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of sales growth',
-            categoryValue: 'E-commerce sales at nonstore retailers',
+            breakdown: 'E-commerce sales at nonstore retailers',
             valueKey: 'year over year growth rate',
             valueValue: 12.4,
           },
@@ -503,19 +503,19 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of sales increase',
-            categoryValue: 'general merchandise stores',
+            breakdown: 'general merchandise stores',
             valueKey: 'online sales increase rate',
             valueValue: 8.7,
           },
           {
             space: 'category of sales increase',
-            categoryValue: 'food and beverage stores',
+            breakdown: 'food and beverage stores',
             valueKey: 'online sales increase rate',
             valueValue: 5.1,
           },
           {
             space: 'category of sales increase',
-            categoryValue: 'health and personal care stores',
+            breakdown: 'health and personal care stores',
             valueKey: 'online sales increase rate',
             valueValue: 4.7,
           },
@@ -533,19 +533,19 @@ const article4: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of sales',
-            categoryValue: 'electronics and appliance stores',
+            breakdown: 'electronics and appliance stores',
             valueKey: 'sales percentage change',
             valueValue: -1.6,
           },
           {
             space: 'category of sales',
-            categoryValue: 'motor vehicle and parts dealers',
+            breakdown: 'motor vehicle and parts dealers',
             valueKey: 'sales percentage change',
             valueValue: -3.2,
           },
           {
             space: 'category of sales',
-            categoryValue: 'furniture and home furnishings stores',
+            breakdown: 'furniture and home furnishings stores',
             valueKey: 'sales percentage change',
             valueValue: -16.2,
           },

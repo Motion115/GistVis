@@ -11,7 +11,7 @@ declare module 'gist-wsv' {
 
   export type DataSpec = {
     space: string;
-    categoryValue: string;
+    breakdown: string;
     valueKey: string;
     valueValue: number;
   };

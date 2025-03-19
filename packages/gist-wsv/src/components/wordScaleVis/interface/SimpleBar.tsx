@@ -22,7 +22,7 @@ const SimpleBar: React.FC<SimpleBarChartProps> = ({
     },
     dataSpec: data.map((point, index) => ({
       space: 'category',
-      categoryValue: point.label || `Item ${index + 1}`,
+      breakdown: point.label || `Item ${index + 1}`,
       valueKey: 'value',
       valueValue: point.y,
     })),

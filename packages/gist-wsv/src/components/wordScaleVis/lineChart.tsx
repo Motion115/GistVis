@@ -98,7 +98,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         >
           {capitalizeFirstLetter(dataSpec[0].valueKey) +
             ' of ' +
-            dataSpec.find((d) => d.valueValue === selectionVal)?.categoryValue +
+            dataSpec.find((d) => d.valueValue === selectionVal)?.breakdown +
             ': ' +
             selectionVal}
           {gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
@@ -120,7 +120,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         >
           {capitalizeFirstLetter(dataSpec[0].valueKey) +
             ' of ' +
-            dataSpec.find((d) => d.valueValue === selectionVal)?.categoryValue +
+            dataSpec.find((d) => d.valueValue === selectionVal)?.breakdown +
             ': ' +
             selectionVal}
           .
@@ -163,7 +163,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         : gistvisSpec.unitSegmentSpec.attribute === 'negative'
         ? 'red'
         : 'grey'
-      : colorScale(dataSpec[0].categoryValue);
+      : colorScale(dataSpec[0].breakdown);
 
   const uid =
     gistvisSpec.unitSegmentSpec.insightType + '-' + gistvisSpec.unitSegmentSpec.attribute + '-' + gistvisSpec.id;

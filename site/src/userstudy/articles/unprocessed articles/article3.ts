@@ -17,7 +17,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of age gap',
-            categoryValue: 'age gap between husbands and wives',
+            breakdown: 'age gap between husbands and wives',
             valueKey: 'age gap value',
             valueValue: NaN,
           },
@@ -35,19 +35,19 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Age difference between husbands and wives',
-            categoryValue: '2022',
+            breakdown: '2022',
             valueKey: 'Age difference in years',
             valueValue: 2.2,
           },
           {
             space: 'Age difference between husbands and wives',
-            categoryValue: '2000',
+            breakdown: '2000',
             valueKey: 'Age difference in years',
             valueValue: 2.4,
           },
           {
             space: 'Age difference between husbands and wives',
-            categoryValue: '1880',
+            breakdown: '1880',
             valueKey: 'Age difference in years',
             valueValue: 4.9,
           },
@@ -71,7 +71,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of age gap',
-            categoryValue: 'age gap between U.S. husbands and wives',
+            breakdown: 'age gap between U.S. husbands and wives',
             valueKey: 'age gap value',
             valueValue: NaN,
           },
@@ -95,7 +95,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'marriages in which the husband is several years older than the wife',
+            breakdown: 'marriages in which the husband is several years older than the wife',
             valueKey: 'share of marriages',
             valueValue: NaN,
           },
@@ -114,7 +114,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'marriages where the wife is significantly older than the husband',
+            breakdown: 'marriages where the wife is significantly older than the husband',
             valueKey: 'frequency of occurrence',
             valueValue: NaN,
           },
@@ -137,7 +137,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'opposite-sex marriages in 2022',
+            breakdown: 'opposite-sex marriages in 2022',
             valueKey: 'proportion of marriages',
             valueValue: 0.5,
           },
@@ -174,13 +174,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of opposite-sex marriages',
-            categoryValue: 'spouses age difference',
+            breakdown: 'spouses age difference',
             valueKey: 'percentage of marriages',
             valueValue: 51,
           },
           {
             space: 'category of opposite-sex marriages',
-            categoryValue: 'spouses age difference',
+            breakdown: 'spouses age difference',
             valueKey: 'percentage of marriages',
             valueValue: 46,
           },
@@ -204,13 +204,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'marriages with husband 3+ years older',
+            breakdown: 'marriages with husband 3+ years older',
             valueKey: 'percentage of marriages',
             valueValue: 40,
           },
           {
             space: 'category of marriages',
-            categoryValue: 'marriages with husband 3+ years older',
+            breakdown: 'marriages with husband 3+ years older',
             valueKey: 'percentage of marriages',
             valueValue: 43,
           },
@@ -234,13 +234,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'marriages with a wife three or more years older',
+            breakdown: 'marriages with a wife three or more years older',
             valueKey: 'share of marriages',
             valueValue: 10,
           },
           {
             space: 'category of marriages',
-            categoryValue: 'marriages with a wife three or more years older',
+            breakdown: 'marriages with a wife three or more years older',
             valueKey: 'peak share of marriages',
             valueValue: 11,
           },
@@ -264,13 +264,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of same-age marriage',
-            categoryValue: 'spouses within two years',
+            breakdown: 'spouses within two years',
             valueKey: 'historical trend',
             valueValue: 100,
           },
           {
             space: 'category of same-age marriage',
-            categoryValue: 'spouses within four years',
+            breakdown: 'spouses within four years',
             valueKey: 'historical trend',
             valueValue: 100,
           },
@@ -319,13 +319,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of husbands with education level',
-            categoryValue: 'husbands with at least a bachelor’s degree',
+            breakdown: 'husbands with at least a bachelor’s degree',
             valueKey: 'percentage in same-age marriage',
             valueValue: 55,
           },
           {
             space: 'category of husbands with education level',
-            categoryValue: 'husbands with some college education or less',
+            breakdown: 'husbands with some college education or less',
             valueKey: 'percentage in same-age marriage',
             valueValue: 48,
           },
@@ -348,13 +348,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriage status',
-            categoryValue: 'first marriage',
+            breakdown: 'first marriage',
             valueKey: 'percentage of husbands same age as wife',
             valueValue: 56,
           },
           {
             space: 'category of marriage status',
-            categoryValue: 'more than once married',
+            breakdown: 'more than once married',
             valueKey: 'percentage of husbands same age as wife',
             valueValue: 32,
           },
@@ -372,13 +372,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'type of marriage',
-            categoryValue: 'first marriage',
+            breakdown: 'first marriage',
             valueKey: 'percentage of husbands with a wife three or more years younger',
             valueValue: 35,
           },
           {
             space: 'type of marriage',
-            categoryValue: 'remarried',
+            breakdown: 'remarried',
             valueKey: 'percentage of husbands with a wife three or more years younger',
             valueValue: 56,
           },
@@ -401,25 +401,25 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: "Husband's Ethnicity",
-            categoryValue: 'White',
+            breakdown: 'White',
             valueKey: 'Likelihood of Same-Age Marriage',
             valueValue: 53,
           },
           {
             space: "Husband's Ethnicity",
-            categoryValue: 'Hispanic',
+            breakdown: 'Hispanic',
             valueKey: 'Likelihood of Same-Age Marriage',
             valueValue: 46,
           },
           {
             space: "Husband's Ethnicity",
-            categoryValue: 'Black',
+            breakdown: 'Black',
             valueKey: 'Likelihood of Same-Age Marriage',
             valueValue: 45,
           },
           {
             space: "Husband's Ethnicity",
-            categoryValue: 'Asian',
+            breakdown: 'Asian',
             valueKey: 'Likelihood of Same-Age Marriage',
             valueValue: 45,
           },
@@ -437,25 +437,25 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'Race',
-            categoryValue: 'Asian',
+            breakdown: 'Asian',
             valueKey: 'Percentage of husbands with a wife three or more years younger',
             valueValue: 49,
           },
           {
             space: 'Race',
-            categoryValue: 'Hispanic',
+            breakdown: 'Hispanic',
             valueKey: 'Percentage of husbands with a wife three or more years younger',
             valueValue: 42,
           },
           {
             space: 'Race',
-            categoryValue: 'Black',
+            breakdown: 'Black',
             valueKey: 'Percentage of husbands with a wife three or more years younger',
             valueValue: 43,
           },
           {
             space: 'Race',
-            categoryValue: 'White',
+            breakdown: 'White',
             valueKey: 'Percentage of husbands with a wife three or more years younger',
             valueValue: 38,
           },
@@ -478,13 +478,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriage patterns',
-            categoryValue: "wife's characteristics",
+            breakdown: "wife's characteristics",
             valueKey: 'similarity in marriage patterns',
             valueValue: 0,
           },
           {
             space: 'category of marriage patterns',
-            categoryValue: "husband's characteristics",
+            breakdown: "husband's characteristics",
             valueKey: 'similarity in marriage patterns',
             valueValue: 0,
           },
@@ -520,13 +520,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'marital status',
-            categoryValue: 'first marriage',
+            breakdown: 'first marriage',
             valueKey: 'likelihood of similar age',
             valueValue: 0,
           },
           {
             space: 'marital status',
-            categoryValue: 'married more than once',
+            breakdown: 'married more than once',
             valueKey: 'likelihood of similar age',
             valueValue: 30,
           },
@@ -549,13 +549,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of age difference',
-            categoryValue: 'husbands and wives',
+            breakdown: 'husbands and wives',
             valueKey: 'age difference value',
             valueValue: 0,
           },
           {
             space: 'category of age difference',
-            categoryValue: 'husbands and wives',
+            breakdown: 'husbands and wives',
             valueKey: 'age difference value',
             valueValue: 30,
           },
@@ -573,7 +573,7 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'marital status',
-            categoryValue: 'widowed',
+            breakdown: 'widowed',
             valueKey: 'likelihood',
             valueValue: NaN,
           },
@@ -597,13 +597,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of marriages',
-            categoryValue: 'marriages where the husband is older than his wife',
+            breakdown: 'marriages where the husband is older than his wife',
             valueKey: 'share of marriages',
             valueValue: NaN,
           },
           {
             space: 'category of widowhood',
-            categoryValue: 'widowhood among older women',
+            breakdown: 'widowhood among older women',
             valueKey: 'rate of widowhood',
             valueValue: NaN,
           },
@@ -621,13 +621,13 @@ const article3: paragraphSpec[] = [
         dataSpec: [
           {
             space: 'category of widows',
-            categoryValue: 'women ages 65 and older',
+            breakdown: 'women ages 65 and older',
             valueKey: 'percentage of widows',
             valueValue: 30,
           },
           {
             space: 'category of widows',
-            categoryValue: 'women ages 65 and older',
+            breakdown: 'women ages 65 and older',
             valueKey: 'percentage of widows',
             valueValue: 45,
           },

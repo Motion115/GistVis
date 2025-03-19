@@ -17,7 +17,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
 
   // Task 1: check valueValue isNaN
   const valueValueHasNaN = dataSpec.some((d) => isNaN(d.valueValue));
-  const categoryValueHasEmpty = dataSpec.some((d) => d.categoryValue === '');
+  const breakdownHasEmpty = dataSpec.some((d) => d.breakdown === '');
 
   // Task 2: check insituPos
   const inSituPositionList: string[] = unitSegmentSpec.inSituPosition ?? [];
@@ -33,7 +33,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   const isInOneToTenRange = dataSpec.every((d) => d.valueValue >= 1 && d.valueValue <= 10);
 
   const notValidTypes: InsightType[] = [];
-  if (valueValueHasNaN || categoryValueHasEmpty || dataSpecLength < 2) {
+  if (valueValueHasNaN || breakdownHasEmpty || dataSpecLength < 2) {
     notValidTypes.push('comparison');
   }
   // value/extreme must have inSitu position
@@ -41,7 +41,7 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
     notValidTypes.push('value');
     notValidTypes.push('extreme');
   }
-  if (valueValueHasNaN || categoryValueHasEmpty) {
+  if (valueValueHasNaN || breakdownHasEmpty) {
     notValidTypes.push('value');
   }
   // extreme must have attribute
@@ -61,17 +61,17 @@ export const recommendValidTypes = (gistVisSpec: GistvisSpec) => {
   };
   
   // not negative/positive, while there exist empty value, or less than 2 data points, not valid for trend
-  if (!validForNominalTrend && (valueValueHasNaN || categoryValueHasEmpty || dataSpecLength < 2)) {
+  if (!validForNominalTrend && (valueValueHasNaN || breakdownHasEmpty || dataSpecLength < 2)) {
     notValidTypes.push('trend');
   }else if (attribute === 'invariable' && !checkInvariableTrend(dataSpec)) {
     notValidTypes.push('trend');
   }
   // if the sum of valueValue is greater than 1, than not a proportion
-  if (valueValueHasNaN || categoryValueHasEmpty || sumOfValueValue > 1) {
+  if (valueValueHasNaN || breakdownHasEmpty || sumOfValueValue > 1) {
     notValidTypes.push('proportion');
   }
   // if valueValue is not in 1-10 range, should not be a rank
-  if (!isInOneToTenRange || valueValueHasNaN || categoryValueHasEmpty) {
+  if (!isInOneToTenRange || valueValueHasNaN || breakdownHasEmpty) {
     notValidTypes.push('rank');
   }
 
