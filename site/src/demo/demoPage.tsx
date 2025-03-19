@@ -34,13 +34,13 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of car production',
+              space: 'the category of car production',
               categoryValue: 'BYD',
               valueKey: 'the number of cars produced',
               valueValue: 4000000,
             },
             {
-              categoryKey: 'the category of car production growth rate',
+              space: 'the category of car production growth rate',
               categoryValue: 'BYD',
               valueKey: 'the year-on-year growth rate of car production',
               valueValue: 41.3,
@@ -59,31 +59,31 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of BYD sales',
+              space: 'the category of BYD sales',
               categoryValue: 'BYD sales',
               valueKey: 'the number of BYD sales',
               valueValue: 409000,
             },
             {
-              categoryKey: 'the category of BYD sales',
+              space: 'the category of BYD sales',
               categoryValue: 'BYD sales',
               valueKey: 'the number of BYD sales',
               valueValue: 395000,
             },
             {
-              categoryKey: 'the category of BYD sales',
+              space: 'the category of BYD sales',
               categoryValue: 'BYD sales',
               valueKey: 'the number of BYD sales',
               valueValue: 721000,
             },
             {
-              categoryKey: 'the category of BYD sales',
+              space: 'the category of BYD sales',
               categoryValue: 'BYD sales',
               valueKey: 'the number of BYD sales',
               valueValue: 1802000,
             },
             {
-              categoryKey: 'the category of BYD sales',
+              space: 'the category of BYD sales',
               categoryValue: 'BYD sales',
               valueKey: 'the number of BYD sales',
               valueValue: 3024000,
@@ -101,7 +101,7 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of vehicle sales',
+              space: 'the category of vehicle sales',
               categoryValue: 'BYD Song series',
               valueKey: 'the number of units sold',
               valueValue: 636530,
@@ -124,13 +124,13 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of market share in global EV sales',
+              space: 'the category of market share in global EV sales',
               categoryValue: 'BYD',
               valueKey: 'the proportion of global EV sales',
               valueValue: 0.22,
             },
             {
-              categoryKey: 'the category of market share in global EV sales',
+              space: 'the category of market share in global EV sales',
               categoryValue: 'Other manufacturers',
               valueKey: 'the proportion of global EV sales',
               valueValue: 0.78,
@@ -147,31 +147,31 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'BYD',
               valueKey: 'sales rank',
               valueValue: 1,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Tesla',
               valueKey: 'sales rank',
               valueValue: 2,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'VW',
               valueKey: 'sales rank',
               valueValue: 3,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Geely-Volvo Car Group',
               valueKey: 'sales rank',
               valueValue: 4,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'SAIC',
               valueKey: 'sales rank',
               valueValue: 5,
@@ -188,13 +188,13 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of market share',
+              space: 'the category of market share',
               categoryValue: 'Tesla',
               valueKey: 'the market share percentage',
               valueValue: 0,
             },
             {
-              categoryKey: 'the category of market share',
+              space: 'the category of market share',
               categoryValue: 'BYD',
               valueKey: 'the market share percentage',
               valueValue: 8.8,
@@ -232,13 +232,13 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales percentage',
               valueValue: 0.3,
             },
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'the rest of the top 5 companies',
               valueKey: 'the sales percentage',
               valueValue: 0.25,
@@ -255,7 +255,7 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: NaN,
@@ -272,31 +272,31 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: 10000,
             },
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: 5000,
             },
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: 30000,
             },
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: 80000,
             },
             {
-              categoryKey: 'the category of sales',
+              space: 'the category of sales',
               categoryValue: 'BYD',
               valueKey: 'the sales volumn',
               valueValue: 50000,
@@ -315,7 +315,7 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'The category of vehicle range',
+              space: 'The category of vehicle range',
               categoryValue: 'Qin series',
               valueKey: 'The vehicle range',
               valueValue: 2000,
@@ -337,31 +337,31 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Toyota',
               valueKey: 'rank in top 5 sellers for traditional NCE vehicles',
               valueValue: 1,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'VW',
               valueKey: 'rank in top 5 sellers for traditional NCE vehicles',
               valueValue: 2,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Stellantis',
               valueKey: 'rank in top 5 sellers for traditional NCE vehicles',
               valueValue: 3,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Nissan',
               valueKey: 'rank in top 5 sellers for traditional NCE vehicles',
               valueValue: 4,
             },
             {
-              categoryKey: 'seller',
+              space: 'seller',
               categoryValue: 'Geely',
               valueKey: 'rank in top 5 sellers for traditional NCE vehicles',
               valueValue: 5,
@@ -377,13 +377,13 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'The category of car sales',
+              space: 'The category of car sales',
               categoryValue: 'Toyota',
               valueKey: 'The number of cars sold per year',
               valueValue: 5000000,
             },
             {
-              categoryKey: 'The category of car sales',
+              space: 'The category of car sales',
               categoryValue: 'VW',
               valueKey: 'The number of cars sold per year',
               valueValue: 0,
@@ -400,7 +400,7 @@ export const DemoPage = () => {
           },
           dataSpec: [
             {
-              categoryKey: 'the category of car prices',
+              space: 'the category of car prices',
               categoryValue: 'Toyota car',
               valueKey: 'the average price',
               valueValue: 25000,

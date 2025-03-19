@@ -15,19 +15,19 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'candidate',
+            space: 'candidate',
             categoryValue: 'Kamala Harris',
             valueKey: 'support rate',
             valueValue: 0,
           },
           {
-            categoryKey: 'candidate',
+            space: 'candidate',
             categoryValue: 'Donald Trump',
             valueKey: 'support rate',
             valueValue: 0,
           },
           {
-            categoryKey: 'candidate',
+            space: 'candidate',
             categoryValue: 'Robert F. Kennedy Jr.',
             valueKey: 'support rate',
             valueValue: 0,
@@ -50,19 +50,19 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Kamala Harris',
             valueKey: 'Voter Preference',
             valueValue: 0,
           },
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Donald Trump',
             valueKey: 'Voter Preference',
             valueValue: -30,
           },
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Robert F. Kennedy Jr.',
             valueKey: 'Voter Preference',
             valueValue: -30,
@@ -85,19 +85,19 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Harris',
             valueKey: 'Proportion of Black Voters',
             valueValue: 0.77,
           },
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Trump',
             valueKey: 'Proportion of Black Voters',
             valueValue: 0.13,
           },
           {
-            categoryKey: 'Candidate Preference',
+            space: 'Candidate Preference',
             categoryValue: 'Kennedy',
             valueKey: 'Proportion of Black Voters',
             valueValue: 0.07,
@@ -120,7 +120,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of support',
+            space: 'category of support',
             categoryValue: "Black voters' support for the top of the Democratic ticket",
             valueKey: 'support rate',
             valueValue: NaN,
@@ -138,7 +138,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'the category of voters',
+            space: 'the category of voters',
             categoryValue: 'Black voters',
             valueKey: 'the support rate for Biden',
             valueValue: 0.64,
@@ -161,13 +161,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Voter Support Category',
+            space: 'Voter Support Category',
             categoryValue: 'Black Voters Supporting Trump',
             valueKey: 'Proportion of Black Voters',
             valueValue: 0.75,
           },
           {
-            categoryKey: 'Voter Support Category',
+            space: 'Voter Support Category',
             categoryValue: 'Black Voters Supporting Kennedy',
             valueKey: 'Proportion of Black Voters',
             valueValue: 0.25,
@@ -202,7 +202,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Demographic',
+            space: 'Demographic',
             categoryValue: 'Black voters',
             valueKey: 'Support for Harris',
             valueValue: NaN,
@@ -225,13 +225,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'age group',
+            space: 'age group',
             categoryValue: 'Black voters 50 and older',
             valueKey: 'support for Harris',
             valueValue: 86,
           },
           {
-            categoryKey: 'age group',
+            space: 'age group',
             categoryValue: 'Black voters 18 to 49',
             valueKey: 'support for Harris',
             valueValue: 68,
@@ -253,13 +253,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Survey Entity',
+            space: 'Survey Entity',
             categoryValue: 'Biden',
             valueKey: 'Age Difference',
             valueValue: 0,
           },
           {
-            categoryKey: 'Survey Entity',
+            space: 'Survey Entity',
             categoryValue: 'April 2024 Survey',
             valueKey: 'Age Difference',
             valueValue: 30,
@@ -277,13 +277,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'age group',
+            space: 'age group',
             categoryValue: '18 to 49',
             valueKey: 'support for Harris',
             valueValue: 49,
           },
           {
-            categoryKey: 'age group',
+            space: 'age group',
             categoryValue: '50 and older',
             valueKey: 'support for Harris',
             valueValue: 44,
@@ -306,13 +306,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Black voters with',
+            space: 'Black voters with',
             categoryValue: 'college degrees',
             valueKey: 'support for Harris',
             valueValue: 84,
           },
           {
-            categoryKey: 'Black voters with',
+            space: 'Black voters with',
             categoryValue: 'without degrees',
             valueKey: 'support for Harris',
             valueValue: 74,
@@ -330,13 +330,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of education level',
+            space: 'category of education level',
             categoryValue: 'college graduates',
             valueKey: 'support percentage for Harris',
             valueValue: 56,
           },
           {
-            categoryKey: 'category of education level',
+            space: 'category of education level',
             categoryValue: 'those without bachelor’s degrees',
             valueKey: 'support percentage for Harris',
             valueValue: 41,
@@ -358,13 +358,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'support for Harris',
             valueValue: 0,
           },
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters by gender',
             valueKey: 'support for Harris',
             valueValue: 0,
@@ -387,7 +387,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'view Harris favorably',
             valueValue: NaN,
@@ -410,7 +410,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'favorability rating',
             valueValue: NaN,
@@ -432,7 +432,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Demographic Group',
+            space: 'Demographic Group',
             categoryValue: 'Black voters',
             valueKey: 'Favorability of Harris',
             valueValue: 0.79,
@@ -449,13 +449,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'share of sentiment',
+            space: 'share of sentiment',
             categoryValue: 'happy',
             valueKey: 'proportion of sentiment',
             valueValue: 0.8,
           },
           {
-            categoryKey: 'share of sentiment',
+            space: 'share of sentiment',
             categoryValue: 'other',
             valueKey: 'proportion of sentiment',
             valueValue: 0.2,
@@ -478,13 +478,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'favorable view of Biden',
             valueValue: 68,
           },
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'favorable view of Trump',
             valueValue: 14,
@@ -502,7 +502,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of view',
+            space: 'category of view',
             categoryValue: 'Harris',
             valueKey: 'percentage of positive views',
             valueValue: NaN,
@@ -526,19 +526,19 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Time Segment',
+            space: 'Time Segment',
             categoryValue: 'July 2023',
             valueKey: 'Favorable View Percentage',
             valueValue: 65,
           },
           {
-            categoryKey: 'Time Segment',
+            space: 'Time Segment',
             categoryValue: 'May 2024',
             valueKey: 'Favorable View Percentage',
             valueValue: 67,
           },
           {
-            categoryKey: 'Time Segment',
+            space: 'Time Segment',
             categoryValue: 'August 2024',
             valueKey: 'Favorable View Percentage',
             valueValue: 79,
@@ -562,7 +562,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of opinion shift',
+            space: 'category of opinion shift',
             categoryValue: 'Black voters',
             valueKey: 'opinion shift rate',
             valueValue: NaN,
@@ -584,13 +584,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Opinion of Harris among Women',
+            space: 'Opinion of Harris among Women',
             categoryValue: 'Black women',
             valueKey: 'Favorable opinion percentage',
             valueValue: 67,
           },
           {
-            categoryKey: 'Opinion of Harris among Women',
+            space: 'Opinion of Harris among Women',
             categoryValue: 'Black women',
             valueKey: 'Favorable opinion percentage',
             valueValue: 82,
@@ -614,13 +614,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Age Group',
+            space: 'Age Group',
             categoryValue: 'Black voters ages 18 to 49',
             valueKey: 'Favorability of Harris',
             valueValue: 52,
           },
           {
-            categoryKey: 'Age Group',
+            space: 'Age Group',
             categoryValue: 'Black voters ages 18 to 49',
             valueKey: 'Favorability of Harris',
             valueValue: 70,
@@ -644,7 +644,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters with college degrees',
             valueKey: 'favorability ratings',
             valueValue: 82,
@@ -667,7 +667,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'positive views increase',
             valueValue: 100,
@@ -686,7 +686,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of favorability ratings',
+            space: 'category of favorability ratings',
             categoryValue: 'Democrats and Democratic leaners',
             valueKey: 'favorability ratings',
             valueValue: NaN,
@@ -709,7 +709,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters',
             valueKey: 'motivation to vote',
             valueValue: NaN,
@@ -733,7 +733,7 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'demographic and political groups',
+            space: 'demographic and political groups',
             categoryValue: 'voters',
             valueKey: 'motivation to cast a ballot',
             valueValue: NaN,
@@ -752,13 +752,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Time Segment',
+            space: 'Time Segment',
             categoryValue: 'July',
             valueKey: 'Motivation Level Among Black Voters',
             valueValue: 56,
           },
           {
-            categoryKey: 'Time Segment',
+            space: 'Time Segment',
             categoryValue: 'August',
             valueKey: 'Motivation Level Among Black Voters',
             valueValue: 67,
@@ -776,13 +776,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of demographic',
+            space: 'category of demographic',
             categoryValue: 'women',
             valueKey: 'increase rate',
             valueValue: NaN,
           },
           {
-            categoryKey: 'category of education',
+            space: 'category of education',
             categoryValue: 'college degrees',
             valueKey: 'increase rate',
             valueValue: NaN,
@@ -805,13 +805,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'time period',
+            space: 'time period',
             categoryValue: 'July',
             valueKey: 'motivation level of Black women to vote',
             valueValue: 51,
           },
           {
-            categoryKey: 'time period',
+            space: 'time period',
             categoryValue: 'August',
             valueKey: 'motivation level of Black women to vote',
             valueValue: 67,
@@ -835,13 +835,13 @@ const article6: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters with college degrees',
             valueKey: 'motivation to vote',
             valueValue: 63,
           },
           {
-            categoryKey: 'category of voters',
+            space: 'category of voters',
             categoryValue: 'Black voters with college degrees',
             valueKey: 'motivation to vote',
             valueValue: 81,

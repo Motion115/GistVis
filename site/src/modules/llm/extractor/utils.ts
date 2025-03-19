@@ -43,7 +43,7 @@ export const getZodFormatting = (insightType: InsightType) => {
   const baseZodFormatting = z.object({
     dataSpec: z.array(
       z.object({
-        categoryKey: z.string().describe(SpecDescriptions.CATEGORY_KEY_DESCRIPTION),
+        space: z.string().describe(SpecDescriptions.CATEGORY_KEY_DESCRIPTION),
         categoryValue: z.string().describe(SpecDescriptions.CATEGORY_VALUE_DESCRIPTION),
         valueKey: z.string().describe(SpecDescriptions.VALUE_KEY_DESCRIPTION),
         valueValue: z

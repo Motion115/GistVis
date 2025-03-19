@@ -23,7 +23,7 @@ const extrExtreme = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent
         You have to extract entities, numerical values, and other content from text blocks as required. 
         This sentence contains extreme. Extreme refers to the extreme data cases along with the data attributes or within a certain range, such as maximum and minimum. 
         First, you should extract the value of extreme. Then you should convert it into numbers. Finally, you need to indicate whether this extreme is the maximum or minimum value.
-        Specifically, for 'categoryKey', identify the subject of comparison with its context, e.g., "the category of GDP growth" instead of just "entity". But the 'value_key' of all data items should keep the same.
+        Specifically, for 'space', identify the subject of comparison with its context, e.g., "the category of GDP growth" instead of just "entity". But the 'value_key' of all data items should keep the same.
         For 'value_key', specify the exact context of the value that is the extreme value, e.g., "the GDP growth rate" instead of just "value". But the 'category_key' of all data items should keep the same.
         The user intends to highlight the value of extreme. Please output the position of the extreme.
         \n{formatInstructions}\n{insightType}\n{paragraph}

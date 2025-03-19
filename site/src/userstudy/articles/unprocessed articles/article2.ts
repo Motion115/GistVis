@@ -15,13 +15,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of K-12 STEM education',
+            space: 'category of K-12 STEM education',
             categoryValue: 'United States',
             valueKey: 'comparison of K-12 STEM education with other wealthy nations',
             valueValue: 0,
           },
           {
-            categoryKey: 'category of K-12 STEM education',
+            space: 'category of K-12 STEM education',
             categoryValue: 'other wealthy nations',
             valueKey: 'comparison of K-12 STEM education with other wealthy nations',
             valueValue: 30,
@@ -44,13 +44,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'country',
+            space: 'country',
             categoryValue: 'U.S.',
             valueKey: 'math test scores',
             valueValue: 0,
           },
           {
-            categoryKey: 'country',
+            space: 'country',
             categoryValue: 'other wealthy nations',
             valueKey: 'math test scores',
             valueValue: 30,
@@ -68,13 +68,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: "category of students' performance",
+            space: "category of students' performance",
             categoryValue: "America's students",
             valueKey: 'performance in science',
             valueValue: NaN,
           },
           {
-            categoryKey: "category of students' performance",
+            space: "category of students' performance",
             categoryValue: 'pupils in other countries',
             valueKey: 'performance in science',
             valueValue: NaN,
@@ -109,7 +109,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of comparison',
+            space: 'category of comparison',
             categoryValue: 'U.S. STEM education',
             valueKey: 'comparison with other wealthy countries',
             valueValue: NaN,
@@ -132,13 +132,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Perception of K-12 STEM Education',
+            space: 'Perception of K-12 STEM Education',
             categoryValue: 'Americans',
             valueKey: 'Proportion of Average or Below Average Perception',
             valueValue: 0.67,
           },
           {
-            categoryKey: 'Perception of K-12 STEM Education',
+            space: 'Perception of K-12 STEM Education',
             categoryValue: 'Americans',
             valueKey: 'Proportion of Above Average Perception',
             valueValue: 0.33,
@@ -161,7 +161,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of K-12 education quality',
+            space: 'category of K-12 education quality',
             categoryValue: 'U.S. adults',
             valueKey:
               'proportion of U.S. adults who think America is the best or above average in K-12 science, technology, engineering and math education',
@@ -180,19 +180,19 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Perception of U.S. K-12 STEM Education',
+            space: 'Perception of U.S. K-12 STEM Education',
             categoryValue: 'Average',
             valueKey: 'Proportion of Responses',
             valueValue: 0.33,
           },
           {
-            categoryKey: 'Perception of U.S. K-12 STEM Education',
+            space: 'Perception of U.S. K-12 STEM Education',
             categoryValue: 'Below Average or Worst',
             valueKey: 'Proportion of Responses',
             valueValue: 0.32,
           },
           {
-            categoryKey: 'Perception of U.S. K-12 STEM Education',
+            space: 'Perception of U.S. K-12 STEM Education',
             categoryValue: 'Other',
             valueKey: 'Proportion of Responses',
             valueValue: 0.35,
@@ -215,25 +215,25 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Demographic Group',
+            space: 'Demographic Group',
             categoryValue: 'White Americans',
             valueKey: 'Pessimism Level',
             valueValue: 24,
           },
           {
-            categoryKey: 'Demographic Group',
+            space: 'Demographic Group',
             categoryValue: 'Black Americans',
             valueKey: 'Pessimism Level',
             valueValue: 31,
           },
           {
-            categoryKey: 'Demographic Group',
+            space: 'Demographic Group',
             categoryValue: 'Hispanic Americans',
             valueKey: 'Pessimism Level',
             valueValue: 37,
           },
           {
-            categoryKey: 'Demographic Group',
+            space: 'Demographic Group',
             categoryValue: 'English-speaking Asian Americans',
             valueKey: 'Pessimism Level',
             valueValue: 43,
@@ -250,13 +250,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Gender',
+            space: 'Gender',
             categoryValue: 'Women',
             valueKey: 'Proportion of respondents',
             valueValue: 0.25,
           },
           {
-            categoryKey: 'Gender',
+            space: 'Gender',
             categoryValue: 'Men',
             valueKey: 'Proportion of respondents',
             valueValue: 0.32,
@@ -279,13 +279,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Political Affiliation',
+            space: 'Political Affiliation',
             categoryValue: 'Democrats and Democratic-leaning independents',
             valueKey: 'Percentage rating K-12 STEM education as at least above average',
             valueValue: 31,
           },
           {
-            categoryKey: 'Political Affiliation',
+            space: 'Political Affiliation',
             categoryValue: 'Republicans and GOP leaners',
             valueKey: 'Percentage rating K-12 STEM education as at least above average',
             valueValue: 27,
@@ -308,13 +308,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Survey Year',
+            space: 'Survey Year',
             categoryValue: '2019',
             valueKey: 'Views Similarity',
             valueValue: 0,
           },
           {
-            categoryKey: 'Survey Year',
+            space: 'Survey Year',
             categoryValue: '2023',
             valueKey: 'Views Similarity',
             valueValue: 0,
@@ -332,7 +332,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of survey response',
+            space: 'category of survey response',
             categoryValue: 'U.S. K-12 STEM education',
             valueKey: 'proportion of positive responses',
             valueValue: 0.31,
@@ -354,13 +354,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Country',
+            space: 'Country',
             categoryValue: 'U.S.',
             valueKey: 'STEM test scores',
             valueValue: NaN,
           },
           {
-            categoryKey: 'Country',
+            space: 'Country',
             categoryValue: 'Other countries',
             valueKey: 'STEM test scores',
             valueValue: NaN,
@@ -383,25 +383,25 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: 'U.S.',
             valueKey: 'math ranking',
             valueValue: 2,
           },
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: 'average',
             valueKey: 'math ranking',
             valueValue: 1,
           },
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: 'U.S.',
             valueKey: 'science ranking',
             valueValue: 1,
           },
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: 'average',
             valueKey: 'science ranking',
             valueValue: 2,
@@ -438,25 +438,25 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of academic performance',
+            space: 'category of academic performance',
             categoryValue: 'U.S.',
             valueKey: 'math performance compared to OECD average',
             valueValue: 0,
           },
           {
-            categoryKey: 'category of academic performance',
+            space: 'category of academic performance',
             categoryValue: 'OECD average',
             valueKey: 'math performance compared to OECD average',
             valueValue: 30,
           },
           {
-            categoryKey: 'category of academic performance',
+            space: 'category of academic performance',
             categoryValue: 'U.S.',
             valueKey: 'science performance compared to OECD average',
             valueValue: 30,
           },
           {
-            categoryKey: 'category of academic performance',
+            space: 'category of academic performance',
             categoryValue: 'OECD average',
             valueKey: 'science performance compared to OECD average',
             valueValue: 0,
@@ -479,19 +479,19 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'OECD member countries',
+            space: 'OECD member countries',
             categoryValue: 'U.S. students',
             valueKey: 'math ranking',
             valueValue: 28,
           },
           {
-            categoryKey: 'OECD member countries',
+            space: 'OECD member countries',
             categoryValue: 'Japanese students',
             valueKey: 'math ranking',
             valueValue: 1,
           },
           {
-            categoryKey: 'OECD member countries',
+            space: 'OECD member countries',
             categoryValue: 'Colombian students',
             valueKey: 'math ranking',
             valueValue: 37,
@@ -509,13 +509,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'Time Period',
+            space: 'Time Period',
             categoryValue: '2018',
             valueKey: 'U.S. Average Math Score',
             valueValue: 0,
           },
           {
-            categoryKey: 'Time Period',
+            space: 'Time Period',
             categoryValue: '2022',
             valueKey: 'U.S. Average Math Score',
             valueValue: -13,
@@ -537,7 +537,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'country',
+            space: 'country',
             categoryValue: 'U.S.',
             valueKey: 'rank in OECD countries',
             valueValue: 12,
@@ -554,13 +554,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'students',
+            space: 'students',
             categoryValue: 'Japanese',
             valueKey: 'noType',
             valueValue: 1,
           },
           {
-            categoryKey: 'students',
+            space: 'students',
             categoryValue: 'Mexican',
             valueKey: 'noType',
             valueValue: 2,
@@ -578,13 +578,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'category of score',
+            space: 'category of score',
             categoryValue: 'U.S average science score',
             valueKey: 'score value',
             valueValue: 100,
           },
           {
-            categoryKey: 'category of score',
+            space: 'category of score',
             categoryValue: 'U.S average science score trend',
             valueKey: 'trend value',
             valueValue: 0,
@@ -602,13 +602,13 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'subject of scores',
+            space: 'subject of scores',
             categoryValue: 'science scores',
             valueKey: 'decline in scores',
             valueValue: 0,
           },
           {
-            categoryKey: 'subject of scores',
+            space: 'subject of scores',
             categoryValue: 'math scores',
             valueKey: 'decline in scores',
             valueValue: 30,
@@ -625,7 +625,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: 'Seven OECD countries',
             valueKey: 'mean science scores',
             valueValue: -10,
@@ -647,7 +647,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'age group',
+            space: 'age group',
             categoryValue: '15-year-old students',
             valueKey: 'frequency of testing',
             valueValue: NaN,
@@ -664,7 +664,7 @@ const article2: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'OECD countries',
+            space: 'OECD countries',
             categoryValue: '37',
             valueKey: '',
             valueValue: NaN,

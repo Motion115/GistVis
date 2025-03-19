@@ -52,7 +52,7 @@ const GlyphsMaxMin = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEnti
         fontWeight: 'bold',
       }}
     >
-      {dataSpec.length > 0 ? 'The ' + attribute + ' of ' + dataSpec[0].categoryKey : attribute}
+      {dataSpec.length > 0 ? 'The ' + attribute + ' of ' + dataSpec[0].space : attribute}
     </div>
   );
 

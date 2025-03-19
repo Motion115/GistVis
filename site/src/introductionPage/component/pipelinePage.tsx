@@ -46,8 +46,8 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
             columns={[
               {
                 title: 'Category Key',
-                dataIndex: 'categoryKey',
-                key: 'categoryKey',
+                dataIndex: 'space',
+                key: 'space',
                 width: 150,
                 onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
               },

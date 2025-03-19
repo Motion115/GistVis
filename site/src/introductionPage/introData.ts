@@ -85,13 +85,13 @@ export const extractorData: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'the category of sales percentage',
+            space: 'the category of sales percentage',
             categoryValue: 'BYD',
             valueKey: 'the sales percentage',
             valueValue: 30,
           },
           {
-            categoryKey: 'the category of sales percentage',
+            space: 'the category of sales percentage',
             categoryValue: 'rest of the top 5 companies',
             valueKey: 'the sales percentage',
             valueValue: 25,
@@ -110,31 +110,31 @@ export const extractorData: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'the category of sales',
+            space: 'the category of sales',
             categoryValue: 'BYD',
             valueKey: 'the sales amount',
             valueValue: 10000,
           },
           {
-            categoryKey: 'the category of sales',
+            space: 'the category of sales',
             categoryValue: 'BYD',
             valueKey: 'the sales amount',
             valueValue: 5000,
           },
           {
-            categoryKey: 'the category of sales',
+            space: 'the category of sales',
             categoryValue: 'BYD',
             valueKey: 'the sales amount',
             valueValue: 30000,
           },
           {
-            categoryKey: 'the category of sales',
+            space: 'the category of sales',
             categoryValue: 'BYD',
             valueKey: 'the sales amount',
             valueValue: 80000,
           },
           {
-            categoryKey: 'the category of sales',
+            space: 'the category of sales',
             categoryValue: 'BYD',
             valueKey: 'the sales amount',
             valueValue: 50000,
@@ -153,7 +153,7 @@ export const extractorData: paragraphSpec[] = [
         },
         dataSpec: [
           {
-            categoryKey: 'the category of vehicle series',
+            space: 'the category of vehicle series',
             categoryValue: 'Qin series',
             valueKey: 'the maximum range of the vehicle',
             valueValue: 2000,

@@ -17,7 +17,7 @@ describe('getHighlightPos', () => {
     },
     dataSpec: [
       {
-        categoryKey: 'company',
+        space: 'company',
         categoryValue: 'BYD',
         valueKey: 'sales',
         valueValue: 30

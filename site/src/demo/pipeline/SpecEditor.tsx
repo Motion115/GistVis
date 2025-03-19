@@ -228,7 +228,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
       dataSpec: [
         ...(prev.dataSpec || []),
         {
-          categoryKey: '',
+          space: '',
           categoryValue: '',
           valueKey: '',
           valueValue: 0,
@@ -403,7 +403,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                         ...prev,
                         dataSpec: [
                           {
-                            categoryKey: '',
+                            space: '',
                             categoryValue: '',
                             valueKey: '',
                             valueValue: 0,
@@ -433,8 +433,8 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                 <Form layout="vertical">
                   <Item label="Category Key">
                     <Input
-                      value={data.categoryKey}
-                      onChange={(e) => handleDataSpecChange(index, 'categoryKey', e.target.value)}
+                      value={data.space}
+                      onChange={(e) => handleDataSpecChange(index, 'space', e.target.value)}
                     />
                   </Item>
                   <Item label="Category Value">

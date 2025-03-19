@@ -24,7 +24,7 @@ describe('recommendValidTypes', () => {
     return valueValues.map((value, index) => ({
       valueValue: value,
       categoryValue: categoryValues[index] || '',
-      categoryKey: 'category',
+      space: 'category',
       valueKey: 'value'
     }));
   };

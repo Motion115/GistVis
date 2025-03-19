@@ -21,7 +21,7 @@ const SimpleBar: React.FC<SimpleBarChartProps> = ({
       context: '',
     },
     dataSpec: data.map((point, index) => ({
-      categoryKey: 'category',
+      space: 'category',
       categoryValue: point.label || `Item ${index + 1}`,
       valueKey: 'value',
       valueValue: point.y,

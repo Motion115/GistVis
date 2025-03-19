@@ -15,7 +15,7 @@ export type TrendAttribute = 'positive' | 'negative' | 'invariable';
 export type Attribute = ExtremeAttribute | TrendAttribute;
 
 export type DataSpec = {
-  categoryKey: string;
+  space: string;
   categoryValue: string;
   valueKey: string;
   valueValue: number;

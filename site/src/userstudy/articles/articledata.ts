@@ -466,13 +466,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'time segment',
+                space: 'time segment',
                 categoryValue: '2024',
                 valueKey: 'number of Americans ages 100 and older',
                 valueValue: 101000,
               },
               {
-                categoryKey: 'time segment',
+                space: 'time segment',
                 categoryValue: '2054',
                 valueKey: 'number of Americans ages 100 and older',
                 valueValue: 422000,
@@ -491,13 +491,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'Centenarians',
                 valueKey: 'percentage of overall U.S. population',
                 valueValue: 0.03,
               },
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'Centenarians',
                 valueKey: 'projected percentage of overall U.S. population in 2054',
                 valueValue: 0.1,
@@ -521,7 +521,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of centenarians',
+                space: 'category of centenarians',
                 categoryValue: 'centenarians in the United States',
                 valueKey: 'number of centenarians',
                 valueValue: 2300,
@@ -540,7 +540,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'year of census',
+                space: 'year of census',
                 categoryValue: 'prior to 1990',
                 valueKey: 'error in census counts of centenarians',
                 valueValue: NaN,
@@ -563,7 +563,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population growth',
+                space: 'category of population growth',
                 categoryValue: 'U.S. centenarian population',
                 valueKey: 'population growth rate',
                 valueValue: 300,
@@ -581,7 +581,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: 'centenarians',
                 valueKey: 'population count',
                 valueValue: 37000,
@@ -616,13 +616,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'demographic group',
+                space: 'demographic group',
                 categoryValue: 'women',
                 valueKey: 'proportion in population',
                 valueValue: NaN,
               },
               {
-                categoryKey: 'demographic group',
+                space: 'demographic group',
                 categoryValue: 'White adults',
                 valueKey: 'proportion in population',
                 valueValue: NaN,
@@ -640,13 +640,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of shares',
+                space: 'category of shares',
                 categoryValue: 'shares',
                 valueKey: 'value of shares',
                 valueValue: 100,
               },
               {
-                categoryKey: 'category of shares',
+                space: 'category of shares',
                 categoryValue: 'projected shares',
                 valueKey: 'value of shares',
                 valueValue: 0,
@@ -668,13 +668,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Gender',
+                space: 'Gender',
                 categoryValue: 'Women',
                 valueKey: 'Proportion of Centenarians',
                 valueValue: 0.78,
               },
               {
-                categoryKey: 'Gender',
+                space: 'Gender',
                 categoryValue: 'Men',
                 valueKey: 'Proportion of Centenarians',
                 valueValue: 0.22,
@@ -692,13 +692,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'gender',
+                space: 'gender',
                 categoryValue: 'women',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.68,
               },
               {
-                categoryKey: 'gender',
+                space: 'gender',
                 categoryValue: 'men',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.32,
@@ -721,43 +721,43 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'White',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.77,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Black',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.08,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Asian',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.07,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Hispanic',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.06,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Multiracial',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.01,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'American Indian or Alaska Native',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.01,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Native Hawaiian or other Pacific Islander',
                 valueKey: 'Proportion of centenarians',
                 valueValue: 0.01,
@@ -775,25 +775,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'racial category',
+                space: 'racial category',
                 categoryValue: 'White adults',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.72,
               },
               {
-                categoryKey: 'racial category',
+                space: 'racial category',
                 categoryValue: 'Asian adults',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.05,
               },
               {
-                categoryKey: 'racial category',
+                space: 'racial category',
                 categoryValue: 'Hispanic adults',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'racial category',
+                space: 'racial category',
                 categoryValue: 'Black adults',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.1,
@@ -817,7 +817,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population age',
+                space: 'category of population age',
                 categoryValue: 'U.S. population',
                 valueKey: 'population age trend',
                 valueValue: NaN,
@@ -835,13 +835,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: 'adults ages 65 and older',
                 valueKey: 'population proportion',
                 valueValue: 0.18,
               },
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: 'other adults',
                 valueKey: 'population proportion',
                 valueValue: 0.82,
@@ -865,13 +865,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: '65-and-older',
                 valueKey: 'percentage of older Americans',
                 valueValue: 0.2,
               },
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: '65-and-older',
                 valueKey: 'percentage of older Americans',
                 valueValue: 0.5,
@@ -908,7 +908,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'population category',
+                space: 'population category',
                 categoryValue: 'centenarians',
                 valueKey: 'population count',
                 valueValue: 722000,
@@ -926,13 +926,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of centenarian population',
+                space: 'category of centenarian population',
                 categoryValue: 'U.S.',
                 valueKey: 'centenarian population estimate',
                 valueValue: 108000,
               },
               {
-                categoryKey: 'category of centenarian population',
+                space: 'category of centenarian population',
                 categoryValue: 'U.S. (Census Bureau)',
                 valueKey: 'centenarian population estimate',
                 valueValue: 0,
@@ -955,25 +955,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Japan',
                 valueKey: 'number of people in their 100s',
                 valueValue: 146000,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'China',
                 valueKey: 'number of people in their 100s',
                 valueValue: 60000,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'India',
                 valueKey: 'number of people in their 100s',
                 valueValue: 48000,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Thailand',
                 valueKey: 'number of people in their 100s',
                 valueValue: 38000,
@@ -996,13 +996,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'centenarians',
                 valueKey: 'proportion of overall population',
                 valueValue: 0.01,
               },
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'world’s population ages 100 and older',
                 valueKey: 'proportion of overall population',
                 valueValue: 0.55,
@@ -1025,31 +1025,31 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Japan',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.75,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Thailand',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.75,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'U.S.',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.75,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'China',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.25,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'India',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.25,
@@ -1067,31 +1067,31 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Japan',
                 valueKey: 'centenarians per 10,000 people',
                 valueValue: 12,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Thailand',
                 valueKey: 'centenarians per 10,000 people',
                 valueValue: 5,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'U.S.',
                 valueKey: 'centenarians per 10,000 people',
                 valueValue: 3,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'China',
                 valueKey: 'centenarians per 10,000 people',
                 valueValue: 1,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'India',
                 valueKey: 'centenarians per 10,000 people',
                 valueValue: 1,
@@ -1114,7 +1114,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population growth',
+                space: 'category of population growth',
                 categoryValue: 'global centenarian population',
                 valueKey: 'projected population',
                 valueValue: 4000000,
@@ -1132,31 +1132,31 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'China',
                 valueKey: 'Number of Centenarians',
                 valueValue: 1,
               },
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'U.S.',
                 valueKey: 'Number of Centenarians',
                 valueValue: 2,
               },
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'India',
                 valueKey: 'Number of Centenarians',
                 valueValue: 3,
               },
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'Japan',
                 valueKey: 'Number of Centenarians',
                 valueValue: 4,
               },
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'Thailand',
                 valueKey: 'Number of Centenarians',
                 valueValue: 5,
@@ -1174,31 +1174,31 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Thailand',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.0049,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'Japan',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.004,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'U.S.',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.0014,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'China',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.0006,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'India',
                 valueKey: 'proportion of centenarians',
                 valueValue: 0.0002,
@@ -1290,13 +1290,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of K-12 STEM education',
+                space: 'category of K-12 STEM education',
                 categoryValue: 'United States',
                 valueKey: 'comparison of K-12 STEM education with other wealthy nations',
                 valueValue: 0,
               },
               {
-                categoryKey: 'category of K-12 STEM education',
+                space: 'category of K-12 STEM education',
                 categoryValue: 'other wealthy nations',
                 valueKey: 'comparison of K-12 STEM education with other wealthy nations',
                 valueValue: 30,
@@ -1319,13 +1319,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'U.S.',
                 valueKey: 'math test scores',
                 valueValue: 0,
               },
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'other wealthy nations',
                 valueKey: 'math test scores',
                 valueValue: 30,
@@ -1343,13 +1343,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: "category of students' performance",
+                space: "category of students' performance",
                 categoryValue: "America's students",
                 valueKey: 'performance in science',
                 valueValue: NaN,
               },
               {
-                categoryKey: "category of students' performance",
+                space: "category of students' performance",
                 categoryValue: 'pupils in other countries',
                 valueKey: 'performance in science',
                 valueValue: NaN,
@@ -1384,7 +1384,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of comparison',
+                space: 'category of comparison',
                 categoryValue: 'U.S. STEM education',
                 valueKey: 'comparison with other wealthy countries',
                 valueValue: NaN,
@@ -1407,13 +1407,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Perception of K-12 STEM Education',
+                space: 'Perception of K-12 STEM Education',
                 categoryValue: 'Americans',
                 valueKey: 'Proportion of Average or Below Average Perception',
                 valueValue: 0.67,
               },
               {
-                categoryKey: 'Perception of K-12 STEM Education',
+                space: 'Perception of K-12 STEM Education',
                 categoryValue: 'Americans',
                 valueKey: 'Proportion of Above Average Perception',
                 valueValue: 0.33,
@@ -1436,7 +1436,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of K-12 education quality',
+                space: 'category of K-12 education quality',
                 categoryValue: 'U.S. adults',
                 valueKey:
                   'proportion of U.S. adults who think America is the best or above average in K-12 science, technology, engineering and math education',
@@ -1455,19 +1455,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Perception of U.S. K-12 STEM Education',
+                space: 'Perception of U.S. K-12 STEM Education',
                 categoryValue: 'Average',
                 valueKey: 'Proportion of Responses',
                 valueValue: 0.33,
               },
               {
-                categoryKey: 'Perception of U.S. K-12 STEM Education',
+                space: 'Perception of U.S. K-12 STEM Education',
                 categoryValue: 'Below Average or Worst',
                 valueKey: 'Proportion of Responses',
                 valueValue: 0.32,
               },
               {
-                categoryKey: 'Perception of U.S. K-12 STEM Education',
+                space: 'Perception of U.S. K-12 STEM Education',
                 categoryValue: 'Other',
                 valueKey: 'Proportion of Responses',
                 valueValue: 0.35,
@@ -1490,25 +1490,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Demographic Group',
+                space: 'Demographic Group',
                 categoryValue: 'White Americans',
                 valueKey: 'Pessimism Level',
                 valueValue: 24,
               },
               {
-                categoryKey: 'Demographic Group',
+                space: 'Demographic Group',
                 categoryValue: 'Black Americans',
                 valueKey: 'Pessimism Level',
                 valueValue: 31,
               },
               {
-                categoryKey: 'Demographic Group',
+                space: 'Demographic Group',
                 categoryValue: 'Hispanic Americans',
                 valueKey: 'Pessimism Level',
                 valueValue: 37,
               },
               {
-                categoryKey: 'Demographic Group',
+                space: 'Demographic Group',
                 categoryValue: 'English-speaking Asian Americans',
                 valueKey: 'Pessimism Level',
                 valueValue: 43,
@@ -1525,13 +1525,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Gender',
+                space: 'Gender',
                 categoryValue: 'Women',
                 valueKey: 'Proportion of respondents',
                 valueValue: 0.25,
               },
               {
-                categoryKey: 'Gender',
+                space: 'Gender',
                 categoryValue: 'Men',
                 valueKey: 'Proportion of respondents',
                 valueValue: 0.32,
@@ -1554,13 +1554,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Political Affiliation',
+                space: 'Political Affiliation',
                 categoryValue: 'Democrats and Democratic-leaning independents',
                 valueKey: 'Percentage rating K-12 STEM education as at least above average',
                 valueValue: 31,
               },
               {
-                categoryKey: 'Political Affiliation',
+                space: 'Political Affiliation',
                 categoryValue: 'Republicans and GOP leaners',
                 valueKey: 'Percentage rating K-12 STEM education as at least above average',
                 valueValue: 27,
@@ -1583,13 +1583,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Survey Year',
+                space: 'Survey Year',
                 categoryValue: '2019',
                 valueKey: 'Views Similarity',
                 valueValue: 0,
               },
               {
-                categoryKey: 'Survey Year',
+                space: 'Survey Year',
                 categoryValue: '2023',
                 valueKey: 'Views Similarity',
                 valueValue: 0,
@@ -1607,7 +1607,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of survey response',
+                space: 'category of survey response',
                 categoryValue: 'U.S. K-12 STEM education',
                 valueKey: 'proportion of positive responses',
                 valueValue: 0.31,
@@ -1629,13 +1629,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'U.S.',
                 valueKey: 'STEM test scores',
                 valueValue: NaN,
               },
               {
-                categoryKey: 'Country',
+                space: 'Country',
                 categoryValue: 'Other countries',
                 valueKey: 'STEM test scores',
                 valueValue: NaN,
@@ -1658,25 +1658,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: 'U.S.',
                 valueKey: 'math ranking',
                 valueValue: 2,
               },
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: 'average',
                 valueKey: 'math ranking',
                 valueValue: 1,
               },
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: 'U.S.',
                 valueKey: 'science ranking',
                 valueValue: 1,
               },
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: 'average',
                 valueKey: 'science ranking',
                 valueValue: 2,
@@ -1713,25 +1713,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of academic performance',
+                space: 'category of academic performance',
                 categoryValue: 'U.S.',
                 valueKey: 'math performance compared to OECD average',
                 valueValue: 0,
               },
               {
-                categoryKey: 'category of academic performance',
+                space: 'category of academic performance',
                 categoryValue: 'OECD average',
                 valueKey: 'math performance compared to OECD average',
                 valueValue: 30,
               },
               {
-                categoryKey: 'category of academic performance',
+                space: 'category of academic performance',
                 categoryValue: 'U.S.',
                 valueKey: 'science performance compared to OECD average',
                 valueValue: 30,
               },
               {
-                categoryKey: 'category of academic performance',
+                space: 'category of academic performance',
                 categoryValue: 'OECD average',
                 valueKey: 'science performance compared to OECD average',
                 valueValue: 0,
@@ -1754,19 +1754,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'OECD member countries',
+                space: 'OECD member countries',
                 categoryValue: 'U.S. students',
                 valueKey: 'math ranking',
                 valueValue: 28,
               },
               {
-                categoryKey: 'OECD member countries',
+                space: 'OECD member countries',
                 categoryValue: 'Japanese students',
                 valueKey: 'math ranking',
                 valueValue: 1,
               },
               {
-                categoryKey: 'OECD member countries',
+                space: 'OECD member countries',
                 categoryValue: 'Colombian students',
                 valueKey: 'math ranking',
                 valueValue: 37,
@@ -1784,13 +1784,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Time Period',
+                space: 'Time Period',
                 categoryValue: '2018',
                 valueKey: 'U.S. Average Math Score',
                 valueValue: 0,
               },
               {
-                categoryKey: 'Time Period',
+                space: 'Time Period',
                 categoryValue: '2022',
                 valueKey: 'U.S. Average Math Score',
                 valueValue: -13,
@@ -1812,7 +1812,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'country',
+                space: 'country',
                 categoryValue: 'U.S.',
                 valueKey: 'rank in OECD countries',
                 valueValue: 12,
@@ -1829,13 +1829,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'students',
+                space: 'students',
                 categoryValue: 'Japanese',
                 valueKey: 'rank',
                 valueValue: 1,
               },
               {
-                categoryKey: 'students',
+                space: 'students',
                 categoryValue: 'Mexican',
                 valueKey: 'rank',
                 valueValue: 2,
@@ -1853,13 +1853,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of score',
+                space: 'category of score',
                 categoryValue: 'U.S average science score',
                 valueKey: 'score value',
                 valueValue: 100,
               },
               {
-                categoryKey: 'category of score',
+                space: 'category of score',
                 categoryValue: 'U.S average science score trend',
                 valueKey: 'trend value',
                 valueValue: 0,
@@ -1877,13 +1877,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'subject of scores',
+                space: 'subject of scores',
                 categoryValue: 'science scores',
                 valueKey: 'decline in scores',
                 valueValue: 0,
               },
               {
-                categoryKey: 'subject of scores',
+                space: 'subject of scores',
                 categoryValue: 'math scores',
                 valueKey: 'decline in scores',
                 valueValue: 30,
@@ -1900,7 +1900,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: 'Seven OECD countries',
                 valueKey: 'mean science scores',
                 valueValue: -10,
@@ -1922,7 +1922,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: '15-year-old students',
                 valueKey: 'frequency of testing',
                 valueValue: NaN,
@@ -1939,7 +1939,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'OECD countries',
+                space: 'OECD countries',
                 categoryValue: '37',
                 valueKey: '',
                 valueValue: NaN,
@@ -2036,7 +2036,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of age gap',
+                space: 'category of age gap',
                 categoryValue: 'age gap between husbands and wives',
                 valueKey: 'age gap value',
                 valueValue: NaN,
@@ -2054,19 +2054,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Age difference between husbands and wives',
+                space: 'Age difference between husbands and wives',
                 categoryValue: '2022',
                 valueKey: 'Age difference in years',
                 valueValue: 2.2,
               },
               {
-                categoryKey: 'Age difference between husbands and wives',
+                space: 'Age difference between husbands and wives',
                 categoryValue: '2000',
                 valueKey: 'Age difference in years',
                 valueValue: 2.4,
               },
               {
-                categoryKey: 'Age difference between husbands and wives',
+                space: 'Age difference between husbands and wives',
                 categoryValue: '1880',
                 valueKey: 'Age difference in years',
                 valueValue: 4.9,
@@ -2090,7 +2090,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of age gap',
+                space: 'category of age gap',
                 categoryValue: 'age gap between U.S. husbands and wives',
                 valueKey: 'age gap value',
                 valueValue: NaN,
@@ -2114,7 +2114,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages in which the husband is several years older than the wife',
                 valueKey: 'share of marriages',
                 valueValue: NaN,
@@ -2133,7 +2133,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages where the wife is significantly older than the husband',
                 valueKey: 'frequency of occurrence',
                 valueValue: NaN,
@@ -2156,7 +2156,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'opposite-sex marriages in 2022',
                 valueKey: 'proportion of marriages',
                 valueValue: 0.5,
@@ -2193,13 +2193,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of opposite-sex marriages',
+                space: 'category of opposite-sex marriages',
                 categoryValue: 'spouses age difference',
                 valueKey: 'percentage of marriages',
                 valueValue: 51,
               },
               {
-                categoryKey: 'category of opposite-sex marriages',
+                space: 'category of opposite-sex marriages',
                 categoryValue: 'spouses age difference',
                 valueKey: 'percentage of marriages',
                 valueValue: 46,
@@ -2223,13 +2223,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages with husband 3+ years older',
                 valueKey: 'percentage of marriages',
                 valueValue: 40,
               },
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages with husband 3+ years older',
                 valueKey: 'percentage of marriages',
                 valueValue: 43,
@@ -2253,13 +2253,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages with a wife three or more years older',
                 valueKey: 'share of marriages',
                 valueValue: 10,
               },
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages with a wife three or more years older',
                 valueKey: 'peak share of marriages',
                 valueValue: 11,
@@ -2283,13 +2283,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of same-age marriage',
+                space: 'category of same-age marriage',
                 categoryValue: 'spouses within two years',
                 valueKey: 'historical trend',
                 valueValue: 100,
               },
               {
-                categoryKey: 'category of same-age marriage',
+                space: 'category of same-age marriage',
                 categoryValue: 'spouses within four years',
                 valueKey: 'historical trend',
                 valueValue: 100,
@@ -2338,13 +2338,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of husbands with education level',
+                space: 'category of husbands with education level',
                 categoryValue: 'husbands with at least a bachelor’s degree',
                 valueKey: 'percentage in same-age marriage',
                 valueValue: 55,
               },
               {
-                categoryKey: 'category of husbands with education level',
+                space: 'category of husbands with education level',
                 categoryValue: 'husbands with some college education or less',
                 valueKey: 'percentage in same-age marriage',
                 valueValue: 48,
@@ -2367,13 +2367,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriage status',
+                space: 'category of marriage status',
                 categoryValue: 'first marriage',
                 valueKey: 'percentage of husbands same age as wife',
                 valueValue: 56,
               },
               {
-                categoryKey: 'category of marriage status',
+                space: 'category of marriage status',
                 categoryValue: 'more than once married',
                 valueKey: 'percentage of husbands same age as wife',
                 valueValue: 32,
@@ -2391,13 +2391,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of marriage',
+                space: 'type of marriage',
                 categoryValue: 'first marriage',
                 valueKey: 'percentage of husbands with a wife three or more years younger',
                 valueValue: 35,
               },
               {
-                categoryKey: 'type of marriage',
+                space: 'type of marriage',
                 categoryValue: 'remarried',
                 valueKey: 'percentage of husbands with a wife three or more years younger',
                 valueValue: 56,
@@ -2420,25 +2420,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: "Husband's Ethnicity",
+                space: "Husband's Ethnicity",
                 categoryValue: 'White',
                 valueKey: 'Likelihood of Same-Age Marriage',
                 valueValue: 53,
               },
               {
-                categoryKey: "Husband's Ethnicity",
+                space: "Husband's Ethnicity",
                 categoryValue: 'Hispanic',
                 valueKey: 'Likelihood of Same-Age Marriage',
                 valueValue: 46,
               },
               {
-                categoryKey: "Husband's Ethnicity",
+                space: "Husband's Ethnicity",
                 categoryValue: 'Black',
                 valueKey: 'Likelihood of Same-Age Marriage',
                 valueValue: 45,
               },
               {
-                categoryKey: "Husband's Ethnicity",
+                space: "Husband's Ethnicity",
                 categoryValue: 'Asian',
                 valueKey: 'Likelihood of Same-Age Marriage',
                 valueValue: 45,
@@ -2456,25 +2456,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Asian',
                 valueKey: 'Percentage of husbands with a wife three or more years younger',
                 valueValue: 49,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Hispanic',
                 valueKey: 'Percentage of husbands with a wife three or more years younger',
                 valueValue: 42,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'Black',
                 valueKey: 'Percentage of husbands with a wife three or more years younger',
                 valueValue: 43,
               },
               {
-                categoryKey: 'Race',
+                space: 'Race',
                 categoryValue: 'White',
                 valueKey: 'Percentage of husbands with a wife three or more years younger',
                 valueValue: 38,
@@ -2497,13 +2497,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriage patterns',
+                space: 'category of marriage patterns',
                 categoryValue: "wife's characteristics",
                 valueKey: 'similarity in marriage patterns',
                 valueValue: 0,
               },
               {
-                categoryKey: 'category of marriage patterns',
+                space: 'category of marriage patterns',
                 categoryValue: "husband's characteristics",
                 valueKey: 'similarity in marriage patterns',
                 valueValue: 0,
@@ -2539,13 +2539,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'marital status',
+                space: 'marital status',
                 categoryValue: 'first marriage',
                 valueKey: 'likelihood of similar age',
                 valueValue: 0,
               },
               {
-                categoryKey: 'marital status',
+                space: 'marital status',
                 categoryValue: 'married more than once',
                 valueKey: 'likelihood of similar age',
                 valueValue: 30,
@@ -2568,13 +2568,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of age difference',
+                space: 'category of age difference',
                 categoryValue: 'husbands and wives',
                 valueKey: 'age difference value',
                 valueValue: 0,
               },
               {
-                categoryKey: 'category of age difference',
+                space: 'category of age difference',
                 categoryValue: 'husbands and wives',
                 valueKey: 'age difference value',
                 valueValue: 30,
@@ -2592,7 +2592,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'marital status',
+                space: 'marital status',
                 categoryValue: 'widowed',
                 valueKey: 'likelihood',
                 valueValue: NaN,
@@ -2616,13 +2616,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of marriages',
+                space: 'category of marriages',
                 categoryValue: 'marriages where the husband is older than his wife',
                 valueKey: 'share of marriages',
                 valueValue: NaN,
               },
               {
-                categoryKey: 'category of widowhood',
+                space: 'category of widowhood',
                 categoryValue: 'widowhood among older women',
                 valueKey: 'rate of widowhood',
                 valueValue: NaN,
@@ -2640,13 +2640,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of widows',
+                space: 'category of widows',
                 categoryValue: 'women ages 65 and older',
                 valueKey: 'percentage of widows',
                 valueValue: 30,
               },
               {
-                categoryKey: 'category of widows',
+                space: 'category of widows',
                 categoryValue: 'women ages 65 and older',
                 valueKey: 'percentage of widows',
                 valueValue: 45,
@@ -2757,7 +2757,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of online sales',
+                space: 'category of online sales',
                 categoryValue: 'retail e-commerce sales',
                 valueKey: 'total online sales in the fourth quarter',
                 valueValue: 303.1,
@@ -2775,13 +2775,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'quarterly average',
+                space: 'quarterly average',
                 categoryValue: 'first nine months of the year',
                 valueKey: 'value in billion USD',
                 valueValue: 245.6,
               },
               {
-                categoryKey: 'current quarter',
+                space: 'current quarter',
                 categoryValue: 'current quarter',
                 valueKey: 'value in billion USD',
                 valueValue: 302.1704,
@@ -2805,7 +2805,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'online share',
                 valueKey: 'share of all retail sales',
                 valueValue: NaN,
@@ -2823,13 +2823,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'online sales',
                 valueKey: 'proportion of retail sales',
                 valueValue: 0.163,
               },
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'other retail sales',
                 valueKey: 'proportion of retail sales',
                 valueValue: 0.837,
@@ -2852,7 +2852,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of online shopping',
+                space: 'category of online shopping',
                 categoryValue: 'online shopping',
                 valueKey: 'growth in the fourth quarter of 2023',
                 valueValue: 100,
@@ -2870,13 +2870,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'retail e-commerce',
                 valueKey: 'proportion of all retail sales',
                 valueValue: 0.149,
               },
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'other retail sales',
                 valueKey: 'proportion of all retail sales',
                 valueValue: 0.851,
@@ -2899,7 +2899,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of online sales',
+                space: 'category of online sales',
                 categoryValue: 'online sales',
                 valueKey: 'growth rate of online sales',
                 valueValue: 100,
@@ -2923,7 +2923,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'year',
+                space: 'year',
                 categoryValue: '2000-2020',
                 valueKey: 'online share of retail sales',
                 valueValue: NaN,
@@ -2947,13 +2947,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of sales',
+                space: 'category of sales',
                 categoryValue: 'online sales',
                 valueKey: 'sales during pandemic',
                 valueValue: NaN,
               },
               {
-                categoryKey: 'category of sales',
+                space: 'category of sales',
                 categoryValue: 'online share of total sales',
                 valueKey: 'share during pandemic',
                 valueValue: NaN,
@@ -2977,13 +2977,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'online share of total retail sales',
+                space: 'online share of total retail sales',
                 categoryValue: 'online share of total retail sales',
                 valueKey: 'percentage of online sales',
                 valueValue: 0.7,
               },
               {
-                categoryKey: 'online share of total retail sales',
+                space: 'online share of total retail sales',
                 categoryValue: 'online share of total retail sales',
                 valueKey: 'percentage of online sales',
                 valueValue: 12.4,
@@ -3007,7 +3007,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of online sales',
+                space: 'category of online sales',
                 categoryValue: 'online sales',
                 valueKey: 'online sales rate',
                 valueValue: NaN,
@@ -3026,13 +3026,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'time segment',
+                space: 'time segment',
                 categoryValue: 'second quarter of 2020',
                 valueKey: 'e-commerce sales',
                 valueValue: 205.3,
               },
               {
-                categoryKey: 'time segment',
+                space: 'time segment',
                 categoryValue: 'second quarter of 2019',
                 valueKey: 'e-commerce sales',
                 valueValue: 132.3,
@@ -3050,13 +3050,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'e-commerce',
                 valueKey: 'proportion of retail sales',
                 valueValue: 0.167,
               },
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'other retail sales',
                 valueKey: 'proportion of retail sales',
                 valueValue: 0.833,
@@ -3080,7 +3080,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'e-commerce share',
                 valueKey: 'e-commerce share value',
                 valueValue: NaN,
@@ -3097,13 +3097,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'online sales',
                 valueKey: 'percentage of retail sales',
                 valueValue: 16.3,
               },
               {
-                categoryKey: 'category of retail sales',
+                space: 'category of retail sales',
                 categoryValue: 'online sales',
                 valueKey: 'percentage of retail sales',
                 valueValue: 16.1,
@@ -3125,7 +3125,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'retailer category',
+                space: 'retailer category',
                 categoryValue: 'retailer',
                 valueKey: 'online sales benefit',
                 valueValue: NaN,
@@ -3149,7 +3149,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of retailers',
+                space: 'category of retailers',
                 categoryValue: 'retailers without physical stores',
                 valueKey: 'share of online sales',
                 valueValue: 0,
@@ -3172,13 +3172,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Retail Category',
+                space: 'Retail Category',
                 categoryValue: 'Nonstore retailers',
                 valueKey: 'E-commerce Sales Proportion',
                 valueValue: 0.62,
               },
               {
-                categoryKey: 'Retail Category',
+                space: 'Retail Category',
                 categoryValue: 'Other retailers',
                 valueKey: 'E-commerce Sales Proportion',
                 valueValue: 0.38,
@@ -3197,7 +3197,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of sales growth',
+                space: 'category of sales growth',
                 categoryValue: 'E-commerce sales at nonstore retailers',
                 valueKey: 'year over year growth rate',
                 valueValue: 12.4,
@@ -3220,19 +3220,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of sales increase',
+                space: 'category of sales increase',
                 categoryValue: 'general merchandise stores',
                 valueKey: 'online sales increase rate',
                 valueValue: 8.7,
               },
               {
-                categoryKey: 'category of sales increase',
+                space: 'category of sales increase',
                 categoryValue: 'food and beverage stores',
                 valueKey: 'online sales increase rate',
                 valueValue: 5.1,
               },
               {
-                categoryKey: 'category of sales increase',
+                space: 'category of sales increase',
                 categoryValue: 'health and personal care stores',
                 valueKey: 'online sales increase rate',
                 valueValue: 4.7,
@@ -3250,19 +3250,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of sales',
+                space: 'category of sales',
                 categoryValue: 'electronics and appliance stores',
                 valueKey: 'sales percentage change',
                 valueValue: -1.6,
               },
               {
-                categoryKey: 'category of sales',
+                space: 'category of sales',
                 categoryValue: 'motor vehicle and parts dealers',
                 valueKey: 'sales percentage change',
                 valueValue: -3.2,
               },
               {
-                categoryKey: 'category of sales',
+                space: 'category of sales',
                 categoryValue: 'furniture and home furnishings stores',
                 valueKey: 'sales percentage change',
                 valueValue: -16.2,
@@ -3349,13 +3349,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of restaurants in the United States',
+                space: 'category of restaurants in the United States',
                 categoryValue: 'Asian food serving restaurants',
                 valueKey: 'proportion of all restaurants',
                 valueValue: 0.12,
               },
               {
-                categoryKey: 'category of restaurants in the United States',
+                space: 'category of restaurants in the United States',
                 categoryValue: 'Other restaurants',
                 valueKey: 'proportion of all restaurants',
                 valueValue: 0.88,
@@ -3372,13 +3372,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'Asian American',
                 valueKey: 'percentage of population',
                 valueValue: 7,
               },
               {
-                categoryKey: 'category of population',
+                space: 'category of population',
                 categoryValue: 'other population',
                 valueKey: 'percentage of population',
                 valueValue: 0,
@@ -3401,19 +3401,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Type of Food',
+                space: 'Type of Food',
                 categoryValue: 'Chinese',
                 valueKey: 'Proportion of Asian Restaurants',
                 valueValue: 0.71,
               },
               {
-                categoryKey: 'Type of Food',
+                space: 'Type of Food',
                 categoryValue: 'Japanese',
                 valueKey: 'Proportion of Asian Restaurants',
                 valueValue: 0.71,
               },
               {
-                categoryKey: 'Type of Food',
+                space: 'Type of Food',
                 categoryValue: 'Thai',
                 valueKey: 'Proportion of Asian Restaurants',
                 valueValue: 0.71,
@@ -3436,25 +3436,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Asian origin groups',
+                space: 'Asian origin groups',
                 categoryValue: 'Chinese',
                 valueKey: 'Proportion of Asian restaurants',
                 valueValue: 0.3,
               },
               {
-                categoryKey: 'Asian origin groups',
+                space: 'Asian origin groups',
                 categoryValue: 'Japanese',
                 valueKey: 'Proportion of Asian restaurants',
                 valueValue: 0.3,
               },
               {
-                categoryKey: 'Asian origin groups',
+                space: 'Asian origin groups',
                 categoryValue: 'Thai',
                 valueKey: 'Proportion of Asian restaurants',
                 valueValue: 0.3,
               },
               {
-                categoryKey: 'Asian origin groups',
+                space: 'Asian origin groups',
                 categoryValue: 'Other',
                 valueKey: 'Proportion of Asian restaurants',
                 valueValue: 0.1,
@@ -3471,7 +3471,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'the category of U.S. Asian population',
+                space: 'the category of U.S. Asian population',
                 categoryValue: 'These groups',
                 valueKey: 'the proportion of U.S. Asian population',
                 valueValue: 0.33,
@@ -3508,13 +3508,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of Asian restaurant',
+                space: 'type of Asian restaurant',
                 categoryValue: 'Chinese food',
                 valueKey: 'proportion of Asian restaurants serving Chinese food',
                 valueValue: 0.39,
               },
               {
-                categoryKey: 'type of Asian restaurant',
+                space: 'type of Asian restaurant',
                 categoryValue: 'Other Asian food',
                 valueKey: 'proportion of Asian restaurants serving other Asian food',
                 valueValue: 0.61,
@@ -3532,7 +3532,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of Asians living in the U.S.',
+                space: 'category of Asians living in the U.S.',
                 categoryValue: 'Chinese Americans',
                 valueKey: 'proportion of Asians living in the U.S.',
                 valueValue: 0.24,
@@ -3555,13 +3555,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of food',
+                space: 'type of food',
                 categoryValue: 'Japanese food',
                 valueKey: 'share of U.S. population',
                 valueValue: 0,
               },
               {
-                categoryKey: 'type of food',
+                space: 'type of food',
                 categoryValue: 'Thai food',
                 valueKey: 'share of U.S. population',
                 valueValue: 0,
@@ -3579,7 +3579,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: '',
+                space: '',
                 categoryValue: '',
                 valueKey: '',
                 valueValue: NaN,
@@ -3597,7 +3597,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of Asian restaurants in the U.S.',
+                space: 'category of Asian restaurants in the U.S.',
                 categoryValue: 'Japanese food',
                 valueKey: 'proportion of Asian restaurants',
                 valueValue: 0.28,
@@ -3615,7 +3615,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'population category',
+                space: 'population category',
                 categoryValue: 'Japanese Americans',
                 valueKey: 'proportion of U.S. Asian population',
                 valueValue: 0.07,
@@ -3638,13 +3638,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'cuisine type',
+                space: 'cuisine type',
                 categoryValue: 'Thai',
                 valueKey: 'proportion of all Asian restaurants',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'ethnicity',
+                space: 'ethnicity',
                 categoryValue: 'Thai',
                 valueKey: 'proportion of Asian Americans',
                 valueValue: 0.02,
@@ -3663,7 +3663,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of diplomacy',
+                space: 'category of diplomacy',
                 categoryValue: 'Thai restaurants',
                 valueKey: 'number of Thai restaurants',
                 valueValue: NaN,
@@ -3686,13 +3686,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of Asian restaurants',
+                space: 'category of Asian restaurants',
                 categoryValue: 'Indian restaurants',
                 valueKey: 'proportion of Asian restaurants in the U.S.',
                 valueValue: 0.07,
               },
               {
-                categoryKey: 'category of Asian restaurants',
+                space: 'category of Asian restaurants',
                 categoryValue: 'Filipino restaurants',
                 valueKey: 'proportion of Asian restaurants in the U.S.',
                 valueValue: 0.01,
@@ -3715,31 +3715,31 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'state',
+                space: 'state',
                 categoryValue: 'California',
                 valueKey: 'Asian American population proportion',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'state',
+                space: 'state',
                 categoryValue: 'New York',
                 valueKey: 'Asian American population proportion',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'state',
+                space: 'state',
                 categoryValue: 'Texas',
                 valueKey: 'Asian American population proportion',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'state',
+                space: 'state',
                 categoryValue: 'New Jersey',
                 valueKey: 'Asian American population proportion',
                 valueValue: 0.11,
               },
               {
-                categoryKey: 'state',
+                space: 'state',
                 categoryValue: 'Washington',
                 valueKey: 'Asian American population proportion',
                 valueValue: 0.11,
@@ -3756,13 +3756,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'location category',
+                space: 'location category',
                 categoryValue: 'five states',
                 valueKey: 'proportion of Asian restaurants',
                 valueValue: 0.45,
               },
               {
-                categoryKey: 'location category',
+                space: 'location category',
                 categoryValue: 'other states',
                 valueKey: 'proportion of Asian restaurants',
                 valueValue: 0.55,
@@ -3785,7 +3785,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'State',
+                space: 'State',
                 categoryValue: 'Hawaii, California, Washington, Nevada, New York',
                 valueKey: 'Proportion of Restaurants Serving Asian Food',
                 valueValue: 0.15,
@@ -3803,13 +3803,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of restaurants',
+                space: 'category of restaurants',
                 categoryValue: 'Asian restaurants',
                 valueKey: 'proportion of all restaurants',
                 valueValue: 0.06,
               },
               {
-                categoryKey: 'category of restaurants',
+                space: 'category of restaurants',
                 categoryValue: 'Other restaurants',
                 valueKey: 'proportion of all restaurants',
                 valueValue: 0.94,
@@ -3832,13 +3832,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of counties in the U.S.',
+                space: 'category of counties in the U.S.',
                 categoryValue: 'counties with at least one Asian restaurant',
                 valueKey: 'proportion of counties with at least one Asian restaurant',
                 valueValue: 0.73,
               },
               {
-                categoryKey: 'category of counties in the U.S.',
+                space: 'category of counties in the U.S.',
                 categoryValue: 'counties without any Asian restaurant',
                 valueKey: 'proportion of counties without any Asian restaurant',
                 valueValue: 0.27,
@@ -3856,13 +3856,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of restaurant',
+                space: 'type of restaurant',
                 categoryValue: 'Asian restaurants',
                 valueKey: 'proportion of food establishments',
                 valueValue: 0.25,
               },
               {
-                categoryKey: 'location',
+                space: 'location',
                 categoryValue: 'California',
                 valueKey: 'proportion of counties',
                 valueValue: 0.5,
@@ -3885,7 +3885,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of restaurants',
+                space: 'category of restaurants',
                 categoryValue: 'Asian food',
                 valueKey: 'proportion of restaurants serving Asian food',
                 valueValue: 0.25,
@@ -3907,13 +3907,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of U.S. counties',
+                space: 'category of U.S. counties',
                 categoryValue: 'Chinese restaurants',
                 valueKey: 'proportion of U.S. counties',
                 valueValue: 0.7,
               },
               {
-                categoryKey: 'category of U.S. counties',
+                space: 'category of U.S. counties',
                 categoryValue: 'Other restaurants',
                 valueKey: 'proportion of U.S. counties',
                 valueValue: 0.3,
@@ -3931,13 +3931,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'restaurant type',
+                space: 'restaurant type',
                 categoryValue: 'Japanese',
                 valueKey: 'proportion of restaurants',
                 valueValue: 0.45,
               },
               {
-                categoryKey: 'restaurant type',
+                space: 'restaurant type',
                 categoryValue: 'Thai',
                 valueKey: 'proportion of restaurants',
                 valueValue: 0.33,
@@ -3960,13 +3960,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of Asian food',
+                space: 'type of Asian food',
                 categoryValue: 'Vietnamese and Indian',
                 valueKey: 'percentage of U.S. counties',
                 valueValue: 20,
               },
               {
-                categoryKey: 'type of Asian food',
+                space: 'type of Asian food',
                 categoryValue: 'Filipino, Pakistani, Mongolian, Burmese',
                 valueKey: 'percentage of U.S. counties',
                 valueValue: 10,
@@ -4002,13 +4002,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of Asian restaurants in the U.S.',
+                space: 'category of Asian restaurants in the U.S.',
                 categoryValue: 'Asian restaurants offering cuisines from multiple origin groups',
                 valueKey: 'proportion of Asian restaurants in the U.S. offering cuisines from multiple origin groups',
                 valueValue: 0.09,
               },
               {
-                categoryKey: 'category of Asian restaurants in the U.S.',
+                space: 'category of Asian restaurants in the U.S.',
                 categoryValue: 'Asian restaurants not offering cuisines from multiple origin groups',
                 valueKey:
                   'proportion of Asian restaurants in the U.S. not offering cuisines from multiple origin groups',
@@ -4027,25 +4027,25 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Type of Establishment',
+                space: 'Type of Establishment',
                 categoryValue: 'Chinese and Japanese food combinations',
                 valueKey: 'Percentage of Establishments',
                 valueValue: 36,
               },
               {
-                categoryKey: 'Type of Establishment',
+                space: 'Type of Establishment',
                 categoryValue: 'Chinese and Thai food',
                 valueKey: 'Percentage of Establishments',
                 valueValue: 18,
               },
               {
-                categoryKey: 'Type of Establishment',
+                space: 'Type of Establishment',
                 categoryValue: 'Japanese and Thai food',
                 valueKey: 'Percentage of Establishments',
                 valueValue: 15,
               },
               {
-                categoryKey: 'Type of Establishment',
+                space: 'Type of Establishment',
                 categoryValue: 'Japanese and Korean food',
                 valueKey: 'Percentage of Establishments',
                 valueValue: 10,
@@ -4076,13 +4076,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'type of restaurant',
+                space: 'type of restaurant',
                 categoryValue: 'Pakistani restaurants in the U.S.',
                 valueKey: 'proportion serving Indian food',
                 valueValue: 0.78,
               },
               {
-                categoryKey: 'type of restaurant',
+                space: 'type of restaurant',
                 categoryValue: 'Indian restaurants in the U.S.',
                 valueKey: 'proportion serving Pakistani food',
                 valueValue: 0.1,
@@ -4169,19 +4169,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'candidate',
+                space: 'candidate',
                 categoryValue: 'Kamala Harris',
                 valueKey: 'support rate',
                 valueValue: 0,
               },
               {
-                categoryKey: 'candidate',
+                space: 'candidate',
                 categoryValue: 'Donald Trump',
                 valueKey: 'support rate',
                 valueValue: 0,
               },
               {
-                categoryKey: 'candidate',
+                space: 'candidate',
                 categoryValue: 'Robert F. Kennedy Jr.',
                 valueKey: 'support rate',
                 valueValue: 0,
@@ -4204,19 +4204,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Kamala Harris',
                 valueKey: 'Voter Preference',
                 valueValue: 0,
               },
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Donald Trump',
                 valueKey: 'Voter Preference',
                 valueValue: -30,
               },
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Robert F. Kennedy Jr.',
                 valueKey: 'Voter Preference',
                 valueValue: -30,
@@ -4239,19 +4239,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Harris',
                 valueKey: 'Proportion of Black Voters',
                 valueValue: 0.77,
               },
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Trump',
                 valueKey: 'Proportion of Black Voters',
                 valueValue: 0.13,
               },
               {
-                categoryKey: 'Candidate Preference',
+                space: 'Candidate Preference',
                 categoryValue: 'Kennedy',
                 valueKey: 'Proportion of Black Voters',
                 valueValue: 0.07,
@@ -4274,7 +4274,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of support',
+                space: 'category of support',
                 categoryValue: "Black voters' support for the top of the Democratic ticket",
                 valueKey: 'support rate',
                 valueValue: NaN,
@@ -4292,7 +4292,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'the category of voters',
+                space: 'the category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'the support rate for Biden',
                 valueValue: 0.64,
@@ -4315,13 +4315,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Voter Support Category',
+                space: 'Voter Support Category',
                 categoryValue: 'Black Voters Supporting Trump',
                 valueKey: 'Proportion of Black Voters',
                 valueValue: 0.75,
               },
               {
-                categoryKey: 'Voter Support Category',
+                space: 'Voter Support Category',
                 categoryValue: 'Black Voters Supporting Kennedy',
                 valueKey: 'Proportion of Black Voters',
                 valueValue: 0.25,
@@ -4356,7 +4356,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Demographic',
+                space: 'Demographic',
                 categoryValue: 'Black voters',
                 valueKey: 'Support for Harris',
                 valueValue: NaN,
@@ -4379,13 +4379,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: 'Black voters 50 and older',
                 valueKey: 'support for Harris',
                 valueValue: 86,
               },
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: 'Black voters 18 to 49',
                 valueKey: 'support for Harris',
                 valueValue: 68,
@@ -4407,13 +4407,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Survey Entity',
+                space: 'Survey Entity',
                 categoryValue: 'Biden',
                 valueKey: 'Age Difference',
                 valueValue: 0,
               },
               {
-                categoryKey: 'Survey Entity',
+                space: 'Survey Entity',
                 categoryValue: 'April 2024 Survey',
                 valueKey: 'Age Difference',
                 valueValue: 30,
@@ -4431,13 +4431,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: '18 to 49',
                 valueKey: 'support for Harris',
                 valueValue: 49,
               },
               {
-                categoryKey: 'age group',
+                space: 'age group',
                 categoryValue: '50 and older',
                 valueKey: 'support for Harris',
                 valueValue: 44,
@@ -4460,13 +4460,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Black voters with',
+                space: 'Black voters with',
                 categoryValue: 'college degrees',
                 valueKey: 'support for Harris',
                 valueValue: 84,
               },
               {
-                categoryKey: 'Black voters with',
+                space: 'Black voters with',
                 categoryValue: 'without degrees',
                 valueKey: 'support for Harris',
                 valueValue: 74,
@@ -4484,13 +4484,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of education level',
+                space: 'category of education level',
                 categoryValue: 'college graduates',
                 valueKey: 'support percentage for Harris',
                 valueValue: 56,
               },
               {
-                categoryKey: 'category of education level',
+                space: 'category of education level',
                 categoryValue: 'those without bachelor’s degrees',
                 valueKey: 'support percentage for Harris',
                 valueValue: 41,
@@ -4513,13 +4513,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'support for Harris',
                 valueValue: 0,
               },
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters by gender',
                 valueKey: 'support for Harris',
                 valueValue: 0,
@@ -4542,7 +4542,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'view Harris favorably',
                 valueValue: NaN,
@@ -4565,7 +4565,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'favorability rating',
                 valueValue: NaN,
@@ -4587,7 +4587,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Demographic Group',
+                space: 'Demographic Group',
                 categoryValue: 'Black voters',
                 valueKey: 'Favorability of Harris',
                 valueValue: 0.79,
@@ -4604,13 +4604,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'share of sentiment',
+                space: 'share of sentiment',
                 categoryValue: 'happy',
                 valueKey: 'proportion of sentiment',
                 valueValue: 0.8,
               },
               {
-                categoryKey: 'share of sentiment',
+                space: 'share of sentiment',
                 categoryValue: 'other',
                 valueKey: 'proportion of sentiment',
                 valueValue: 0.2,
@@ -4633,13 +4633,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'favorable view of Biden',
                 valueValue: 68,
               },
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'favorable view of Trump',
                 valueValue: 14,
@@ -4657,7 +4657,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of view',
+                space: 'category of view',
                 categoryValue: 'Harris',
                 valueKey: 'percentage of positive views',
                 valueValue: NaN,
@@ -4681,19 +4681,19 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Time Segment',
+                space: 'Time Segment',
                 categoryValue: 'July 2023',
                 valueKey: 'Favorable View Percentage',
                 valueValue: 65,
               },
               {
-                categoryKey: 'Time Segment',
+                space: 'Time Segment',
                 categoryValue: 'May 2024',
                 valueKey: 'Favorable View Percentage',
                 valueValue: 67,
               },
               {
-                categoryKey: 'Time Segment',
+                space: 'Time Segment',
                 categoryValue: 'August 2024',
                 valueKey: 'Favorable View Percentage',
                 valueValue: 79,
@@ -4717,7 +4717,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of opinion shift',
+                space: 'category of opinion shift',
                 categoryValue: 'Black voters',
                 valueKey: 'opinion shift rate',
                 valueValue: NaN,
@@ -4740,13 +4740,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Opinion of Harris among Women',
+                space: 'Opinion of Harris among Women',
                 categoryValue: 'Black women',
                 valueKey: 'Favorable opinion percentage',
                 valueValue: 67,
               },
               {
-                categoryKey: 'Opinion of Harris among Women',
+                space: 'Opinion of Harris among Women',
                 categoryValue: 'Black women',
                 valueKey: 'Favorable opinion percentage',
                 valueValue: 82,
@@ -4770,13 +4770,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Age Group',
+                space: 'Age Group',
                 categoryValue: 'Black voters ages 18 to 49',
                 valueKey: 'Favorability of Harris',
                 valueValue: 52,
               },
               {
-                categoryKey: 'Age Group',
+                space: 'Age Group',
                 categoryValue: 'Black voters ages 18 to 49',
                 valueKey: 'Favorability of Harris',
                 valueValue: 70,
@@ -4800,7 +4800,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters with college degrees',
                 valueKey: 'favorability ratings',
                 valueValue: 82,
@@ -4823,7 +4823,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'positive views increase',
                 valueValue: 100,
@@ -4842,7 +4842,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of favorability ratings',
+                space: 'category of favorability ratings',
                 categoryValue: 'Democrats and Democratic leaners',
                 valueKey: 'favorability ratings',
                 valueValue: NaN,
@@ -4865,7 +4865,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters',
                 valueKey: 'motivation to vote',
                 valueValue: NaN,
@@ -4889,7 +4889,7 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'demographic and political groups',
+                space: 'demographic and political groups',
                 categoryValue: 'voters',
                 valueKey: 'motivation to cast a ballot',
                 valueValue: NaN,
@@ -4908,13 +4908,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'Time Segment',
+                space: 'Time Segment',
                 categoryValue: 'July',
                 valueKey: 'Motivation Level Among Black Voters',
                 valueValue: 56,
               },
               {
-                categoryKey: 'Time Segment',
+                space: 'Time Segment',
                 categoryValue: 'August',
                 valueKey: 'Motivation Level Among Black Voters',
                 valueValue: 67,
@@ -4932,13 +4932,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of demographic',
+                space: 'category of demographic',
                 categoryValue: 'women',
                 valueKey: 'increase rate',
                 valueValue: NaN,
               },
               {
-                categoryKey: 'category of education',
+                space: 'category of education',
                 categoryValue: 'college degrees',
                 valueKey: 'increase rate',
                 valueValue: NaN,
@@ -4961,13 +4961,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'time period',
+                space: 'time period',
                 categoryValue: 'July',
                 valueKey: 'motivation level of Black women to vote',
                 valueValue: 51,
               },
               {
-                categoryKey: 'time period',
+                space: 'time period',
                 categoryValue: 'August',
                 valueKey: 'motivation level of Black women to vote',
                 valueValue: 67,
@@ -4991,13 +4991,13 @@ export const articles: ArticleData[] = [
             },
             dataSpec: [
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters with college degrees',
                 valueKey: 'motivation to vote',
                 valueValue: 63,
               },
               {
-                categoryKey: 'category of voters',
+                space: 'category of voters',
                 categoryValue: 'Black voters with college degrees',
                 valueKey: 'motivation to vote',
                 valueValue: 81,

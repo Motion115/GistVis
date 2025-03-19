@@ -28,7 +28,7 @@ const SimpleMaxMin: React.FC<SimpleMaxMinProps> = ({
       inSituPosition: ['current'],
     },
     dataSpec: [{
-      categoryKey: 'value',
+      space: 'value',
       categoryValue: 'current',
       valueKey: `${attribute} value`,
       valueValue: current,

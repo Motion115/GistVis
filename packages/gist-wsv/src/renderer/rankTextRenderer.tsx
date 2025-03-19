@@ -12,7 +12,7 @@ const addPlaceholders = (dataSpec: DataSpec[], maxRank: number) => {
   const placeholders = Array.from({ length: maxRank }, (_, i) => i + 1)
     .filter((rank) => !existingRanks.includes(rank))
     .map((rank) => ({
-      categoryKey: dataSpec[0].categoryKey,
+      space: dataSpec[0].space,
       categoryValue: 'placeholder',
       valueKey: dataSpec[0].valueKey,
       valueValue: rank,
@@ -23,7 +23,7 @@ const addPlaceholders = (dataSpec: DataSpec[], maxRank: number) => {
 const ensureMinimumLength = (dataSpec: DataSpec[], minLength: number) => {
   if (dataSpec.length < minLength) {
     const additionalData = Array.from({ length: minLength - dataSpec.length }, (_, i) => ({
-      categoryKey: dataSpec[0].categoryKey,
+      space: dataSpec[0].space,
       categoryValue: 'placeholder',
       valueKey: dataSpec[0].valueKey,
       valueValue: dataSpec.length + i + 1,
