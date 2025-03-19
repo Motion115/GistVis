@@ -26,13 +26,13 @@ const EXAMPLE_SPECS: GistvisSpec[] = [
       {
         space: 'time segment',
         breakdown: '2024',
-        valueKey: 'number of Americans ages 100 and older',
+        feature: 'number of Americans ages 100 and older',
         valueValue: 101000,
       },
       {
         space: 'time segment',
         breakdown: '2054',
-        valueKey: 'number of Americans ages 100 and older',
+        feature: 'number of Americans ages 100 and older',
         valueValue: 422000,
       },
     ],
@@ -51,13 +51,13 @@ const EXAMPLE_SPECS: GistvisSpec[] = [
       {
         space: 'category of population',
         breakdown: 'Centenarians',
-        valueKey: 'percentage of overall U.S. population',
+        feature: 'percentage of overall U.S. population',
         valueValue: 0.03,
       },
       {
         space: 'category of population',
         breakdown: 'Centenarians',
-        valueKey: 'projected percentage of overall U.S. population in 2054',
+        feature: 'projected percentage of overall U.S. population in 2054',
         valueValue: 0.1,
       },
     ],

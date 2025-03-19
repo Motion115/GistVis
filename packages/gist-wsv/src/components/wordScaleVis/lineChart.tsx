@@ -96,7 +96,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {capitalizeFirstLetter(dataSpec[0].valueKey) +
+          {capitalizeFirstLetter(dataSpec[0].feature) +
             ' of ' +
             dataSpec.find((d) => d.valueValue === selectionVal)?.breakdown +
             ': ' +
@@ -118,7 +118,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {capitalizeFirstLetter(dataSpec[0].valueKey) +
+          {capitalizeFirstLetter(dataSpec[0].feature) +
             ' of ' +
             dataSpec.find((d) => d.valueValue === selectionVal)?.breakdown +
             ': ' +

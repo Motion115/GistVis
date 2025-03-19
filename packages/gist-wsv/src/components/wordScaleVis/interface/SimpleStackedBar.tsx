@@ -30,7 +30,7 @@ const SimpleStackedBar: React.FC<SimpleStackedBarChartProps> = ({
       item.values.map(value => ({
         space: 'category',
         breakdown: item.category,
-        valueKey: 'proportion',
+        feature: 'proportion',
         valueValue: value,
       }))
     ),

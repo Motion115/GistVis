@@ -25,7 +25,7 @@ describe('recommendValidTypes', () => {
       valueValue: value,
       breakdown: breakdowns[index] || '',
       space: 'category',
-      valueKey: 'value'
+      feature: 'value'
     }));
   };
 

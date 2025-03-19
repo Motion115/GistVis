@@ -17,7 +17,7 @@ export type Attribute = ExtremeAttribute | TrendAttribute;
 export type DataSpec = {
   space: string;
   breakdown: string;
-  valueKey: string;
+  feature: string;
   valueValue: number;
 };
 

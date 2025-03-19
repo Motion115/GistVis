@@ -24,7 +24,7 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
     .range([SVG_HEIGHT, 0]);
 
   const knownCategories = dataSpec.map((d: DataSpec, i: number) => {
-    const uniqueId = `${d.breakdown}-${d.valueKey}-${d.valueValue}`;
+    const uniqueId = `${d.breakdown}-${d.feature}-${d.valueValue}`;
     const isHovered = uniqueId === hoveredUniqueId;
     const hoverStyle = {
       opacity: isHovered ? 1 : 0.5,
@@ -61,7 +61,7 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
     }
 
     if (gistvisSpec.unitSegmentSpec.insightType === 'comparison') {
-      const currentCase = dataSpec.find((d) => `${d.breakdown}-${d.valueKey}-${d.valueValue}` === hoveredUniqueId);
+      const currentCase = dataSpec.find((d) => `${d.breakdown}-${d.feature}-${d.valueValue}` === hoveredUniqueId);
       if (!currentCase) {
         return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Comparison</div>;
       }
@@ -93,14 +93,14 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
         );
       }
     } else if (gistvisSpec.unitSegmentSpec.insightType === 'rank') {
-      const rankData = dataSpec.find((d) => `${d.breakdown}-${d.valueKey}-${d.valueValue}` === hoveredUniqueId);
+      const rankData = dataSpec.find((d) => `${d.breakdown}-${d.feature}-${d.valueValue}` === hoveredUniqueId);
       const rank = rankData?.valueValue;
       if (!rankData || rank === undefined) {
         return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Rank</div>;
       }
       return (
         <div style={{ lineHeight: 1.1, fontSize: '14px', color: colorScale(selectedEntity), fontWeight: 'bold' }}>
-          {rankData.valueKey + ' ' + rank + ': ' + selectedEntity}
+          {rankData.feature + ' ' + rank + ': ' + selectedEntity}
         </div>
       );
     }

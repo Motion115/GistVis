@@ -14,7 +14,7 @@ const addPlaceholders = (dataSpec: DataSpec[], maxRank: number) => {
     .map((rank) => ({
       space: dataSpec[0].space,
       breakdown: 'placeholder',
-      valueKey: dataSpec[0].valueKey,
+      feature: dataSpec[0].feature,
       valueValue: rank,
     }));
   return [...dataSpec, ...placeholders];
@@ -25,7 +25,7 @@ const ensureMinimumLength = (dataSpec: DataSpec[], minLength: number) => {
     const additionalData = Array.from({ length: minLength - dataSpec.length }, (_, i) => ({
       space: dataSpec[0].space,
       breakdown: 'placeholder',
-      valueKey: dataSpec[0].valueKey,
+      feature: dataSpec[0].feature,
       valueValue: dataSpec.length + i + 1,
     }));
     return [...dataSpec, ...additionalData];

@@ -19,7 +19,7 @@ describe('getHighlightPos', () => {
       {
         space: 'company',
         breakdown: 'BYD',
-        valueKey: 'sales',
+        feature: 'sales',
         valueValue: 30
       }
     ]

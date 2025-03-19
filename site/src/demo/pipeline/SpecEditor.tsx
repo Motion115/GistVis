@@ -230,7 +230,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
         {
           space: '',
           breakdown: '',
-          valueKey: '',
+          feature: '',
           valueValue: 0,
         },
       ],
@@ -405,7 +405,7 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                           {
                             space: '',
                             breakdown: '',
-                            valueKey: '',
+                            feature: '',
                             valueValue: 0,
                           },
                         ],
@@ -445,8 +445,8 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                   </Item>
                   <Item label="Value Key">
                     <Input
-                      value={data.valueKey}
-                      onChange={(e) => handleDataSpecChange(index, 'valueKey', e.target.value)}
+                      value={data.feature}
+                      onChange={(e) => handleDataSpecChange(index, 'feature', e.target.value)}
                     />
                   </Item>
                   <Item label="Value">

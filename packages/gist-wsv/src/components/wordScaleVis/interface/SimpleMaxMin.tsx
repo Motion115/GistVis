@@ -30,7 +30,7 @@ const SimpleMaxMin: React.FC<SimpleMaxMinProps> = ({
     dataSpec: [{
       space: 'value',
       breakdown: 'current',
-      valueKey: `${attribute} value`,
+      feature: `${attribute} value`,
       valueValue: current,
     }],
   };

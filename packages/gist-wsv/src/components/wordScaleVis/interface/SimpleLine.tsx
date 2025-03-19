@@ -25,7 +25,7 @@ const SimpleLine: React.FC<SimpleLineChartProps> = ({
     dataSpec: data.map((point, index) => ({
       space: 'time',
       breakdown: point.label || index.toString(),
-      valueKey: 'value',
+      feature: 'value',
       valueValue: point.y,
     })),
   };

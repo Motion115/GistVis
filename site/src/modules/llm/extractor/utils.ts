@@ -45,7 +45,7 @@ export const getZodFormatting = (insightType: InsightType) => {
       z.object({
         space: z.string().describe(SpecDescriptions.CATEGORY_KEY_DESCRIPTION),
         breakdown: z.string().describe(SpecDescriptions.CATEGORY_VALUE_DESCRIPTION),
-        valueKey: z.string().describe(SpecDescriptions.VALUE_KEY_DESCRIPTION),
+        feature: z.string().describe(SpecDescriptions.VALUE_KEY_DESCRIPTION),
         valueValue: z
           .union([z.number(), z.string()])
           .transform((value) => {
