@@ -1,28 +1,28 @@
-import React, { useRef, useState } from 'react';
-import { Image, Button, Layout, Divider, Flex, Steps, ConfigProvider, Carousel, Row, Col } from 'antd';
+import { useEffect, useRef, useState } from 'react';
+import {
+  Image,
+  Button,
+  Layout,
+  Typography,
+  Flex,
+  Steps,
+  ConfigProvider,
+  Carousel,
+  Row,
+  Col,
+  Space,
+  Pagination,
+} from 'antd';
 import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
 import {
-  buttonGithub,
-  buttonOpen,
-  buttonPdf,
   GistVis,
-  headerContent,
-  headerStyle,
-  buttonContainer,
-  bottomButtonRow,
-  introductionContent,
-  overviewContainer,
   overviewVideo,
-  pipelineContainer,
   divHead,
   divContent,
-  stepsContainer,
-  buttonPrevious,
-  buttonNext,
   visContainer,
-  sampleContainer,
   bibtexContainer,
-  buttonYtb,
+  titleContent,
+  authors,
 } from './IntroPageCSS.tsx';
 import teaserImage from '../../static/teaser.png';
 import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
@@ -32,17 +32,89 @@ import { articles } from '../userstudy/articles/articledata.ts';
 import { ArtcleProcess } from 'gist-wsv';
 import BibtexCard from './component/bibtex.tsx';
 import { Link } from 'react-router-dom';
+import THEME from '../style/theme.tsx';
+import { Footer } from 'antd/es/layout/layout';
 const { Header, Content } = Layout;
+const { Paragraph, Title, Text } = Typography;
+
+const AuthorLinkComponent = ({ authorName, authorLink }: { authorName: string; authorLink?: string }) => {
+  return authorLink ? (
+    <Link
+      style={{
+        color: '#000000',
+        textDecoration: 'underline',
+      }}
+      to={authorLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {authorName}
+    </Link>
+  ) : (
+    <Link
+      style={{
+        color: '#000000',
+      }}
+      to={`/`}
+    >
+      {authorName}
+    </Link>
+  );
+};
 
 const IntroPage = () => {
-  const [hoverOpenButton, sethoverOpenButton] = useState(false);
-  const [hoverPdfButton, sethoverPdfButton] = useState(false);
-  const [hoverGithubButton, sethoverGithubButton] = useState(false);
   const [stepsCurrent, setStepsCurrent] = useState(0);
+
   const [currentArticleIndex, setCurrentArticleIndex] = useState(1);
   // Refs for Previous and Next buttons
   const buttonPreviousRef = useRef<HTMLButtonElement>(null);
   const buttonNextRef = useRef<HTMLButtonElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const [browserWidth, setBrowserWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setBrowserWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleLoadedData = () => {
+      video.currentTime = 1;
+    };
+
+    const handleSeeked = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        video.poster = canvas.toDataURL();
+      }
+      video.removeEventListener('seeked', handleSeeked);
+    };
+
+    video.addEventListener('loadeddata', handleLoadedData);
+    video.addEventListener('seeked', handleSeeked);
+
+    return () => {
+      video.removeEventListener('loadeddata', handleLoadedData);
+      video.removeEventListener('seeked', handleSeeked);
+    };
+  }, []);
 
   // Handle Previous button click
   const handlePrevious = () => {
@@ -58,30 +130,13 @@ const IntroPage = () => {
     }
   };
 
-  const openButtonStyle = {
-    ...buttonOpen,
-    backgroundColor: hoverOpenButton ? 'rgba(36, 140, 168, 1)' : 'rgba(48, 176, 199, 1)',
-  };
-
-  const pdfButtonStyle = {
-    ...buttonPdf,
-    backgroundColor: hoverPdfButton ? 'rgba(224, 67, 67, 1)' : 'rgba(255, 76, 76, 1)',
-    transform: hoverPdfButton ? 'scale(1.05)' : 'scale(1)',
-  };
-
-  const githubButtonStyle = {
-    ...buttonGithub,
-    backgroundColor: hoverGithubButton ? 'rgba(74, 74, 74, 1)' : 'rgba(51, 51, 51, 1)',
-    transform: hoverGithubButton ? 'scale(1.05)' : 'scale(1)',
-  };
-
   const items = [
-    { title: 'Input', description: 'origin article' },
-    { title: 'Discoverer', description: 'Segmenting the article' },
-    { title: 'Annotator', description: 'Labeling the segments' },
-    { title: 'Extractor', description: 'Extracting data specifications' },
-    { title: 'Visualizer', description: 'Mapping data to visualizations' },
-    { title: 'Output', description: 'Final Article' },
+    { title: 'Input', description: 'Plain document' },
+    { title: 'Discoverer', description: 'Find unit segments' },
+    { title: 'Annotator', description: 'Label unit segments' },
+    { title: 'Extractor', description: 'Extract unit segment spec' },
+    { title: 'Visualizer', description: 'Map spec to visualizations' },
+    { title: 'Output', description: 'Augmented document' },
   ];
 
   const pipelineChange = (current: number) => {
@@ -112,201 +167,160 @@ const IntroPage = () => {
       </div>
     );
   };
+
+  const handlePageChange = (page: number) => {
+    setCurrentArticleIndex(page);
+  };
+
   return (
-    <ConfigProvider
-      theme={{
-        token: {
-          motionDurationSlow: '0.8s',
-        },
-      }}
-    >
+    <ConfigProvider theme={THEME}>
       <Layout style={{ alignContent: 'center', margin: 'auto' }}>
-        <Header style={headerStyle}>
-          <h1 style={GistVis}>GistVis</h1>
-          <p style={headerContent}>Automatic Generation of Word-scale Visualizations from Data-rich Documents</p>
-          <div style={buttonContainer}>
-            <Link to="/home">
-              <Button
-                style={openButtonStyle}
-                onMouseEnter={() => sethoverOpenButton(true)}
-                onMouseLeave={() => sethoverOpenButton(false)}
-              >
-                open GistVis
-              </Button>
-            </Link>
-            <div style={bottomButtonRow}>
-              <Button
-                style={pdfButtonStyle}
-                target="_blank"
-                href="https://doi.org/10.48550/arXiv.2502.03784"
-                onMouseEnter={() => sethoverPdfButton(true)}
-                onMouseLeave={() => sethoverPdfButton(false)}
-              >
-                <FilePdfOutlined style={{ fontSize: 20 }} />
+        <Header style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto', height: 'auto' }}>
+          <Title style={GistVis}>GistVis</Title>
+          <Title level={2} style={titleContent}>
+            Automatic Generation of Word-scale Visualizations from Data-rich Documents
+          </Title>
+          <Paragraph style={authors}>
+            <AuthorLinkComponent authorName="Ruishi Zou*" authorLink="https://motion115.github.io/" />,{' '}
+            <AuthorLinkComponent authorName="Yinqi Tang*" />, <AuthorLinkComponent authorName="Jingzhu Chen" />,{' '}
+            <AuthorLinkComponent authorName="Siyu Lu" />, <AuthorLinkComponent authorName="Yan Lu" />,{' '}
+            <AuthorLinkComponent authorName="Yingfan Yang" />,{' '}
+            <AuthorLinkComponent authorName="Chen Ye" authorLink="https://faculty.tongji.edu.cn/yechen/en/index.htm" />
+          </Paragraph>
+          <Paragraph style={authors}>* Equal contribution</Paragraph>
+          <Space align="center" wrap style={{ justifyContent: 'center', display: 'flex' }}>
+            <Link to="https://doi.org/10.48550/arXiv.2502.03784" target="_blank">
+              <Button variant="filled" icon={<FilePdfOutlined />}>
                 Paper
               </Button>
-              <Button
-                style={githubButtonStyle}
-                target="_blank"
-                href="https://github.com/Motion115/GistVis"
-                onMouseEnter={() => sethoverGithubButton(true)}
-                onMouseLeave={() => sethoverGithubButton(false)}
-              >
-                <GithubOutlined style={{ fontSize: 20 }} />
+            </Link>
+            <Link to="/home">
+              <Button variant="outlined">Open GistVis</Button>
+            </Link>
+            <Link to="https://github.com/Motion115/GistVis" target="_blank">
+              <Button variant="outlined" icon={<GithubOutlined />}>
                 GitHub
               </Button>
-            </div>
-          </div>
+            </Link>
+          </Space>
         </Header>
-        <Content style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
-          {/* Introduction */}
-          <Flex vertical align="center" style={{ marginTop: '2rem' }}>
-            <Image src={teaserImage} alt="teaser image" width={1156} height={348} preview={false} />
-            <p style={introductionContent}>
-              GistVis is an innovative system that automatically generates word-scale visualizations to augment
-              data-rich documents, thereby enhancing document-centric analysis. By leveraging large language models and
-              design-driven techniques, GistVis decomposes the visualization process into four modular
-              stages—Discoverer, Annotator, Extractor, and Visualizer—to accurately extract, annotate, and render key
-              data insights directly from textual descriptions. This approach supports multiple data fact types such as
-              comparison, proportion, trend, rank, extreme, and value, and seamlessly integrates interactive visual
-              elements into the document to improve user comprehension and reduce cognitive load.
-            </p>
-          </Flex>
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
-          {/* Overview */}
-          <Flex vertical style={overviewContainer} gap={10}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>Overview - Explore the Potential of GistVis</h1>
-              <p style={divContent}>Click to watch the video and quickly discover the features of GistVis.</p>
-              <Flex style={{ marginTop: '5px' }} gap={20}>
-                <p style={{ ...divContent, lineHeight: '1.6', marginTop: '3px', marginBottom: '5px' }}>
-                  For more details, click our Talk Video 👉
-                </p>
-                <Button
-                  style={buttonYtb}
-                  href="https://www.youtube.com/watch?v=OIjAvoWdVCo"
-                  target="_blank"
-                  size="small"
-                >
-                  <YoutubeOutlined />
-                </Button>
+        <Content style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto' }}>
+          <Space direction="vertical" size="large" style={{ width: '100%' }}>
+            {/* Introduction */}
+            <Flex vertical align="center" style={{ marginTop: '2rem', padding: '1%' }}>
+              <Image
+                src={teaserImage}
+                alt="teaser image"
+                preview={false}
+                style={{ width: '80%', maxWidth: '90rem', margin: '0 auto', padding: 'auto', display: 'flex' }}
+              />
+              <Paragraph style={{ marginTop: '2rem', textAlign: 'justify', lineHeight: '1.4' }}>
+                GistVis is an innovative system that automatically generates word-scale visualizations to augment
+                data-rich documents, thereby enhancing document-centric analysis. By leveraging large language models
+                and design-driven techniques, GistVis decomposes the visualization process into four modular
+                stages—Discoverer, Annotator, Extractor, and Visualizer—to accurately extract, annotate, and render key
+                data insights directly from textual descriptions. This approach supports multiple data fact types such
+                as comparison, proportion, trend, rank, extreme, and value, and seamlessly integrates interactive visual
+                elements into the document to improve user comprehension and reduce cognitive load.
+              </Paragraph>
+            </Flex>
+            {/* Overview */}
+            <div>
+              <Flex vertical gap={10}>
+                <div style={{ width: '100%', alignSelf: 'flex-start' }}>
+                  <h1 style={divHead}>Video Teaser</h1>
+                  <Flex gap={5}>
+                    <Paragraph>
+                      Check more detailed discussion about GistVis in our{' '}
+                      <Link to="https://www.youtube.com/watch?v=OIjAvoWdVCo" target="_blank">
+                        <YoutubeOutlined /> talk video.
+                      </Link>
+                    </Paragraph>
+                  </Flex>
+                </div>
+                <video ref={videoRef} style={overviewVideo} controls muted>
+                  <source src={GistVisVideo} type="video/mp4" />
+                </video>
               </Flex>
             </div>
-            <video style={overviewVideo} controls autoPlay muted>
-              <source src={GistVisVideo} type="video/mp4" />
-            </video>
-          </Flex>
-          {/* Overview */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
-          {/* Pipeline */}
-          <Flex vertical style={pipelineContainer}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>Pipeline - From Discovery to Visualization</h1>
-              <p style={divContent}>Click on the interactive components to dive deeper into the core processes.</p>
-            </div>
-            <div style={{ alignSelf: 'center' }}>
-              <Image src={pipelineImage} alt="pipelineImage" width={1000} height={355} preview={false} />
-            </div>
-            <div style={stepsContainer}>
-              <Steps current={stepsCurrent} onChange={pipelineChange} items={items}></Steps>
-              <Flex vertical={stepsCurrent === 0 || stepsCurrent >= 4} style={{ width: '100%' }}>
-                <PipelinePage stage={stepsCurrent} />
+            {/* Overview */}
+            {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
+            {/* Pipeline */}
+            <div>
+              <div style={{ alignSelf: 'flex-start' }}>
+                <h1 style={divHead}>Computation Pipeline</h1>
+              </div>
+              <Flex vertical align="center" style={{ marginTop: '2rem', padding: '1%' }}>
+                <Image
+                  src={pipelineImage}
+                  alt="pipelineImage"
+                  style={{ width: '80%', maxWidth: '90rem', margin: 'auto', padding: 'auto', display: 'flex' }}
+                  preview={false}
+                />
               </Flex>
-              <Button
-                ref={buttonPreviousRef}
-                style={buttonPrevious}
-                onClick={handlePrevious}
-                disabled={stepsCurrent === 0}
-              >
-                Previous
-              </Button>
-              <Button ref={buttonNextRef} style={buttonNext} onClick={handleNext} disabled={stepsCurrent === 5}>
-                Next
-              </Button>
+              {browserWidth > 650 ? (
+                <Space direction='vertical' style={{ width: '100%'}}>
+                  <Steps current={stepsCurrent} onChange={pipelineChange} items={items}></Steps>
+                  <Flex justify='center' gap={10}>
+                    <Button ref={buttonPreviousRef} onClick={handlePrevious} disabled={stepsCurrent === 0}>
+                      <LeftOutlined />
+                      Previous
+                    </Button>
+                    <Button ref={buttonNextRef} onClick={handleNext} disabled={stepsCurrent === 5}>
+                      Next
+                      <RightOutlined />
+                    </Button>
+                  </Flex>
+                  <p style={divContent}>
+                    Click on the interactive components to dive deeper into the computation process.
+                  </p>
+                  <div style={{ width: '100%' }}>
+                    <PipelinePage stage={stepsCurrent} />
+                  </div>
+                </Space>
+              ) : (
+                <div />
+              )}
             </div>
-          </Flex>
-          {/* Pipeline */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
-          {/* Article Visualization */}
-          <Flex vertical style={visContainer} gap={20}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>Article Visualization with GistVis: Bringing Insights to Life</h1>
-              <p style={divContent}>
-                Experience how GistVis transforms complex articles into intuitive visual representations, revealing
-                deeper insights at a glance.
-              </p>
+            {/* Pipeline */}
+            {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
+            {/* Article Visualization */}
+            <div>
+              <div style={{ alignSelf: 'flex-start' }}>
+                <h1 style={divHead}>Gallery</h1>
+                <Paragraph>Generated documents used in user study.</Paragraph>
+              </div>
+              <Space direction="vertical" align="center">
+                <div style={{ width: '90%', margin: 'auto', padding: 'auto' }}>
+                  <Flex style={{ maxHeight: '20rem', overflow: 'scroll' }}>
+                    {renderArticleContent(currentArticleIndex)}
+                    {renderArticleContent(currentArticleIndex + 6)}
+                  </Flex>
+                  <Pagination
+                    defaultCurrent={1}
+                    current={currentArticleIndex}
+                    total={6}
+                    pageSize={1}
+                    onChange={(page: number, pageSize: number) => handlePageChange(page)}
+                    style={{ margin: 'auto', padding: 'auto', justifyContent: 'center' }}
+                  />
+                </div>
+              </Space>
             </div>
-            <div style={{ margin: '0 auto' }}>
-              <ConfigProvider
-                theme={{
-                  token: {
-                    colorBgContainer: ' rgba(76, 144, 226, 0.8)',
-                  },
-                }}
-              >
-                <Carousel
-                  autoplay
-                  arrows
-                  infinite={true}
-                  dotPosition="top"
-                  style={sampleContainer}
-                  prevArrow={<LeftOutlined />}
-                  nextArrow={<RightOutlined />}
-                  effect="fade"
-                  autoplaySpeed={5000}
-                >
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 6)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 1)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 7)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 2)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 8)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 3)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 9)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 4)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 10)}</Col>
-                    </Row>
-                  </div>
-                  <div>
-                    <Row gutter={[16, 16]} className="content-wrapper1">
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 5)}</Col>
-                      <Col span={12}>{renderArticleContent(currentArticleIndex + 11)}</Col>
-                    </Row>
-                  </div>
-                </Carousel>
-              </ConfigProvider>
-            </div>
-          </Flex>
-          {/* Article Visualization */}
-          <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} />
-          {/* Bibtex */}
-          <Flex vertical style={bibtexContainer} gap={20}>
-            <div style={{ alignSelf: 'flex-start' }}>
-              <h1 style={divHead}>BibTex</h1>
-              <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
-            </div>
-            <BibtexCard />
-          </Flex>
-          {/* Bibtex */}
+            {/* Bibtex */}
+            <Flex vertical style={bibtexContainer} gap={20}>
+              <div style={{ alignSelf: 'flex-start' }}>
+                <h1 style={divHead}>BibTex</h1>
+                <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
+              </div>
+              <BibtexCard />
+            </Flex>
+            {/* Bibtex */}
+          </Space>
         </Content>
+        <Footer style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto', height: '10rem' }}>
+          © Copyright GistVis Development Team
+        </Footer>
       </Layout>
     </ConfigProvider>
   );
