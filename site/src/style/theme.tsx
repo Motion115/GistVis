@@ -1,7 +1,9 @@
+
+
 const THEME = {
   token: {
     // colorPrimary: "#B3E5FC",
-    colorPrimary: 'rgb(200, 200, 200)',
+    // colorPrimary: 'rgb(200, 200, 200)',
     colorBgLayout: '#ffffff',
     borderRadius: 4,
     fontSize: 20,
@@ -22,15 +24,19 @@ const THEME = {
       horizontalItemBorderRadius: 8,
     },
     Slider: {
-      trackBg: '#000000',
-      trackHoverBg: '#000000',
-      railBg: 'rgba(0, 0, 0, 0.2)',
-      railHoverBg: 'rgba(0, 0, 0, 0.4)',
-      handleColor: '#000000',
-      handleActiveColor: '#000000',
-      dotBorderColor: '#000000',
-      dotActiveBorderColor: '#000000',
+      // trackBg: '#000000',
+      // trackHoverBg: '#000000',
+      // railBg: 'rgba(0, 0, 0, 0.2)',
+      // railHoverBg: 'rgba(0, 0, 0, 0.4)',
+      // handleColor: '#000000',
+      // handleActiveColor: '#000000',
+      // dotBorderColor: '#000000',
+      // dotActiveBorderColor: '#000000',
     },
+    Typography: {
+      titleMarginBottom: '0.3em',
+      titleMarginTop: '0.6em',
+    }
   },
 };
 

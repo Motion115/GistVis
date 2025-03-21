@@ -10,16 +10,11 @@
 
 // Common container style (shared margin and width for multiple containers)
 const commonContainer: React.CSSProperties = {
-  margin: '0 auto',
-  padding: '30px 0 20px 0',
-  width: '1200px',
+
 };
 
 // Common div style (shared by divHead and divContent)
 const commonDiv: React.CSSProperties = {
-  marginTop: '0px',
-  marginBottom: '0px',
-  marginLeft: '40px',
   textAlign: 'left',
 };
 
@@ -40,32 +35,31 @@ export const commonButton: React.CSSProperties = {
 };
 
 export const headerStyle: React.CSSProperties = {
-  display: 'flex',
-  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  width: '100%',
-  height: '370px',
-  background: 'linear-gradient(135deg, rgba(68, 183, 204, 0.5) 0%, rgba(68, 183, 204, 0.8) 100%)',
-  padding: '0 20px',
+  width: '80%',
+  // height: '370px',
+  height: 'auto',
+  // background: 'linear-gradient(135deg, rgba(68, 183, 204, 0.5) 0%, rgba(68, 183, 204, 0.8) 100%)',
+  background: '#ffffff',
 };
 
 export const GistVis: React.CSSProperties = {
-  margin: '1.5rem auto',
-  color: 'rgba(48, 176, 199, 1)',
-  fontSize: '6rem',
+  margin: '3rem 0 1.2rem 0',
+  // color: 'rgba(48, 176, 199, 1)',
+  // color: '#d6e4ff',
+  fontSize: '3.5em',
   fontWeight: 'bold',
-  fontStyle: 'italic',
   textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
   textAlign: 'center',
 };
 
 export const titleContent: React.CSSProperties = {
-  marginTop: '1rem',
-  marginBottom: '0',
-  color: 'rgba(230,244,241,1)',
-  fontSize: '2rem',
-  fontWeight: 'bold',
+  margin: '0.5rem 0 0.5rem 0',
+  // color: '#f0f5ff',
+  fontSize: '1.5rem',
+  // fontWeight: 'bold',
+  fontStyle: 'italic',
   lineHeight: 1.4,
   textAlign: 'center',
 };
@@ -73,20 +67,19 @@ export const titleContent: React.CSSProperties = {
 export const authors: React.CSSProperties = {
   marginTop: '0',
   marginBottom: '0',
-  color: 'rgba(230,244,241,1)',
-  fontSize: '1.5rem',
-  fontWeight: 'bold',
+  // color: 'rgba(230,244,241,1)',
+  fontSize: '1.2rem',
+  // fontWeight: 'bold',
   lineHeight: 1.4,
   textAlign: 'center',
 };
 
 export const buttonContainer: React.CSSProperties = {
-  marginTop: '2rem',
+  marginTop: '1rem',
   width: '100%',
   maxWidth: '600px',
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'center',
   justifyContent: 'space-evenly',
   gap: '30px',
 };
@@ -159,9 +152,9 @@ export const buttonYtb = {
 };
 
 export const overviewVideo: React.CSSProperties = {
-  width: '935px',
-  height: '526px',
   alignSelf: 'center',
+  width: '75%',
+  maxWidth: '90em'
 };
 
 export const pipelineContainer: React.CSSProperties = {
@@ -169,9 +162,8 @@ export const pipelineContainer: React.CSSProperties = {
 };
 
 export const stepsContainer: React.CSSProperties = {
-  position: 'relative',
   marginTop: '1rem',
-  width: '1200px',
+  width: '100%',
   paddingBottom: '50px',
 };
 
@@ -192,9 +184,7 @@ export const visContainer: React.CSSProperties = {
 };
 
 export const sampleContainer: React.CSSProperties = {
-  padding: '10px 0',
   background: '#ffffff',
-  width: '1000px',
   borderRadius: '5px',
 };
 

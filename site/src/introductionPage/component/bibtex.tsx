@@ -24,22 +24,20 @@ const BibtexCard: React.FC = () => {
   };
 
   return (
-    <Card
-      title={
-        <Title level={4} style={bibtexCardHeader}>
-          Citation
-        </Title>
-      }
-      bordered={false}
-      style={bibtexCardContainer}
-      extra={
-        <Button icon={<CopyOutlined />} onClick={copyToClipboard} style={bibtexCardExtraButton}>
-          Copy
-        </Button>
-      }
-    >
+    <div style={{ position: 'relative', width: '80%', padding: 'auto', margin: 'auto' }}>
       <pre style={bibtexPreStyle} dangerouslySetInnerHTML={{ __html: bibtex }} />
-    </Card>
+      <Button
+        icon={<CopyOutlined />}
+        onClick={copyToClipboard}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+        }}
+      >
+        Copy
+      </Button>
+    </div>
   );
 };
 

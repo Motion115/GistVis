@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import { Image, Flex, Table, Tag, Button, Modal, Tooltip } from 'antd';
+import { Image, Flex, Table, Tag, Button, Modal, Tooltip, Typography } from 'antd';
 import { DataSpec, InsightType, UnitSegmentSpec } from 'gist-wsv';
 import { annotatorData, discovererData, extractorData } from '../introData';
 import designSpaceImage from '../../../static/design-space.jpg';
 import { ArtcleProcess } from 'gist-wsv';
 import { gistKB } from '../../modules/llm/visKB';
 import DisplayPrompt from './displayPrompt';
+
+const { Paragraph } = Typography;
 
 const insightColorMap: Record<InsightType, string> = {
   comparison: 'blue',
@@ -22,6 +24,20 @@ interface NestedRow extends UnitSegmentSpec {
   dataSpec: DataSpec[];
 }
 
+const ColoredDivider = () => {
+  return (
+    <div
+      style={{
+        width: '100%',
+        height: '0.5rem',
+        backgroundColor: '#e6f4ff',
+        margin: '5px 0',
+        borderRadius: '5px',
+      }}
+    />
+  );
+};
+
 // Component to display DataSpec in a popup modal using Antd components
 const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
   const [visible, setVisible] = useState(false);
@@ -33,11 +49,9 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       {/* Center the button and control its width */}
       <Button
-        type="primary"
         onClick={showModal}
-        style={{ width: '120px', marginBottom: '20px' }} // Adjust button width
       >
-        Show DataSpec
+        See Data
       </Button>
       <Modal title="DataSpec Details" open={visible} onCancel={handleCancel} footer={null}>
         {/* Set a max-width for the DataSpec table to control its size */}
@@ -102,13 +116,13 @@ const nestedColumns = [
       );
     },
   },
-  {
-    title: 'Segment Index',
-    dataIndex: 'segmentIdx',
-    key: 'segmentIdx',
-    onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
-    render: (text: number) => text,
-  },
+  // {
+  //   title: 'Segment Index',
+  //   dataIndex: 'segmentIdx',
+  //   key: 'segmentIdx',
+  //   onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
+  //   render: (text: number) => text,
+  // },
   {
     title: 'Context',
     dataIndex: 'context',
@@ -149,10 +163,9 @@ const nestedColumns = [
 // Define the extractorColumns for the main table
 const extractorColumns = [
   {
-    title: 'Paragraph Segment Index',
+    title: 'PID',
     dataIndex: 'id',
     key: 'id',
-    width: 100,
     onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
   },
   {
@@ -180,10 +193,9 @@ const extractorColumns = [
 
 const columns = [
   {
-    title: 'Paragraph Segment Index',
+    title: 'PID',
     dataIndex: 'id',
     key: 'id',
-    width: 200,
     onHeaderCell: () => ({
       style: { textAlign: 'center' as const },
     }),
@@ -215,14 +227,14 @@ const columns = [
               );
             },
           },
-          {
-            title: 'Segment Index',
-            dataIndex: 'segmentIdx',
-            key: 'segmentIdx',
-            width: 100,
-            onHeaderCell: () => ({ style: { textAlign: 'center' } }),
-            render: (text: number) => text,
-          },
+          // {
+          //   title: 'Segment Index',
+          //   dataIndex: 'segmentIdx',
+          //   key: 'segmentIdx',
+          //   width: 100,
+          //   onHeaderCell: () => ({ style: { textAlign: 'center' } }),
+          //   render: (text: number) => text,
+          // },
           {
             title: 'Context',
             dataIndex: 'context',
@@ -245,18 +257,6 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
     case 0:
       return (
         <>
-          <h2
-            style={{
-              fontSize: '36px',
-              textAlign: 'center',
-              marginBottom: '20px',
-              fontFamily: 'Arial, sans-serif',
-              fontWeight: 'bold',
-              color: '#333',
-            }}
-          >
-            Input
-          </h2>
           <div
             style={{
               border: '1px solid #ddd',
@@ -290,142 +290,102 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
     case 1:
       return (
         <>
+          <Flex vertical>
+            <Flex>
+              <h2 style={{ fontSize: '36px', margin: '0' }}>Discoverer</h2>
+              <DisplayPrompt module="Discoverer" />
+            </Flex>
+            <ColoredDivider />
+            <Paragraph>
+              <blockquote>
+              This module segments paragraphs into unit segments, which are the smallest units of text that convey a
+              data insight. It uses large language models (LLMs) to identify these segments and prepare the document for
+              further processing.
+              </blockquote>
+            </Paragraph>
+          </Flex>
           <Table
             columns={columns}
             dataSource={discovererData[0].paragraphContent}
             pagination={false}
             rowKey="paragraphIdx"
-            style={{ width: '800px', marginTop: '10px' }}
           />
-          <Flex vertical style={{ marginLeft: '50px', width: '340px' }}>
-            <Flex>
-              <h2 style={{ fontSize: '36px', margin: '0' }}>Discoverer</h2>
-              <DisplayPrompt module="Discoverer" />
-            </Flex>
-            <div
-              style={{
-                width: '100%',
-                height: '10px',
-                backgroundColor: '#8FD4E0',
-                margin: '5px 0',
-                borderRadius: '5px',
-              }}
-            />
-            <p style={{ fontSize: '15px', color: '#8E8D8D' }}>
-              This module segments paragraphs into unit segments, which are the smallest units of text that convey a
-              data insight. It uses large language models (LLMs) to identify these segments and prepare the document for
-              further processing.
-            </p>
-          </Flex>
         </>
       );
     case 2:
       return (
         <>
-          <Flex vertical style={{ marginRight: '50px', width: '340px' }}>
+          <Flex vertical>
             <Flex>
               <h2 style={{ fontSize: '36px', margin: '0' }}>Annotator</h2>
               <DisplayPrompt module="Annotator" />
             </Flex>
-            <div
-              style={{
-                width: '100%',
-                height: '10px',
-                backgroundColor: '#8FD4E0',
-                margin: '5px 0',
-                borderRadius: '5px',
-              }}
-            />
-            <p style={{ fontSize: '15px', color: '#8E8D8D' }}>
+            <ColoredDivider />
+
+            <Paragraph>
+              <blockquote>
               Annotator assigns a specific data fact type—like comparison, trend, or extreme—to each text segment.
               Starting from a generic "noType" label provided by Discoverer, it first checks if the segment matches a
               particular data type and then refines that classification to ensure the most accurate label, which in turn
               guides the subsequent data extraction and visualization steps.
-            </p>
+            </blockquote>
+            </Paragraph>
           </Flex>
           <Table
             columns={columns}
             dataSource={annotatorData[0].paragraphContent}
             pagination={false}
             rowKey="paragraphIdx"
-            style={{ width: '800px', marginTop: '10px' }}
           />
         </>
       );
     case 3:
       return (
         <>
-          <Table
-            columns={extractorColumns}
-            dataSource={extractorData[0].paragraphContent}
-            pagination={false}
-            rowKey="paragraphIdx"
-            style={{ width: '1200px', marginTop: '10px' }}
-          />
-          <Flex vertical style={{ marginLeft: '50px', width: '340px' }}>
+          <Flex vertical>
             <Flex>
               <h2 style={{ fontSize: '36px', margin: '0' }}>Extractor</h2>
               <DisplayPrompt module="Extractor" />
             </Flex>
-            <div
-              style={{
-                width: '100%',
-                height: '10px',
-                backgroundColor: '#8FD4E0',
-                margin: '5px 0',
-                borderRadius: '5px',
-              }}
-            />
-            <p style={{ fontSize: '15px', color: '#8E8D8D' }}>
+            <ColoredDivider />
+            <Paragraph>
+              <blockquote>
               The Extractor module in GistVis transforms annotated text segments into structured data, converting
               narrative insights into a standardized data fact specification. It interprets the annotated segments
               produced by the previous modules and extracts key numerical values, categories, and attributes that form
               the backbone of the subsequent word-scale visualizations.
-            </p>
+            </blockquote>
+            </Paragraph>
           </Flex>
+          <div>
+            <Table
+              columns={extractorColumns}
+              dataSource={extractorData[0].paragraphContent}
+              pagination={false}
+              rowKey="paragraphIdx"
+              scroll={{ x: 650}}
+            />
+          </div>
         </>
       );
     case 4:
       return (
         <>
           <Flex vertical style={{ width: '90%', height: '90%', margin: '0 auto' }}>
-            <h2 style={{ fontSize: '36px', margin: '0' }}>Extractor</h2>
-            <div
-              style={{
-                width: '100%',
-                height: '10px',
-                backgroundColor: '#8FD4E0',
-                margin: '5px 0',
-                borderRadius: '5px',
-              }}
-            />
+            <h2 style={{ fontSize: '36px', margin: '0' }}>Visualizer</h2>
+            <ColoredDivider />
             <p style={{ fontSize: '15px', color: '#8E8D8D' }}>
-              The Extractor module in GistVis transforms annotated text segments into structured data, converting
-              narrative insights into a standardized data fact specification. It interprets the annotated segments
-              produced by the previous modules and extracts key numerical values, categories, and attributes that form
-              the backbone of the subsequent word-scale visualizations.
+              TBD
             </p>
           </Flex>
           <div style={{ width: '80%', height: '80%', margin: '0 auto' }}>
-            <Image src={designSpaceImage} alt="designSpaceImage"></Image>
+            <Image src={designSpaceImage} alt="designSpaceImage" preview={false} />
           </div>
         </>
       );
     case 5:
       return (
         <>
-          <h2
-            style={{
-              fontSize: '36px',
-              textAlign: 'center',
-              marginBottom: '20px',
-              fontFamily: 'Arial, sans-serif',
-              fontWeight: 'bold',
-              color: '#333',
-            }}
-          >
-            Input
-          </h2>
           <div
             style={{
               border: '1px solid #ddd',
