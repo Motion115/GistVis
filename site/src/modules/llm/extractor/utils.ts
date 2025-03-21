@@ -39,14 +39,14 @@ function parseValue(value: string | number) {
 }
 
 export const getZodFormatting = (insightType: InsightType) => {
-  const valueValueBespokeDescription = SpecDescriptions.VALUE_VALUE_DESCRIPTION[insightType];
+  const valueBespokeDescription = SpecDescriptions.VALUE_VALUE_DESCRIPTION[insightType];
   const baseZodFormatting = z.object({
     dataSpec: z.array(
       z.object({
-        categoryKey: z.string().describe(SpecDescriptions.CATEGORY_KEY_DESCRIPTION),
-        categoryValue: z.string().describe(SpecDescriptions.CATEGORY_VALUE_DESCRIPTION),
-        valueKey: z.string().describe(SpecDescriptions.VALUE_KEY_DESCRIPTION),
-        valueValue: z
+        space: z.string().describe(SpecDescriptions.CATEGORY_KEY_DESCRIPTION),
+        breakdown: z.string().describe(SpecDescriptions.CATEGORY_VALUE_DESCRIPTION),
+        feature: z.string().describe(SpecDescriptions.VALUE_KEY_DESCRIPTION),
+        value: z
           .union([z.number(), z.string()])
           .transform((value) => {
             if (typeof value === 'string' && value.toUpperCase() === 'NAN') {
@@ -55,7 +55,7 @@ export const getZodFormatting = (insightType: InsightType) => {
               return parseValue(value);
             }
           })
-          .describe(valueValueBespokeDescription),
+          .describe(valueBespokeDescription),
       })
     ),
   });

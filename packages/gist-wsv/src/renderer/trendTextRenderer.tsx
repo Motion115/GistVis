@@ -44,7 +44,7 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
 
   const colorScale = d3.scaleOrdinal(d3.schemeCategory10).domain(uniqueEntities);
 
-  const hasNaN = dataSpec.some((d) => isNaN(d.valueValue));
+  const hasNaN = dataSpec.some((d) => isNaN(d.value));
   const numEntries = dataSpec.length;
   const validForNominalTrend = attribute === 'negative' || attribute === 'positive' || attribute === 'invariable';
   const lineChartType: TrendOptions =
@@ -60,8 +60,8 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
     if (lineChartType === 'nominal' || lineChartType === 'trending') {
       return dummyDataMap[attribute];
     } else if (lineChartType === 'start-end') {
-      const low = d3.min(dataSpec, (d) => d.valueValue) as number;
-      const high = d3.max(dataSpec, (d) => d.valueValue) as number;
+      const low = d3.min(dataSpec, (d) => d.value) as number;
+      const high = d3.max(dataSpec, (d) => d.value) as number;
       if (attribute === 'negative') {
         return [
           { x: 0, y: high },
@@ -84,8 +84,8 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
         return dataSpec.map((d, i) => {
           return {
             x: i,
-            y: d.valueValue,
-            xLegend: d.categoryValue,
+            y: d.value,
+            xLegend: d.breakdown,
           };
         });
       }
@@ -93,8 +93,8 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
       return dataSpec.map((d, i) => {
         return {
           x: i,
-          y: d.valueValue,
-          xLegend: d.categoryValue,
+          y: d.value,
+          xLegend: d.breakdown,
         };
       });
     }

@@ -83,7 +83,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
           }}
         >
           {gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increased' : '↘ decreased'}{' '}
-          {dataSpec[0].valueValue}
+          {dataSpec[0].value}
         </div>
       );
     } else if (type === 'start-end') {
@@ -96,15 +96,15 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {capitalizeFirstLetter(dataSpec[0].valueKey) +
+          {capitalizeFirstLetter(dataSpec[0].feature) +
             ' of ' +
-            dataSpec.find((d) => d.valueValue === selectionVal)?.categoryValue +
+            dataSpec.find((d) => d.value === selectionVal)?.breakdown +
             ': ' +
             selectionVal}
           {gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
             ? '. The value remains stable.'
             : `. The ${gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increase' : '↘ decrease'} is ${
-                Math.abs(dataSpec[1].valueValue - dataSpec[0].valueValue)
+                Math.abs(dataSpec[1].value - dataSpec[0].value)
               }.`}
         </div>
       );
@@ -118,9 +118,9 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {capitalizeFirstLetter(dataSpec[0].valueKey) +
+          {capitalizeFirstLetter(dataSpec[0].feature) +
             ' of ' +
-            dataSpec.find((d) => d.valueValue === selectionVal)?.categoryValue +
+            dataSpec.find((d) => d.value === selectionVal)?.breakdown +
             ': ' +
             selectionVal}
           .
@@ -163,7 +163,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
         : gistvisSpec.unitSegmentSpec.attribute === 'negative'
         ? 'red'
         : 'grey'
-      : colorScale(dataSpec[0].categoryValue);
+      : colorScale(dataSpec[0].breakdown);
 
   const uid =
     gistvisSpec.unitSegmentSpec.insightType + '-' + gistvisSpec.unitSegmentSpec.attribute + '-' + gistvisSpec.id;

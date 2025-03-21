@@ -28,10 +28,10 @@ const SimpleStackedBar: React.FC<SimpleStackedBarChartProps> = ({
     },
     dataSpec: normalizedData.flatMap((item, i) => 
       item.values.map(value => ({
-        categoryKey: 'category',
-        categoryValue: item.category,
-        valueKey: 'proportion',
-        valueValue: value,
+        space: 'category',
+        breakdown: item.category,
+        feature: 'proportion',
+        value: value,
       }))
     ),
   };

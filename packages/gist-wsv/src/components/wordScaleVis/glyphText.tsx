@@ -8,10 +8,10 @@ import { SearchOutlined } from '@ant-design/icons';
 const GlyphText = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
   const dataSpec = gistvisSpec.dataSpec ?? [];
   // process cases with one value only
-  const value = dataSpec.map((d: DataSpec) => d.valueValue)[0];
+  const value = dataSpec.map((d: DataSpec) => d.value)[0];
   const inSituPosition = gistvisSpec.unitSegmentSpec.inSituPosition ?? [];
 
-  const targetEntity = dataSpec.map((d: DataSpec) => d.categoryValue)[0];
+  const targetEntity = dataSpec.map((d: DataSpec) => d.breakdown)[0];
 
   const getToolTipContent = (value: number, category: string) => {
     const formatter = new Intl.NumberFormat('en-US', {
@@ -86,12 +86,12 @@ const GlyphText = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity 
 
   const mainElement = dataSpec.map((d: DataSpec, i: number) => {
     const hoverStyle = {
-      opacity: d.categoryValue === selectedEntity ? 1 : 0.5,
+      opacity: d.breakdown === selectedEntity ? 1 : 0.5,
       transition: 'opacity 0.3s',
     };
     return (
-      <Tooltip title={getToolTipContent(d.valueValue, d.categoryValue)} placement="bottom" color="#ffffff">
-        {getVisElement(d.valueValue, d.categoryValue)}
+      <Tooltip title={getToolTipContent(d.value, d.breakdown)} placement="bottom" color="#ffffff">
+        {getVisElement(d.value, d.breakdown)}
       </Tooltip>
     );
   });

@@ -15,10 +15,10 @@ export type TrendAttribute = 'positive' | 'negative' | 'invariable';
 export type Attribute = ExtremeAttribute | TrendAttribute;
 
 export type DataSpec = {
-  categoryKey: string;
-  categoryValue: string;
-  valueKey: string;
-  valueValue: number;
+  space: string;
+  breakdown: string;
+  feature: string;
+  value: number;
 };
 
 export type UnitSegmentSpec = {

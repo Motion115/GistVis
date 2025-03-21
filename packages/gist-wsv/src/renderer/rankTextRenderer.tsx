@@ -8,14 +8,14 @@ import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../uti
 import useTrackVisit from '../utils/useTrack';
 
 const addPlaceholders = (dataSpec: DataSpec[], maxRank: number) => {
-  const existingRanks = dataSpec.map((item) => item.valueValue);
+  const existingRanks = dataSpec.map((item) => item.value);
   const placeholders = Array.from({ length: maxRank }, (_, i) => i + 1)
     .filter((rank) => !existingRanks.includes(rank))
     .map((rank) => ({
-      categoryKey: dataSpec[0].categoryKey,
-      categoryValue: 'placeholder',
-      valueKey: dataSpec[0].valueKey,
-      valueValue: rank,
+      space: dataSpec[0].space,
+      breakdown: 'placeholder',
+      feature: dataSpec[0].feature,
+      value: rank,
     }));
   return [...dataSpec, ...placeholders];
 };
@@ -23,10 +23,10 @@ const addPlaceholders = (dataSpec: DataSpec[], maxRank: number) => {
 const ensureMinimumLength = (dataSpec: DataSpec[], minLength: number) => {
   if (dataSpec.length < minLength) {
     const additionalData = Array.from({ length: minLength - dataSpec.length }, (_, i) => ({
-      categoryKey: dataSpec[0].categoryKey,
-      categoryValue: 'placeholder',
-      valueKey: dataSpec[0].valueKey,
-      valueValue: dataSpec.length + i + 1,
+      space: dataSpec[0].space,
+      breakdown: 'placeholder',
+      feature: dataSpec[0].feature,
+      value: dataSpec.length + i + 1,
     }));
     return [...dataSpec, ...additionalData];
   }
@@ -40,8 +40,8 @@ const RankTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
 
   // check entity counts in the dataSpec, if less than 3, add dummy data
   let dataSpec: DataSpec[] = gistvisSpec.dataSpec ? gistvisSpec.dataSpec : [];
-  // get maximum valueValue
-  const existingRanks = dataSpec.map((d) => d.valueValue);
+  // get maximum value
+  const existingRanks = dataSpec.map((d) => d.value);
   const maxRank = Math.max(...existingRanks);
 
   // if the length and maxRank does not match, fill in the rest with placeholder
@@ -49,7 +49,7 @@ const RankTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
     dataSpec = addPlaceholders(dataSpec, maxRank);
   }
   // sort dataSpec
-  dataSpec = lodash.orderBy(dataSpec, ['valueValue'], ['asc']);
+  dataSpec = lodash.orderBy(dataSpec, ['value'], ['asc']);
   // ensure ranking vis has at least 3 items
   dataSpec = ensureMinimumLength(dataSpec, 3);
 

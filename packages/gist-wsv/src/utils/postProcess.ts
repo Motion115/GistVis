@@ -13,7 +13,7 @@ export const getHighlightPos = (gistVisSpec: GistvisSpec, type: 'phrase' | 'enti
 
   return items
     .map((item: string | DataSpec) => {
-      const str = typeof item === 'string' ? item : item.categoryValue;
+      const str = typeof item === 'string' ? item : item.breakdown;
       const pos = fuzzySearch(str, gistVisSpec.unitSegmentSpec.context, false);
       const posArray = pos.map((p) => {
         return {

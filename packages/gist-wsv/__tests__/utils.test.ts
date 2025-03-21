@@ -20,12 +20,12 @@ describe('capitalizeFirstLetter', () => {
 });
 
 describe('recommendValidTypes', () => {
-  const createMockDataSpec = (valueValues: number[], categoryValues: string[]): DataSpec[] => {
-    return valueValues.map((value, index) => ({
-      valueValue: value,
-      categoryValue: categoryValues[index] || '',
-      categoryKey: 'category',
-      valueKey: 'value'
+  const createMockDataSpec = (values: number[], breakdowns: string[]): DataSpec[] => {
+    return values.map((value, index) => ({
+      value: value,
+      breakdown: breakdowns[index] || '',
+      space: 'category',
+      feature: 'value'
     }));
   };
 
@@ -124,7 +124,7 @@ describe('recommendValidTypes', () => {
     expect(result).toEqual(['noType']);
   });
 
-  it('handles invalid data with empty category values', () => {
+  it('handles invalid data with empty breakdowns', () => {
     const data = createMockDataSpec([1, 2], ['A', '']);
     const spec = createBaseSpec(data);
     const result = recommendValidTypes(spec);

@@ -203,10 +203,10 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
     setIsOutdated(true);
     setEditingSpec((prev) => {
       const newDataSpec = [...(prev.dataSpec || [])];
-      if (field === 'valueValue') {
+      if (field === 'value') {
         newDataSpec[index] = {
           ...newDataSpec[index],
-          valueValue: Number(value),
+          value: Number(value),
         };
       } else {
         newDataSpec[index] = {
@@ -228,10 +228,10 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
       dataSpec: [
         ...(prev.dataSpec || []),
         {
-          categoryKey: '',
-          categoryValue: '',
-          valueKey: '',
-          valueValue: 0,
+          space: '',
+          breakdown: '',
+          feature: '',
+          value: 0,
         },
       ],
     }));
@@ -403,10 +403,10 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                         ...prev,
                         dataSpec: [
                           {
-                            categoryKey: '',
-                            categoryValue: '',
-                            valueKey: '',
-                            valueValue: 0,
+                            space: '',
+                            breakdown: '',
+                            feature: '',
+                            value: 0,
                           },
                         ],
                       }))
@@ -431,29 +431,29 @@ export const SpecEditor: React.FC<SpecEditorProps> = ({
                 }
               >
                 <Form layout="vertical">
-                  <Item label="Category Key">
+                  <Item label="space">
                     <Input
-                      value={data.categoryKey}
-                      onChange={(e) => handleDataSpecChange(index, 'categoryKey', e.target.value)}
+                      value={data.space}
+                      onChange={(e) => handleDataSpecChange(index, 'space', e.target.value)}
                     />
                   </Item>
-                  <Item label="Category Value">
+                  <Item label="breakdown">
                     <Input
-                      value={data.categoryValue}
-                      onChange={(e) => handleDataSpecChange(index, 'categoryValue', e.target.value)}
+                      value={data.breakdown}
+                      onChange={(e) => handleDataSpecChange(index, 'breakdown', e.target.value)}
                     />
                   </Item>
-                  <Item label="Value Key">
+                  <Item label="feature">
                     <Input
-                      value={data.valueKey}
-                      onChange={(e) => handleDataSpecChange(index, 'valueKey', e.target.value)}
+                      value={data.feature}
+                      onChange={(e) => handleDataSpecChange(index, 'feature', e.target.value)}
                     />
                   </Item>
                   <Item label="Value">
                     <Input
                       type="number"
-                      value={data.valueValue}
-                      onChange={(e) => handleDataSpecChange(index, 'valueValue', e.target.value)}
+                      value={data.value}
+                      onChange={(e) => handleDataSpecChange(index, 'value', e.target.value)}
                     />
                   </Item>
                 </Form>

@@ -42,8 +42,8 @@ export const extractDataForParagraphs = async (
                   dataSpec: result.dataSpec
                     ? result.dataSpec.map((item) => ({
                         ...item,
-                        valueValue:
-                          item.valueValue !== undefined ? parseFloat(item.valueValue.toFixed(2)) : item.valueValue,
+                        value:
+                          item.value !== undefined ? parseFloat(item.value.toFixed(2)) : item.value,
                       }))
                     : [],
                   unitSegmentSpec: {

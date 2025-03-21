@@ -33,9 +33,9 @@ export const ArtcleProcess: React.FC<{ llmarticle: paragraphSpec[] }> = ({ llmar
     //   return false;
     // }
     // else {
-    //   let categoryKeyList = lodash.uniq(dataSpec.map((data) => data.categoryKey));
-    //   let valueKeyList = lodash.uniq(dataSpec.map((data) => data.valueKey));
-    //   if (categoryKeyList.length > 1 || valueKeyList.length > 1) {
+    //   let spaceList = lodash.uniq(dataSpec.map((data) => data.space));
+    //   let featureList = lodash.uniq(dataSpec.map((data) => data.feature));
+    //   if (spaceList.length > 1 || featureList.length > 1) {
     //     return false;
     //   }
     //   else {
