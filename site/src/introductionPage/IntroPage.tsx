@@ -259,9 +259,9 @@ const IntroPage = () => {
                 />
               </Flex>
               {browserWidth > 650 ? (
-                <Space direction='vertical' style={{ width: '100%'}}>
+                <Space direction="vertical" style={{ width: '100%' }}>
                   <Steps current={stepsCurrent} onChange={pipelineChange} items={items}></Steps>
-                  <Flex justify='center' gap={10}>
+                  <Flex justify="center" gap={10}>
                     <Button ref={buttonPreviousRef} onClick={handlePrevious} disabled={stepsCurrent === 0}>
                       <LeftOutlined />
                       Previous
