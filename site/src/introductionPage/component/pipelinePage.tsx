@@ -280,6 +280,18 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
               5k, 30k, 80k, and 50k respectively. The top seller for BYD, the Qin series, could do a maximum range of
               2000 kilometers, making it the longest-ranged plug-in hybrid you can buy on the market.
             </p>
+            <p
+              style={{
+                fontSize: '10px',
+                lineHeight: '1.6',
+                color: '#555',
+                fontWeight: 'lighter',
+                textAlign: 'justify',
+                marginBottom: '10px',
+              }}
+            >
+              * The text is written for demonstration purposes and does not guarantee factuality.{' '}
+            </p>
           </div>
         </>
       );

@@ -12,6 +12,7 @@ import {
   Col,
   Space,
   Pagination,
+  Divider,
 } from 'antd';
 import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
 import {
@@ -175,7 +176,7 @@ const IntroPage = () => {
   return (
     <ConfigProvider theme={THEME}>
       <Layout style={{ alignContent: 'center', margin: 'auto' }}>
-        <Header style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto', height: 'auto' }}>
+        <Header style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto', height: 'auto' }}>
           <Title style={GistVis}>GistVis</Title>
           <Title level={2} style={titleContent}>
             Automatic Generation of Word-scale Visualizations from Data-rich Documents
@@ -204,7 +205,7 @@ const IntroPage = () => {
             </Link>
           </Space>
         </Header>
-        <Content style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto' }}>
+        <Content style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto' }}>
           <Space direction="vertical" size="large" style={{ width: '100%' }}>
             {/* Introduction */}
             <Flex vertical align="center" style={{ marginTop: '2rem', padding: '1%' }}>
@@ -229,6 +230,7 @@ const IntroPage = () => {
               <Flex vertical gap={10}>
                 <div style={{ width: '100%', alignSelf: 'flex-start' }}>
                   <h1 style={divHead}>Video Teaser</h1>
+                  <Divider style={{ margin: '0 0 1% 0' }} />
                   <Flex gap={5}>
                     <Paragraph>
                       Check more detailed discussion about GistVis in our{' '}
@@ -247,9 +249,8 @@ const IntroPage = () => {
             {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
             {/* Pipeline */}
             <div>
-              <div style={{ alignSelf: 'flex-start' }}>
-                <h1 style={divHead}>Computation Pipeline</h1>
-              </div>
+              <h1 style={divHead}>Computation Pipeline</h1>
+              <Divider style={{ margin: '0 0 1% 0' }} />
               <Flex vertical align="center" style={{ marginTop: '2rem', padding: '1%' }}>
                 <Image
                   src={pipelineImage}
@@ -286,13 +287,15 @@ const IntroPage = () => {
             {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
             {/* Article Visualization */}
             <div>
-              <div style={{ alignSelf: 'flex-start' }}>
-                <h1 style={divHead}>Gallery</h1>
-                <Paragraph>Generated documents used in user study.</Paragraph>
-              </div>
+              <h1 style={divHead}>Gallery</h1>
+              <Divider style={{ margin: '0 0 1% 0' }} />
+              <Paragraph>Generated documents used in user study.</Paragraph>
+              <Paragraph>
+                <blockquote>Article source: Pew Research</blockquote>
+              </Paragraph>
               <Space direction="vertical" align="center">
                 <div style={{ width: '90%', margin: 'auto', padding: 'auto' }}>
-                  <Flex style={{ maxHeight: '20rem', overflow: 'scroll' }}>
+                  <Flex style={{ maxHeight: '30rem', overflow: 'scroll' }}>
                     {renderArticleContent(currentArticleIndex)}
                     {renderArticleContent(currentArticleIndex + 6)}
                   </Flex>
@@ -308,17 +311,15 @@ const IntroPage = () => {
               </Space>
             </div>
             {/* Bibtex */}
-            <Flex vertical style={bibtexContainer} gap={20}>
-              <div style={{ alignSelf: 'flex-start' }}>
-                <h1 style={divHead}>BibTex</h1>
-                <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
-              </div>
+            <div>
+              <h1 style={divHead}>BibTex</h1>
+              <Divider style={{ margin: 0 }} />
+              <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
               <BibtexCard />
-            </Flex>
-            {/* Bibtex */}
+            </div>
           </Space>
         </Content>
-        <Footer style={{ backgroundColor: '#ffffff', width: '80%', margin: 'auto', height: '10rem' }}>
+        <Footer style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto', height: '10rem' }}>
           © Copyright GistVis Development Team
         </Footer>
       </Layout>
