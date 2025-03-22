@@ -48,11 +48,7 @@ const DataSpecDisplay: React.FC<{ dataSpec: DataSpec[] }> = ({ dataSpec }) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       {/* Center the button and control its width */}
-      <Button
-        onClick={showModal}
-      >
-        See Data
-      </Button>
+      <Button onClick={showModal}>See Data</Button>
       <Modal title="DataSpec Details" open={visible} onCancel={handleCancel} footer={null}>
         {/* Set a max-width for the DataSpec table to control its size */}
         <div style={{ maxWidth: '100%', overflowX: 'auto' }}>
@@ -105,7 +101,7 @@ const nestedColumns = [
     dataIndex: 'insightType',
     key: 'insightType',
     width: 100,
-    onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
+    onCell: () => ({ style: { textAlign: 'center' as const } }),
     render: (text: InsightType) => {
       return text === 'noType' ? (
         <Tag color={insightColorMap.noType}>{text}</Tag>
@@ -215,8 +211,8 @@ const columns = [
             title: 'Insight Type',
             dataIndex: 'insightType',
             key: 'insightType',
-            width: 100,
-            onHeaderCell: () => ({ style: { textAlign: 'center' as const } }),
+            width: 150,
+            onCell: () => ({ style: { textAlign: 'center' as const } }),
             render: (text: InsightType) => {
               return text === 'noType' ? (
                 <Tag color={insightColorMap.noType}>{text}</Tag>
@@ -284,6 +280,18 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
               5k, 30k, 80k, and 50k respectively. The top seller for BYD, the Qin series, could do a maximum range of
               2000 kilometers, making it the longest-ranged plug-in hybrid you can buy on the market.
             </p>
+            <p
+              style={{
+                fontSize: '10px',
+                lineHeight: '1.6',
+                color: '#555',
+                fontWeight: 'lighter',
+                textAlign: 'justify',
+                marginBottom: '10px',
+              }}
+            >
+              * The text is written for demonstration purposes and does not guarantee factuality.{' '}
+            </p>
           </div>
         </>
       );
@@ -298,9 +306,9 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
             <ColoredDivider />
             <Paragraph>
               <blockquote>
-              This module segments paragraphs into unit segments, which are the smallest units of text that convey a
-              data insight. It uses large language models (LLMs) to identify these segments and prepare the document for
-              further processing.
+                This module segments paragraphs into unit segments, which are the smallest units of text that convey a
+                data insight. It uses large language models (LLMs) to identify these segments and prepare the document
+                for further processing.
               </blockquote>
             </Paragraph>
           </Flex>
@@ -324,11 +332,11 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
 
             <Paragraph>
               <blockquote>
-              Annotator assigns a specific data fact type—like comparison, trend, or extreme—to each text segment.
-              Starting from a generic "noType" label provided by Discoverer, it first checks if the segment matches a
-              particular data type and then refines that classification to ensure the most accurate label, which in turn
-              guides the subsequent data extraction and visualization steps.
-            </blockquote>
+                Annotator assigns a specific data fact type—like comparison, trend, or extreme—to each text segment.
+                Starting from a generic "noType" label provided by Discoverer, it first checks if the segment matches a
+                particular data type and then refines that classification to ensure the most accurate label, which in
+                turn guides the subsequent data extraction and visualization steps.
+              </blockquote>
             </Paragraph>
           </Flex>
           <Table
@@ -350,20 +358,23 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
             <ColoredDivider />
             <Paragraph>
               <blockquote>
-              The Extractor module in GistVis transforms annotated text segments into structured data, converting
-              narrative insights into a standardized data fact specification. It interprets the annotated segments
-              produced by the previous modules and extracts key numerical values, categories, and attributes that form
-              the backbone of the subsequent word-scale visualizations.
-            </blockquote>
+                The Extractor module in GistVis transforms annotated text segments into structured data, converting
+                narrative insights into a standardized data fact specification. It interprets the annotated segments
+                produced by the previous modules and extracts key numerical values, categories, and attributes that form
+                the backbone of the subsequent word-scale visualizations.
+              </blockquote>
             </Paragraph>
           </Flex>
           <div>
             <Table
               columns={extractorColumns}
-              dataSource={extractorData[0].paragraphContent}
+              dataSource={extractorData[0].paragraphContent.map((item) => ({
+                ...item,
+                dataSpec: item.dataSpec || [],
+              }))}
               pagination={false}
               rowKey="paragraphIdx"
-              scroll={{ x: 650}}
+              scroll={{ x: 650 }}
             />
           </div>
         </>
@@ -374,9 +385,18 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
           <Flex vertical style={{ width: '90%', height: '90%', margin: '0 auto' }}>
             <h2 style={{ fontSize: '36px', margin: '0' }}>Visualizer</h2>
             <ColoredDivider />
-            <p style={{ fontSize: '15px', color: '#8E8D8D' }}>
-              TBD
-            </p>
+
+            <Paragraph>
+              <blockquote>
+                The visualizer leverages various data fact types—such as percentages, averages, min/max values, and
+                trends—and maps each one to a suitable graphical representation, as demonstrated in the figure. By
+                seamlessly blending text-based insights with intuitive visuals like bar charts, line graphs, and
+                highlight elements, it enables users to quickly identify key patterns, compare differences, and track
+                changes over time. This approach effectively utilizes the data structure generated from the original
+                text through LLM processing, converting it into interactive, word-scale visual components that enhance
+                the readability of the entire article.
+              </blockquote>
+            </Paragraph>
           </Flex>
           <div style={{ width: '80%', height: '80%', margin: '0 auto' }}>
             <Image src={designSpaceImage} alt="designSpaceImage" preview={false} />

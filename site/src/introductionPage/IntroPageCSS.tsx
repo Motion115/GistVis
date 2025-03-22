@@ -132,7 +132,7 @@ export const divHead: React.CSSProperties = {
 
 export const divContent: React.CSSProperties = {
   ...commonDiv,
-  fontSize: '15px',
+  fontSize: '20px',
   color: 'rgb(142, 141, 141)',
 };
 
@@ -220,7 +220,7 @@ export const bibtexPreStyle: React.CSSProperties = {
   background: '#282C34',
   padding: '20px',
   borderRadius: '8px',
-  fontSize: '15px',
+  fontSize: '18px',
   fontFamily: 'Consolas, "Courier New", monospace',
   color: '#AB9EAB',
   margin: 0,
