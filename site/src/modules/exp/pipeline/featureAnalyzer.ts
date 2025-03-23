@@ -102,7 +102,7 @@ export const analyzeValues = async (
       feature: item.feature,
       values: item.values.map(v => ({
         entity: v.entity,
-        value: parseFloat(v.value) || 0 // 将字符串转换为数字
+        value: parseFloat(v.value) || 0
       }))
     }));
 };
