@@ -7,6 +7,7 @@ import GistTest from './demo/GistTest';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import IntroPage from './introductionPage/IntroPage';
 import DemoPipeline from './demo/pipeline/DemoPipeline';
+import { ExpTester } from './modules/exp/components/ExpTester';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path={`/interactive`} element={<HomePage />} />
           <Route path={`/interactive/:pageType/:pageId`} element={<InteractivePage />} />
           <Route path={`/llm_setting`} element={<LLMConfigurationPage />} />
+          <Route path={`/exp-test`} element={<ExpTester />} />
         </Routes>
       </Router>
     </>
