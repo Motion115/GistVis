@@ -3,6 +3,26 @@ import { DataSpec } from 'gist-wsv';
 import { analyzeSpaceBreakdown } from './spaceAnalyzer';
 import { analyzeFeatures, analyzeValues } from './featureAnalyzer';
 import { processToDataSpecs } from './dataSpecProcessor';
+import { generateDirectDataSpecs } from './directDataFactGenerator';
+
+export const runDirectPipeline = async (
+  model: ChatOpenAI,
+  text: string
+): Promise<DataSpec[]> => {
+  console.log('Starting direct pipeline execution...');
+  
+  // Generate CSV data facts directly
+  console.log('Generating data facts in CSV format...');
+  const startTime = performance.now();
+  const dataSpecs = await generateDirectDataSpecs(model, text);
+
+  const endTime = performance.now();
+  
+  console.log(`Pipeline completed in ${(endTime - startTime).toFixed(2)}ms`);
+  console.log(`Generated ${dataSpecs.length} data specifications`);
+  
+  return dataSpecs;
+};
 
 export const runNewPipeline = async (
   model: ChatOpenAI,

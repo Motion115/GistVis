@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Input, Space, Card, Typography } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
-import { runNewPipeline } from '../pipeline';
+import { runNewPipeline, runDirectPipeline } from '../pipeline';
 import { DataSpec } from 'gist-wsv';
 
 const { TextArea } = Input;
@@ -13,6 +13,52 @@ export const ExpTester: React.FC = () => {
   const [result, setResult] = useState<DataSpec[]>([]);
   const [error, setError] = useState('');
 
+  const createModel = () => new ChatOpenAI({
+    temperature: 0.7,
+    topP: 1,
+    n: 1,
+    streaming: false,
+    openAIApiKey:
+      JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_API_KEY ||
+      import.meta.env.VITE_LLM_API_KEY ||
+      '',
+    modelName:
+      JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_MODEL_NAME ||
+      import.meta.env.VITE_LLM_MODEL_NAME ||
+      '',
+    configuration: {
+      apiKey:
+        JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_API_KEY ||
+        import.meta.env.VITE_LLM_API_KEY ||
+        '',
+      baseURL:
+        JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_URL_BASE ||
+        import.meta.env.VITE_LLM_URL_BASE ||
+        '',
+    },
+    verbose: false,
+  });
+
+  const handleRunDirectPipeline = async () => {
+    if (!text) {
+      setError('请输入文本');
+      return;
+    }
+
+    setLoading(true);
+    setError('');
+    
+    try {
+      const model = createModel();
+      const specs = await runDirectPipeline(model, text);
+      setResult(specs);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '处理过程出错');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleRunPipeline = async () => {
     if (!text) {
       setError('请输入文本');
@@ -23,31 +69,7 @@ export const ExpTester: React.FC = () => {
     setError('');
     
     try {
-      const model = new ChatOpenAI({
-        temperature: 0.7,
-        topP: 1,
-        n: 1,
-        streaming: false,
-        openAIApiKey:
-          JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_API_KEY ||
-          import.meta.env.VITE_LLM_API_KEY ||
-          '',
-        modelName:
-          JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_MODEL_NAME ||
-          import.meta.env.VITE_LLM_MODEL_NAME ||
-          '',
-        configuration: {
-          apiKey:
-            JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_API_KEY ||
-            import.meta.env.VITE_LLM_API_KEY ||
-            '',
-          baseURL:
-            JSON.parse(localStorage.getItem('envVariables') || '{}')?.VITE_LLM_URL_BASE ||
-            import.meta.env.VITE_LLM_URL_BASE ||
-            '',
-        },
-        verbose: false,
-      });
+      const model = createModel();
       
       const specs = await runNewPipeline(model, text);
       setResult(specs);
@@ -69,14 +91,21 @@ export const ExpTester: React.FC = () => {
           onChange={(e) => setText(e.target.value)}
           placeholder="请输入要分析的文本..."
         />
-        <Button 
-          type="primary"
-          onClick={handleRunPipeline}
-          loading={loading}
-          style={{ marginTop: 16 }}
-        >
-          运行 Pipeline
-        </Button>
+        <Space style={{ marginTop: 16 }}>
+          <Button
+            type="primary"
+            onClick={handleRunPipeline}
+            loading={loading}
+          >
+            spaceAnalysis+featureAnalysis
+          </Button>
+          <Button
+            onClick={handleRunDirectPipeline}
+            loading={loading}
+          >
+            csvAnalysis
+          </Button>
+        </Space>
       </Card>
 
       {error && (
