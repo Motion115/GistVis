@@ -1,5 +1,5 @@
 import { ChatOpenAI } from '@langchain/openai';
-import { DataSpec } from './types';
+import { DataSpec } from 'gist-wsv';
 import { analyzeSpaceBreakdown } from './spaceAnalyzer';
 import { analyzeFeatures, analyzeValues } from './featureAnalyzer';
 import { processToDataSpecs } from './dataSpecProcessor';
@@ -18,12 +18,12 @@ export const runNewPipeline = async (
     const features = await analyzeFeatures(model, text, sb.breakdowns);
     
     // Analyze values for the features and entities (values in the facts)
-    const featureValues = await analyzeValues(model, text, features, sb.breakdowns);
-    allFeatureValues.push(...featureValues);
+    const featureValues = await analyzeValues(model, text, features, sb.breakdowns, sb.space);
+    allFeatureValues.push(...featureValues); // flatten
   }
 
   // Step 3: Convert to final data specs
-  return processToDataSpecs(spaceBreakdowns, allFeatureValues);
+  return processToDataSpecs(allFeatureValues);
 };
 
 export * from './types';

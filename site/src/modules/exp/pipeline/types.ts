@@ -4,17 +4,10 @@ export interface SpaceBreakdown {
 }
 
 export interface FeatureValue {
+  space: string;
   feature: string;
   values: {
     entity: string;
-    value: any;
+    value: number;
   }[];
-}
-
-export interface DataSpec {
-  // TODO: Define data spec interface based on requirements
-  space: string;
-  feature: string;
-  entities: string[];
-  values: any[];
 }
