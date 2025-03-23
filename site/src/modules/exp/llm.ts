@@ -1,8 +1,7 @@
 import { convert } from 'html-to-text';
 import { ChatOpenAI } from '@langchain/openai';
 import splitInsight from '@src/modules/llm/discoverer/discoverer';
-import { processParagraphs } from '@src/modules/llm/annotator/annotator';
-import { extractDataForParagraphs } from '@src/modules/llm/extractor/extractor';
+import { runNewPipeline } from './pipeline';
 
 const removeHTML = (input: string) => {
   const plainText = convert(input, {
@@ -65,49 +64,33 @@ const generateGistVisMarkup = async (input: string, setStage: (stage: number) =>
     verbose: false,
   });
 
-  /**
-   * Step 1: Discoverer
-   * @param model: ChatOpenAI<ChatOpenAICallOptions> - An instance of the OpenAI chat model used for segmentation.
-   * @param paragraphList: string[] - A list of paragraphs provided by the user for segmentation.
-   *
-   * @returns {Promise<paragraphSpec[]>} - Returns a list of paragraph specification objects (`paragraphSpec`)
-   */
+  // Step 1: Use discoverer to split insights
   const gistParagraphSpecList = await splitInsight(model, paragraphList);
   setStage(1); // Stage 1 complete
 
-  /**
-   * Step 2: Annotator
-   * @param {paragraphSpec[]} gistParagraphSpecList - The list of paragraphs to be processed. Each paragraph contains multiple `GistvisSpec`
-   * objects, each representing a smaller segment of the paragraph's content.
-   *
-   * @param {ChatOpenAI<ChatOpenAICallOptions>} model
-   *
-   * @returns {Promise<paragraphSpec[]>} Returns a new list of paragraphs, where each paragraph's `insightType` has been updated
-   * according to the inferred type.
-   *
-   * @description
-   * This function uses asynchronous processing (`Promise.all`) to iterate over all paragraphs and performs the following steps for each:
-   * - For each segment of the paragraph, it calls `runTypeCheck` to infer its type.
-   * - If there are multiple candidate types, it uses `runMatch` to further determine the most suitable type.
-   * - It updates the `insightType` attribute of each paragraph and returns the updated paragraph object.
-   */
-  const typedParagraphSpecList = await processParagraphs(gistParagraphSpecList, model);
-  setStage(2); // stage 2 complete
+  // Step 2 & 3: Process each segment through the new pipeline
+  const results = [];
+  for (const paragraph of gistParagraphSpecList) {
+    const processedSegments = await Promise.all(
+      paragraph.paragraphContent.map(async (segment) => {
+        const specs = await runNewPipeline(model, segment.unitSegmentSpec.context);
+        return {
+          ...segment,
+          dataSpecs: specs
+        };
+      })
+    );
 
-  /**
-   * step 3: Extractor
-   * @param {paragraphSpec[]} typedParagraphSpecList - A list of paragraph specifications to be processed.
-   * Each specification contains paragraph content that may need further data extraction based on its `insightType`.
-   * @param {ChatOpenAI<ChatOpenAICallOptions>} model
-   *
-   * @returns {Promise<paragraphSpec[]>} - A promise that resolves to a list of enhanced paragraph specifications
-   * with extracted data based on their respective insight types.
-   */
-  const fullList = await extractDataForParagraphs(typedParagraphSpecList, model);
-  setStage(3); // stage 3 complete
-  console.log(fullList);
+    results.push({
+      ...paragraph,
+      paragraphContent: processedSegments
+    });
 
-  return fullList;
+    setStage(1 + (results.length / gistParagraphSpecList.length * 2)); // Stages 2-3 (progress from 1 to 3)
+  }
+
+  console.log(results);
+  return results;
 };
 
 export default generateGistVisMarkup;
