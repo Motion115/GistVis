@@ -20,13 +20,22 @@ export const analyzeSpaceBreakdown = async (
 
   const spaceAnalysisChain = RunnableSequence.from([
     PromptTemplate.fromTemplate(`
+      Specifically, space is a facet of analysis with a given text description. For example, if a sentence describes the marketshare of different car manufacturers, the analysis space would be “car manufacture”. Meanwhile, breakdowns a set of temporal or categorical data fields in which data are further divided under the space. For example, the brand name, like “Brand A”, would be the breakdown for “car manufacture”.
+
+      Feature is the measurement of breakdown. For example, we could measure the sales percentage for each manufacturer, a feature derived from annual sales of car manufacturers. Lastly, value is a numerical data field that could be retrieved from a combination of breakdown and feature. For example, the “sales percentage” of “Brand A” is 0.5. All data attributes arerequired for each data specification entry, with the only exception being the “not a number” (NaN) value attributes.Cases exist when the unit segment describes a semantic data insight (e.g., increasing or decreasing for the trend type), and we make “not a number cases” a special condition for GistVis to process.
+
+      1. Don't think space is same to feature.
+      2. Space is the category of the entities. Each of the space is suitable to be the x-label of a chart like Year, Name, Country, Manufacturer.
+      3. Breakdowns are the entities in the space. They are suitable to exist in x-axis of a chart like (2024 and 2026), (Any and Bob), (China and US), (Toyota and Honda).
+      4. Dont include the infomation gotton from calculation.
+
       Analyze the entities mentioned in the following text and group them by category:
       
       {text}
       
       {format_instructions}
       
-      Example output: [{"space": "countries", "breakdowns": ["China", "US"]}, {"space": "tech fields", "breakdowns": ["AI", "5G"]}]
+      Example output: {exampleOutput}
     `),
     model as ChatOpenAI<ChatOpenAICallOptions>,
     parser,
@@ -35,6 +44,17 @@ export const analyzeSpaceBreakdown = async (
   const result = await spaceAnalysisChain.invoke({
     text: text,
     format_instructions: parser.getFormatInstructions(),
+    exampleOutput: `
+      [
+        {
+          "space": "Country",
+          "breakdowns": ["China", "US"]
+        },
+        {
+          "space": "Location",
+          "breakdowns": ["New York", "San Francisco"]
+        }
+      ]`
   });
 
   return result as SpaceBreakdown[];
