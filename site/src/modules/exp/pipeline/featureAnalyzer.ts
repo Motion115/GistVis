@@ -98,8 +98,8 @@ export const analyzeValues = async (
       )
     )
     .map(item => ({
-      ...item,
       space: space,
+      feature: item.feature,
       values: item.values.map(v => ({
         entity: v.entity,
         value: parseFloat(v.value) || 0 // 将字符串转换为数字
