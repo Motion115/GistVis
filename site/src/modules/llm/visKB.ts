@@ -118,7 +118,7 @@ export const gistKB: { [key in VisInsightType]: GistFactKnowledgeBase } = {
     // with special meanings
     examples: [
       `46 horses have won two out of three Triple Crown Races.`,
-      `40 cities and counties also are hiking their minimum wages.`,
+      `33 towns being considered for this project.`,
     ],
     negativeExamples: [`The little boy was careful enough to come first in the exam.`],
   },
