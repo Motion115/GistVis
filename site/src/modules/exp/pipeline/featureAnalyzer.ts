@@ -18,6 +18,14 @@ export const analyzeFeatures = async (
   
   const featureAnalysisChain = RunnableSequence.from([
     PromptTemplate.fromTemplate(`
+      Specifically, space is a facet of analysis with a given text description. For example, if a sentence describes the marketshare of different car manufacturers, the analysis space would be “car manufacture”. Meanwhile, breakdowns a set of temporal or categorical data fields in which data are further divided under the space. For example, the brand name, like “Brand A”, would be the breakdown for “car manufacture”. Feature is the measurement of breakdown. For example, we could measure the sales percentage for each manufacturer, a feature derived from annual sales of car manufacturers. Lastly, value is a numerical data field that could be retrieved from a combination of breakdown and feature. For example, the “sales percentage” of “Brand A” is 0.5. All data attributes arerequired for each data specification entry, with the only exception being the “not a number” (NaN) value attributes.Cases exist when the unit segment describes a semantic data insight (e.g., increasing or decreasing for the trend type), and we make “not a number cases” a special condition for GistVis to process.
+
+      1. Don't use calculated values as features/values. Use the direct information from the text.
+      2. Features are the measurements of breakdowns. They are suitable to be the y-label of a chart like Sales, Market Share, Growth Rate.
+      3. Values are the numerical data fields that could be retrieved from a combination of breakdowns and features. They are suitable to exist in y-axis of a chart like 100, 0.5, 0.3.
+
+      Entity is equivalent to breakdown in the context of this analysis.
+
       Analyze the data features about {entities} in the following text:
 
       {text}
@@ -71,7 +79,6 @@ export const analyzeValues = async (
       1. Don't use calculated values as features/values. Use the direct information from the text.
       2. Features are the measurements of breakdowns. They are suitable to be the y-label of a chart like Sales, Market Share, Growth Rate.
       3. Values are the numerical data fields that could be retrieved from a combination of breakdowns and features. They are suitable to exist in y-axis of a chart like 100, 0.5, 0.3.
-      4. Dont include the infomation gotton from calculation.
 
       Entity is equivalent to breakdown in the context of this analysis.
 

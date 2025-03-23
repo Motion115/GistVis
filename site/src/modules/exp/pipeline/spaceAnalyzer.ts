@@ -57,5 +57,15 @@ export const analyzeSpaceBreakdown = async (
       ]`
   });
 
-  return result as SpaceBreakdown[];
+  // if breakdown fo two spaces are the same, only keep one
+  const resultObj = result.reduce((acc, { space, breakdowns }) => {
+    if (!acc[space]) {
+      acc[space] = breakdowns;
+    } else {
+      acc[space] = Array.from(new Set([...acc[space], ...breakdowns]));
+    }
+    return acc;
+  }, {} as Record<string, string[]>);
+  return Object.entries(resultObj).map(([space, breakdowns]) => ({ space, breakdowns })) as SpaceBreakdown[];
+
 };
