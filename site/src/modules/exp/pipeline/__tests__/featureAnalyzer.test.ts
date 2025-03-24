@@ -17,9 +17,9 @@ describe('analyzeReasoning', () => {
                 {
                     reasoning: "The text compares values between two entities",
                     type: "comparison",
-                    datafactRestatement: "A有比B更高的销售额",
-                    dataCategory: "销售额",
-                    entityCategory: "品牌",
+                    datafactRestatement: "The revenue of A is higher than B's",
+                    dataCategory: "revenue",
+                    entityCategory: "brand",
                     entities: ["A", "B"]
                 }
             ]),
@@ -28,17 +28,17 @@ describe('analyzeReasoning', () => {
     });
 
     test('transforms LLM output to ReasoningStructure', async () => {
-        const text = "A的销售额比B高";
+        const text = "The revenue of A is higher than B's";
         const result = await analyzeReasoning(dummyModel, text);
         expect(mockChain.invoke).toHaveBeenCalled();
         expect(result).toEqual([
             {
                 reasoning: "The text compares values between two entities",
                 type: "comparison",
-                datafactRestatement: "A有比B更高的销售额",
-                feature: "销售额",
+                datafactRestatement: "The revenue of A is higher than B's",
+                feature: "revenue",
                 entity: {
-                    space: "品牌",
+                    space: "brand",
                     breakdowns: ["A", "B"]
                 }
             }
@@ -47,7 +47,7 @@ describe('analyzeReasoning', () => {
 
     test('handles empty result from LLM', async () => {
         mockChain.invoke.mockResolvedValueOnce([]);
-        const text = "一些无关的文本";
+        const text = "useless text";
         const result = await analyzeReasoning(dummyModel, text);
         expect(result).toEqual([]);
     });

@@ -18,13 +18,13 @@ describe('analyzeSpaceBreakdown', () => {
         (RunnableSequence.from as jest.Mock).mockReturnValue(mockChain);
     });
 
-    test('基本功能：返回空间和分类', async () => {
+    test('return space and breakdowns', async () => {
         mockChain.invoke.mockResolvedValueOnce([
             { space: 'countries', breakdowns: ['China', 'US'] },
             { space: 'tech fields', breakdowns: ['AI', '5G'] }
         ]);
 
-        const result = await analyzeSpaceBreakdown(dummyModel, '示例文本');
+        const result = await analyzeSpaceBreakdown(dummyModel, 'example text');
         
         expect(mockChain.invoke).toHaveBeenCalled();
         expect(result).toEqual([
@@ -33,14 +33,14 @@ describe('analyzeSpaceBreakdown', () => {
         ]);
     });
 
-    test('合并相同空间的分类', async () => {
+    test('merge when equal', async () => {
         mockChain.invoke.mockResolvedValueOnce([
             { space: 'country', breakdowns: ['China', 'US'] },
             { space: 'country', breakdowns: ['Japan', 'US'] },
             { space: 'tech', breakdowns: ['AI'] }
         ]);
 
-        const result = await analyzeSpaceBreakdown(dummyModel, '示例文本');
+        const result = await analyzeSpaceBreakdown(dummyModel, 'example text');
         
         expect(result).toEqual([
             { space: 'country', breakdowns: ['China', 'US', 'Japan'] },
@@ -48,32 +48,32 @@ describe('analyzeSpaceBreakdown', () => {
         ]);
     });
 
-    test('处理空结果', async () => {
+    test('deal with empty', async () => {
         mockChain.invoke.mockResolvedValueOnce([]);
 
-        const result = await analyzeSpaceBreakdown(dummyModel, '无相关实体的文本');
+        const result = await analyzeSpaceBreakdown(dummyModel, 'no entity');
         
         expect(result).toEqual([]);
     });
 
-    test('去重相同的分类项', async () => {
+    test('duplicate removal', async () => {
         mockChain.invoke.mockResolvedValueOnce([
             { space: 'category', breakdowns: ['A', 'B', 'B', 'A'] }
         ]);
 
-        const result = await analyzeSpaceBreakdown(dummyModel, '示例文本');
+        const result = await analyzeSpaceBreakdown(dummyModel, 'example text');
         
         expect(result).toEqual([
             { space: 'category', breakdowns: ['A', 'B'] }
         ]);
     });
 
-    test('模型调用参数格式正确', async () => {
+    test('model calling', async () => {
         mockChain.invoke.mockResolvedValueOnce([]);
-        await analyzeSpaceBreakdown(dummyModel, '测试文本');
+        await analyzeSpaceBreakdown(dummyModel, 'example text');
 
         const invokeArgs = mockChain.invoke.mock.calls[0][0];
-        expect(invokeArgs).toHaveProperty('text', '测试文本');
+        expect(invokeArgs).toHaveProperty('text', 'example text');
         expect(invokeArgs).toHaveProperty('format_instructions');
         expect(invokeArgs).toHaveProperty('exampleOutput');
         expect(invokeArgs.exampleOutput).toContain('"space":');

@@ -43,7 +43,7 @@ export const ExpTester: React.FC = () => {
 
   const handleTestReasoning = async () => {
     if (!text) {
-      setError('请输入文本');
+      setError('enter text to analyze');
       return;
     }
 
@@ -54,9 +54,9 @@ export const ExpTester: React.FC = () => {
       const model = createModel();
       const reasoning = await analyzeReasoning(model, text);
       setReasoningResult(reasoning);
-      setResult([]); // 清空其他结果
+      setResult([]);
     } catch (err) {
-      setError(err instanceof Error ? err.message : '处理过程出错');
+      setError(err instanceof Error ? err.message : 'error in processing');
     } finally {
       setLoading(false);
     }
@@ -64,7 +64,7 @@ export const ExpTester: React.FC = () => {
 
   const handleRunDirectPipeline = async () => {
     if (!text) {
-      setError('请输入文本');
+      setError('enter text to analyze');
       return;
     }
 
@@ -76,7 +76,7 @@ export const ExpTester: React.FC = () => {
       const specs = await runDirectPipeline(model, text);
       setResult(specs);
     } catch (err) {
-      setError(err instanceof Error ? err.message : '处理过程出错');
+      setError(err instanceof Error ? err.message : 'error in processing');
     } finally {
       setLoading(false);
     }
@@ -84,7 +84,7 @@ export const ExpTester: React.FC = () => {
 
   const handleRunPipeline = async () => {
     if (!text) {
-      setError('请输入文本');
+      setError('enter text to analyze');
       return;
     }
 
@@ -97,7 +97,7 @@ export const ExpTester: React.FC = () => {
       const specs = await runNewPipeline(model, text);
       setResult(specs);
     } catch (err) {
-      setError(err instanceof Error ? err.message : '处理过程出错');
+      setError(err instanceof Error ? err.message : 'error in processing');
     } finally {
       setLoading(false);
     }
@@ -105,14 +105,14 @@ export const ExpTester: React.FC = () => {
 
   return (
     <Space direction="vertical" style={{ width: '100%', padding: 24 }}>
-      <Title level={2}>Exp 模块测试</Title>
+      <Title level={2}>Exp Pipeline</Title>
       
-      <Card title="输入">
+      <Card title="input">
         <TextArea
           rows={6}
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="请输入要分析的文本..."
+          placeholder="enter text to analyze..."
         />
         <Space style={{ marginTop: 16 }}>
           <Button
@@ -139,13 +139,13 @@ export const ExpTester: React.FC = () => {
       </Card>
 
       {error && (
-        <Card title="错误" bordered={false}>
+        <Card title="error" bordered={false}>
           <Text type="danger">{error}</Text>
         </Card>
       )}
 
       {result.length > 0 && (
-        <Card title="分析结果" bordered={false}>
+        <Card title="result" bordered={false}>
           <pre style={{
             background: '#f5f5f5',
             padding: 16,
@@ -158,7 +158,7 @@ export const ExpTester: React.FC = () => {
       )}
 
       {reasoningResult && (
-        <Card title="Reasoning分析结果" bordered={false}>
+        <Card title="Reasoning result" bordered={false}>
           <pre style={{
             background: '#f5f5f5',
             padding: 16,

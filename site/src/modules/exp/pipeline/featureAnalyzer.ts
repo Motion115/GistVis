@@ -196,11 +196,11 @@ export const analyzeValues = async (
   
   return result
     .filter(item =>
-      item.feature &&  // 检查feature不为空
-      Array.isArray(item.values) &&  // 检查values是数组
-      item.values.length > 0 &&  // 检查values不为空数组
+      item.feature &&
+      Array.isArray(item.values) &&
+      item.values.length > 0 &&
       item.values.every((v: { entity: string; value: any }) =>
-        v.entity && v.value !== undefined && v.value !== ''  // 检查每个value有效
+        v.entity && v.value !== undefined && v.value !== ''
       )
     )
     .map(item => ({
