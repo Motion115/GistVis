@@ -1,7 +1,7 @@
 import { ChatOpenAI } from '@langchain/openai';
 import { DataSpec } from 'gist-wsv';
 import { analyzeSpaceBreakdown } from './spaceAnalyzer';
-import { analyzeFeatures, analyzeValues } from './featureAnalyzer';
+import { analyzeFeatures, analyzeValues, analyzeReasoning } from './featureAnalyzer';
 import { processToDataSpecs } from './dataSpecProcessor';
 import { generateDirectDataSpecs } from './directDataFactGenerator';
 
@@ -39,10 +39,22 @@ export const runNewPipeline = async (
   console.log(`Step 1 completed in ${(endTime1 - startTime1).toFixed(2)}ms`);
   console.log(`Identified ${spaceBreakdowns.length} space breakdowns \n${spaceBreakdowns.map(sb => sb.space).join('\n')}`);
   
-  // Step 2: For each space-breakdown combination (entities in a space, get 'facts' about them)
-  console.log('Step 2: Analyzing features and values...');
+  // Step 2: Generate reasoning structure and analyze features and values
+  console.log('Step 2: Analyzing features, values and reasoning...');
   const startTime2 = performance.now();
   const allFeatureValues = [];
+
+  // Generate reasoning[] structure
+  console.log(`>> Analyzing reasoning structure...`);
+  const reasonings = await analyzeReasoning(model, text);
+  reasonings.forEach(reasoning => {
+    console.log(`- Generated reasoning of type: ${reasoning.type}`);
+    console.log(`- Space: ${reasoning.entity.space}`);
+    console.log(`- Entities: ${reasoning.entity.breakdowns.join(', ')}`);
+    // Add the analyzed space-breakdown to spaceBreakdowns
+    spaceBreakdowns.push(reasoning.entity);
+  });
+
   for (let i = 0; i < spaceBreakdowns.length; i++) {
     const sb = spaceBreakdowns[i];
     console.log(`=====\nProcessing space ${i+1}/${spaceBreakdowns.length}\n Space name: ${sb.space}`);
@@ -79,3 +91,4 @@ export const runNewPipeline = async (
 };
 
 export * from './types';
+export { analyzeReasoning } from './featureAnalyzer';

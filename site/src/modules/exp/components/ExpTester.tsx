@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Button, Input, Space, Card, Typography } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
-import { runNewPipeline, runDirectPipeline } from '../pipeline';
+import { runNewPipeline, runDirectPipeline, analyzeReasoning } from '../pipeline';
 import { DataSpec } from 'gist-wsv';
+import { ReasoningStructure, SpaceBreakdown } from '../pipeline/types';
 
 const { TextArea } = Input;
 const { Title, Text } = Typography;
@@ -11,6 +12,7 @@ export const ExpTester: React.FC = () => {
   const [text, setText] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<DataSpec[]>([]);
+  const [reasoningResult, setReasoningResult] = useState<ReasoningStructure[] | null>(null);
   const [error, setError] = useState('');
 
   const createModel = () => new ChatOpenAI({
@@ -38,6 +40,27 @@ export const ExpTester: React.FC = () => {
     },
     verbose: false,
   });
+
+  const handleTestReasoning = async () => {
+    if (!text) {
+      setError('请输入文本');
+      return;
+    }
+
+    setLoading(true);
+    setError('');
+    
+    try {
+      const model = createModel();
+      const reasoning = await analyzeReasoning(model, text);
+      setReasoningResult(reasoning);
+      setResult([]); // 清空其他结果
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '处理过程出错');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleRunDirectPipeline = async () => {
     if (!text) {
@@ -105,6 +128,13 @@ export const ExpTester: React.FC = () => {
           >
             csvAnalysis
           </Button>
+          <Button
+            type="dashed"
+            onClick={handleTestReasoning}
+            loading={loading}
+          >
+            Reasoning
+          </Button>
         </Space>
       </Card>
 
@@ -116,13 +146,26 @@ export const ExpTester: React.FC = () => {
 
       {result.length > 0 && (
         <Card title="分析结果" bordered={false}>
-          <pre style={{ 
+          <pre style={{
             background: '#f5f5f5',
             padding: 16,
             borderRadius: 4,
             overflow: 'auto'
           }}>
             {JSON.stringify(result, null, 2)}
+          </pre>
+        </Card>
+      )}
+
+      {reasoningResult && (
+        <Card title="Reasoning分析结果" bordered={false}>
+          <pre style={{
+            background: '#f5f5f5',
+            padding: 16,
+            borderRadius: 4,
+            overflow: 'auto'
+          }}>
+            {JSON.stringify(reasoningResult, null, 2)}
           </pre>
         </Card>
       )}
