@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import { SVG_HEIGHT, SVG_UNIT_WIDTH } from '../constants';
 import { ChartProps, DataSpec, InsightType } from '../types';
@@ -6,6 +6,10 @@ import { Tooltip } from 'antd';
 
 const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
   const [hoveredUniqueId, setHoveredUniqueId] = useState<string | null>(null);
+  useEffect(() => {
+    console.log('hoveredUniqueId:', hoveredUniqueId);
+    console.log('selectedEntity:', selectedEntity);
+  }, [selectedEntity]);
   const dataSpec = gistvisSpec.dataSpec ?? [];
 
   const verticalBarChartWidth = SVG_UNIT_WIDTH * dataSpec.length;
@@ -25,7 +29,7 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
 
   const knownCategories = dataSpec.map((d: DataSpec, i: number) => {
     const uniqueId = `${d.breakdown}-${d.feature}-${d.value}`;
-    const isHovered = uniqueId === hoveredUniqueId;
+    const isHovered = uniqueId === hoveredUniqueId || (hoveredUniqueId === null && d.breakdown === selectedEntity);
     const hoverStyle = {
       opacity: isHovered ? 1 : 0.5,
       transition: 'opacity 0.3s',
