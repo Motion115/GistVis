@@ -40,4 +40,5 @@ export type {
   UnitSegmentSpec,
   paragraphSpec,
   DataSpec,
+  VIS_INSIGHT_TYPES,
 } from './components/types';
