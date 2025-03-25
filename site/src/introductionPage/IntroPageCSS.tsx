@@ -154,7 +154,9 @@ export const buttonYtb = {
 export const overviewVideo: React.CSSProperties = {
   alignSelf: 'center',
   width: '75%',
-  maxWidth: '90em'
+  maxWidth: '90em',
+  height: 'auto',
+  aspectRatio: '16 / 9',
 };
 
 export const pipelineContainer: React.CSSProperties = {

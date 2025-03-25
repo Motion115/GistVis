@@ -26,7 +26,6 @@ import {
   authors,
 } from './IntroPageCSS.tsx';
 import teaserImage from '../../static/teaser.png';
-import GistVisVideo from '../../static/GistVis - Video Figure.mp4';
 import pipelineImage from '../../static/GistVis-Pipeline.jpg';
 import PipelinePage from './component/pipelinePage.tsx';
 import { articles } from '../userstudy/articles/articledata.ts';
@@ -240,11 +239,24 @@ const IntroPage = () => {
                     </Paragraph>
                   </Flex>
                 </div>
+                {/* iframe youtube video */}
+                <iframe
+                  style={overviewVideo}
+                  src="https://www.youtube.com/embed/GmAQp_iuKrI"
+                  title="GistVis Teaser Video"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </Flex>
+            </div>
+            {/* Overview */}
+            {/* <div>
+              <h1 style={divHead}>Overview</h1>
                 <video ref={videoRef} style={overviewVideo} controls muted>
                   <source src={GistVisVideo} type="video/mp4" />
                 </video>
               </Flex>
-            </div>
+            </div> */}
             {/* Overview */}
             {/* <Divider style={{ borderColor: 'rgba(217, 217, 217, 1)' }} /> */}
             {/* Pipeline */}
