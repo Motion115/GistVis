@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Input, Space, Card, Typography } from 'antd';
 import { ChatOpenAI } from '@langchain/openai';
-import { runNewPipeline, runDirectPipeline, analyzeReasoning } from '../pipeline';
+import { runNewPipeline, runDirectPipeline, runReasoningPipeline } from '../pipeline';
 import { DataSpec } from 'gist-wsv';
 import { ReasoningStructure, SpaceBreakdown } from '../pipeline/types';
 
@@ -52,9 +52,8 @@ export const ExpTester: React.FC = () => {
     
     try {
       const model = createModel();
-      const reasoning = await analyzeReasoning(model, text);
-      setReasoningResult(reasoning);
-      setResult([]);
+      const reasoning = await runReasoningPipeline(model, text);
+      setResult(reasoning);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'error in processing');
     } finally {
@@ -153,19 +152,6 @@ export const ExpTester: React.FC = () => {
             overflow: 'auto'
           }}>
             {JSON.stringify(result, null, 2)}
-          </pre>
-        </Card>
-      )}
-
-      {reasoningResult && (
-        <Card title="Reasoning result" bordered={false}>
-          <pre style={{
-            background: '#f5f5f5',
-            padding: 16,
-            borderRadius: 4,
-            overflow: 'auto'
-          }}>
-            {JSON.stringify(reasoningResult, null, 2)}
           </pre>
         </Card>
       )}

@@ -1,7 +1,8 @@
 import { ChatOpenAI } from '@langchain/openai';
 import { DataSpec } from 'gist-wsv';
 import { analyzeSpaceBreakdown } from './spaceAnalyzer';
-import { analyzeFeatures, analyzeValues, analyzeReasoning } from './featureAnalyzer';
+import { analyzeFeatures, analyzeValues } from './featureAnalyzer';
+import { analyzeReasoning, getValuesFromReasoningStructure } from './reasoningProcess';
 import { processToDataSpecs } from './dataSpecProcessor';
 import { generateDirectDataSpecs } from './directDataFactGenerator';
 
@@ -90,5 +91,20 @@ export const runNewPipeline = async (
   return dataSpecs;
 };
 
+export const runReasoningPipeline = async (
+  model: ChatOpenAI,
+  text: string
+): Promise<DataSpec[]> => {
+  const reasoningStructures = await analyzeReasoning(model, text);
+  console.log('Reasoning structures:', reasoningStructures);
+  
+  const featureValues = await Promise.all(reasoningStructures.map(rs => getValuesFromReasoningStructure(model, rs)));
+  console.log('Feature values:', featureValues);
+  
+  const allFeatureValues = featureValues.flat();
+  const dataSpecs = processToDataSpecs(allFeatureValues);
+
+  return dataSpecs;
+}
+
 export * from './types';
-export { analyzeReasoning } from './featureAnalyzer';
