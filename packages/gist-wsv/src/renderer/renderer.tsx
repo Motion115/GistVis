@@ -1,4 +1,3 @@
-import '../page.css';
 import { GistvisSpec, InsightType, paragraphSpec } from '../components/types';
 import {
   ComparisonTextRenderer,

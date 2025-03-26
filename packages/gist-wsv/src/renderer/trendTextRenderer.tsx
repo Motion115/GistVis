@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataPoint, EntitySpec, GistvisSpec, TrendAttribute, TrendOptions } from '../components/types';
 import * as d3 from 'd3';
 import HoverText from '../components/widgets/hoverText';

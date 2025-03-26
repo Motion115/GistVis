@@ -1,4 +1,3 @@
-import React from 'react';
 import { GistvisSpec } from '../components/types';
 
 const PlainTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
