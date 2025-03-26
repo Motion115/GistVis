@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DataSpec, EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
-import lodash from 'lodash';
+import { orderBy } from 'lodash';
 import HoverText from '../components/widgets/hoverText';
 import { VerticalBarChart } from '../components/wordScaleVis/chartList';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
@@ -49,7 +49,7 @@ const RankTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
     dataSpec = addPlaceholders(dataSpec, maxRank);
   }
   // sort dataSpec
-  dataSpec = lodash.orderBy(dataSpec, ['value'], ['asc']);
+  dataSpec = orderBy(dataSpec, ['value'], ['asc']);
   // ensure ranking vis has at least 3 items
   dataSpec = ensureMinimumLength(dataSpec, 3);
 

@@ -15,7 +15,7 @@ pnpm test -- --watch
 pnpm test -- --coverage
 
 # Run a specific test file
-pnpm test src/components/visualizer/utils/__tests__/utils.test.ts
+pnpm test __tests__/<test_file_name>
 ```
 
 ### Test Suites
