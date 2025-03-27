@@ -4,7 +4,12 @@ import { SVG_HEIGHT, SVG_UNIT_WIDTH } from '../constants';
 import { ChartProps, DataSpec, InsightType } from '../types';
 import { Tooltip } from 'antd';
 
-const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
+const VerticalBarChart: React.FC<ChartProps> = ({
+  gistvisSpec,
+  colorScale,
+  selectedEntity,
+  setSelectedEntity,
+}: ChartProps) => {
   const [hoveredUniqueId, setHoveredUniqueId] = useState<string | null>(null);
   useEffect(() => {
     console.log('hoveredUniqueId:', hoveredUniqueId);
@@ -108,6 +113,7 @@ const VerticalBarChart = ({ gistvisSpec, colorScale, selectedEntity, setSelected
         </div>
       );
     }
+    return null;
   };
 
   const visElement = (

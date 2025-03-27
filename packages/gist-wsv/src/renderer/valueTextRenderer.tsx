@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
 import HoverText from '../components/widgets/hoverText';
@@ -6,7 +6,7 @@ import GlyphText from '../components/wordScaleVis/glyphText';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
 import useTrackVisit from '../utils/useTrack';
 
-const ValueTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const ValueTextRenderer: React.FC<{ gistvisSpec: GistvisSpec }> = ({ gistvisSpec }) => {
   const id = gistvisSpec.id;
   const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('value-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
@@ -60,6 +60,9 @@ const ValueTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
               </span>
             </span>
           );
+        } else {
+          console.warn('Unknown display type: ' + content.displayType);
+          return <span key={index}>{content.content}</span>;
         }
       })}
     </span>

@@ -1,21 +1,11 @@
-export { GistViewer } from './App';
 export * from './renderer/rendererList';
 export * from './components/wordScaleVis/chartList';
-export type { GistViewerProps } from './App';
-
-// Export Line Chart component
-export { default as LineChart } from './components/wordScaleVis/lineChart';
 
 // Export Article Process component
 export { GistvisVisualizer } from './renderer/renderer';
 
 // Export simplified interface components
-export {
-  SimpleLine,
-  SimpleBar,
-  SimpleStackedBar,
-  SimpleMaxMin,
-} from './components/wordScaleVis/interface';
+export { SimpleLine, SimpleBar, SimpleStackedBar, SimpleMaxMin } from './components/wordScaleVis/interface';
 
 // Export types for simplified interface
 export type {

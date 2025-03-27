@@ -20,7 +20,7 @@ interface HoverTextProps {
   onMouseOut: () => void;
 }
 
-const HoverText = ({ text, isHovered, color, onMouseOver, onMouseOut }: HoverTextProps) => {
+const HoverText: React.FC<HoverTextProps> = ({ text, isHovered, color, onMouseOver, onMouseOut }) => {
   return (
     <span
       style={{

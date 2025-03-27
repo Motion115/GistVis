@@ -4,7 +4,7 @@ import { SVG_WIDTH, SVG_HEIGHT, SVG_UNIT_WIDTH } from '../constants';
 import { ChartProps, ExtremeAttribute } from '../types';
 import { Tooltip } from 'antd';
 
-const GlyphsMaxMin = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
+const GlyphsMaxMin: React.FC<ChartProps> = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }) => {
   const dataSpec = gistvisSpec.dataSpec ?? [];
   const attribute = gistvisSpec.unitSegmentSpec.attribute as ExtremeAttribute;
   const highlightEntity = gistvisSpec.unitSegmentSpec.inSituPosition ?? [];

@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { DataPoint, EntitySpec, GistvisSpec, TrendAttribute, TrendOptions } from '../components/types';
 import * as d3 from 'd3';
 import HoverText from '../components/widgets/hoverText';
 import { LineChart } from '../components/wordScaleVis/chartList';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
+import { v4 as uuidv4 } from 'uuid';
 import useTrackVisit from '../utils/useTrack';
 
 const dummyDataMap: { [key in TrendAttribute]: DataPoint[] } = {
@@ -30,7 +31,7 @@ const dummyDataMap: { [key in TrendAttribute]: DataPoint[] } = {
   ],
 };
 
-const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const TrendTextRenderer: React.FC<{ gistvisSpec: GistvisSpec }> = ({ gistvisSpec }) => {
   const id = gistvisSpec.id;
   const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('trend-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
@@ -144,6 +145,9 @@ const TrendTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
               </span>
             </span>
           );
+        } else {
+          console.warn('Unknown display type: ' + content.displayType);
+          return <span key={index}>{content.content}</span>;
         }
       })}
     </span>

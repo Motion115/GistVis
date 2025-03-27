@@ -1,4 +1,3 @@
-import React from 'react';
 import { paragraphSpec, GistvisVisualizer } from 'gist-wsv';
 import { Divider, Layout, Typography } from 'antd';
 

@@ -10,7 +10,6 @@ import {
 } from './rendererList';
 import { recommendValidTypes } from '../utils/utils';
 import FallBackCase from '../components/widgets/fallbackVis';
-
 import React from 'react';
 
 export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({ datafactSpec }) => {
@@ -47,7 +46,7 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
     <div style={{ textAlign: 'justify' }}>
       {datafactSpec.map((para) => {
         return (
-          <p key={para.paragraphIdx}>
+          <div key={para.paragraphIdx}>
             {para.paragraphContent.map((item) => {
               const recommendedTypes = recommendValidTypes(item);
               const renderType = recommendedTypes.includes(item.unitSegmentSpec.insightType)
@@ -61,7 +60,7 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
               const renderFunction = renderMap[finalRenderType];
               return renderFunction ? renderFunction(item) : null;
             })}
-          </p>
+          </div>
         );
       })}
     </div>

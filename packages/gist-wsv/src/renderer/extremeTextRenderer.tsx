@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
 import HoverText from '../components/widgets/hoverText';
@@ -6,7 +6,7 @@ import { GlyphMaxMin } from '../components/wordScaleVis/chartList';
 import { getHighlightPos, getProductionVisSpec, getUniqueEntities } from '../utils/postProcess';
 import useTrackVisit from '../utils/useTrack';
 
-const ExtremeTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const ExtremeTextRenderer: React.FC<{ gistvisSpec: GistvisSpec }> = ({ gistvisSpec }) => {
   const id = gistvisSpec.id;
   const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('extreme-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
@@ -60,6 +60,9 @@ const ExtremeTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
               </span>
             </span>
           );
+        } else {
+          console.warn('Unknown display type: ' + content.displayType);
+          return <span key={index}>{content.content}</span>;
         }
       })}
     </span>

@@ -5,7 +5,7 @@ import { ChartProps, DataSpec } from '../types';
 import { Tooltip } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 
-const GlyphText = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
+const GlyphText: React.FC<ChartProps> = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }) => {
   const dataSpec = gistvisSpec.dataSpec ?? [];
   // process cases with one value only
   const value = dataSpec.map((d: DataSpec) => d.value)[0];
