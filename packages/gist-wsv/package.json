@@ -4,12 +4,15 @@
     "name": "GistVis Team"
   },
   "license": "BSD-3-Clause",
-  "description": "Gistvis-wsv is part of the GistVis project that enables users to create word-scale visualizations with JSON DSL-style inputs.",
+  "description": "The wsv package is the Visualizer module of the GistVis project, enabling users and automation processes to create word-scale visualizations with JSON DSL-style inputs.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/motion115/GistVis.git"
+    "url": "https://github.com/Motion115/GistVis/tree/master/packages/gist-wsv"
   },
   "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.cjs",
@@ -22,15 +25,13 @@
     }
   },
   "scripts": {
-    "dev": "tsup --experimental-dts --watch",
+    "dev": "tsup --experimental-dts --watch --sourcemap",
     "build": "tsup --experimental-dts",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",
     "test:watch": "jest --watch",
-    "publish": "pnpm publish --access public",
-    "prepublishOnly": "npm run build",
-    "postpublish": "git push && git push --tags"
+    "publish": "pnpm publish --access public"
   },
   "dependencies": {
     "antd": "^5.16.0",
@@ -70,5 +71,9 @@
     "typescript": "5.7.3",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }

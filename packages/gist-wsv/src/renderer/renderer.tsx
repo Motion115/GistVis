@@ -46,7 +46,7 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
     <div style={{ textAlign: 'justify' }}>
       {datafactSpec.map((para) => {
         return (
-          <div key={para.paragraphIdx}>
+          <p key={para.paragraphIdx}>
             {para.paragraphContent.map((item) => {
               const recommendedTypes = recommendValidTypes(item);
               const renderType = recommendedTypes.includes(item.unitSegmentSpec.insightType)
@@ -60,10 +60,9 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
               const renderFunction = renderMap[finalRenderType];
               return renderFunction ? renderFunction(item) : null;
             })}
-          </div>
+          </p>
         );
       })}
     </div>
   );
 };
-

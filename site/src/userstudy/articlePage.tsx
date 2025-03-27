@@ -120,9 +120,9 @@ const InteractivePage: React.FC = () => {
           <h2>Processed Article {pageId}: </h2>
           <h2 style={{ height: '20px' }}></h2>
           <div className="content-wrapper">
-            <p className="pre-wrap">
+            <div className="pre-wrap">
               <GistvisVisualizer datafactSpec={article.content} />
-            </p>
+            </div>
           </div>
         </div>
       );

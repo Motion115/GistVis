@@ -151,19 +151,15 @@ const IntroPage = () => {
     if (article.processed) {
       return (
         <div style={{ padding: '20px', minHeight: '200px' }}>
-          <div>
-            <p className="pre-wrap">
-              <GistvisVisualizer datafactSpec={article.content} />
-            </p>
+          <div className="pre-wrap">
+            <GistvisVisualizer datafactSpec={article.content} />
           </div>
         </div>
       );
     }
     return (
       <div style={{ padding: '20px', minHeight: '200px' }}>
-        <div>
-          <p className="pre-wrap">{article.content}</p>
-        </div>
+        <p className="pre-wrap">{article.content}</p>
       </div>
     );
   };

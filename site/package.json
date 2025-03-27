@@ -76,7 +76,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
+    "@playwright/test": "^1.50.1",
     "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "@types/d3": "^7.4.3",
     "@types/html-to-text": "^9.0.4",
     "@types/jsonwebtoken": "^9.0.6",
@@ -96,12 +100,8 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "prettier": "^3.5.1",
-    "typescript-eslint": "^8.24.1",
-    "@playwright/test": "^1.50.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "ts-jest": "^29.2.5"
+    "ts-jest": "^29.2.5",
+    "typescript-eslint": "^8.24.1"
   },
   "browser": {
     "jsonwebtoken": false
