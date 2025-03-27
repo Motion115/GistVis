@@ -1,5 +1,5 @@
 import React from 'react';
-import { paragraphSpec, ArtcleProcess } from 'gist-wsv';
+import { paragraphSpec, GistvisVisualizer } from 'gist-wsv';
 import { Divider, Layout, Typography } from 'antd';
 
 const { Text } = Typography;
@@ -418,8 +418,8 @@ export const DemoPage = () => {
         <Text style={{ fontSize: '16px', fontStyle: 'italic' }}>Word-scale in situ visualization</Text>
         <Divider style={{ margin: '0 0 0 0' }} />
         <div style={{ width: '50%', margin: '0 auto' }}>
-          {/* <ArtcleProcess llmarticle={sampleArticle} /> */}
-          <ArtcleProcess llmarticle={sampleArticle2} />
+          {/* <GistvisVisualizer datafactSpec={sampleArticle} /> */}
+          <GistvisVisualizer datafactSpec={sampleArticle2} />
         </div>
       </Layout>
     </div>

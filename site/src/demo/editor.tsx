@@ -12,10 +12,10 @@ import { processStageAtom } from '../globalState';
 const { Text } = Typography;
 
 interface EditorProps {
-  changeLlmArticle: React.Dispatch<React.SetStateAction<paragraphSpec[]>>;
+  changedatafactSpec: React.Dispatch<React.SetStateAction<paragraphSpec[]>>;
 }
 
-const Editor = ({ changeLlmArticle }: EditorProps) => {
+const Editor = ({ changedatafactSpec }: EditorProps) => {
   // const myRef = useRef(null);
   // const [inputText, setInputText] = useState("");
   const [userInput, setUserInput] = useState('');
@@ -28,7 +28,7 @@ const Editor = ({ changeLlmArticle }: EditorProps) => {
     // const input = {userInput}.userInput
     generateGistVisMarkup(userInput, setProcessStage).then((message) => {
       // console.log(message);
-      changeLlmArticle(message);
+      changedatafactSpec(message);
       setProcessStage(4);
     });
   };

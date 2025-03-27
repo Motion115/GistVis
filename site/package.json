@@ -13,10 +13,6 @@
     "@langchain/community": "0.3.30",
     "@langchain/core": "0.3.40",
     "@langchain/openai": "0.4.4",
-    "@playwright/test": "^1.50.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@vitejs/plugin-react": "^4.3.4",
     "antd": "^5.24.4",
     "buffer": "^6.0.3",
@@ -42,7 +38,6 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.4.0",
     "stream-browserify": "^3.0.0",
-    "ts-jest": "^29.2.5",
     "typescript": "5.7.3",
     "util": "^0.12.5",
     "vite": "^6.1.0",
@@ -101,7 +96,12 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "prettier": "^3.5.1",
-    "typescript-eslint": "^8.24.1"
+    "typescript-eslint": "^8.24.1",
+    "@playwright/test": "^1.50.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ts-jest": "^29.2.5"
   },
   "browser": {
     "jsonwebtoken": false

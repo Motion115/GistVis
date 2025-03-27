@@ -4,7 +4,7 @@ import { ChatOpenAI } from '@langchain/openai';
 import THEME from '../../style/theme';
 import SpecProcessEditor from './SpecProcessEditor';
 import splitInsight from '../../modules/llm/discoverer/discoverer';
-import { GistvisSpec, paragraphSpec, ArtcleProcess } from 'gist-wsv';
+import { GistvisSpec, paragraphSpec, GistvisVisualizer } from 'gist-wsv';
 
 const { TextArea } = Input;
 const { Text } = Typography;
@@ -205,7 +205,7 @@ const PipelineExplorer: React.FC<PipelineExplorerProps> = ({ style, onStageChang
           {isDiscoverProcessing ? (
             <Button type="text" loading style={{ margin: '30px' }} />
           ) : specs.length > 0 ? (
-            <ArtcleProcess llmarticle={[{ paragraphIdx: 0, paragraphContent: specs }]} />
+            <GistvisVisualizer datafactSpec={[{ paragraphIdx: 0, paragraphContent: specs }]} />
           ) : null}
         </div>
         <Divider>

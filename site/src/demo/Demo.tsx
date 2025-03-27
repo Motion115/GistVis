@@ -4,7 +4,7 @@ import THEME from '../style/theme';
 // import Editor from "./editor";
 import { DemoPage } from './demoPage';
 import React, { useState } from 'react';
-import { ArtcleProcess } from 'gist-wsv';
+import { GistvisVisualizer } from 'gist-wsv';
 import { articles } from '../userstudy/articles/articledata';
 import MenuBar from './commonElement/menuBar';
 
@@ -23,7 +23,7 @@ const PublicityPage = () => {
         <div style={{ padding: '20px', minHeight: '200px' }}>
           <div>
             <p className="pre-wrap">
-              <ArtcleProcess llmarticle={article.content} />
+              <GistvisVisualizer datafactSpec={article.content} />
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ const PublicityPage = () => {
                 <Divider style={{ margin: '0 0 2% 0' }} />
                 <Editor
                   // changeArticle={changeArticle}
-                  changeLlmArticle={setLlmArticle}
+                  changedatafactSpec={setdatafactSpec}
                 />
               </Col>
               <Col span={12}>
@@ -148,7 +148,7 @@ const PublicityPage = () => {
                   <Text style={{ whiteSpace: 'nowrap' }}>Progress: </Text>
                   <Progress percent={processStage * 25} />
                 </Flex>
-                <ArtcleProcess llmarticle={llmarticle} />
+                <GistvisVisualizer datafactSpec={datafactSpec} />
               </Col>
             </Row>
           </Layout> */}
