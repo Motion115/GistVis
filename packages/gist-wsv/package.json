@@ -7,7 +7,7 @@
   "description": "The wsv package is the Visualizer module of the GistVis project, enabling users and automation processes to create word-scale visualizations with JSON DSL-style inputs.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Motion115/GistVis/tree/master/packages/gist-wsv"
+    "url": "https://github.com/Motion115/GistVis.git"
   },
   "version": "0.0.1",
   "publishConfig": {
