@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Tooltip } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import { GistvisSpec } from '../types';
 
-const FallBackCase = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const FallBackCase: React.FC<{ gistvisSpec: GistvisSpec }> = ({ gistvisSpec }) => {
   const insightType = gistvisSpec.unitSegmentSpec.insightType;
 
   const toolTipContent = (

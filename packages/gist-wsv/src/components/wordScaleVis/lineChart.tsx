@@ -11,7 +11,14 @@ interface LineChartTooltipProps {
   value: number;
 }
 
-const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, setSelectedEntity }: LineChartProps) => {
+const Line: React.FC<LineChartProps> = ({
+  gistvisSpec,
+  visualizeData,
+  type,
+  colorScale,
+  selectedEntity,
+  setSelectedEntity,
+}: LineChartProps) => {
   const dataSpec = gistvisSpec.dataSpec ?? [];
   const dataset = visualizeData;
 
@@ -39,9 +46,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
     .line<{ x: number; y: number }>()
     .x((d) => xScale(d.x))
     .y((d) => yScale(d.y))
-    .curve(gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
-      ? d3.curveMonotoneX 
-      : d3.curveLinear); 
+    .curve(gistvisSpec.unitSegmentSpec.attribute === 'invariable' ? d3.curveMonotoneX : d3.curveLinear);
 
   const lineGeneratorDifference = d3
     .line<{ x: number; y: number }>()
@@ -65,11 +70,11 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {gistvisSpec.unitSegmentSpec.attribute === 'positive' 
-          ? '↗ increasing' 
-          : gistvisSpec.unitSegmentSpec.attribute === 'negative'
-            ? '↘ decreasing'
-            : '→ stable'}
+          {gistvisSpec.unitSegmentSpec.attribute === 'positive'
+            ? '↗ increasing'
+            : gistvisSpec.unitSegmentSpec.attribute === 'negative'
+              ? '↘ decreasing'
+              : '→ stable'}
         </div>
       );
     } else if (type === 'trending') {
@@ -82,8 +87,7 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             fontWeight: 'bold',
           }}
         >
-          {gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increased' : '↘ decreased'}{' '}
-          {dataSpec[0].value}
+          {gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increased' : '↘ decreased'} {dataSpec[0].value}
         </div>
       );
     } else if (type === 'start-end') {
@@ -101,11 +105,11 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
             dataSpec.find((d) => d.value === selectionVal)?.breakdown +
             ': ' +
             selectionVal}
-          {gistvisSpec.unitSegmentSpec.attribute === 'invariable' 
+          {gistvisSpec.unitSegmentSpec.attribute === 'invariable'
             ? '. The value remains stable.'
-            : `. The ${gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increase' : '↘ decrease'} is ${
-                Math.abs(dataSpec[1].value - dataSpec[0].value)
-              }.`}
+            : `. The ${gistvisSpec.unitSegmentSpec.attribute === 'positive' ? '↗ increase' : '↘ decrease'} is ${Math.abs(
+                dataSpec[1].value - dataSpec[0].value
+              )}.`}
         </div>
       );
     } else {
@@ -161,8 +165,8 @@ const Line = ({ gistvisSpec, visualizeData, type, colorScale, selectedEntity, se
       ? gistvisSpec.unitSegmentSpec.attribute === 'positive'
         ? 'green'
         : gistvisSpec.unitSegmentSpec.attribute === 'negative'
-        ? 'red'
-        : 'grey'
+          ? 'red'
+          : 'grey'
       : colorScale(dataSpec[0].breakdown);
 
   const uid =

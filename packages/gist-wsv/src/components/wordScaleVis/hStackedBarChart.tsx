@@ -4,7 +4,7 @@ import { SVG_WIDTH, SVG_HEIGHT } from '../constants';
 import { ChartProps, DataSpec } from '../types';
 import { Tooltip } from 'antd';
 
-const HorizontalStackedBar = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }: ChartProps) => {
+const HorizontalStackedBar: React.FC<ChartProps> = ({ gistvisSpec, colorScale, selectedEntity, setSelectedEntity }) => {
   const dataSpec = gistvisSpec?.dataSpec ?? [];
   const xScale = d3.scaleLinear().domain([0, 1]).range([0, SVG_WIDTH]);
   let curSum = 0;

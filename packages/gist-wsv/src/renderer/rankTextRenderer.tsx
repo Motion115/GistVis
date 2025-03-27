@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { DataSpec, EntitySpec, GistvisSpec } from '../components/types';
 import * as d3 from 'd3';
 import { orderBy } from 'lodash';
@@ -33,7 +33,7 @@ const ensureMinimumLength = (dataSpec: DataSpec[], minLength: number) => {
   return dataSpec;
 };
 
-const RankTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
+const RankTextRenderer: React.FC<{ gistvisSpec: GistvisSpec }> = ({ gistvisSpec }) => {
   const id = gistvisSpec.id;
   const { visitCount, handleMouseEnter, handleMouseLeave, identifier } = useTrackVisit('rank-' + id);
   const [currentEntity, setCurrentEntity] = useState<string>('');
@@ -105,6 +105,9 @@ const RankTextRenderer = ({ gistvisSpec }: { gistvisSpec: GistvisSpec }) => {
               </span>
             </span>
           );
+        } else {
+          console.warn('Unknown display type: ' + content.displayType);
+          return <span key={index}>{content.content}</span>;
         }
       })}
     </span>
