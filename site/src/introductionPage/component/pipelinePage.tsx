@@ -3,7 +3,7 @@ import { Image, Flex, Table, Tag, Button, Modal, Tooltip, Typography } from 'ant
 import { DataSpec, InsightType, UnitSegmentSpec } from 'gist-wsv';
 import { annotatorData, discovererData, extractorData } from '../introData';
 import designSpaceImage from '../../../static/design-space.jpg';
-import { ArtcleProcess } from 'gist-wsv';
+import { GistvisVisualizer } from 'gist-wsv';
 import { gistKB } from '../../modules/llm/visKB';
 import DisplayPrompt from './displayPrompt';
 
@@ -428,7 +428,7 @@ const PipelinePage: React.FC<{ stage: number }> = ({ stage }) => {
                 marginBottom: '10px',
               }}
             >
-              <ArtcleProcess llmarticle={extractorData} />
+              <GistvisVisualizer datafactSpec={extractorData} />
             </p>
           </div>
         </>

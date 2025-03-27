@@ -1,7 +1,7 @@
 // src/InteractivePage.js
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArtcleProcess } from 'gist-wsv';
+import { GistvisVisualizer } from 'gist-wsv';
 import { ArticleData, IQuestion } from './articles/articleTypes';
 import { articles } from './articles/articledata';
 import './us.css';
@@ -121,7 +121,7 @@ const InteractivePage: React.FC = () => {
           <h2 style={{ height: '20px' }}></h2>
           <div className="content-wrapper">
             <p className="pre-wrap">
-              <ArtcleProcess llmarticle={article.content} />
+              <GistvisVisualizer datafactSpec={article.content} />
             </p>
           </div>
         </div>

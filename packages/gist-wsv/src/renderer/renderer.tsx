@@ -13,7 +13,7 @@ import FallBackCase from '../components/widgets/fallbackVis';
 
 import React from 'react';
 
-export const ArtcleProcess: React.FC<{ llmarticle: paragraphSpec[] }> = ({ llmarticle }) => {
+export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({ datafactSpec }) => {
   const renderMap = {
     noType: (item: GistvisSpec) => <PlainTextRenderer gistvisSpec={item} />,
     trend: (item: GistvisSpec) => <TrendTextRenderer gistvisSpec={item} />,
@@ -24,7 +24,7 @@ export const ArtcleProcess: React.FC<{ llmarticle: paragraphSpec[] }> = ({ llmar
     value: (item: GistvisSpec) => <ValueTextRenderer gistvisSpec={item} />,
     fallback: (item: GistvisSpec) => <FallBackCase gistvisSpec={item} />,
   };
-  // console.log(JSON.stringify(llmarticle, null, 2))
+  // console.log(JSON.stringify(datafactSpec, null, 2))
 
   const checkDataspecValidity = (item: GistvisSpec) => {
     const dataSpec = item.dataSpec ?? [];
@@ -45,7 +45,7 @@ export const ArtcleProcess: React.FC<{ llmarticle: paragraphSpec[] }> = ({ llmar
 
   return (
     <div style={{ textAlign: 'justify' }}>
-      {llmarticle.map((para) => {
+      {datafactSpec.map((para) => {
         return (
           <p key={para.paragraphIdx}>
             {para.paragraphContent.map((item) => {

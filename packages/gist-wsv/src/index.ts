@@ -7,7 +7,7 @@ export type { GistViewerProps } from './App';
 export { default as LineChart } from './components/wordScaleVis/lineChart';
 
 // Export Article Process component
-export { ArtcleProcess } from './renderer/renderer';
+export { GistvisVisualizer } from './renderer/renderer';
 
 // Export simplified interface components
 export {

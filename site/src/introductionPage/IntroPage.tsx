@@ -29,7 +29,7 @@ import teaserImage from '../../static/teaser.png';
 import pipelineImage from '../../static/GistVis-Pipeline.jpg';
 import PipelinePage from './component/pipelinePage.tsx';
 import { articles } from '../userstudy/articles/articledata.ts';
-import { ArtcleProcess } from 'gist-wsv';
+import { GistvisVisualizer } from 'gist-wsv';
 import BibtexCard from './component/bibtex.tsx';
 import { Link } from 'react-router-dom';
 import THEME from '../style/theme.tsx';
@@ -153,7 +153,7 @@ const IntroPage = () => {
         <div style={{ padding: '20px', minHeight: '200px' }}>
           <div>
             <p className="pre-wrap">
-              <ArtcleProcess llmarticle={article.content} />
+              <GistvisVisualizer datafactSpec={article.content} />
             </p>
           </div>
         </div>
