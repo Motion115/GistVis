@@ -1,0 +1,2998 @@
+[
+  {
+    "content": "Encounters on the southern border of those trying to enter the U.S. without authorization have gone up significantly under President Joe Biden.",
+    "candidateTypes": [
+      "trend"
+    ]
+  },
+  {
+    "content": "Some Republicans, however, have misleadingly suggested the number released into the country since Biden took office is much higher.",
+    "candidateTypes": [
+      "trend"
+    ]
+  },
+  {
+    "content": "The same day on CNN’s “State of the Union,” Sen. Marco Rubio of Florida said that, conservatively, “3.3 million people have been released into the country who arrived here illegally.” But he also claimed that Biden had a policy of releasing “virtually 85, 90% of any migrant that crossed the border,” a percentage that would translate to well more than 3.3 million.",
+    "candidateTypes": [
+      "value",
+      "proportion"
+    ]
+  },
+  {
+    "content": "Other Republicans have said 85% of migrants crossing illegally are being released, a figure that reportedly, according to the Border Patrol Union, was used by Department of Homeland Security Secretary Alejandro Mayorkas in early January. The 85% figure is close to accurate for apprehensions by Border Patrol for one month — December — but statistics for other months or Biden’s time in office are much lower, as we’ll explain later.",
+    "candidateTypes": [
+      "proportion"
+    ]
+  },
+  {
+    "content": "For one, the number of apprehensions at the border includes people who have tried to cross more than once.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "During the pandemic, the U.S. used Title 42, a public health law, to immediately expel border-crossers, but without any criminal consequences — a policy that likely incentivized repeated attempts to enter the country. Biden stopped the use of Title 42 in May, when the federal public health emergency for COVID-19 ended. And since then, the recidivism rate has dropped; it was 11% in August, according to CBP.",
+    "candidateTypes": [
+      "trend",
+      "proportion"
+    ]
+  },
+  {
+    "content": "Comprehensive figures are available through October. So to keep things as simple as possible, we’ll present numbers for February 2021, the month after Biden took office, through October, unless otherwise noted.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "The agency would not provide an updated estimate. However, a DHS spokesperson told us: “Under this Administration, the estimated annual apprehension rate has averaged 78%, identical to the rate of the prior Administration.”",
+    "candidateTypes": [
+      "trend",
+      "value"
+    ]
+  },
+  {
+    "content": "That rate would support a gotaway figure of 1.6 million from February 2021 through October.",
+    "candidateTypes": [
+      "value"
+    ]
+  },
+  {
+    "content": "The figures used by Haley, DeSantis and Cotton — 8 million or 10 million — are totals of all migrant encounters at the border plus gotaways, and, in Cotton’s case, encounters at the northern border, coastal borders and airports.",
+    "candidateTypes": [
+      "value"
+    ]
+  },
+  {
+    "content": "Cotton’s press secretary, Patrick McCann, told us that those figures showed the senator was correct to say that number “crossed into the country.”",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "But these claims ignore that DHS statistics show 2.8 million of the encounters at the southern border alone resulted in a removal or expulsion directly from CBP custody, and all of the rest of the migrants encountered are not simply released.",
+    "candidateTypes": [
+      "value"
+    ]
+  },
+  {
+    "content": "Most of those removals – nearly 2.5 million — were immediate expulsions under Title 42.",
+    "candidateTypes": [
+      "value"
+    ]
+  },
+  {
+    "content": "The process at legal ports of entry is different. Most migrants without authorization to enter the U.S. who are processed at ports of entry have appointments through CBP One — an app that in January 2023 began accepting appointments for a limited number of migrants who are in Mexico and want to request asylum or parole. DHS calls this “safer, humane, and more orderly” than processing between ports of entry, where migrants cross the border illegally and wait to be apprehended. Migrants with CBP One appointments get a similar screening and could be subject to expedited removal, but the majority are released into the U.S. with a notice to appear in immigration court, Putzel-Kavanaugh said.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "But it is taking four to five years for asylum cases to get to court.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "Under Title 42, the U.S. immediately expelled people encountered at the border, except for unaccompanied children, without giving them an opportunity to apply for asylum — and without imposing criminal penalties. Now that Title 42 has ended, there are fewer expulsions overall, but the number removed from CBP custody under Title 8 has increased. Title 8 laws are the longstanding immigration laws that dictate what can happen to migrants entering illegally and who is inadmissible. Title 8 removals are subject to criminal penalties, including a five-year ban on entering the U.S. again.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "In addition to fewer expulsions since the end of Title 42, there is evidence of a decline in the rate and number of gotaways, according to David J. Bier, the associate director of immigration studies at the libertarian Cato Institute.",
+    "candidateTypes": [
+      "trend"
+    ]
+  },
+  {
+    "content": "The gotaway figures can be estimated through observation – such as electronic surveillance of the border – or statistical modeling. “Gotaway data have become more reliable over the past decade because border surveillance has increased dramatically from 2005 to 2023,” Bier wrote.",
+    "candidateTypes": [
+      "trend"
+    ]
+  },
+  {
+    "content": "(Publicly, Mayorkas said at the time that “the majority of all southwest border migrant encounters throughout this administration have been removed, returned, or expelled.”)",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "But the monthly figures vary.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "“These numbers highlight how difficult it was even for the most determined administration in US history to expel everyone who enters illegally,” Bier wrote.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "A: Like all energy sources, wind farms have some negative environmental impacts. But getting energy from wind farms results in dramatically lower greenhouse gas emissions than getting it from fossil fuels.",
+    "candidateTypes": [
+      "difference"
+    ]
+  },
+  {
+    "content": "Skip to content Watch Live Register Sign In Home News Sport Business Innovation Culture Travel Earth Video Live Why South Korean women aren't having babies 28 February 2024 Share Jean Mackenzie Seoul correspondent Jean Chung South Korea has the lowest birth rate in the world, which continues to plummet each year",
+    "candidateTypes": [
+      "trend",
+      "extreme"
+    ]
+  },
+  {
+    "content": "Neither she, nor any of her friends, are planning on having children. They are part of a growing community of women choosing the child-free life.",
+    "candidateTypes": [
+      "noType"
+    ]
+  },
+  {
+    "content": "South Korea has the lowest birth rate in the world, and it continues to plummet, beating its own staggeringly low record year after year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This refers to the number of children a woman is expected to have in her lifetime.",
+    "candidateTypes": []
+  },
+  {
+    "content": "If this trend continues, Korea's population is estimated to halve by the year 2100.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A 'national emergency'",
+    "candidateTypes": []
+  },
+  {
+    "content": "Globally, developed countries are seeing birth rates fall, but none in such an extreme way as South Korea.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Asia is spending to boost birth rates - will it work?",
+    "candidateTypes": []
+  },
+  {
+    "content": "Such financial incentives have not worked, leading politicians to brainstorm more \"creative\" solutions, like hiring nannies from South East Asia and paying them below minimum wage, and exempting men from serving in the military if they have three children before turning 30.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But five years ago, she decided not to get married, and not to have children.",
+    "candidateTypes": []
+  },
+  {
+    "content": "S Korea records world's lowest fertility rate again",
+    "candidateTypes": []
+  },
+  {
+    "content": "Korean women are the most highly educated of those in OECD countries, and yet the country has the worst gender pay gap and a higher-than-average proportion of women out of work compared to men.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Researchers say this proves they are being presented with a trade-off - have a career or have a family. Increasingly, they are choosing a career.",
+    "candidateTypes": []
+  },
+  {
+    "content": "More than half the population live in or around the capital Seoul, which is where the vast majority of opportunities are, creating huge pressure on apartments and resources. Stella and her husband have been gradually pushed further and further away from the capital, into neighbouring provinces, and are still unable to buy their own place.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Then there is the cost of private education. While unaffordable housing is a problem the world over, this is what makes Korea truly unique.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The practice is so widespread that to opt out is seen as setting your child up to fail, an inconceivable notion in hyper-competitive Korea. This has made it the most expensive country in the world to raise a child.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But her biggest consideration is that she does not want to put a child through the same competitive misery she experienced.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Over the past 50 years, Korea's economy has developed at break-neck speed, propelling women into higher education and the workforce, and expanding their ambitions, but the roles of wife and mother have not evolved at nearly the same pace.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But Minji says she is grateful she has agency. \"We are the first generation who get to choose. Before it was a given, we had to have children. And so we choose not to because we can.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "She researched which countries ranked highly on gender equality, and New Zealand emerged a clear winner. \"It's a place where men and women are paid equally,\" she says, almost disbelievingly, \"So I'm off.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "Minsung's answer surprises me. \"I'd love to have children. I'd have 10 if I could,\" So, what's stopping her, I ask? The 27-year-old tells me she is bisexual and envisages having a same-sex partner.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It appears politicians might slowly be accepting the depth and complexity of the crisis.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"I feel so much more respected at work and people are less judgemental,\" she added.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Health 7 days ago Charli XCX donates thousands of pants from new video",
+    "candidateTypes": []
+  },
+  {
+    "content": "Skip links Skip to Content Navigation menu News Show more news sections War on Gaza US Election Opinion Sport Video More Show more sections LIVE Click here to search Sign up News | Climate Crisis Climate change pushes Malaysia’s coastal fishermen away from the sea",
+    "candidateTypes": []
+  },
+  {
+    "content": "Going to sea in small boats has become increasingly risky as the weather becomes unpredictable.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Video Duration 02 minutes 20 seconds 02:20 By Patrick Lee Published On 7 Mar 2024 7 Mar 2024",
+    "candidateTypes": []
+  },
+  {
+    "content": "KEEP READING list of 4 items list 1 of 4 Refugees, migrants held in ‘violent, squalid’ Malaysian detention centres list 2 of 4 Malaysia could renew search for MH370 plane 10 years after it vanished list 3 of 4 Malaysia’s top court rules some Islamic laws in Kelantan unconstitutional list 4 of 4 Malaysia says it recovered $5m of stolen 1MDB assets over last 13 months end of list",
+    "candidateTypes": []
+  },
+  {
+    "content": "Ridhwan’s tale is not an isolated one, but shared by many traditional Malaysian fishermen who have found themselves increasingly affected by the climate crisis, which is changing weather patterns that have long governed when and where they can fish.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But erratic weather, warming seas and declining fish stocks caused by climate change are slowly pushing them away from the seas they and generations before them once depended on.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Warming waters",
+    "candidateTypes": []
+  },
+  {
+    "content": "Man-made emissions have pushed the average temperature of oceans higher, leading to the melting of polar ice, rising sea levels, ocean acidification, marine heatwaves and more fiercely unpredictable weather.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Professor Mohd Fadzil Mohd Akhir, an oceanographer with Universiti Malaysia Terengganu, said marine animals, sensitive to sea temperatures, had been found to migrate to cooler waters as oceans warmed.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Most marine organisms in tropical areas will move to cooler areas when these areas get warmer.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The prospect of a further decline in an already falling harvest is a huge blow for Malaysia’s coastal fishermen who have invested thousands in a back-breaking trade with often poor returns.",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, fishermen who have fished here for decades complain that there are fewer good days than before.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Originally, fishermen in the area blamed the dwindling supply on coastal and industrial developments.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But Serina Rahman, a conservation scientist working with fishermen in the area for more than 15 years, also noticed a “dramatic collapse” as the world shut down during the COVID-19 pandemic.",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, Serina and the fishermen noticed that fish stocks did not climb back as hoped, even as coastal development, previously blamed for declining catches, came to a halt during the lockdowns.",
+    "candidateTypes": []
+  },
+  {
+    "content": "She said that while dredging in the past had been shown to increase the catch of certain species, such as prawns, climate change had no such benefits.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“That was when we really saw the fall in catch, because over the COVID period was when we saw the numbers totally decline,” Serina said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Potentially, each platform can net up to 100,000 ringgit ($20,920) a year in fish; a lot less risky than going out to sea.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Ridhwan said that there were “many” now skirting the Johor coast, compared with only three or four a decade ago.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Skip links Skip to Content Navigation menu News Show more news sections War on Gaza US Election Opinion Sport Video More Show more sections LIVE Click here to search Sign up EXPLAINER Features | Health Are snakebites rising in South Asia — and what’s responsible?",
+    "candidateTypes": []
+  },
+  {
+    "content": "A study from Sri Lanka suggests climate change will spark a rise in the numbers of people receiving snakebites.",
+    "candidateTypes": []
+  },
+  {
+    "content": "KEEP READING list of 4 items list 1 of 4 African nations face snake-venom antidote crisis list 2 of 4 Papua New Guinea’s Snake Man list 3 of 4 Deadly snake halts play at Australia tennis tournament list 4 of 4 No money for meat, so we eat rats: The Indian snake catcher end of list",
+    "candidateTypes": []
+  },
+  {
+    "content": "Hence, snakes have slithered their way into folklore, pop culture and media, but incidents of venomous bites may also be rising.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A 2018 study from the University of Kelaniya in Sri Lanka also concluded that climate change is likely to increase the number of snakebites.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Where do snakebites occur most frequently in South Asia?",
+    "candidateTypes": []
+  },
+  {
+    "content": "The WHO estimated that 33,000 snakebites in Sri Lanka between 2012 and 2013 had resulted in 400 deaths.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Furthermore, as the study from the University of Kelaniya suggests, snakebites in Sri Lanka may already be increasing.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The common krait, one of the ‘big four’ snakes in India [Shutterstock] Which snakes are the most common?",
+    "candidateTypes": []
+  },
+  {
+    "content": "Common species of snakes found in Pakistan and India include the big four: the common krait, Russell’s viper, saw-scaled viper and the Indian Cobra (Naja naja).",
+    "candidateTypes": []
+  },
+  {
+    "content": "Kharel said that he was aware of his surroundings for the first 20km, then his eyes and tongue began to tingle and go numb.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Venomous snakebites can cause difficulty in breathing, an inability to open the eyes and cardiac problems. Symptoms can be felt quicker with some types of snakes – for example, Indian cobras – than others such as kraits.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Jignasu Dolia, a wildlife biologist and conservationist in northern India’s Uttarakhand area, who carries out conservation-based research on king cobras, explained that not all snakebites result in envenoming, in fact about half of king cobra bites are “dry bites”, which means the snake does not inject any venom or may only inject small, non-lethal quantities.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Memon said that the antivenom does not work as well on snakebites in Pakistan, even for the same species of snake, due to slight variations in geography and diet.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Climate change is another major issue. Research by Emory University, published in July 2023, showed a considerable increase in the likelihood of being bitten by a snake for every degree Celsius that daily temperatures increase.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rising temperatures, however, are known to make habitats for some species of snake unsuitable for them. Conditions can become too dry for snakes to thrive, explained Michael Starkey, conservation biologist and founder of Save the Snakes, a California-based organisation dedicated to conserving snakes and mitigating human-snake conflict.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This can cause snakes to move to areas where conditions are better – often areas where humans are living, thus increasing the likelihood of humans and snakes interacting.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Human encroachment into the natural habitat of snakes has caused a rising incidence of snakebites [Shutterstock]",
+    "candidateTypes": []
+  },
+  {
+    "content": "Some snakes may adapt to changing weather conditions while others may run out of suitable habitats altogether, eventually going extinct.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A rise in temperature is not the only climate change effect that could be causing an increase in human-snake interactions, resulting in more snakebites.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rodents also carry ticks that carry bacteria which causes Lyme disease. The ticks infect people by biting them, causing symptoms such as a fever, rash, joint pains and headaches.  Researchers at the University of Maryland in the United States in 2013 found a link between the decline of rattlesnakes and a rise in Lyme disease.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Furthermore, killing snakes puts people at higher risk of being bitten. This is because the closer humans are to snakes, the more likely snakes are to act in defence and bite.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Memon said that the production of antivenom needs to be ramped up throughout South Asia, adding that making it more affordable would be a step in the right direction.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Health Life, But Better Fitness Food Sleep More Watch Listen Live TV Sign in Switching to electric vehicles could prevent millions of illnesses in US children by 2050, report estimates By Jen Christensen, CNN 6 minute read Updated 2:46 PM EST, Wed February 21, 2024 Video Ad Feedback Electric cars of tomorrow 01:43 - Source: CNN CNN —",
+    "candidateTypes": []
+  },
+  {
+    "content": "Hundreds of infants’ lives would be saved and millions of children would breathe easier across the US if the nation’s power grid depended on clean energy and more drivers made the switch to zero-emission vehicles, according to a new report from the American Lung Association.",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED ARTICLE Biden administration considers slowing key emissions rules – a potential blow to EV growth",
+    "candidateTypes": []
+  },
+  {
+    "content": "Electric cars and trucks are better than gas-fueled vehicles because over the course of their lifetime they emit fewer carbon emissions.",
+    "candidateTypes": []
+  },
+  {
+    "content": "While battery-powered cars don’t emit greenhouse gases from tailpipes, they aren’t completely “zero-emission” even if that’s their official label. There are still emissions created when the cars are built, when manufacturers create the cars’ large batteries, and when they charge. Decarbonization of the electric grid is a key component to cleaning up the air. Without a clean source of power like hydroelectric or solar, the benefit of having an electric car is much more limited.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This latest report estimates that by 2050, a switch to zero-emission vehicles and a decarbonized electric grid would mean 2.79 million fewer pediatric asthma attacks, 147,000 fewer pediatric acute bronchitis cases, 2.67 million fewer cases of pediatric upper respiratory symptoms and 1.87 million fewer cases of pediatric lower respiratory symptoms, and 508 infants’ lives would be saved.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Pollution is more dangerous for children since their bodies are still developing and they have small lungs. They tend to take in more air than adults because their breathing is quicker, and as a result, their lungs and bodies are exposed to even more pollution. Kids also tend to spend more time outside – in potentially polluted air – than adults typically do, the new report said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Horton, who did not work on the new report, has published a number of papers showing that billions of dollars could be saved and hundreds of lives spared even if only some people shifted to electric vehicles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "One 2023 study that simulated air quality levels on a neighborhood level showed that if just 30% of all vehicles in the Chicago region were replaced with electric versions, it would save more than 1,000 lives and more than $10 billion a year because of fewer deaths related to pollution.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Another study, focused on replacing 30% of heavy-duty vehicles like trucks and school buses in the Chicago region with electric versions, calculated that it would save more than 500 lives and about $5 billion per year in health benefits.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Communities of color tend to live in more polluted areas, regardless of income, and neighborhoods where there are high concentrations of people with limited incomes tend to be more polluted, studies show. That exposure to pollution exacerbates existing health disparities.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Public health advocates have pushed for more financial incentives to encourage people to buy EVs. And as more of them become available as used cars, Horton said, prices are dropping, and that should also help.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Biden administration has indicated that it may relax strict vehicle emissions rules it proposed last year to give carmakers more time to meet requirements to create more electric vehicles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The American Lung Association is encouraging the government to create the strongest possible pollution standards.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Water shortages are not uncommon in this neighborhood, but this time feels different, Gomez said. “Right now, we are getting this hot weather. It’s even worse, things are more complicated.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Years of abnormally low rainfall, longer dry periods and high temperatures have added stress to a water system already straining to cope with increased demand. Authorities have been forced to introduce significant restrictions on the water pumped from reservoirs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Several neighborhoods have suffered from a lack of water for weeks, and there are still four months left for the rains to start,” said Christian Domínguez Sarmiento, an atmospheric scientist at the National Autonomous University of Mexico (UNAM).",
+    "candidateTypes": []
+  },
+  {
+    "content": "Politicians are downplaying any sense of crisis, but some experts say the situation has now reached such critical levels that Mexico City could be barreling towards “day zero” in a matter of months — where the taps run dry for huge swaths of the city.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Video Ad Feedback Experts warn one of world's largest cities may be out of water by summer 03:33 - Source: CNN Historic lows",
+    "candidateTypes": []
+  },
+  {
+    "content": "An aerial view of Mexico City, one of the biggest megacities in the world. Cesar Rodriguez/Bloomberg/Getty Images",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED ARTICLE These five cities could be one natural disaster away from a catastrophic water crisis",
+    "candidateTypes": []
+  },
+  {
+    "content": "“It’s almost half of the amount of water that we should have,” said Fabiola Sosa-Rodríguez, head of economic growth and environment at the Metropolitan Autonomous University in Mexico City.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In October, Conagua, the country’s national water commission, announced it would restrict water from Cutzamala by 8% “to ensure the supply of drinking water to the population given the severe drought.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“We are around the middle of the dry season with sustained temperature increases expected until April or May,” said June Garcia-Becerra, an assistant professor in engineering at the University of Northern British Columbia.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Natural climate variability heavily affects this part of Mexico. Three years of La Niña brought drought to the region, and then the arrival of El Niño last year helped deliver a painfully short rainy season that failed to replenish the reservoirs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED ARTICLE The world’s largest lakes are shrinking dramatically, and scientists say they have figured out why",
+    "candidateTypes": []
+  },
+  {
+    "content": "But the long-term trend of human-caused global warming hums in the background, fueling longer droughts and fiercer heat waves, as well as heavier rains when they do arrive.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Climate change has made droughts increasingly severe due to the lack of water,” said UNAM’s Sarmiento. Added to this, high temperatures “have caused the water that is available in the Cutzamala system to evaporate,” she said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The climate impacts have collided with the growing pains of a fast-expanding city. As the population booms, experts say the centralized water system has not kept pace.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The crisis has set up a fierce debate about whether the city will reach a “day zero,” where the Cutzamala system falls to such low levels that it will be unable to provide any water to the city’s residents.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Local media widely reported in early February that an official from a branch of Conagua said that without significant rain, “day zero” could arrive as early as June 26.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But many experts warn of a spiraling crisis. Mexico City could run out of water before the rainy season arrives if it carries on using it in the same way, Sosa-Rodríguez said. “It’s probable that we will face a day zero,” she added.",
+    "candidateTypes": []
+  },
+  {
+    "content": "DOW S&P 500 NASDAQ",
+    "candidateTypes": []
+  },
+  {
+    "content": "Fear & Greed Index",
+    "candidateTypes": []
+  },
+  {
+    "content": "Paramount cuts 15% of US staff, writes down $6 billion in latest sign of TV troubles OpenAI worries people may become emotionally reliant on its new ChatGPT voice mode Delta lashes out at CrowdStrike for its ‘vastly inadequate’ apology Business / Investing This market rally is nearly unprecedented.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Markets have been on an incredible winning streak since late October.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Just last week the S&P 500 hit a new all-time high and notched its best showing in a year. The cost of borrowing, meanwhile, has dropped to its lowest in two years, signaling a rosier economic outlook.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But this nearly unprecedented surge in the markets is sparking some concern over what’s driving the rally and whether it can continue.",
+    "candidateTypes": []
+  },
+  {
+    "content": "What’s happening: Nvidia and other artificial intelligence stocks continued their upward trajectory on Monday after boosting markets to new highs last week.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The S&P 500 and Dow last week each reached record levels after blockbuster earnings from the chipmaker set off a broad market rally. The tech-heavy Nasdaq Composite also reached its highest level in more than a year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The S&P 500 Health Care, Industrials, and Tech sectors also set new highs last week, said Sam Stovall, chief investment strategist at CFRA.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And with less than a week left in February, all three major indexes are on pace to end the month higher.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But this isn’t just a run-of-the-mill rally. These market gains are nearly unprecedented.",
+    "candidateTypes": []
+  },
+  {
+    "content": "That’s only happened one other time in the last 50 years, in 1989, according to analysts at Deutsche Bank.",
+    "candidateTypes": []
+  },
+  {
+    "content": "If markets are positive again this week, they’ll tie the record for winning weeks last achieved in 1971.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Why the surge: The AI boom is lifting the entire market along with it.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Inflation is also trending lower, and Federal Reserve officials have indicated that they will likely lower interest rates this year, boosting the outlook on Wall Street.",
+    "candidateTypes": []
+  },
+  {
+    "content": "US unemployment is sitting at 3.7%, and S&P Global Ratings revised their forecast for US economic growth in 2024 higher just last week.",
+    "candidateTypes": []
+  },
+  {
+    "content": "That’s largely because the rally isn’t broad enough and is concentrated in the tech sector.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“That marked the first time since 1998 that the S&P 500 outpaced its equal-weighted version by more than 10 percentage points, back during the dot com bubble,” wrote Deutsche Bank analysts.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Inflation also remains a worry for traders. While long-term numbers show that price growth is easing and one month does not make a trend, January data has shown some regression.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Fed officials continued to fear that inflation could remain stubbornly elevated during their policy meeting last month, minutes released last week showed. That could keep interest rates at 23-year high for longer than previously expected, affecting Americans’ borrowing costs on everything from car loans to mortgages.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Traders now largely expect the Fed to begin cutting rates in June or July, rather than at its May policy meeting, according to the CME FedWatch Tool.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The report follows a hotter-than-expected CPI inflation reading earlier in February that prompted markets to fall.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Berkshire Hathaway neared a $1 trillion market valuation Monday after a record-breaking year, but CEO Warren Buffett warned in his annual letter to investors that more skyrocketing performances are likely a thing of the past, reports my colleague Eva Rothenberg.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Only a handful of companies worldwide has ever reached the $1 trillion milestone, among them tech giants Amazon, Apple and Microsoft.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Omaha, Nebraska-based conglomerate reported a record cash hoard Saturday in its fourth-quarter earnings.",
+    "candidateTypes": []
+  },
+  {
+    "content": "For the year, operating earnings rose to $37.3 billion, after setting a record of $30.8 billion in 2022.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Berkshire should do a bit better than the average American corporation and, more important, should also operate with materially less risk of permanent loss of capital,” he wrote. “Anything beyond ‘slightly better,’ though, is wishful thinking.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Kellogg’s CEO: Let them eat Corn Flakes for dinner.“Let them eat Corn Flakes” appears to be Kellogg’s CEO Gary Pilnick’s advice to cash-strapped shoppers who are spending the highest portion of their income on food than at any point in the last 30 years.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“The cereal category has always been quite affordable, and it tends to be a great destination when consumers are under pressure,” Pilnick said. “If you think about the cost of cereal for a family versus what they might otherwise do, that’s going to be much more affordable.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "His advice hasn’t landed well with people frustrated by spending 26% more on groceries since 2020; on social media the campaign is being seen as insensitive.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Pilnick thought the opposite.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“In fact, it’s landing really well right now,” Pilnick said. “Cereal for dinner is something that is probably more on trend now, and we would expect to continue as that consumer is under pressure.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED CNN BUSINESS VIDEOS What a huge drop for stocks may signal about U.S. economy Why the stock market is freaking out, but you shouldn’t Uncertainty among Americans grows continuously after weak jobs report US economy adds far fewer jobs than expected. CNN breaks down what that means World Africa Americas Asia Australia China Europe India Middle East United Kingdom US Politics SCOTUS Congress Facts First 2024 Elections Business Tech Media Calculators Videos Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Before the Bell Nightcap Opinion Political Op-Eds Social Commentary Health Life, But Better Fitness Food Sleep Mindfulness Relationships Entertainment Movies Television Celebrity Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities Style Arts Design Fashion Architecture Luxury Beauty Video Travel Destinations Food & Drink Stay News Videos Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio podcasts Science Space Life Unearthed Climate Solutions Weather Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes Weather Video Climate Ukraine-Russia War Israel-Hamas War Paris Olympics About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN Business FOLLOW CNN BUSINESS Sign in",
+    "candidateTypes": []
+  },
+  {
+    "content": "Paramount cuts 15% of US staff, writes down $6 billion in latest sign of TV troubles OpenAI worries people may become emotionally reliant on its new ChatGPT voice mode Delta lashes out at CrowdStrike for its ‘vastly inadequate’ apology Business / Cars How EVs became such a massive disappointment By Peter Valdes-Dapena, CNN 5 minute read Updated 8:49 AM EST, Mon February 26, 2024 The All-Electric Ford Mach-E is displayed during the 2023 Los Angeles Auto Show at the Los Angeles Convention Center on November 24, 2023 in Los Angeles, California. Josh Lefkowitz/Getty Images CNN —",
+    "candidateTypes": []
+  },
+  {
+    "content": "Tesla has been slashing prices. Ford just cut the price of its Mustang Mach-E, too, plus it cut back production of its electric pickup. And General Motors is thinking about bringing back plug-in hybrids, possibly taking a step back from GM’s earlier commitment to shifting straight to pure EVs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And now the EPA is considering slowing down requirements for automakers to sell more electric vehicles, dialing back what had been aggressive plans to move away from gas powered cars and SUVs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In fact, EV sales in the United States hit a record last year, topping 1 million for the first time.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But the EV market has nevertheless become a major disappointment. There is a troubling gap between expectations and reality.",
+    "candidateTypes": []
+  },
+  {
+    "content": "(BNEF’s figures include plug-in hybrids, but the large majority are fully electric vehicles.) The trend line isn’t slanting upward as sharply as many had predicted so the industry is lowering future estimates.",
+    "candidateTypes": []
+  },
+  {
+    "content": "High prices",
+    "candidateTypes": []
+  },
+  {
+    "content": "Most electric vehicles currently on sale in America are on the more expensive side of the automotive market.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Between $50,000 and $60,000 now we get Kia and we get Cadillac,” said Tyson Jominy, an industry analyst with J.D. Power, referring to the Kia EV9 and Cadillac Lyriq electric vehicles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Those two don’t normally face each other.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Besides being too expensive for the average buyer, selection is limited in terms of body style, said Corey Cantor, an industry analyst with Bloomberg New Energy Finance. The vast majority are relatively expensive SUVs, and there are few sedans or compact cars for customers who want something different.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The target customer is also changing as selling more EVs means reaching outside a core of knowledgable EV enthusiasts.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This is why Ford recently cut prices for the Mach-E SUV and why Farley created a team to work on a less expensive EV engineering platform that will be the basis for future models.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Besides raw numbers, the EV chargers that are currently available tend to rate low with consumers in terms of reliability, according to J.D.. Power surveys.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The two issues of vehicle price and public charging are related, Jominy said. People who can afford to buy luxury-priced vehicles are also more likely to have a home in the suburbs with a garage where they can charge their car overnight. Public chargers are more important to people who can afford neither an expensive vehicle nor a house with private parking.",
+    "candidateTypes": []
+  },
+  {
+    "content": "EV chargers in the US are nowhere near that level, yet but things will improve, said Valdez Streaty.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“I think, in the next couple of years, we’re going to start to see exponential growth of charging,” she said, “and hopefully, with that comes reliability, because that’s the other big aspect of it.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED CNN BUSINESS VIDEOS What a huge drop for stocks may signal about U.S. economy Why the stock market is freaking out, but you shouldn’t Uncertainty among Americans grows continuously after weak jobs report US economy adds far fewer jobs than expected. CNN breaks down what that means World Africa Americas Asia Australia China Europe India Middle East United Kingdom US Politics SCOTUS Congress Facts First 2024 Elections Business Tech Media Calculators Videos Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Before the Bell Nightcap Opinion Political Op-Eds Social Commentary Health Life, But Better Fitness Food Sleep Mindfulness Relationships Entertainment Movies Television Celebrity Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities Style Arts Design Fashion Architecture Luxury Beauty Video Travel Destinations Food & Drink Stay News Videos Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio podcasts Science Space Life Unearthed Climate Solutions Weather Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes Weather Video Climate Ukraine-Russia War Israel-Hamas War Paris Olympics About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN Business FOLLOW CNN BUSINESS",
+    "candidateTypes": []
+  },
+  {
+    "content": "For anyone working a minimum wage job in this new year, they will be paid more in 22 states and in at least 40 cities and counties across the country than they were in 2023.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The higher hourly rates are due either to scheduled increases or lawmakers having indexed the minimum wage in their jurisdiction to inflation, most typically using the Consumer Price Index as their gauge.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The newcomers to the category are Maryland, New Jersey and most of New York State (with the exception of New York City, Westchester and Long Island, which already had a $15 minimum in place and where the minimum wage is increasing to $16 in 2024).",
+    "candidateTypes": []
+  },
+  {
+    "content": "January 1 isn’t the only day minimum wages will go up.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Cities, counties and some industries often trump state minimums",
+    "candidateTypes": []
+  },
+  {
+    "content": "States’ minimum wage rates are often eclipsed by those in many of their own cities and counties.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And in some states, there are big sector-specific wage hikes on tap.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In California, for instance, starting in April, fast food workers must be paid at least $20 an hour, and on June 1, health care workers will start earning between $18 and $23 an hour depending on their role and the size and type of employer they work for — an hourly rate that will eventually reach $25.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And 20 states — including Pennsylvania, New Hampshire, Alabama and Mississippi — still adhere to it.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Had it just been adjusted for inflation since 2009, it would be $10.33 today.",
+    "candidateTypes": []
+  },
+  {
+    "content": "She points to MIT’s living wage calculator to assess what a single person without kids would have to earn per hour just to cover the cost of basic needs (e.g., food, housing, transportation and medical care).",
+    "candidateTypes": []
+  },
+  {
+    "content": "For example, in Mississippi, where the minimum wage is just $7.25, a person would have to earn $15.30 an hour in Pike County just to pay for basic needs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But among child care workers, fast food cooks and cashiers in the state, the median wage (meaning half of people in those jobs earn less) ranges between $9.83 and $10.17 an hour, Sklar noted.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Given how little movement there has been at the federal level to raise the country’s minimum wage sufficiently, she expects states and local jurisdictions will continue to do the heavy lifting.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And she believes the economic case for their increases is there for both workers and employers.",
+    "candidateTypes": []
+  },
+  {
+    "content": "For businesses, she said, consumer spending goes up because minimum wage workers will spend their additional earnings quickly.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Want to live up to an additional 24 years?",
+    "candidateTypes": []
+  },
+  {
+    "content": "Eating this food may be a reason why some people live to 100",
+    "candidateTypes": []
+  },
+  {
+    "content": "Starting at age 50 instead?",
+    "candidateTypes": []
+  },
+  {
+    "content": "No problem, you could prolong your life by up to 21 years, the study found.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Age 60?",
+    "candidateTypes": []
+  },
+  {
+    "content": "You’ll still gain nearly 18 years if you adopt all eight healthy habits.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“There’s a 20-year period in which you can make these changes, whether you do it gradually or all at once,“ said lead study author Xuan-Mai Nguyen, a health science specialist for the Million Veteran Program at the VA Boston Healthcare System.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“We also did an analysis to see if we eliminated people with type 2 diabetes, high cholesterol, stroke, cancer and the like, does it change the outcome?",
+    "candidateTypes": []
+  },
+  {
+    "content": "“The earlier the better, but even if you only make a small change in your 40s, 50s or 60s, it still is beneficial,” Nguyen said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Adding a second led to seven more years, while adopting three habits prolonged life for men by 8.6 years.",
+    "candidateTypes": []
+  },
+  {
+    "content": "As the number of additional lifestyle changes climbed so did the benefits for men, adding up to nearly a quarter century of extra life.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Women saw huge leaps in life span as well, Nguyen said, although the numbers added up differently than for men.",
+    "candidateTypes": []
+  },
+  {
+    "content": "After adjusting for age, body mass index, sex, race and ethnicity, marital status, education level and family income level, the study found “an 87% relative reduction in all-cause mortality for those who adopted all eight lifestyle factors compared to those who adopted none,” Nguyen said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "What’s more important as you age — stretching, balance work or strength training?",
+    "candidateTypes": []
+  },
+  {
+    "content": "“We looked at whether they did light, moderate or vigorous activity compared to not doing anything and just sitting on the couch,” Nguyen said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Just to give you a baseline — if you can walk up a flight of stairs without losing your breath, that’s four minutes of the 7.5.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "No. 3: Never using tobacco reduced risk of death by 29%, the study found.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In addition, other studies have found that any amount of drinking may be unhealthy, except perhaps, for heart attacks and stroke, and even that finding has been challenged.",
+    "candidateTypes": []
+  },
+  {
+    "content": "One study found than even one drink may trigger an irregular heart rhythm called atrial fibrillation.",
+    "candidateTypes": []
+  },
+  {
+    "content": "No. 7: Getting a good night’s sleep — defined as at least seven to nine hours a night with no insomnia — reduced early death from any cause by 18%, Nguyen said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Short sleep negates benefits of exercise for the brain, study says",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, loneliness and isolation, especially among older adults, is becoming more widespread and worrisome, experts say.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But more employers are now saying they’re willing to hire them.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But employers are now — at least publicly — becoming more open to the idea of skills-based hiring, which focuses on a job candidates’ competencies and capacity to learn new skills rather than on their educational background.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But lurking over all of them is a demographic reality: The falling US birth rate will produce fewer workers in the years ahead to replace the number of workers retiring.",
+    "candidateTypes": []
+  },
+  {
+    "content": "At a Fortune conference in October last year, Ken Frazier, the former CEO of Merck, noted that roughly three-quarters of Black adults do not have college degrees, yet the vast majority of openings at leading US companies required college degrees “for almost any job.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "That means the lack of college degrees can’t be ignored, since Blacks and Hispanics are least likely to have a bachelor’s degree.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Its goal is to help non-degreed Black workers find better jobs with family-sustaining pay, as defined by the MIT Living Wage Calculator.",
+    "candidateTypes": []
+  },
+  {
+    "content": "OneTen’s mission has since grown to include all workers without four-year degrees, and the group has pulled together a coalition of more than 70 leading US corporations from Accenture to Yum!",
+    "candidateTypes": []
+  },
+  {
+    "content": "She also noted its career marketplace platform has 23,000 profiles of non-degreed job seekers and those seeking training, which is a talent pool that employers can search.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Talk of skills-based hiring still more virtue signaling than actual hiring",
+    "candidateTypes": []
+  },
+  {
+    "content": "That may reflect what one recent study found: Not all employers who talk about skills-based hiring and remove degree requirements from job ads are actually hiring candidates without degrees.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“[F]or all its fanfare, the increased opportunity promised by skills-based hiring has borne out in not even 1 in 700 hires last year,” wrote the authors of a report from Harvard Business School and the Burning Glass Institute.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“[D]espite the limited progress to date, our analysis shows that, for those who embrace it, skills-based hiring … yields tangible, measurable value.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Skills-based hiring boosts retention among non-degreed workers hired into roles that formerly asked for degrees,” they said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The tool is aimed at lower-wage workers without college degrees.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It helps them identify better-paying occupations that have overlap with the skills required in their current positions.",
+    "candidateTypes": []
+  },
+  {
+    "content": "For example: A cashier in the Cincinnati metro area might consider a job first as a customer service representative, then move on to the role of police or fire station dispatcher and later transition to becoming a human resource specialist or legal assistant.",
+    "candidateTypes": []
+  },
+  {
+    "content": "With each move, the former cashier’s pay could increase considerably.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“It’s a good illustration of how skills gained in prior jobs can be used to move up the career ladder,” said Keith Wardrip, senior community development research adviser at the Federal Reserve Bank of Philadelphia.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The death toll was shocking, as were reports of chaos in nursing homes and seniors suffering from isolation, depression, untreated illness, and neglect.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Efforts to strengthen care quality in nursing homes and assisted living centers have stalled amid debate over costs and the availability of staff.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And only a small percentage of people are masking or taking other precautions in public despite a new wave of covid, flu, and respiratory syncytial virus infections hospitalizing and killing seniors.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The pandemic made things worse",
+    "candidateTypes": []
+  },
+  {
+    "content": "Prejudice against older adults is nothing new, but “it feels more intense, more hostile” now than previously, said Karl Pillemer, 69, a professor of psychology and gerontology at Cornell University.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“And human nature being what it is, we tend to like people who are similar to us and be less well disposed to ‘the others.’”",
+    "candidateTypes": []
+  },
+  {
+    "content": "He spoke as an individual, not a government representative.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Combine the fear of diminishment, decline and death that can accompany growing older with the trauma and fear that arose during the pandemic, and “I think Covid has pushed us back in whatever progress we were making in addressing the needs of our rapidly aging society.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The solution: “We have to find ways to better integrate older adults in the community as opposed to moving them to campuses where they are apart from the rest of us,” Power said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“I suspect things for people in my generation could get a lot worse in the years ahead,” Pillemer said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "(The pay data in the tool still reflects 2020 pay levels, but it will be updated later this year, according to a spokesperson for the Philadelphia Fed.)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Don’t be surprised if Friday’s jobs report shows that February’s employment gains were far below those reported for January.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In fact, it would continue a history-making stretch of labor market expansion.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Friday’s jobs report could very well provide a more reliable read on what’s actually happening in the labor market than the jobs reports of recent months’ past, Julia Pollak, chief economist at ZipRecruiter, told CNN.",
+    "candidateTypes": []
+  },
+  {
+    "content": "October’s and November’s reports had some bumpiness because of striking and returning autoworkers, writers and actors.",
+    "candidateTypes": []
+  },
+  {
+    "content": "December and, especially, January likely overstated growth.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Even so, the projected employment gains for February would be well above historical averages and the neutral rate of job growth needed to keep up with population growth (estimated between 70,000 to 100,000 jobs).",
+    "candidateTypes": []
+  },
+  {
+    "content": "Economists expect the pace of wage growth to moderate slightly, but not slow enough for the Federal Reserve’s liking.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Central bankers are likely looking for annual wage growth to be in the 3.5% realm, Gus Faucher, PNC Financial Services’ chief economist, told CNN.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Other data shows that wage growth is moderating.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Higher quit rates typically correlate to higher wage and price inflation pressures.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The decrease, which contributed to the boost in the average hourly earnings data point, was likely due to the frigid temperatures and snow in January that affected work in weather-sensitive industries, Faucher said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, if average weekly hours do shrink more, it could be a sign that economic activity is weakening.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Oftentimes when businesses see softer demand, the first thing they’ll do is they’ll cut back on hours, because they don’t want to have to lay people off,” he said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Where the jobs are and labor force participation: For much of the past year, the lion’s share of employment gains were concentrated in only three sectors: health care, leisure and hospitality, and government.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The labor force participation rate, which is an estimation of the active workforce and people looking for work, was unchanged in January at 62.5%.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The participation rate has not returned to pre-pandemic levels, vexing economists and the Fed, while also contributing to an imbalance of worker supply and demand.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Last month’s total landed slightly below economists’ expectations for a net gain of 150,000 jobs but above ADP’s January tally, which was upwardly revised to 111,000 hires.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Job Openings and Labor Turnover Survey (JOLTS) for January showed that job openings, hiring activity, quits and layoffs all moved downward.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Still, the number of job openings — a closely watched measure of labor demand — remains well above pre-pandemic averages, highlighting the continued strength of the labor market.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Layoff announcements, by some measures, remain elevated.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Businesses are aggressively slashing costs and embracing technological innovations, actions that are significantly reshaping staffing needs.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Still, real-time data such as initial and continued jobless claims indicate that layoff activity remains low across the economy,” she noted.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the decade before the pandemic, weekly claims for unemployment benefits averaged 311,000, Labor Department data shows.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Friday’s jobs report came in strong: the US economy added 261,000 new jobs in October, blowing away analyst expectations of 200,000, even as unemployment ticked up to 3.7%.",
+    "candidateTypes": []
+  },
+  {
+    "content": "What’s happening: Tech companies are announcing an alarming number of layoffs and hiring freezes.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Late last month, Amazon forecast its revenue for the holiday quarter would be lighter than analysts had expected, causing its stock to fall sharply.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Like other tech companies, Apple is worried about slower growth during the holiday season, higher interest rates and waning consumer spending.",
+    "candidateTypes": []
+  },
+  {
+    "content": "We’re facing a probable recession sometime in the next year and rideshare insurance costs are going up.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Just last year, Stripe became the most valuable US startup, with a valuation of $95 billion.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Twitter on Friday announced extreme layoffs, noting that offices would be locked and badge access suspended as new CEO Elon Musk cuts about half of its 7,500-person workforce.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The bottom line: Headline jobs numbers and third-quarter corporate earnings still reflect a strong economy overall.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But other companies won’t be immune to the softening demand from consumers and businesses that tech companies have noted.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Mondelez International (MDLZ) and Pfizer (PFE) have also reportedly joined that list.",
+    "candidateTypes": []
+  },
+  {
+    "content": "On Friday, a group of watchdog organizations including the Anti-Defamation League, Free Press and GLAAD, increased their pressure on brands to rethink advertising on Twitter.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Google and Meta both cited lower ad payouts as a massive challenge in their most recent earnings reports.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Prices of goods from gasoline to food and cars could soar if trains halt.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The terrain encountered during a hiking odyssey in subcontinent-sized India is as diverse as the cultural fabric that weaves this extraordinary nation together.",
+    "candidateTypes": []
+  },
+  {
+    "content": "During summer (mid-May to June), a thrilling rappel of about 400 meters (1,312 feet) down a steep ice wall awaits, while in autumn (mid-September to mid-October), a steep descent amid rugged boulders provides an exhilarating experience.",
+    "candidateTypes": []
+  },
+  {
+    "content": "An absolute humdinger of a route, this trek takes in three high passes of the Himalayas and seven glacier-fed lakes.",
+    "candidateTypes": []
+  },
+  {
+    "content": "On day five comes the real treat – spectacular views of the biggest of the Satsar Lakes and the twin lakes of Gangabal and Nundkol.",
+    "candidateTypes": []
+  },
+  {
+    "content": "If you’re up for a challenge and view that ranks among India’s most sublime, consider this trek in West Sikkim.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There are a variety of trek distances available, but one of the most popular and shortest options begins and ends in Ghangaria, a popular base camp for visitors wanting to visit the valley.",
+    "candidateTypes": []
+  },
+  {
+    "content": "As one of the most popular hikes in India, you won’t be alone, so there’s no need for a guide here.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Birdwatchers will find themselves captivated by the five species of hornbills and other avian species found along the way.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The best time to hike here is mid-September to April.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Highlights are many but you’ll never forget clapping eyes on the snow-capped peaks of Deo Tibba (6,001 meters/19,688 feet) and Mount Indrasan (6,221 meters/ 20,410 feet) from the top of Hampta Pass on day four.",
+    "candidateTypes": []
+  },
+  {
+    "content": "One of India’s most stirring natural wonders is the Living Root Bridges, crafted by indigenous Khasi villagers out of Indian rubber tree roots.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Over 100 of these humble river crossings are found in the Meghalaya hills, with a notable concentration in the jungle-laden Nongriat Village.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The finale is the centuries-old double-decker living root bridge.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Hike between April to June, as the weather is comfortably warm.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Chalk and cheese won’t suffice in defining the distance between the two.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It isn’t as bitter as Irish Guinness and has a lovelier, frothier head. Its sugar content is higher.",
+    "candidateTypes": []
+  },
+  {
+    "content": "America, where Nigeria’s Foreign Extra Import Guinness is not typically available, is worse off for its absence.",
+    "candidateTypes": []
+  },
+  {
+    "content": "I slow-cook stewing beef in three-quarters of a can with carrots, leeks, dried Cameroonian peppers and honey.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Nigeria is the second largest Guinness-drinking nation worldwide.",
+    "candidateTypes": []
+  },
+  {
+    "content": "We drink more Guinness than the Irish.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And we were the first Guinness-brewing outpost of note, with a representative brew – not barley but maize, sorghum and a unique yeast –  created for our national palate.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There is a scientific postscript for Femi Oyebade’s avowal of our Guinness’ superiority.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Foreign Extra Import – our own export of the Nigerian brew – can be found sitting on the shelf (in a 33-centiliter bottle) in every good London corner shop, you just have to know to ask.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Our brew is apparently “less” bitter, and roasted darker, than the original Irish Guinness Draught in a can or pub-poured pint glass.",
+    "candidateTypes": []
+  },
+  {
+    "content": "We drink differently too.",
+    "candidateTypes": []
+  },
+  {
+    "content": "They were rarely alone – no, they were accompanied by women (notably not their wives).",
+    "candidateTypes": []
+  },
+  {
+    "content": "The clientele was mostly “bring our girlfriend for fish” men, between 40 and 50 years old, with women half their age.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The size of the Guinness beer bottle you buy for a friend or new acquaintance points to how highly you esteem them.",
+    "candidateTypes": []
+  },
+  {
+    "content": "An Odeku is twice the esteem of a Lanko or a Heineken. A Nigerian man flirting with a woman won’t buy her a big bottle of Guinness in a beer parlor; he will buy her a Lanko with a glass.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But then, of course she can drink as many Lankos as she likes – enough to equal the Odekus – because the protocols of respectful courting have already been observed.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In 1992, Nigerian Breweries attempted to create a new brew to rival Guinness and came up with Legend Extra Stout.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It contains the eluded barley with sorghum and caramel, but more than 30 years later it has still failed to topple Guinness from its throne.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Femi Oyebade speaks for many when he says there is no match for Nigerian Guinness in smoothness or cultured mouth-feel – not even close.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Beef and stout stew tastes so much better the next day.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Dominican Republic's forests are being cut down for grazing land – and it's also having a serious effect on the water supply. Is planting new trees a natural solution to the crisis?",
+    "candidateTypes": []
+  },
+  {
+    "content": "Dominga Reynoso turned her rusted, squeaky tap above the kitchen sink. Nothing, not even a drop, came out. Even the pipes, which usually gurgled in anticipation, stayed silent. Reynoso and her neighbours, who live in Santo Domingo, the capital of the Dominican Republic, would go without running water for 22 days – an increasingly common occurrence across the mountainous Caribbean island of Hispaniola, which the country shares with Haiti.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Historically, the country has relied on bountiful natural supplies of water, which are freely accessible to both public and private entities. Over the past century, however, that supply has been under threat. Increased demands from the tourist, mining, and agricultural industries have meant less is left for local people.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"Economic and population growth are putting great pressure on the Dominican Republic's traditionally bountiful water resources,\" says Chloe Oliver Viola, a senior water supply and sanitation specialist at the World Bank. \"Reforms and greater investments are urgently needed to ensure sustainable use and safe water supply for businesses and households.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "In 2011, Núñez helped launch a multi-country project called the Latin American Water Funds Partnership, bringing millions of dollars of funding from conglomerates such as the world's largest bottler of fizzy drinks, to invest in water projects in the Latin America and Caribbean regions.",
+    "candidateTypes": []
+  },
+  {
+    "content": "To achieve this, the projects have been increasing tree canopies, ensuring the water is managed efficiently, delivering clean water to local communities, and bringing sustainable and long-term economic empowerment to rural areas – through environmentally beneficial industries.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Yaque del Norte river basin is home to significant agricultural production, as well as being the country's second-largest metropolitan area, which has led to increasing tension between water users. \"As an island state, we're very vulnerable to climate change,\" Abreu adds. \"And the effects are altering the way the water cycle works.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "Although Latin America has the most water sources in the world, 36 million people in the region lack access to clean drinking water.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Travel included a return flight (CO2 emissions of 530kg), but as it was not the primary purpose of the trip, we have not counted the emissions.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The land, which used to be covered in lush, green vegetation, is now severely degraded, with roads cutting across the parched landscape, stripped of native trees and heavily grazed by cattle. \"There's an understanding now that if we want to fix the water crisis, we need to rebuild the watersheds,\" says Núñez.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The team began approaching small scale farmers living in these rural, mountainous areas with a proposition: The Nature Conservancy would help plant either coffee or cacao crops – both plants help prevent soil erosion, which leads to better water retention in the watershed. They are also highly valuable economically; the country is a major exporter of organic fair trade cocoa. Planting a valuable crop means that money is being brought into these rural areas, and farmers are more likely to stick with that crop.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Farmers see how well their neighbours are doing with our programme and they want to sign up - Francisco Núñez",
+    "candidateTypes": []
+  },
+  {
+    "content": "Two-thirds of Dominican homes don't have sewage connections which treat wastewater",
+    "candidateTypes": []
+  },
+  {
+    "content": "Water quality is just as important as the quantity available, highlights Walkiria Estévez, director of the Yaque del Norte project. Residents in poverty-stricken areas repeatedly report water discoloration and odours from government-run taps, which leaves them at risk of contracting serious illnesses, including cholera.",
+    "candidateTypes": []
+  },
+  {
+    "content": "These natural filtration systems, built using layers of sand and gravel and native plants such as vetiver, reduce pollutants by up to 98% without using any kind of chemicals or electricity, according to The Nature Conservancy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The most recent wetland was built in a school, and the team trained teachers to use the artificial ecosystem to educate students about environment and ecology.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Whilst the government pushes through its top-down legislative reforms, Abreu continues to fight for water on the ground. \"Most important to me is the way we integrate everyone in the country, to come together to cooperate for a greater objective,\" she says. \"Gathering data is important, but we're translating the data to comprehensive projects that can actually respond to the challenge of water security.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "And the results suggest the approach works. The land that has undergone careful restoration is starkly different from the untouched areas: healthy trees with full foliage dot the landscape; streams are flowing and clear, with vegetation lining the banks; lush green grass covers the hills. It's a vast improvement to the dry, arid conditions that Abreu and her team were faced with a decade ago.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A look through footage from the Paris 1924 Olympics gives viewers a chance to reflect on how much has changed.",
+    "candidateTypes": []
+  },
+  {
+    "content": "With storms occurring between 140 to 160 nights a year, it's no wonder the area is a world record holder.",
+    "candidateTypes": []
+  },
+  {
+    "content": "4 days ago Is the man trying to reverse ageing getting younger?",
+    "candidateTypes": []
+  },
+  {
+    "content": "5 days ago Less is more: Can degrowth save the world?",
+    "candidateTypes": []
+  },
+  {
+    "content": "27 Jul 2024 AI v The Mind: Can AI tell better jokes than a human?",
+    "candidateTypes": []
+  },
+  {
+    "content": "In a clash of wit and technology, we bring together two unlikely adversaries: a comedian and an AI chatbot.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A bustling community of trillions of cells influence almost every aspect of our life.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Heat is the most deadly extreme weather phenomenon and cities are seeking ways to cool their urban cores.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Future 4 days ago E. coli at swim site '20 times minimum standards'",
+    "candidateTypes": []
+  },
+  {
+    "content": "Very high E. coli levels are recorded at a site in Devon where hundreds of people are due to swim.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Then I sat down and on the emergency card [in the seat pocket] it said it was a Max.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Pierson has a unique and first-hand perspective of the aircraft, made by Boeing at its Renton factory in the state of Washington.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Now the executive director of airline watchdog group Foundation for Aviation Safety, he served as a squadron commanding officer among other leadership roles during a 30-year Naval career, followed by 10 years at Boeing – including three as a senior manager in production support at Renton itself, working on the 737 Max project before its launch.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The previous model, the Max 8, was involved in two fatal crashes in 2018 and 2019 that killed a total of 346 people.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The move comes as critics have repeatedly said that the aircraft manufacturer is prioritizing profits over safety.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The FAA is now “taking a holistic look at the quality control issues at Boeing to ensure safety is always the company’s top priority,” a spokesperson for the government agency told CNN.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Most countries cleared the Max 8 to fly again by 2021, but three years on, there still appears to be negative public opinion about the Max.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“The whole thing of, ‘If it’s not Boeing I ain’t going,’ it’s totally the opposite now,” she said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "She says she’s not the only one in her circle, and says she knows people employing both “soft” and “hard” boycotts.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Some say, ‘Absolutely not,’ others say, ‘If I can change it, I will; if not I’ll just go on it.’”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Grimes, who travels regularly for work, was worried following the Max 8’s first crash in October 2018: Lion Air flight 610, in Indonesia, which killed all 189 onboard a plane in service for less than three months.",
+    "candidateTypes": []
+  },
+  {
+    "content": "When Ethiopian Airlines flight 302 crashed in March 2019, killing another 157 people, it confirmed her resolve.",
+    "candidateTypes": []
+  },
+  {
+    "content": "I wouldn’t exactly refuse to fly it, but I’d ideally fly an Airbus if given the choice,” he said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "I feel I can trust them more than the Max.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The report highlighted five key themes, including “production pressures that jeopardized the safety of the flying public” and a “culture of concealment” at Boeing.",
+    "candidateTypes": []
+  },
+  {
+    "content": "As Hollywood’s movers and shakers ready themselves for this Sunday’s Academy Awards ceremony, millions of movie fans are waiting to see who will take home those coveted gold statues.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Locations where those Best Picture nominees were filmed – Louisiana for “Green Book” or Atlanta for “Black Panther” – may become as popular as the actors who starred in them.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Here are eight of our favorites.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But Mumbai is also where you’ll find Bollywood, the world’s largest movie producer.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The museum’s core exhibit brings technique into focus, followed by examples of where the real money is made – licensed merchandise, video games, webisodes and more.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The museum is dramatically located within the Mole Antonelliana, a late 1800s-era synagogue with a 550-foot-high marble dome used as a movie screen.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Travelers will appreciate that the museum’s state of the art Cinema Massimo is one of the very few theaters in Italy showing current Oscar nominees in their original language.",
+    "candidateTypes": []
+  },
+  {
+    "content": "London's Cinema Museum honors both greats and unknowns of British films.",
+    "candidateTypes": []
+  },
+  {
+    "content": "That never stopped Alfred Hitchcock – director of 53 features and five-time Oscar nominee – from famously saying, “Blondes make the best victims.",
+    "candidateTypes": []
+  },
+  {
+    "content": "They’re like virgin snow that shows up the bloody footprints.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "London’s movie museum honors both greats and unknowns of British cinema at the Victorian-era Lambeth Workhouse, a poorhouse that in 1898 sheltered the 9-year-old Charlie Chaplin and his family.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Thanks to the multibillion-dollar “Lord of the Rings” and “The Hobbit” franchises, a respected Kiwi industry has grown into one of the largest filmmaking machines – and tourism attractions – in the world, with Oscar-winning director Sir Peter Jackson as front man.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Enter one of the 44 hobbit-holes and explore Bag End, and don’t forget to visit the reconstructed oak with its synthetic leaves.",
+    "candidateTypes": []
+  },
+  {
+    "content": "She has authored a dozen Frommer guidebooks and contributes to many publications and digital guides.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Restaurants founder Simon Prideaux, who owns two 24-hour diners in the city in addition to a new third branch open until 3 a.m. everyday.",
+    "candidateTypes": []
+  },
+  {
+    "content": "London’s highest 24-hour restaurant might also be the city’s poshest for around-the-clock dining.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“People in different areas now have the chance to come without lengthy bus journeys or pricey cabs.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Though a majority of the late-night dining industry has seen a recent customer increase in the wee weekend hours, Phil Inzani, Polo Bar’s founder, finds the Night Tube service has created an opposite effect.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“At Polo Bar, the busiest hours used to be after midnight… after a bar closes.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Now that the Tube is running much later, going home is less of a drudge – it’s quicker, easier and making it less tempting [for customers] to go for the nightcap!” Inzani says.",
+    "candidateTypes": []
+  },
+  {
+    "content": "With a comforting amount of fat, Beigel Bake's salt beef bagel is one of the best late-night cheap eats.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Beigel Bake is widely considered one of the finest cheap-eats joints in the capital, and a prime grub spot for the many after-hours revelers spilling from Shoreditch’s bars and clubs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It is one of the best deals in London,” Morrow says.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Those with serious hunger pangs can try the MEATliquor’s Triple Chilli Challenge.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Former London local Faisal Nisar explains, “If you manage to finish the Green Chili Cheeseburger, Chili Dog and Chili Cheese Fries in under 10 minutes, it’s all free and you’ll walk out a rich man.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Over the last 30 years, the Old Compton Street favorite has been a haven for night owls who are always up for a rowdy good time, with weekend drinks flowing until 3 a.m. and indulgent dishes served until 6 a.m.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Kamala Harris has aced her moment.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The vice president has already won the backing of enough delegates to secure the Democratic nomination, sparked a fundraising bonanza and alchemized the mood of a party that looked headed for defeat.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But while Harris can hardly have hoped for a better start in establishing legitimacy among Democrats after President Joe Biden abandoned his reelection campaign, she is still just hours into a mission that ranks as the most daunting for any modern potential presidential nominee.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perhaps most significantly, she also notched the endorsement of her fellow Californian, former House Speaker Nancy Pelosi, whose backdoor maneuvering was critical to ending Biden’s stalled reelection bid and revealed the 84-year-old is still the nation’s most skilled and influential Democrat.",
+    "candidateTypes": []
+  },
+  {
+    "content": "After Pelosi said her backing was “official, personal and political,” other congressional leaders fell into line behind Harris – ready to entrust their party’s hopes to a historic standard bearer who is nevertheless an untested leader at the pinnacle of American politics.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And after the freezing of donor cash helped force Biden out of the race, Democratic wallets have opened big-time.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The maxim usually applies to the heady first hours of primary campaigns.",
+    "candidateTypes": []
+  },
+  {
+    "content": "After replacing Biden as the figurehead of the campaign, Harris is now leading an effort that has as its foundation an attempt to save democracy from Trump.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Trump has seemed momentarily thrown off by the swift shift in Democratic candidates after Biden recognized the unsustainable nature of his bid for a second term that would have ended when he is 86.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“She’s had a lower approval rating than Joe Biden.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Harris is the least popular vice president in history – which is no surprise given her terrible record,” the memo said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“She makes just as much sense as Joe Biden.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But something has undeniably shifted.",
+    "candidateTypes": []
+  },
+  {
+    "content": "One of the two parties has now given voters what they have told pollsters they want for months — a choice of a candidate who is not named Biden or Trump.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A CNN poll at the end of June showed, for instance, that in a hypothetical matchup against Trump, the vice president outpolled her boss among women voters, political independents and movable voters.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Such key voting blocs could be critical to the outcome of the election in the handful of swing states and districts likely to decide the race.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There’s going to be more energy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Trump, after all, has usually led polling on issues that matter most to voters — from immigration to national security and the economy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Sixteen years ago, many Americans believed that the country would never put a Black man in the White House.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Now Harris, a Black woman and Asian American, faces an even higher historic barrier.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Other officials have been more receptive.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Roberts said he has received voter-registration challenges from a local resident who separately told CNN he had spent about 100 hours compiling lists of voters who appeared ineligible based on data in the IV3 app.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Phillips said most of the challenges involve voters the county has already placed in an inactive status or removed from the rolls, whereas a minority of them warrant follow-up.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Despite those controversies, the group’s revenue has ballooned over the last decade.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“These kinds of rash activities can do much more harm than good,” said Moss, the Denton County, Texas voter.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Kamala Harris seems to have more appeal among voters of color and younger voters than Joe Biden did before he got out of the presidential race.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The same holds to a somewhat lesser degree among Hispanic voters.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Biden was doing the worst for a Democrat this century among all these traditionally Democratic-leaning groups.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Harris probably had nowhere to go but up with these segments of the electorate.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Without improving among these groups, Harris likely cannot win against the former president.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The good news for Harris, though, is that she’s showing that she can make up some ground with this group relative to how Biden was doing earlier this year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The fact that Harris overperforms Biden among voters of color also provides her an opportunity to open up more paths in the Electoral College.",
+    "candidateTypes": []
+  },
+  {
+    "content": "He was likely going to need to run the table in the northern battleground states by carrying Michigan, Pennsylvania and Wisconsin, as well as Nebraska’s 2nd Congressional District.",
+    "candidateTypes": []
+  },
+  {
+    "content": "His polling in the Sun Belt states of Arizona, Georgia, Nevada and North Carolina had been poor.",
+    "candidateTypes": []
+  },
+  {
+    "content": "If he won the northern battleground states and the other Democratic-leaning states (minus those aforementioned Sun Belt states), Biden would have gotten exactly the 270 electoral votes he needed to win.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A big reason Biden struggled in those Sun Belt states is that each has a significant share of either Black or Hispanic voters.",
+    "candidateTypes": []
+  },
+  {
+    "content": "By doing better with those groups, Harris may reopen the possibility of more electoral paths.",
+    "candidateTypes": []
+  },
+  {
+    "content": "If, for instance, Harris won all four Sun Belt battlegrounds mentioned above, she wouldn’t need to carry Michigan, Pennsylvania or Wisconsin.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perhaps more likely, Harris could get to 270 electoral votes by winning some mixture of northern battlegrounds and Sun Belt swing states.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The bottom line is that the latest CNN polling provides the Harris campaign with some hope.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It’s not that Trump isn’t favored or that Harris doesn’t face an tough climb.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rather, Harris now has a bunch of paths toward victory, while Biden’s options seemed to be closing rather quickly.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In North Carolina, newly empowered GOP state legislators took an aggressive approach with their map-drawing, crafting lines that are expected to allow their party to flip at least three seats now held by Democrats. But, in recently concluded redistricting in New York, Democrats, who had final say over the map, adopted a more modest position – essentially turning just one Republican-held seat a deeper shade of blue.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the South, Democrats are expected to gain two seats as a result of Voting Rights Act rulings out of Alabama and Louisiana. But a protracted battle over the congressional map in another Southern state, Georgia, has not changed the partisan balance of the state’s US House delegation heading into November.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Although Black people make up roughly a third of the state’s population, Louisiana has just one Black lawmaker – who is also the lone Democrat – in its six-member US House delegation.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Then, a ruling by the state’s highest court appeared to jeopardize those gains by potentially making it easier for Democrats to pick up as many as six GOP-held seats.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Legislature’s final product ended up putting a Central New York seat held by Republican freshman Brandon Williams at greater risk for his party. It also shored up for Democrats Tom Suozzi’s Long Island seat, which the party flipped in a February special election to succeed expelled former Rep. George Santos.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Leaders of both political parties say they can live with the map’s modest approach, which still puts the Empire State at the epicenter of the battle for the House. But some progressives have criticized New York Democrats, who hold supermajorities in the state Legislature, for not taking a more aggressive approach.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Former New York Rep. John Faso, a Republican who had been a key player in litigation over redistricting, said the map drawn by Democrats “has no material differences from the current map.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The state’s current House delegation is split 7-7 between Democrats and Republicans.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A map that Republican state lawmakers approved put three House Democrats in what one expert called “almost impossible to win” districts.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A fourth Democrat, Rep. Don Davis, saw his district retooled to become more friendly toward Republicans while remaining competitive for both parties.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The high court’s 5-4 decision in June saw two conservatives, Chief Justice John Roberts and Justice Brett Kavanaugh, side with the three liberals to uphold the lower-court ruling. Their action kept intact a key pillar of the Voting Rights Act: that it’s illegal to draw maps that effectively keep Black voters from electing a candidate of their choice.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Given that Black voters in Alabama have traditionally backed Democrats, the party now stands a better chance of winning the newly reconfigured district and sending two of its members to Congress after November’s elections.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In a big win for Republicans, Jones in late December ruled that the new legislature-drawn map that preserved Republicans’ 9-5 advantage “fully complied” with his order.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This case, unlike the Alabama fight decided by the US Supreme Court, centers on provisions in the state constitution.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Observers say that in the end, the outcome of the state litigation is more likely than the federal case to determine the future of the North Florida district, given the state constitution’s especially strong protections for the voting rights of racial minorities and the lower burden of proof required to establish that those rights were abridged.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The dispute centered on lawmakers’ decision to move Kentucky’s capital city – Democratic-leaning Frankfort – out of the 6th Congressional District and into an oddly shaped – and solidly Republican – 1st District. Doing so helped shore up the GOP odds of holding the 6th District, represented by Republican Andy Barr.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Advocacy groups and a handful of voters are challenging a congressional map that further carved up Democratic-leaning Salt Lake County between four decidedly Republican districts.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Doing so, the plaintiffs asserted in their lawsuit, “takes a slice of Salt Lake County and grafts it onto large swaths of the rest of Utah,” allowing Republican voters in rural areas and smaller cities far away from Salt Lake to “dictate the outcome of elections.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"With climate change, extreme weather rainfall events are going to increase and so [depaving is] not a nice-to-have – it's a necessity,\" Casimirri adds.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Community-led and DIY efforts on driveways and on local streets with permission are fantastic, he adds, but it's even better to think of depaving and greening as the introduction of a new kind of infrastructure in a city. It requires the same level of planning and investment as, say, a new railway.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"We are scaling up now, we are setting up a team dedicated to depaving,\" says Vlaeminck.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Among the initiatives instigated by Leuven is a \"tile taxi\" – a small truck that officials will happily send to your home so you can throw in concrete tiles or cobblestones you have removed from your garden. The material is later reused rather than thrown away, says Vlaeminck, who adds that several million euros have been set aside by Leuven to fund depaving and renaturing projects such as this.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Part of the motivation is to make towns and cities more resilient to summer heatwaves, which have badly affected parts of France in recent years.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In a 2022 study, they simulated the impact based on a series of scenarios – the most ambitious of which involved removing half of the open-air parking spaces in the city, about 11,000.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The emissions from travel it took to report this story were 0kg CO2. The digital emissions from this story are an estimated 1.2g to 3.6g CO2 per page view. Find out more about how we calculated this figure here.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In their 2022 study on depaving in Melbourne, Croeser and his colleagues included modelling that suggested a modest increase in greenery could allow species such as the blue-banded bee to roam across a far greater area of urban habitat than before.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Future 17 hrs ago The 2024 wellness trend to help you switch off",
+    "candidateTypes": []
+  },
+  {
+    "content": "In a world simultaneously connected through and plagued by social media, silence is becoming an ever-appreciating commodity.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Is a slower, more mindful pace of life the answer to stress – or is it just another privileged lifestyle brag? Meet the author who battled burnout with \"a year of nothing\".",
+    "candidateTypes": []
+  },
+  {
+    "content": "Culture 20 hrs ago How Italy's volcanoes are changing",
+    "candidateTypes": []
+  },
+  {
+    "content": "As volcanic activity continues at Mount Etna, Chris Baraniuk explores why Mount Etna and Mount Stromboli are becoming more lively.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This is the second installment in the series, in which we gain the perspectives of our reporters to understand how East China's Jiangsu Province keeps vigorous development with a strong engine based on local people's industriousness and tenacity, and how East China's Anhui Province explores emerging areas of high tech and new energy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "People flood to visit a 14-meter high dragon lantern displayed at the Zhonghua Gate in Nanjing, East China's Jiangsu Province, on February 17, 2024. Photo: VCG",
+    "candidateTypes": []
+  },
+  {
+    "content": "The answer is pretty close to my own understanding of people from the province. In my 33 years, my parents constantly reiterated the surmountable nature of every challenge.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The eyes of my grandfather, 78, only light up when he is doing or talking about business. Otherwise, he has nothing to do but sits languidly on his chair, looking forlorn.",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, as they set off on their return journeys, more and more people took to social media platforms to express their amazement as they found Jingsu's highways cleared overnight.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Three people have been killed and two are still missing in an explosion that occurred at an aluminum ...",
+    "candidateTypes": []
+  },
+  {
+    "content": "In recent years, Tong'an Town in the city of Suzhou has scaled up efforts to boost local tourism. ...",
+    "candidateTypes": []
+  },
+  {
+    "content": "MOST VIEWED 1\tWhat does Foxconn’s ‘return’ mean?: Global Times editorial 2\tChinese FM calls for intl community to unite behind cease-fire in Gaza 3\tChina’s foreign trade up 6.2% to hit new record in first 7 months, defying West’s protectionist measures 4\tKursk attack ‘worsens conflict, dashes hopes for peace talks’ 5\tIs the US’ ‘sports cheating’ systematic? The world needs an answer: Global Times editorial 6\tRiots in UK ‘a microcosm of Europe’s broader challenges’",
+    "candidateTypes": []
+  },
+  {
+    "content": "CHINA / SOCIETY First half of Spring Festival holidays sees record tourism boom; measures prepared for travelers’ safe return By Hu Yuwei and Liu Yang Published: Feb 14, 2024 08:01 PM",
+    "candidateTypes": []
+  },
+  {
+    "content": "The first half of the Spring Festival holidays has seen a clear boom in tourism compared to previous years, with many popular scenic spots reaching their maximum capacity.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The thriving tourism market has elevated the festive atmosphere to new heights, and ushered in the return journeys on Wednesday – the fifth day of the holiday – amid the hustle and bustle.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This surge in travel enthusiasm not only signifies the recovery of the domestic tourism industry but also serves as compelling evidence of China's economic resilience and vitality, analysts said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Data released by various cultural and tourism departments nationwide indicate a remarkable increase in tourist numbers during this year's Spring Festival, which boasts the longest holiday period in history.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Numerous scenic spots have witnessed a significant increase in visitors, with popular tourist attractions selling out tickets and reaching maximum capacity. Some popular attractions have closed their reservation channels. The scenes of bustling crowds and congestion at many destinations, with tourists jostling to get a glimpse or take a photo, continue to dominate social media feeds.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Data from travel platform Fliggy shows that as of the third day of the Spring Festival holidays, the booking volume of travel products, including domestic and international hotels, train tickets, plane tickets, tour packages, and scenic tickets, has reached unprecedented levels.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Cultural and artistic tours, ice and snow tours, rural tours, temple-themed tours, and ancient town tours have emerged as popular travel trends. Rural tourism activities such as hiking, fishing, and fruit picking have also attracted a large number of tourists for spring outings, according to Fliggy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The surge in tourism has also spurred a boom in homestays.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Among the top five popular cities are Southwest China’s Dali, Chongqing, the capital Beijing, Northeast China’s Harbin, and North China’s Xi'an.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Furthermore, outbound trips have experienced significant development alongside the domestic boom. During the Spring Festival holidays, visa-free policies for Chinese tourists to Singapore, Thailand, Malaysia, and the Maldives – popular destinations among Chinese tourists – have been implemented, enhancing outbound travel convenience.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Wang noted that the consumption boom will have a positive impact on economic growth, helping enhance market confidence and stabilize economic development. This pulling effect will, to a certain extent, offset the negative impact that other factors may have on the economy, laying a solid foundation for stable economic growth throughout the year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "According to a report recently released by China’s Ministry of Transport, the overall journey during the first half of Spring Festival travel rush has been smooth and orderly, with the volume of inter-regional travelling reaching a new high for the same period in history.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Many train stations have augmented security checkpoints and scanners to expedite passenger entry, with waiting rooms operating 24 hours to accommodate travelers.",
+    "candidateTypes": []
+  },
+  {
+    "content": "On the heels of the announcement, China's stock markets, including the bourses in Shanghai, Shenzhen, Beijing and Hong Kong, all staged stellar rallies during the last three trading sessions. This significantly boosted market morale and public confidence in the country's bright future.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China's top leadership recently convened an important financial work conference in Beijing, attended by nearly all ministerial-level officials, to chart a course on comprehensively strengthening the country's financial sector. By all metrics, building a financial powerhouse in China is imperative and in synergy with the country's current position as the world's largest manufacturing base, important technology innovator, and unparalleled trade power.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The financial policy loosening, in the form of the 50-bps RRR cut by the central bank, was widely expected by market investors in the wake of the conference. And more and even bolder monetary and fiscal stimulus measures are expected to be worked out this year to accelerate China's economic growth, probably in early March when the annual National People's Congress (NPC) and Chinese People's Political Consultative Conference (CPPCC), commonly referred to as the \"two sessions,\" will be held in Beijing.",
+    "candidateTypes": []
+  },
+  {
+    "content": "During the two sessions, the NPC deputies will deliberate and vote on 2024 economic and budgetary plans, as well as detailed implementation steps.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Chinese economists have urged the NPC legislators to prod for higher government spending by raising the budget deficit ratio to 3.8 percent or higher of the GDP, so as to sustain China's economic growth, which reached 5.2 percent in 2023, one of the highest growths among major economies.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Some international organizations including the World Bank and the International Monetary Fund (IMF) have forecasted that China's 2024 GDP will grow by only 4.5 or 4.6 percent rate, which is largely downbeat or pessimistic in the eyes of most Chinese economists.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Nevertheless, China's central bank has more means at its disposal to propel the economy. Just as Pan stated, the PBC has policy tools to support the central government in selling more treasury bonds, which has been hailed by Chinese economists as necessary to stimulate fiscal spending and government investment at a time when the country is facing a pattern of negative monthly consumer price index (CPI) since October, indicating rising deflationary pressure.",
+    "candidateTypes": []
+  },
+  {
+    "content": "This highlighted the strong internal dynamics of the world's second-largest economy and its significant potential for continuous expansion, even amid a turbulent international macroeconomic environment, continuing to drive global resurgence.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The annual per capita disposable income of residents nationwide reached 39,218 yuan, marking a nominal growth of 6.3 percent compared to the previous year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Tian highlighted automotive, airplane and ship manufacturing as highlights that beat market expectations the most.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The high-tech industry investment emerged as a highlight, growing by 10.3 percent and surpassing the overall investment growth by 7.3 percentage points.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Investments in high-tech manufacturing and high-tech services increased by 9.9 percent and 11.4 percent, respectively.",
+    "candidateTypes": []
+  },
+  {
+    "content": "For instance, in the field of semiconductor technology, China has witnessed a decline in chip imports, yet its domestic production has not only been maintained but has also demonstrated higher efficiency, Tian said, stressing that it was an impressive progress in the face of an ongoing US blockade.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China's global trade position is unassailable. Without the export of high-quality and low-cost technologically advanced products from China, many countries, especially developing and low-income nations, might face even more severe development challenges than they currently do, Tian added.",
+    "candidateTypes": []
+  },
+  {
+    "content": "GAC deputy head Wang Lingjun told a press conference that \"China's imports and exports performed 'better than expected,' and it is expected to maintain its position as the world's largest goods trading nation for a seventh consecutive year.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"We see the drag by the property sector will likely diminish in 2024,\" Xing Zhaopeng, senior China strategist with ANZ Research, told the Global Times in a written interview.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Xing further predicted that China is expected to set a GDP growth target of 5 percent for 2024 and \"potential growth should still be above 5 percent.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED ARTICLES China could aim for 5% GDP growth in 2024: Yu Yongding",
+    "candidateTypes": []
+  },
+  {
+    "content": "The GDP growth target set by China at the beginning of 2023 was around 5 percent. With the ...",
+    "candidateTypes": []
+  },
+  {
+    "content": "For example, an affiliate of Chinese electric vehicle (EV) maker Xpeng revealed its \"flying car\" concept model at the event. The electric vertical takeoff and landing car will be available for preorder from the fourth quarter of 2024, with the goal of delivering the first shipment by the fourth quarter of 2025, the company said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China's auto output exceeded 30.16 million units in 2023, up 11.6 percent year-on-year, and sales exceeded 30.09 million units, up 12 percent, according to data the China Association of Automobile Manufacturers (CAAM) released on Thursday.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In particular, China produced 9.587 million NEVs in 2023, up 35.8 percent year-on-year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The production of intelligent cars can drive a lot of industries, including software, hardware, chips, sensors, industrial data and more. A car is a larger application terminal than a mobile phone, and can boost the development of many high-tech industries, and vice versa, Zhang said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A typical smart car is equipped with about 1,700 chips, a manager of a Chinese chip part supplier who works closely with the auto industry told the Global Times.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"China's significant uplift in the production and exports of cars means that smart parts and software will be boosted, which will help shore up the position of Chinese automobile part suppliers in the global value chain,\" the above-quoted Zhang said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "These NEV hubs have attracted more than 1,000 domestic and foreign enterprises, forming a complete and organic collaborative industrial chain and supply chain system for NEVs - covering the whole chain of basic materials, parts, and vehicle production.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Industry insiders pointed out that the production and sales of intelligent cars in China, which is now at the forefront of the global market, have fueled the development of the entire industrial chain and related technologies.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Zhang cited LiDAR, dubbed as the \"eyes\" for cars. Chinese suppliers produce and ship hundreds of thousands of sets every month for domestic and foreign carmakers.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"The LiDAR market was first led by US suppliers, such as Velodyne. But its marketplace was soon largely replaced by RoboSense Technology Co and Hesai Technology, two Chinese lidar manufacturers. Their success was largely boosted by the massive Chinese auto market,\" Zhang said, adding that Chinese lidar is now commonly used in foreign car brands too.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"As the world's first lidar company to achieve mass production of automotive-grade solid state LiDAR, in parallel with remarkable milestones in production and delivery, CES 2024 is the perfect stage to launch the latest cutting-edge solutions in our M Platform,\" said Steven Qui, Robosense's CEO and founder, in a statement the company sent to the Global Times.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"We are upgrading our positioning products to meet automakers' need, especially in level 3 autonomous driving,\" the manufacturer said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The year 2024 is expected to be the Year One of the explosive development of autonomous driving technology, analysts said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Although compared to the US, China is a relative latecomer in the field of autonomous driving, China has been catching up very fast and has amassed some comparable strength- vis-à-vis the US - over the past three years, Zhang Xiang, director of the Digital Automotive International Cooperation Research Center at World Digital Economy Forum, told the Global Times.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A quarter of the UK's homes sit above abandoned coal mines, long since flooded with water. Now, the mines are being put to a new, zero-carbon use.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Coal Authority It's estimated that a quarter of homes in the UK sit above coal fields, meaning many are in close proximity to the warm water of flooded mines (Credit: Coal Authority)",
+    "candidateTypes": []
+  },
+  {
+    "content": "He's not the only one excited by the energy potential of mine water. The UK Coal Authority, which is responsible for the country's disused pits, has big plans for the coming decade. Its geologists believe one-quarter of British homes currently sit on a coalfield, stretching across Wales, central Scotland, northern England, and the Midlands.",
+    "candidateTypes": []
+  },
+  {
+    "content": "An estimated 2 billion cubic metres (2 trillion litres/4.4 billion gallons) of warm water occupy the old mine shafts – equivalent to more than a quarter of the volume of Loch Ness in Scotland.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Getty Images Coal powered the Industrial Revolution in the UK. But with the decline of the industry in recent years, coal mining areas have faced economic stagnation (Credit: Getty Images)",
+    "candidateTypes": []
+  },
+  {
+    "content": "The UK has committed itself to net-zero greenhouse gas emissions by 2050, with much focus on the nation's heating needs (which account for around half of total energy usage).",
+    "candidateTypes": []
+  },
+  {
+    "content": "While almost half of Britain's electricity supply has been decarbonised, swapping residential heating to electric would require a huge ramping up of renewable-energy generation, and put monumental pressure on the grid.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The water is hot enough to heat homes in winter, and cool enough to keep them mild when temperatures rise, with just 25% the carbon emissions of gas.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The north-east of England has some of the country's lowest levels of economic activity, a legacy of pit closures in the 1980s and 1990s that fractured coal-mining communities, leaving them with high unemployment and few opportunities.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Mijnwater BV In the Netherlands, Mijnwater provides heat to the local region with almost two-thirds the carbon emissions of conventional fuel heating (Credit: Mijnwater BV)",
+    "candidateTypes": []
+  },
+  {
+    "content": "A few hundred miles away across the North Sea, hopes of economic resurgence were central to what is seen as the world's most advanced mine water energy scheme – Heerlen in the Netherlands.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The system distributes locally generated heat to a nearby community, in a similar way to the one planned at Seaham, reducing the area's carbon emissions from heating by almost two-thirds. Mijnwater is working to further decarbonise its operation, with plans for solar and wind resources to power the electrical heat pumps that supplement the minewater's temperature.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Though ahead of the game in Europe, Heerlen wasn't the first to leverage this sort of technology. In 1989, a packaging firm in Springhill, Nova Scotia, began attempts to draw heat from a network of nearby coal mines that had lain dormant for decades.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The company, now owned by Mauser Packaging Solutions, has been refining the process ever since, and now boasts a circular climate control system that is 100% renewable 12 months of the year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the mountainous Asturias region of northern Spain, there's a similar story to be told. After years of decline, the area's last remaining pit shut in 2018, cutting deep into a local community reliant on coal for generations. With the advent of mine water heating technology, there's hope for an industrial rebirth.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In addition to hundreds of residential properties, the region's flooded mines provide heat for a hospital, a university, a secondary school, and a number of other public and private buildings. Hunosa, the company in charge of the scheme, guarantees energy prices lower than fossil fuel alternatives, and uses only sustainably generated electricity in its pumping process. In doing so, several thousand tonnes of carbon emissions are avoided each year, Díaz Aguado says.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perhaps the greatest hurdle, however, is that which motivated the opening of the mines in the first place: money. The capital costs are much higher with mine water geothermal, though under the right conditions the energy generated can be cheaper than that from conventional sources.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The emissions from travel it took to report this story were 0kg CO2. The digital emissions from this story are an estimated 1.2g to 3.6g CO2 per page view. Find out more about how we calculated this figure here.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Drug-resistant superbugs are on the rise, prompting researchers and campaigners in the UK to call for a water system clean-up.",
+    "candidateTypes": []
+  },
+  {
+    "content": "CHINA / DIPLOMACY New Year holiday cross-border travel surge signals China more connected with world than ever By GT staff reporters Published: Jan 08, 2024 09:04 PM Updated: Jan 08, 2024 09:14 PM",
+    "candidateTypes": []
+  },
+  {
+    "content": "The past New Year's Day holidays saw the number of arrivals and departures from China roar back to pre-COVID levels, with foreigners flooding into China to get a glimpse of the ever-changing second biggest economy, and Chinese tourists flocking overseas to celebrate a new year in a different culture. Experts say the rise in border crossings is a result of China's unswerving efforts and determination to connect with the world at a deeper and broader level.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Industry insiders believe China's cross-border travel will continue to boom in 2024, with international flights further recovering and more visa optimization policies expected to be rolled out between China and other countries. The surge in trip numbers from and to China also refutes Western media's malicious reports that downplay China's economic performance, as this kind of tourist market vitality would not be seen in a country with economy on decline.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Global Times learned from Trip.com that the popular destinations for outbound travel during the New Year's Day holidays included Hong Kong SAR, Japan, Thailand, Macao SAR, South Korea, Malaysia, Singapore, US, Australia, and UK.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The number of cross-border trips made in the past holiday clearly demonstrates that China's effort to further open up to the world has paid off. After shaking off COVID-19 restrictions, people-to-people exchange between China and the rest of the world has deepened and China is connected with the world at a deeper and broader level, Zhang Yiwu, a Peking University professor who is an expert on culture studies, told the Global Times.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China's first domestically made large cruise ship Adora Magic City starts first commercial voyage from Wusongkou International Cruise Terminal in Shanghai on January 1, 2024. Photo: VCG",
+    "candidateTypes": []
+  },
+  {
+    "content": "Flight volume to 25 countries including the UK has exceeded pre-pandemic levels. ",
+    "candidateTypes": []
+  },
+  {
+    "content": "Zhang said the bustling tourism market and frequent people-to-people exchange serve as a good sign for a more prosperous 2024. He noted that over the year, many Western media have spared no efforts to downplay China's economic performance, picturing it as a country whose economy is on decline.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Donald Trump’s legal team and the New York Attorney General’s office are working hard ahead of the former president’s Monday’s deadline to secure a bond for the multimillion-dollar civil fraud judgment against him.",
+    "candidateTypes": []
+  },
+  {
+    "content": "RELATED ARTICLE Trump stares down first derailment of his campaign-to-courthouse strategy",
+    "candidateTypes": []
+  },
+  {
+    "content": "Assets, such as buildings, houses, cars, helicopters and his plane, are in play. The main focus could be on his bank accounts, which experts say will be easier to take hold of, and properties, which would be more difficult.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The attorney general’s office filed judgments in Westchester County, north of New York City, in what some say is the first sign that the state is laying the groundwork to seize the former president’s golf course in Briarcliff Manor as well as his private estate known as Seven Springs.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Trump is still waiting on whether an appeals court will either lessen the amount he must pay as part of the ruling or pause the judgment all together while his appeal is being considered.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“There’s no reason for courtesy when he owes $455 million dollars to the people of the state of New York after being found persistently liable for fraud,” Pollock said. “That’s not someone you typically extend courtesy to.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "“THROUGH HARD WORK, TALENT, AND LUCK, I CURRENTLY HAVE ALMOST FIVE HUNDRED MILLION DOLLARS IN CASH, A SUBSTANTIAL AMOUNT OF WHICH I INTENDED TO USE IN MY CAMPAIGN FOR PRESIDENT. THE OFTEN OVERTURNED POLITICAL HACK JUDGE ON THE RIGGED AND CORRUPT A.G. CASE, WHERE I HAVE DONE NOTHING WRONG, KNEW THIS, WANTED TO TAKE IT AWAY FROM ME,” Trump posted in all caps.",
+    "candidateTypes": []
+  },
+  {
+    "content": "When he’s not raising horses or working at a construction site, 28-year-old Nick Mirtschink says he spends “a lot” of time on Truth Social, the social media platform started by Donald Trump.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Mirtschink and Duke shared their glowing reviews of the app while attending Trump’s recent rally in Rome, Georgia, where regular users of Truth Social were easy to come by. Outside of his MAGA movement, though, the social media site is struggling to find a wider audience. It is hemorrhaging users, and its traffic has plummeted. There were roughly 860,000 accounts active on the site as of November – a tiny blip compared with more mainstream platforms.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Trump Media’s management warned last year that the company was at risk of insolvency without a merger, and most analysts are skeptical of its current valuation above $6 billion.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“It’s grossly overvalued,” Jay Ritter, a finance professor at the University of Florida, told CNN this week. “It qualifies as a meme stock for which the price is divorced from fundamental value.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Truth Social launched in early 2022, a year after Twitter, now known as X, and Facebook had locked Trump out of his accounts over his incitement of the January 6, 2021, US Capitol attack.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“I would’ve paid millions,” Trump claimed to the crowd.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But the hype for the app exceeded actual usage. Three months after it launched, only 2% of Americans reported regularly using Truth Social to get their news, Pew Research found, in line with other niche conservative social media alternatives such as Gettr and Rumble.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Activity on the app has capsized since its early peaks. The site’s monthly active users on iOS and Android devices are down 39% year-over-year, according to Similarweb data shared with CNN earlier this month. Visits to the site on mobile and desktop have plummeted as well by nearly 29% during that stretch.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Even those who have embraced Truth Social continue to be active on its competitor platforms – including those in Trump’s inner circle.",
+    "candidateTypes": []
+  },
+  {
+    "content": "To some of those supporters, that’s a feature, and not a bug.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Where Truth Social has succeeded has mostly benefited one person: Trump. As the former president reemerged as the front-runner for the Republican nomination, Truth Social gained considerably more mentions in news coverage from reporters mining the site for Trump’s thoughts on the race, said Lukito, the University of Texas professor. That has only accelerated since Trump became the presumptive GOP nominee.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“One of the misconceptions is that what’s important is how big is it going to get relative to Twitter or how much money it’s earning,” Lukito said. “The reality is he’s winning because he’s able to successfully leverage media coverage through Truth Social. Most people learn about it not because they’re on the platform but because they see it in the media.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "“He ends up reading my truth. E (sic) said this guy’s even dumber than I thought,” Trump wrote on Truth Social. “The thing went viral. It’s been all over the world now, and all he had to do was keep his mouth shut.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Republican vice presidential candidate Sen. JD Vance is facing criticism over his previous comments about people without children, including one 2021 remark denouncing “childless cat ladies” in government and another in which he said that, in order to “tax the things that are bad and not tax the things that are good,” people without children should pay a higher tax rate than people with children.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: Vance’s claim that Harris is calling to end the child tax credit is false. In fact, it is the opposite of reality: Harris has called for years to increase the child tax credit. As vice president, she has advocated for the permanent adoption of the enhanced child tax credit that was temporarily in effect in 2021 under a pandemic relief law – a law that was signed by President Joe Biden after it was passed by Congress with only Democratic support.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Spokespeople for Vance and the Trump-Vance campaign did not immediately respond to CNN’s Monday requests to offer any substantiation for Vance’s claim. But a Vance spokesperson, William Martin, argued to ABC News last week that “the policy Senator Vance proposed is basically no different than the Child Tax Credit, which Democrats unanimously support.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "That’s a far more debatable assertion than Vance’s own claim on Fox News that Harris is calling to end the child tax credit, which is just wrong. Erica York, senior economist and research director at The Tax Foundation think tank, said in a Monday email that Vance’s claim is “false.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "York noted that the “ultimate effect” of the child tax credit is that people with children have lower tax rates than people without children, but she said Vance “misleadingly” equated the Harris campaign’s criticism of his 2021 comments with opposition to the existence of the child tax credit.",
+    "candidateTypes": []
+  },
+  {
+    "content": "As vice president, Harris has made numerous comments in support of returning to the enhanced child tax credit that was authorized as a one-year temporary measure by Biden’s 2021 American Rescue Plan pandemic relief law.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The temporary expansion – which increased the maximum amount of the credit, made the credit fully refundable so the lowest-income families could qualify and sent out half of the credit in monthly payments – was a major contributor to a steep decline in child poverty in 2021. Child poverty then spiked in 2022, roughly to pre-pandemic levels, after Congress allowed the expanded credit to expire against the wishes of Biden and Harris.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Harris posted on social media in March: “President Biden and I cut child poverty nearly in half after expanding the Child Tax Credit for millions of working families. It’s time for Congress to restore the full expanded Child Tax Credit.” She posted in March 2023: “The expanded Child Tax Credit cut the child poverty rate nearly in half during the first year of our Administration. Our budget restores this tax credit permanently because we believe it is our duty to invest in our nation’s children.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "She has also talked up the 2021 expansion of the child tax credit on the campaign trail in recent weeks.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the first rally of her presidential campaign on Tuesday, presumptive Democratic nominee Vice President Kamala Harris wrongly described parts of the conservative Project 2025 blueprint for a potential second Donald Trump presidency.",
+    "candidateTypes": []
+  },
+  {
+    "content": "At Harris’ Tuesday rally in Wisconsin, she criticized Trump and “his extreme Project 2025 agenda,” then said: “Can you believe they put that thing in writing? Read it. It’s 900 pages. But here’s the thing. When you read it, you will see Donald Trump intends to cut Social Security and Medicare. He intends to give tax breaks to billionaires and big corporations and make working families foot the bill. They intend to end the Affordable Care Act. And take us back, then, to a time when insurance companies had the power to deny people with pre-existing conditions.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "In addition, contrary to Harris’ suggestion, Project 2025 does not call to “end” the Affordable Care Act or eliminate its protections for people with pre-existing conditions. The document does criticize the Affordable Care Act, especially the law’s expansion of Medicaid, but makes clear it is advocating changes to the law rather than terminating the law entirely.",
+    "candidateTypes": []
+  },
+  {
+    "content": "We won’t render a verdict on Harris’ claim about Project 2025 calling for cuts to Medicare, though Trump himself has vowed he will not cut even a cent from the health insurance program for seniors and people with disabilities. The Project 2025 document proposes multiple significant changes to Medicare, and it’s not clear what their overall impact would be.",
+    "candidateTypes": []
+  },
+  {
+    "content": "And there is a reasonable basis for Harris’ claim about Project 2025 wanting to give tax breaks to the wealthy and corporations. The project’s proposals to significantly restructure the tax code include a reduction in the corporate income tax rate and ideas that would disproportionately benefit high earners. Trump’s own proposal to extend the expiring provisions of his 2017 tax cut law also favors wealthy people.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But contrary to Harris’ claim that “when you read” the Project 2025 document “you will see” that Trump intends to cut Social Security, the lengthy document includes no call to cut Social Security. In fact, the document uses the words “Social Security” just 10 times, mostly in passing. Vought said the document calls for “no changes to Social Security.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Then, four days later, he wrote, “I don’t want to terminate Obamacare, I want to REPLACE IT with MUCH BETTER HEALTHCARE. Obamacare Sucks!!!”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Speakers at the second night of the Republican National Convention made many false and misleading claims throughout the night which focused heavily on immigration and crime.",
+    "candidateTypes": []
+  },
+  {
+    "content": "After criticizing President Joe Biden as weak, House Speaker Mike Johnson claimed in his Tuesday speech at the Republican National Convention that Democrats’ policies have brought communities “dramatic increases” in “violence, crime and drugs.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Similarly, House Republican Conference Chair Rep. Elise Stefanik referred to “Biden’s violent crime crisis,” and a video played near the beginning of the Tuesday evening proceedings featured a narrator saying, “It’s not just big cities. Rising crime is a problem everywhere.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: Johnson’s claims about dramatic increases in violence and crime are false, as is the convention video’s claim that there is a problem “everywhere” with “rising crime.” Official data published by the FBI shows violent crime dropped significantly in the US in 2023 and in the first quarter of 2024, though there were increases in some communities; violent crime is now lower than it was in 2020, President Donald Trump’s last calendar year in office.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Stefanik’s claim of a “violent crime crisis” under Biden is subjective, but she certainly did not acknowledge that the current numbers under Biden are superior to final Trump-era numbers.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There are limitations to the FBI-published data, which comes from local law enforcement – the numbers are preliminary, not all communities submitted data, and the submitted data usually has some initial errors – so these statistics may not precisely capture the size of the recent declines in crime. But these statistics and other data sources make it clear crime has indeed declined to some extent nationally, though not everywhere.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Scalise claims Biden has ‘erode’ American ‘energy dominance’",
+    "candidateTypes": []
+  },
+  {
+    "content": "CNN’s Matt Egan reported in December that the US was exporting the same amount of crude oil, refined products and natural gas liquids as Saudi Arabia or Russia were producing, according to S&P Global Commodity Insights.",
+    "candidateTypes": []
+  },
+  {
+    "content": "None of this is to say that Biden is the reason that domestic oil production has increased; market factors are the key driver of companies’ investment and production decisions, and the Energy Information Administration has credited technological improvements in fracking and horizontal drilling technology that have made oil wells more productive. Egan reported in August: “The American Petroleum Institute, an oil trade group that has been critical of the Biden administration’s regulatory efforts, noted that approved federal permits and new federal acres leased have both fallen sharply under Biden.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Still, despite Biden’s often-critical rhetoric about fossil fuel companies, some policy moves to get tougher on those companies and his major investments in initiatives to fight climate change, he certainly has not come close to stopping fossil fuel production as Trump has claimed.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“I do a daily news search to see what’s going on in prisons around the world and have seen absolutely no evidence that any country is emptying its prisons and sending them all to the US,” said Helen Fair, who is co-author of the World Prison Population List, which tracks the global prison population, and a research fellow at the Institute for Crime & Justice Policy Research at Birkbeck, University of London.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Lara Trump, the co-chair of the Republican National Committee and the former president’s daughter-in-law, hailed the state of the country during the Trump administration. Among other things, she said there were “record low unemployment rates for African Americans, Hispanic Americans, Asian Americans and women.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: These claims need context. Lara Trump didn’t mention that the Trump-era record lows for African American unemployment, Hispanic Americans unemployment and women’s unemployment were all beaten or matched during President Joe Biden’s presidency, though the Trump-era record for Asian American unemployment still stands.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rep. Stefanik claims that Biden presidency has led to the highest inflation of her lifetime",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rep. Elise Stefanik of New York claimed in her Republican National Convention speech Tuesday that Biden’s presidency has led to the “highest rate of inflation” in her lifetime.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Wisconsin Senate candidate exaggerates the numbers of fentanyl deaths",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: It’s a significant exaggeration that fentanyl kills more than 100,000 Americans every year due to the country’s “open” borders. The number of overdose deaths involving synthetic opioids in 2023, including fentanyl, was approximately 75,000, according to estimated and provisional data.",
+    "candidateTypes": []
+  },
+  {
+    "content": "It is also worth noting that fentanyl is largely smuggled by US citizens through legal ports of entry, rather than by migrants sneaking into the country. Contrary to frequent claims by Republicans, the border is not “open”; border officers have seized an increasing amount of illicit fentanyl, numbering in the hundreds of millions of pills, under Biden.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: Trump’s claims are nonsense – slightly vaguer versions of his usual lies that the 2020 election was rigged and stolen and that Democrats are serial election cheaters. The 2020 election was highly secure; Trump lost fair and square to Joe Biden by an Electoral College margin of 306 to 232; there is no evidence of voter fraud even close to widespread enough to have changed the outcome in any state; and there is no basis for claiming that election cheating is the only thing at which Trump’s opponents excel.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Trump administration’s Cybersecurity and Infrastructure Security Agency, part of the Department of Homeland Security, said in a post-election November 2020 statement: “The November 3rd election was the most secure in American history.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The House did not vote on whether to allow noncitizens to vote. The chamber passed a bill on July 10 that would require documentary proof of US citizenship to register to vote in federal elections. Gallego voted against the legislation, which is not expected to be taken up by the Democratic-controlled Senate.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perry Johnson’s incorrect claim about median family income",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perry Johnson, a Michigan business owner who previously ran for governor and president, said Tuesday that income rose consistently under Trump.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Under Trump, family income went up every year. That is a fact,” Johnson told the crowd.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Vance said that “when I was a senior in high school, that same Joe Biden supported the disastrous invasion of Iraq.” After mentioning other past Biden positions as well, Vance said, “Somehow, a real estate developer from New York City by the name of Donald J. Trump was right on all of these issues while Biden was wrong. President Trump knew, even then, that we needed leaders who would put America first.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "But Vance suggested Trump had been right on the invasion itself while Biden got it wrong, and there’s no basis for the claim that they were on opposing sides of the issue.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Kimberly Guilfoyle claims that ‘Trump handed Biden a booming economy’",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: Guilfoyle’s comments are misleading. While the economy did well during the first three years of the Trump administration, it was upended by the Covid-19 pandemic. While it had recovered somewhat by the end of 2020, there were still multiple weak points heading into 2021, when Biden took office.",
+    "candidateTypes": []
+  },
+  {
+    "content": "and the unemployment rate was 6.7% in December of that year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Covid-19 infections had increased that month, prompting some states to take additional containment measures.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Trump was the first president since Herbert Hoover to leave office with fewer jobs than when he entered, largely because of the pandemic.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Under Biden, wages are going down while prices skyrocket,” the video said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts first: The claim in the video is outdated. While inflation outpaced wages during the first half of the Biden administration, that reversed in the middle of last year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Republican National Committee chairman Michael Whatley said in his opening remarks at the party convention on Wednesday: “Our economy is not nearly as strong as it was four years ago.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "We give politicians wide latitude to express opinions, and many Trump supporters have argued that the pre-pandemic economy under former Trump, in 2019 and prior, was stronger than the current Biden-era economy. That’s a matter of subjective debate. But it’s plainly inaccurate that the mid-2020 economy was superior to the current economy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts first: Both of these claims are false.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Although Trump oversaw a deal with the Taliban aimed at the withdrawal of US troops from Afghanistan, the war did not end under his presidency. The last US troops left Afghanistan in August 2021 under the Biden administration.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Moreover, there is no period of “nearly two years” under Trump’s presidency where no American service member was killed. During his four years in office, there were 45 US service member hostile deaths, according to the Defense Casualty Analysis System. The longest stretch without combat deaths was at the end of his presidency, from March 2020 until he left office in January 2021 – less than a year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“[A]fter four years of Joe Biden, wars are back, the Taliban is back and members of ISIS have slipped through America’s broken southern border,” Grenell said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts first: The claim that the US military has “millions of hours” of extremism training is false.",
+    "candidateTypes": []
+  },
+  {
+    "content": "While there has been training in the military on extremism, it is not millions of hours’ worth. Defense Secretary Lloyd Austin ordered units in 2021 to hold a one-day “stand down” to discuss extremism in the military. The undersecretary of defense for personnel and readiness said in a 2022 memo that “discussions about extremist activity” would be included in “periodic training.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: This claim needs context. Biden has stressed the importance of renewable energy during his administration, but the US under Biden is producing more crude oil than any country ever has.",
+    "candidateTypes": []
+  },
+  {
+    "content": "None of this is to say that Biden is the reason that domestic oil production has increased; market factors are the key driver of companies’ investment and production decisions, and the Energy Information Administration has credited technological improvements in fracking and horizontal drilling technology that have made oil wells more productive.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Egan reported in August: “The American Petroleum Institute, an oil trade group that has been critical of the Biden administration’s regulatory efforts, noted that approved federal permits and new federal acres leased have both fallen sharply under Biden.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rep. Ronny Jackson’s false claim of ‘record-high inflation’",
+    "candidateTypes": []
+  },
+  {
+    "content": "Rep. Ronny Jackson of Texas claimed in his Republican National Convention speech on Wednesday that there has been “record-high inflation” under the Biden administration.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Republican Rep. Mike Waltz said Wednesday that there were no spy balloon incidents during the Trump administration, like the Chinese spy balloon that transited over the continental US in 2023 before being shot down over the Atlantic Ocean.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“We had a president who defeated ISIS, broke Iran, stood with Israel, always stood with our allies, made China pay. You didn’t see any spy balloons under President Trump, did you?” Waltz said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Where are we today? Russia has invaded Ukraine,” he said. “They’ve parked a nuclear missile capable boat 90 miles off our shore in Havana, Cuba.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "A group of four Russian Navy vessels arrived in Cuba on June 12 as part of what Pentagon and State Department officials stressed is a routine activity and noted that Cuba has hosted Russian ships every year between 2013 and 2020. A Pentagon spokesperson, Maj. Charlie Dietz, said in June that “given Russia’s long history of Cuban port calls, these are considered routine naval visits, especially in the context of increased US support to Ukraine and NATO exercises.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The nuclear-powered submarine, the Kazan, was the first of the vessels to leave Havana on June 17.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: The claim that there was peace in the Middle East under Trump is false. Whatever the merits of the Abraham Accords that Trump’s administration helped to negotiate, in which Bahrain and the United Arab Emirates agreed in 2020 to normalize relations with Israel (Morocco and Sudan followed), there was still lots of unresolved armed conflict around the Middle East when Trump left office in early 2021.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Dana El Kurd, senior nonresident fellow at the Arab Center Washington DC think tank, also called that claim “false” when Trump made it. She said in a November email: “The Abraham Accords did not achieve peace in the Middle East. In fact, violence escalated in Israel-Palestine in the aftermath of the Accords (using any metric you can think of – death tolls, settlement violence, etc).”",
+    "candidateTypes": []
+  },
+  {
+    "content": "A Defense News article in October 2022 was headlined, “US military in decline, threats from China ‘formidable,’ report says.” The article explained that these assertions came from “a new report by the Heritage Foundation, a conservative think tank that each year analyzes the strength of the armed forces and the threats to America.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "As high-earning Indians settle abroad, they're infusing billions into local economies.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Dr Sharma is part of a wider group of Indians who have moved to Germany in recent years, a figure that's been steadily rising following more accommodating visa regulations for highly skilled workers. Many well-educated and English-speaking Indians are acquiring jobs primarily in science, technology, engineering and maths – often high-paying fields. With full-time employees earning a median monthly wage of €4,974 (£4,253; $5,416), Indians now rank as the top immigrant earners in Europe's largest economy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Indians in Germany are emblematic of a wider story linked to the largest diaspora group in history: according to the UN, around 18 million Indians now live overseas, in places including North America, Europe, the Middle East and other parts of Asia, such as Malaysia and Singapore. Economists say that amid this growth, the economic power of Indians has spread beyond their native borders, leaving a major global economic mark.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"Migrants spend on housing and better education for their children, especially those from Kerala in South India who are living in the Gulf, and the IT workers and academics in the UK,\" says Balasubramanyam. In some cases, says Amrita Datta, a sociology lecturer at Bielefeld University, Indians are also changing economic patterns; in Germany, where they are still a niche diaspora group, many are buying property, which Datta says is a new trend in the country as traditionally, Germans don't buy their houses.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the US, the world's largest economy based on GDP, Indians are emerging as the highest-earning ethnic minority group.",
+    "candidateTypes": []
+  },
+  {
+    "content": "They are using that spending power eagerly. Real estate investments account for a large portion, according to figures from New Delhi-based luxury real estate company DLF Ltd. NRIs purchased 20% of all homes sold by DLF between April and September 2023, up from 15% in the previous financial year. The pattern is global, with extensive demand for real estate also within the UK, Singapore and the Gulf.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Indeed, around 25% of NRIs prefer to choose low-risk investment options in India, while 18% of NRIs based in Canada prioritise retirement planning in their long-term investment strategies within their portfolios in India, followed by 16% in the UK and 12% in Singapore. \"They're definitely using their money wisely, also investing as some do as private entrepreneurs in the United States, for example,\" agrees Balasubramanyam.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"The economic power of the Indian diaspora will continue to increase and be substantial, and what will be interesting is how the diaspora invests back home and develops joint ventures, which I also think will be significant,\" says Balasubramanyam. \"It does depend on India's economic policy going forward, but for now, it's fairly liberal and will inspire much more.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "19 Jul 2024 More 18 hrs ago The 2024 wellness trend to help you switch off",
+    "candidateTypes": []
+  },
+  {
+    "content": "The world's best breakdancers will be spinning on their heads and freezing in eye-popping poses as breaking debuts an Olympic Sport in Paris. This is how they pull off their moves.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Future 2 days ago The TikTok star saving a 400-year-old US tradition",
+    "candidateTypes": []
+  },
+  {
+    "content": "In parts of the world, air quality has rapidly improved through policies that aim to limit pollution. But elsewhere, gains in air quality are at risk of being lost.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Wildfire smoke is one of the factors driving this trend. One study of PM2.5 (see fact box: What is PM2.5?) from wildfire smoke found that levels had increased by up to five micrograms per cubic metre in the western US in the past decade – enough to reverse \"decades of policy-driven improvements in overall air quality\", the authors concluded.",
+    "candidateTypes": []
+  },
+  {
+    "content": "PM2.5 is a type of air pollution made up of \"particulate matter\" measuring 2.5 micrometres across or less – roughly 30 times smaller than the width of a human hair.",
+    "candidateTypes": []
+  },
+  {
+    "content": "To put this in context – one study found that a quarter of the US's PM2.5 pollution was caused by wildfire smoke. In western regions, as much as half was caused by smoke. In 2023, large portions of the US saw significant dips in air quality and visibility as smoke from wildfires north of the Canadian border billowed across the continent. Canada experienced a record number of wildfires in 2023, with the area of land burned far outstripping any previous season.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In May 2024, Canada saw an early start to its wildfires season as more than 130 blazes burned around the country.",
+    "candidateTypes": []
+  },
+  {
+    "content": "With climate change expected to increase the risk of wildfires around the world, it is likely that air quality will also continue to suffer.",
+    "candidateTypes": []
+  },
+  {
+    "content": "People who have existing respiratory conditions and newborns with developing lungs are the most affected by wildfire smoke. (See factbox: \"How to protect yourself from wildfire smoke\".)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Wildfire smoke is contributing a large share of PM2.5 pollution in New York (Credit: Getty Images)",
+    "candidateTypes": []
+  },
+  {
+    "content": "The health risks that come with wildfire air pollution depend in part on what's on fire – in Siberia, 2020, it was resinous boreal forest and peat, releasing record-breaking quantities of pollution, including high quantities of mercury. Another typical pollutant released in wildfires is PM2.5, particulate matter that measures 2.5 micrometres across or less, linked to respiratory conditions. (Read about the risks of PM2.5 and nanoparticle pollution here, and the link between air pollution and respiratory disease here.)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Wildfire smoke has been found to be harmful to certain immune cells in the lungs, with a toxicity four times greater than particulates from other types of pollution. And it gets worse as smoke ages: one study found the toxicity of smoke doubled in the hours after it was first emitted, reaching a peak of four times greater toxicity.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There is growing evidence that air pollution not only affects our physical health, but also our mental health. It has been linked to impaired judgement, poorer performance in school and even higher levels of crime. Researchers point to prolonged exposure to pollutants such as PM2.5.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But the picture is not a simple one. Exposure to air pollution is far from equal – despite how it might seem, we don't all breathe the same air. Often the most polluted areas in a city, for example, are in the poorest neighbourhoods. These are areas also afflicted by other problems that affect health, educational achievement and crime levels. Confounding factors such as investment in education, diet, smoking, drug use and alcohol consumption can also have an effect.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Nonetheless, researchers are increasingly concerned about the effect that air pollution may be having on our brains, as Melissa Hogenboom explains in this feature, where you can learn more about the emerging evidence.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There is also growing evidence that air pollution may also play a role in the development of related conditions such as type 2 diabetes. One major analysis estimated that a fifth of the global burden of type 2 diabetes could be attributed to exposure to PM2.5 pollution. Other studies have suggested that another type of understudied air pollution, airborne microplastics, could also be disrupting the hormones that regulate our metabolism.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Exposure to toxic air may also be eroding our olfaction. A 2021 study found that people who suffered from loss of smell, known as anosmia, in Baltimore, Maryland lived in areas with \"significantly high\" levels of PM2.5. An Italian study found that the noses of teenagers and young adults became less sensitive to odours following exposure to nitrogen dioxide, a component in traffic fumes.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Anosmia disproportionately affects older people. A Swedish study also identified a strong association between higher pollution levels and poorer olfaction in people aged 60 and over.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Almost everyone in the world now breathes air that is polluted in some way. But those who are worst hit by air pollution are also those who are least able to be able to protect themselves or escape from it.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Even in the relatively wealthy, developed nations of Europe and North America, the toll taken by air pollution is borne predominantly by those who are least well off or from minority communities that face systemic inequalities.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the US, PM2.5 pollution is the largest environmental health threat, with black and minority groups facing greater exposure than non-Hispanic white people.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Where can you find the world's cleanest air?",
+    "candidateTypes": []
+  },
+  {
+    "content": "The tiny village of Ny-Ålesund on Svalbard, Norway, is one of the few places in the world with extremely clean air (Credit: Alamy)",
+    "candidateTypes": []
+  },
+  {
+    "content": "This settlement, which boasts a population of just 45 people in winter and is 765 miles (1,230km) from the North Pole, grew up around the coal-mining industry in the first half of the 20th Century.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Today, it has some of the cleanest air on the planet.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But that is also changing – levels of methane have been growing in the air around the town, while levels of sulphate, particulates and metals are also spiking.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Another candidate for the world's most pristine air can be found on the north-western tip of Tasmania, Australia. Cape Grim, or Kennaook, where winds whip across the Southern Ocean unimpeded. As it doesn't pass over any landmasses or populated areas enroute, the air is unaffected by local sources of pollution such as exhaust fumes. Learn more about Cape Grim in this feature by Dani Wright and find out more about how the air around Ny-Ålesund is changing in this feature by Anna Filipova.",
+    "candidateTypes": []
+  },
+  {
+    "content": "We’ve also been told NOx gases – including nitrogen dioxide – are the biggest threat to health within cities. However, NOx is responsible for just 14% of deaths attributed to air pollution in Europe.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The biggest killer of all never makes the headlines, isn’t regulated, and is barely talked about beyond niche scientific circles (despite their best efforts to change that narrative): it’s nanoparticles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The device could count nanoparticles right down to 2nm (many times smaller than a human blood cell) by sucking in air, spraying alcohol onto the surface of the particles to make them visible and individually counting by laser beam.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“I expected a certain level of variation [in particle number]”, she says, “but the level of fluctuation really surprised me… The volume of cars that went past had very little impact on people’s exposure to PM2.5. But it had a massive impact on ultrafines.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "However, the highest averages were recorded inside the cars and buses: the closer to the source of the pollution, the exhaust pipes spewing out the fumes, the higher the total number of nanoparticles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The same readings registered no change in PM2.5.",
+    "candidateTypes": []
+  },
+  {
+    "content": "To visualise this, imagine footballs versus golf balls.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Emmanuel Lafont People inside cars are thought to be subjected to more nanoparticles than those cycling or walking on the pavement (Credit: Emmanuel Lafont)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Another of Kumar’s studies looked at the exposure of children being pushed in prams along the roadside of a small town. “We found that you get a high exposure when waiting at traffic lights, and children get a much higher exposure compared to adults…",
+    "candidateTypes": []
+  },
+  {
+    "content": "Nanoparticles can also pass through the walls of the lungs and into the bloodstream, in a way that larger PM2.5s cannot. Once in the bloodstream they cause the same inflammation damage they inflict on the lungs, except now they can reach any organ or artery in the body. Until recently it wasn’t known exactly what size of particle could make it through, and which remained stuck in the lungs or upper airways.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The volunteers gave blood and urine samples 15 minutes and 24 hours after they inhaled the particles.",
+    "candidateTypes": []
+  },
+  {
+    "content": "“Obviously with humans we couldn’t perform a biopsy, but with the mice we did”, says Raftis. “We found the biggest accumulations [of particles] in the lungs primarily, but the liver next, because your liver is where the blood passes through first…",
+    "candidateTypes": []
+  },
+  {
+    "content": "Think of a plaque as the scene of a car crash, and the artery as a road; nanoparticles are more cars piling up behind it, causing a bigger blockage. The nanoparticles can also be the cause of the crash, inflaming the artery with toxic chemicals stuck to their surface (Newby’s predecessor Ken Donaldson had highlighted the toxicity of nanoparticles back in the 1990s).",
+    "candidateTypes": []
+  },
+  {
+    "content": "A low PM2.5 reading on government website or mobile phone app can therefore give a false impression of clean air when it is, in fact, swirling with particles entering our arteries",
+    "candidateTypes": []
+  },
+  {
+    "content": "Most countries including the US and the EU have legal limits for the most harmful air pollutants, including PM2.5, NOx, carbon monoxide and sulphur dioxide. But no similar regulatory limits exist for nanoparticles. The typical rebuttal is that “PM2.5 includes everything down to 1nm”, which technically it does, but as we have seen, literally millions of nanoparticles still give a low PM2.5 reading. A low PM2.5 reading on government website or mobile phone app can therefore give a false impression of clean air when it is, in fact, swirling with particles entering our arteries.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Emmanuel Lafont The smaller particles actually have a greater collective surface area because there are more of them – and they have a more toxic effect (Credit: Emmanuel Lafont)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Perhaps the only good news is that while particle number doesn’t correlate well with particle mass (PM2.5) measurements, it does tend to correlate with NOx readings. Like nanoparticles, NO2 is highest closest to its source, and then quickly dissipates. NO2 even reacts with other gases in the air to form some of the nanoparticles. So tackling NO2 can often work as a proxy to reduce nanoparticles. “They do correlate well,” says Kumar, “because they are coming from the same source.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "The solution for NOx and nanoparticles are also the same: replacing combustion with electrification. Electric cars still kick up road dust, but they emit no combustion-derived nanoparticles or NOx; and while power stations are needed to take the electricity, we spend far more time standing by roads than we do standing by power station chimneys (although this is all the more reason to rapidly move to 100% renewable energy). True zero-emissions transport, such as walking and cycling, are even better. The quicker we can make this transition, the more lives will be saved. In the interim, we also need to reduce our exposure by physically separating people from combustion-based traffic, via segregated cycle lanes, and green barriers – trees, hedges and climbing plants – inbetween pavements and roads.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Emmanuel Lafont Within the same town or city, our daily exposure to air pollution can differ greatly by person, by mode of transport, by the routes we take (Credit: Emmanuel Lafont)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Within the same town or city, our daily exposure to air pollution can differ greatly by person, by mode of transport, by the routes we take. Most cities or countries measure this with a handful of stationary monitoring stations, which can only test the air immediately next to them. We don’t, however, spend our lives standing still.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In 1997 Captain Charles Moore was sailing from Hawaii to California when he noticed a steady stream of plastics bobbing in the ocean. He had discovered the Great Pacific Garbage Patch.",
+    "candidateTypes": []
+  },
+  {
+    "content": "After two years of research and modelling, he returned to investigate. \"That's when we had the aha moment,\" he says. Using a net system to sample the surface of the ocean, he found six times as much plastic as plankton floating in the ocean.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Moore had discovered the largest of five garbage patches around the world. Created by swirling ocean currents known as gyres, these act like a trash vortex, sucking in plastics and shifting constantly.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Since its discovery, the Great Pacific Garbage Patch (GPGP) has often been depicted in the media as a floating mass of plastic, and referred to as a trash island. However, contrary to popular belief, there is no surface on which to stand and it can't be seen from space.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"It wasn't a mountain of trash, or a field of trash, it wasn't even a patch of trash,\" says Moore. Instead, the ocean looked like a murky soup, made up of different sized plastics.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the following 25 years, our understanding of garbage patches has deepened, with some attempting to quantify and clean them up. But many misconceptions still exist about these remote garbage patches, where few people can venture themselves.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Left unchecked, more trash will accumulate in garbage patches. \"Indeed, they are growing bigger as we speak,\" says Leal.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Garbage patches accumulate in the high seas – the parts of the ocean that are beyond territorial waters – so few governments will take responsibility for them. However, the problem is becoming harder to ignore, says Leal.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The digital emissions from this story are an estimated 1.2g to 3.6g CO2 per page view.",
+    "candidateTypes": []
+  },
+  {
+    "content": "At the age of 16, a high-school research paper on the GPGP coincided with a personal awakening about marine litter. \"I went scuba diving in Greece and I saw more plastic bags than fish,\" says Slat.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The Ocean Cleanup The Ocean Cleanup’s System 03 is capable of cleaning an area of the Great Pacific Garbage Patch the size of a football field every five seconds (Credit: The Ocean Cleanup)",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"The solution is 50% hardware and 50% software,\" Slat says. System 03 – the latest iteration – uses computer modelling to map high-density plastic hotspots and steer the removal technology.",
+    "candidateTypes": []
+  },
+  {
+    "content": "A long u-shaped, net-like barrier \"five school buses in length\" is dragged through patches of rubbish by two boats.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But for Captain Moore, agreeing to stymy plastic at the source has been a long time coming. \"Plastic production is going up and that's the opposite of a solution,\" he says. \"The solutions will involve reducing the amount of plastic produced.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "The team behind the world's most advanced methane-monitoring satellite, MethaneSat, are keen on metaphors about cleaning. \"About the size of a washing machine,\" was how environmental scientist Steven Wofsy, described the orbiting object at a press conference ahead of its launch. \"Like a push-broom,\" was his phrase for its capacity to scan the surface of the Earth.",
+    "candidateTypes": []
+  },
+  {
+    "content": "With 60% of global methane emissions coming from human activities, reductions are essential to reaching the world's climate change targets.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Equally, if not addressed in a timely way, it could contribute to the passing of dangerous tipping points that lead to rapid and irreversible change around the globe.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Yet the oil and gas industry is also far from the only source of human-caused methane emissions.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Within agriculture, flooded rice fields account for 8% of total human-linked emissions, but belches and manure from livestock are the biggest contributors, with cattle the biggest single offenders.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In California, the non-profit coalition Climate Trace found that one single cattle feedlot produced more methane than the state's biggest oil and gas fields.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"If we don't reduce emissions from the food system we won't meet the 1.5C target,\" sums up Mario Herrero, a professor of sustainable food systems at Cornell University in New York, who oversaw the methane calculations used in the 2015 Paris Agreement on climate change. \"Animal numbers are increasing like crazy, thus methane is increasing. We have to reduce emissions from livestock.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "The rationale for focussing on oil and gas activities is that easy wins should be tackled first. \"If you're looking to have the biggest impact and make the biggest difference, it's reasonable to focus on oil and gas first,\" according to Mark Brownstein, a senior vice-president at the Environmental Defense Fund (EDF), the environmental non-profit funding MethaneSat and working in partnership with Google on the project. \"There's fewer actors involved than in agriculture,\" he told reporters. And \"there's also the resources there to solve it\".",
+    "candidateTypes": []
+  },
+  {
+    "content": "So can more precise satellites help? \"In the last five years, satellites have revolutionised our knowledge and understanding of methane emissions for the better,\" says Antoine Halff, chief analyst and co-founder at Kayrros, an environmental intelligence company. \"Thanks to satellites, we can not only track the large emissions events known as 'super-emitters' with great accuracy, but also measure overall emissions at the basin or country level. Importantly, we can do so in a way that is completely independent and verifiable.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "According to Sara Mikaloff-Fletcher, a biogeochemical scientist at National Institute of Water and Atmospheric Research in New Zealand, who is leading MethaneSat's agricultural research, that capacity will only increase in relation to agriculture too.",
+    "candidateTypes": []
+  },
+  {
+    "content": "\"That number might not mean a lot to your readers, but to me it is the same precision I could get from an instrument on the ground – which is extraordinary.\"",
+    "candidateTypes": []
+  },
+  {
+    "content": "There are still technical limitations, however. In terms of methane from livestock, small groups of animals pose problems for satellite monitoring, as do farms in places where agriculture is not the primary emissions source. \"I'm also not sure how well we will be able to do sheep, which have smaller emissions than cows,\" Mikaloff-Fletcher adds.  On rice production, meanwhile, satellites cannot see through cloud and nearby wetlands can complicate the data: \"It is going to be more challenging,\" she says.",
+    "candidateTypes": []
+  },
+  {
+    "content": "There are also limitations as a result of policy. A Global Methane Pledge to reduce emissions by at least 30% by 2030, agreed at the Cop26 climate summit in Glasgow, does not include an agriculture target.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Why the reluctance? According to Halff, while fossil fuel companies are \"treated as certified carbon villains\", there is a \"different aura around farming\" where small family farms can sit alongside larger, corporate operations.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Getty Images One single cattle feedlot in California produces more methane than the state's biggest oil and gas fields (Credit: Getty Images) What would help clean up agricultural methane?",
+    "candidateTypes": []
+  },
+  {
+    "content": "There are some positive moves from industry to tackle the problem. A Dairy Methane Action Alliance has seen six of the world's largest dairy companies sign up to reducing their output, says Marcelo Mena, the former environment minister of Chile and now chief executive of the philanthropic Global Methane Hub. The meat sector, however, \"has not shown the same level of commitment, and needs to do a lot more\".",
+    "candidateTypes": []
+  },
+  {
+    "content": "The key to further progress, Herrero emphasises, is \"less but better\" production of livestock. Methane from enteric fermentation – especially cow burps – is tricky to solve, but new breeding and feeding techniques could help. (Read more about how New Zealand is reducing methane emissions from farming.)",
+    "candidateTypes": []
+  },
+  {
+    "content": "Some farmers are embracing solar panels, while others worry about food security.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Coventry & Warwickshire 18 hrs ago The 2024 wellness trend to help you switch off",
+    "candidateTypes": []
+  },
+  {
+    "content": "In October, Conagua, the country’s national water commission, announced it would restrict water from Cutzamala by 8% “to ensure the supply of drinking water to the population given the severe drought.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "5 Alaska Airlines door plug incident to address concerns about the quality of aircraft that Boeing and its suppliers produce.”",
+    "candidateTypes": []
+  },
+  {
+    "content": "From Saturday to Monday, Macao recorded a total of 502,324 visitor arrivals, of which 364,742 were from the mainland. The region saw 217,541 visitor arrivals on Monday alone, which not only surpassed the highest single-day arrival record since 2023, but also became the second highest single-day record since the statistics were first compiled.",
+    "candidateTypes": []
+  },
+  {
+    "content": "On Tuesday, Thailand released a report on the country’s tourism for the period February 5-11, showing that the number of international tourists entering Thailand in this period amounted to 872,235, an increase of 102,227 from the previous week. The largest number of tourists came from China with 194,275, a 38 percent increase from the previous week and higher than the previously expected 177,000 tourists.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Despite factors including a slowdown in the real estate industry, China's economy emerged from the shadows of the pandemic over the past 12 months, achieving a remarkably steady growth. Standout achievements included vibrant services sector spending, substantial investments in high-end manufacturing, and notable advancements in foreign trade activities. These compelling data refuted the continuous attempts by certain foreign media outlets to paint a negative picture of China's economic recovery.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In 2023, China's annual GDP reached 126.06 trillion yuan ($17.52 trillion), registering a 5.2 percent growth compared to the previous year. Despite stiff headwinds, the national economy demonstrated resilience, achieving a new milestone in overall economic development, according to data released by the National Bureau of Statistics (NBS) on Wednesday.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The annual value-added of the national industrial enterprises above a designated size increased by 4.6 percent compared to the previous year. In particular, that of the equipment manufacturing industry grew by 6.8 percent, 2.2 percentage points higher than that of the overall industrial enterprises above a designated size.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The annual national fixed-asset investment (excluding rural households) reached 50.3 trillion yuan, showing a growth of 3 percent compared to the previous year. Notably, investment in the manufacturing sector increased by 6.5 percent. The high-tech industry investment emerged as a highlight, growing by 10.3 percent and surpassing the overall investment growth by 7.3 percentage points. Investments in high-tech manufacturing and high-tech services increased by 9.9 percent and 11.4 percent, respectively.",
+    "candidateTypes": []
+  },
+  {
+    "content": "As the Spring Festival holidays approach, domestic travel, outbound and inbound travel bookings have all witnessed significant growth. For the upcoming holidays, domestic travel bookings have grown over 7 times compared to the previous year, while both outbound and inbound travel bookings have increased by more than 10 times year-on-year, per data sent to the Global Times by online travel agency Trip.com on Tuesday.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China exported 5.22 million vehicles in 2023, becoming a leading car exporter in the world. Of all vehicle exports, about one-third were new-energy vehicles (NEVs), totaling 1.773 million units, up 67.1 percent year-on-year, according to statistics the General Administration of Customs released on Friday.",
+    "candidateTypes": []
+  },
+  {
+    "content": "China's auto output exceeded 30.16 million units in 2023, up 11.6 percent year-on-year, and sales exceeded 30.09 million units, up 12 percent, according to data the China Association of Automobile Manufacturers (CAAM) released on Thursday. Both output and sales set new records, ranking first in the world for 15 consecutive years, the CAAM said.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In particular, China produced 9.587 million NEVs in 2023, up 35.8 percent year-on-year. Sales of NEVs reached 9.495 million units, up 37.9 percent, making the NEV penetration rate at 31.6 percent, according to the CAAM.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Many people have scheduled their outbound travel plans for the upcoming winter vacation and Spring Festival holidays. Data from Tuniu Travel website shows that the booking volume for Spring Festival group tours has significantly increased compared to the same period last year, and the booking peak has also come earlier. Currently, the proportion of outbound travel bookings accounts for 34 percent, with popular destinations including Thailand, Singapore, Maldives, Russia, New Zealand, United Arab Emirates, Malaysia, Indonesia, and the Nordic countries, it showed.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Looking at specific countries, scheduled international passenger flights now cover 67 countries and regions, seven fewer than before the pandemic. Flight volume to 25 countries including the UK has exceeded pre-pandemic levels. In addition, compared with before the pandemic, there are six new countries including Kuwait, Serbia, Tanzania, Luxembourg, Papua New Guinea, and Nigeria that now have services from China.",
+    "candidateTypes": []
+  },
+  {
+    "content": "But as Trump’s foray as a social media mogul enters its third year, the app’s long-term viability – and purpose – remain unclear. Truth Social is not a serious threat to compete with, let alone eclipse, X, Facebook or YouTube – it’s not among the 100 most downloaded social media applications in the Apple App store – nor has it separated itself as their conservative alternative. Trump Media’s management warned last year that the company was at risk of insolvency without a merger, and most analysts are skeptical of its current valuation above $6 billion.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Truth Social launched in early 2022, a year after Twitter, now known as X, and Facebook had locked Trump out of his accounts over his incitement of the January 6, 2021, US Capitol attack. Both platforms have since reinstated Trump’s account, though he posts almost exclusively to Truth Social.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Many Republican politicians and conservative have not joined Truth Social or they post infrequently. Virginia Gov. Glenn Youngkin’s last post was in July 2022. Popular conservative podcast hosts Megyn Kelly, Ben Shapiro and Glenn Beck don’t appear to have active accounts. South Carolina Sen. Tim Scott only recently joined Truth Social – just as his name surfaced as a potential running mate to Trump.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: One of Harris’ claims about Project 2025 is false, while another is at least misleading. The Project 2025 document does not show that Trump intends to cut Social Security; the document barely discusses Social Security at all and does not propose cuts to the program. In addition, contrary to Harris’ suggestion, Project 2025 does not call to “end” the Affordable Care Act or eliminate its protections for people with pre-existing conditions. The document does criticize the Affordable Care Act, especially the law’s expansion of Medicaid, but makes clear it is advocating changes to the law rather than terminating the law entirely.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: Scalise’s claims are misleading. The US under President Joe Biden is producing more crude oil than any country ever has. The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019. US production of dry natural gas also hit a new high in 2023. So did US crude oil exports.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Typical family income grew by several thousand dollars during each of Trump’s first three years in office, before adjusting for inflation. But it fell by $1,660 in 2020, when the pandemic wreaked havoc on the US economy.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Also, disposable incomes fell by 9.5% on an annualized basis in the fourth quarter of 2020, and the unemployment rate was 6.7% in December of that year.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: This is false. Four years ago, in mid-2020, the US economy was in dire straits because of the Covid-19 pandemic. For example, the June 2020 unemployment rate was 11%, well over double the June 2024 rate of 4.1%. In late July 2020, the federal government announced that the US economy had just experienced its worst contraction on record – shrinking by an annual rate of 32.9% in the quarter running from April 2020 through June 2020.",
+    "candidateTypes": []
+  },
+  {
+    "content": "The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019. US production of dry natural gas also hit a new high in 2023. So did US crude oil exports.",
+    "candidateTypes": []
+  },
+  {
+    "content": "Facts First: This is false. The record for US inflation, set in 1920, is 23.7%; the Biden-era peak was 9.1% in June 2022. Jackson could fairly say there was a four-decade high under Biden – that June 2022 figure was the highest since late 1981 – but there was nothing close to a new record.",
+    "candidateTypes": []
+  },
+  {
+    "content": "In the US, the world's largest economy based on GDP, Indians are emerging as the highest-earning ethnic minority group. Data from Pew Resarch Center in 2021 showed that amid a population of around 4.4 million, Indians born outside the US earn an average of $120,000 (£94,230) per year. South Asians more broadly account for a significant 29% of US Asian buying power – a whopping $381bn (£299bn) of economic influence.",
+    "candidateTypes": []
+  }
+]
