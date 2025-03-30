@@ -403,7 +403,7 @@ useEffect(() => {
             <br />
             4. 可以使用底部的句子列表快速跳转，或使用"跳转到首个未标注记录"按钮
             <br />
-            5. 数据实时保存在本地存储，刷新页面后仍然可用，同时可以开启写入文件的后端服务，通过运行node site/src/server/MannualAnnotate.js启动服务
+            5. 数据实时保存在本地存储，刷新页面后仍然可用，同时可以开启写入文件的后端服务，通过运行node site/server/MannualAnnotate.js启动服务
             <br />
             6. 源文件在site/static/test/relabel.json，可以直接修改或替换
           </Text>
