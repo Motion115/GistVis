@@ -524,21 +524,13 @@ useEffect(() => {
                   onClick={handleSave}
                   onMouseEnter={() => {slideDirection.current = 'forward'; forceUpdate();}}
                   loading={loading}
-                  style={saveButtonStyle}
-                >
-                  保存标注
-                </Button>
-                <Button block
-                  onClick={handleSkipToUnlabeled}
-                  onMouseEnter={() => {
-                    const nextUnlabeled = data.findIndex(item => item.candidateTypes.length === 0);
-                    if (nextUnlabeled === -1) return;
-                    const direction = nextUnlabeled > currentIndex ? 'forward' : 'backward';
-                    slideDirection.current = direction;
-                    forceUpdate();
+                  style={{
+                    ...saveButtonStyle,
+                    height: '50px',
+                    fontSize: '16px'
                   }}
                 >
-                  跳转到首个未标注记录
+                  保存标注
                 </Button>
               </Space>
             </Card>
@@ -566,6 +558,95 @@ useEffect(() => {
                 }
               })}
             />
+          </Card>
+
+          <Card title="批量操作" style={{ marginTop: '16px' }}>
+            <Space direction="vertical" style={{ width: '100%' }} size="middle">
+              <Button
+                block
+                onClick={handleSkipToUnlabeled}
+                onMouseEnter={() => {
+                  const nextUnlabeled = data.findIndex(item => item.candidateTypes.length === 0);
+                  if (nextUnlabeled === -1) return;
+                  const direction = nextUnlabeled > currentIndex ? 'forward' : 'backward';
+                  slideDirection.current = direction;
+                  forceUpdate();
+                }}
+                style={{
+                  height: '50px',
+                  fontSize: '16px'
+                }}
+              >
+                跳转到首个未标注记录
+              </Button>
+              <Button
+                onClick={() => {
+                  const untranslated = data.filter(item => !item.cn);
+                  if (untranslated.length === 0) {
+                    message.info('没有需要翻译的句子了喵~');
+                    return;
+                  }
+                  
+                  dispatch({ type: 'SET_TRANSLATING', payload: true });
+                  
+                  let completed = 0;
+                  const chunks = [];
+                  const chunkSize = 10;
+                  
+                  for (let i = 0; i < untranslated.length; i += chunkSize) {
+                    chunks.push(untranslated.slice(i, i + chunkSize));
+                  }
+                  
+                  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+                  
+                  (async () => {
+                    for (const chunk of chunks) {
+                      const promises = chunk.map(async (item) => {
+                        try {
+                          const translation = await translateText(item.content);
+                          saveTranslation(item.content, translation);
+                          
+                          const index = data.findIndex(d => d.content === item.content);
+                          dispatch({
+                            type: 'UPDATE_DATA_ITEM',
+                            payload: {
+                              index,
+                              item: {
+                                ...data[index],
+                                cn: translation
+                              }
+                            }
+                          });
+                          
+                          completed++;
+                          message.info(`已完成 ${completed}/${untranslated.length} 个翻译喵～`);
+                          
+                          if (completed === untranslated.length) {
+                            dispatch({ type: 'SET_TRANSLATING', payload: false });
+                            message.success('全部翻译完成了喵！(=^･ω･^=)');
+                          }
+                        } catch (error) {
+                          console.error('翻译失败:', error);
+                          message.error(`翻译失败: ${item.content}`);
+                        }
+                      });
+                      
+                      await Promise.all(promises);
+                      if (chunks.indexOf(chunk) < chunks.length - 1) {
+                        message.info('喵呜~休息10秒钟...');
+                        await delay(10000);
+                      }
+                    }
+                  })();
+                }}
+                loading={translating}
+                block
+                type="primary"
+                style={{ backgroundColor: '#1677ff' }}
+              >
+                批量翻译未翻译句子（每10个暂停10秒）
+              </Button>
+            </Space>
           </Card>
         </Space>
       </Layout.Content>
