@@ -202,32 +202,6 @@ const LabelPage: React.FC = () => {
     }
   }, [updateLabeledCount]);
 
-  useEffect(() => {
-    loadData();
-  }, [loadData]);
-useEffect(() => {
-  if (data[currentIndex]) {
-    dispatch({ type: 'SET_SELECTED_TYPES', payload: data[currentIndex].candidateTypes });
-  }
-}, [currentIndex, data]);
-
-useEffect(() => {
-  const currentContent = data[currentIndex]?.content;
-  if (autoTranslate && currentContent && !data[currentIndex]?.cn && !translating) {
-    handleTranslate();
-  }
-}, [currentIndex, autoTranslate]);
-
-
-  const handleTypeClick = useCallback((type: string) => {
-    dispatch({
-      type: 'SET_SELECTED_TYPES',
-      payload: selectedTypes.includes(type)
-        ? selectedTypes.filter(t => t !== type)
-        : [...selectedTypes, type]
-    });
-  }, [selectedTypes]);
-
   const handleSave = useCallback(async () => {
     if (!data[currentIndex]) return;
     
@@ -266,6 +240,95 @@ useEffect(() => {
       dispatch({ type: 'SET_LOADING', payload: false });
     }
   }, [currentIndex, data, selectedTypes, updateLabeledCount]);
+
+  useEffect(() => {
+    loadData();
+  }, [loadData]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        if(selectedTypes.length>0){
+          handleSave()
+        }
+      }
+      const keyNums = ['1','2','3','4','5','6','7'] as string[]
+      const keyCapitals = ['v','d','p','t','r','e','n'] as string[]
+      [keyNums,keyCapitals].forEach(keys => {
+        keys.forEach((key,index)=>{
+          if (event.key===key){
+            handleTypeClick(LABEL_TYPES[index])
+          }
+        })
+      });
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleSave]);
+
+  useEffect(() => {
+    if (data[currentIndex]) {
+      dispatch({ type: 'SET_SELECTED_TYPES', payload: data[currentIndex].candidateTypes });
+    }
+  }, [currentIndex, data]);
+
+  useEffect(() => {
+    const currentContent = data[currentIndex]?.content;
+    if (autoTranslate && currentContent && !data[currentIndex]?.cn && !translating) {
+      handleTranslate();
+    }
+  }, [currentIndex, autoTranslate]);
+
+  const handleTypeClick = useCallback((type: string) => {
+    dispatch({
+      type: 'SET_SELECTED_TYPES',
+      payload: selectedTypes.includes(type)
+        ? selectedTypes.filter(t => t !== type)
+        : [...selectedTypes, type]
+    });
+  }, [selectedTypes]);
+
+  // const handleSave = useCallback(async () => {
+  //   if (!data[currentIndex]) return;
+    
+  //   dispatch({ type: 'SET_LOADING', payload: true });
+  //   try {
+  //     const success = await saveLabel(currentIndex, selectedTypes);
+      
+  //     if (success) {
+  //       dispatch({
+  //         type: 'UPDATE_DATA_ITEM',
+  //         payload: {
+  //           index: currentIndex,
+  //           item: {
+  //             ...data[currentIndex],
+  //             candidateTypes: selectedTypes
+  //           }
+  //         }
+  //       });
+  //       updateLabeledCount([...data]);
+  //       if (selectedTypes.length === 0) {
+  //         message.success('重置了标注类型');
+  //       }else {
+  //         message.success('保存成功');
+  //       }
+        
+  //       if (currentIndex < data.length - 1) {
+  //         handleIndexChange(currentIndex + 1);
+  //       }
+  //     } else {
+  //       message.error('保存失败');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error saving label:', error);
+  //     message.error('保存失败');
+  //   } finally {
+  //     dispatch({ type: 'SET_LOADING', payload: false });
+  //   }
+  // }, [currentIndex, data, selectedTypes, updateLabeledCount]);
 
   const handleSkipToUnlabeled = useCallback(() => {
     const nextUnlabeled = data.findIndex(item => item.candidateTypes.length === 0);
@@ -510,10 +573,10 @@ useEffect(() => {
 
             <Card title="选择数据类型(可多选)" style={{ width: '100%' }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', margin: '-5px' }}>
-                {LABEL_TYPES.map(type => (
+                {LABEL_TYPES.map((type,index) => (
                   <LabelTypeBlock
                     key={type}
-                    type={type}
+                    type={`${type} <${index+1}>`}
                     selected={selectedTypes.includes(type)}
                     onClick={() => handleTypeClick(type)}
                   />
@@ -530,7 +593,7 @@ useEffect(() => {
                     fontSize: '16px'
                   }}
                 >
-                  保存标注
+                  {`保存标注 [enter]`}
                 </Button>
               </Space>
             </Card>
