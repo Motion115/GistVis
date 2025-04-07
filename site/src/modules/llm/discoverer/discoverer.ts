@@ -19,7 +19,7 @@ const splitInsight = async (model: ChatOpenAI<ChatOpenAICallOptions>, paragraphL
 
         The sections in your response should contain complete original text provided by user without any modification. Preserve original punctuation marks and line breaks.
 
-        Please enclose the sections in pure <seciton></section> tags.
+        Please enclose the sections in pure <section></section> tags.
 
         \n{paragraph}`),
     model as ChatOpenAI<ChatOpenAICallOptions>,
