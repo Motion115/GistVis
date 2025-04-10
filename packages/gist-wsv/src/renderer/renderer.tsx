@@ -26,20 +26,55 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
   // console.log(JSON.stringify(datafactSpec, null, 2))
 
   const checkDataspecValidity = (item: GistvisSpec) => {
-    const dataSpec = item.dataSpec ?? [];
-    // if (dataSpec.length === 0) {
-    //   return false;
-    // }
-    // else {
-    //   let spaceList = lodash.uniq(dataSpec.map((data) => data.space));
-    //   let featureList = lodash.uniq(dataSpec.map((data) => data.feature));
-    //   if (spaceList.length > 1 || featureList.length > 1) {
-    //     return false;
-    //   }
-    //   else {
-    return true;
-    //   }
-    // }
+    const insightType = item.unitSegmentSpec.insightType;
+
+    if (!item.dataSpec) {
+      return insightType === 'trend';
+    }
+  
+    const dataSpec = item.dataSpec;
+    
+    if (dataSpec.length === 0) {
+      return insightType === 'trend';
+    }
+  
+    switch (insightType) {
+      case 'trend':
+        return true;
+        
+      case 'comparison':
+        return dataSpec.length >= 2 && 
+               dataSpec.every(data => !isNaN(data.value));
+        
+      case 'proportion':
+        const values = dataSpec.map(data => data.value).filter(val => !isNaN(val));
+        const hasValidValues = values.length > 0;
+                
+        if (!hasValidValues) 
+          return false;
+        const isZeroToOne = values.every(val => val >= 0 && val <= 1);
+        const isZeroToHundred = values.every(val => val >= 0 && val <= 100);        
+        return isZeroToOne || isZeroToHundred;            
+        
+      case 'extreme':
+      case 'value':
+        return dataSpec.every(data => 
+          data.space &&
+          data.feature &&
+          !isNaN(data.value)
+        );
+        
+      case 'rank':
+        return dataSpec.length >= 2 && 
+               dataSpec.every(data => 
+                 data.space &&
+                 data.feature &&
+                 !isNaN(data.value)
+               );
+        
+      default:
+        return true;
+    }
   };
 
   return (
