@@ -1,6 +1,6 @@
 # GistVis
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=rounded)](https://github.com/prettier/prettier) [![BSD-3-Clause License](https://img.shields.io/github/license/motion115/gistvis)](/LICENSE) [![Language](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=rounded)](https://github.com/prettier/prettier) [![BSD-3-Clause License](https://img.shields.io/github/license/motion115/gistvis)](/LICENSE) [![Language](https://img.shields.io/badge/language-typescript-blue.svg)](https://www.typescriptlang.org) [![arXiv](https://img.shields.io/badge/arXiv-2502.03784-b31b1b.svg)](https://arxiv.org/abs/2502.03784)
 
 ![Teaser](site/static/teaser.png)
 
