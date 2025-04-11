@@ -6,7 +6,7 @@ import { Tooltip } from 'antd';
 const MAX_DASHES = 10;
 const DASH_WIDTH = 10;
 const DASH_STROKE_WIDTH = 2;
-const DASH_V_SPACING = 5;
+const DASH_V_SPACING = 3;
 const DASH_H_SPACING = 4;
 const SVG_WIDTH = SVG_PADDING * 2 + DASH_WIDTH * 2 + DASH_H_SPACING;
 
