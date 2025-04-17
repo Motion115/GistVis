@@ -17,7 +17,10 @@ const extrComp = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent: G
         ${ExtractorSystemInstruction}
         
         This sentence contains comparison. Comparison refers to the act of comparing two or more data attributes or comparing the target object with previous values, especially along a time series. 
-        First, you should extract the object of comparison, usually an entity. Then convert the data into numbers. The value you extract should be the value of the comparison object and not the difference, if the context only contains information about the difference, e.g. a difference of 30, then please fill the base entity with value 0 and the comparison entity the difference value (in this case 30) based on the information.
+        First, you should extract the objects of comparison, usually entities. Then, determine how to populate the data values based on the information provided in the sentence, following these prioritized steps:
+        1.  Direct Numerical Values: If specific numerical values are present for the comparison objects, extract these exact values. Ensure the value extracted is the object's actual value, not a difference.
+        2.  Difference Only: If the context only provides the difference between the objects (e.g., 'a difference of 30', 'A is 30 higher than B'), assign the base entity a value of 0 and the comparison entity the value representing the difference (e.g., 30), based on the information.
+        3.  Missing or Incomplete Numerical Data: If specific numerical values are absent or insufficient for direct comparison (e.g., 'A performed better than B' without numbers), analyze the sentence's semantics to understand the relative relationship. In this scenario, instead of numerical values, populate the relevant fields in the output structure by indicating which entity is relatively 'higher' and which is 'lower', strictly following the specified format instructions.
         Specifically, for 'category_key', identify the subject of comparison with its context, e.g., "the category of GDP growth" instead of just "entity". But the 'value_key' of all data items should keep the same.
         For 'value_key', specify the exact context of the value being compared, e.g., "the GDP growth rate" instead of just "value". But the 'category_key' of all data items should keep the same.
         The user intends to use a bar chart to represent the comparison. Please find the most suitable location for placing the bar chart and output the previous word in the recommended location.
@@ -34,7 +37,24 @@ const extrComp = async (model: ChatOpenAI<ChatOpenAICallOptions>, textContent: G
     paragraph: 'User:' + textContent.text,
   });
   // console.log(response);
-
+  console.log(
+    'prompt:',
+    `
+        ${SystemInstruction}
+        ${ExtractorSystemInstruction}
+        
+        This sentence contains comparison. Comparison refers to the act of comparing two or more data attributes or comparing the target object with previous values, especially along a time series. 
+        First, you should extract the objects of comparison, usually entities. Then, determine how to populate the data values based on the information provided in the sentence, following these prioritized steps:
+        1.  Direct Numerical Values: If specific numerical values are present for the comparison objects, extract these exact values. Ensure the value extracted is the object's actual value, not a difference.
+        2.  Difference Only: If the context only provides the difference between the objects (e.g., 'a difference of 30', 'A is 30 higher than B'), assign the base entity a value of 0 and the comparison entity the value representing the difference (e.g., 30), based on the information.
+        3.  Missing or Incomplete Numerical Data: If specific numerical values are absent or insufficient for direct comparison (e.g., 'A performed better than B' without numbers), analyze the sentence's semantics to understand the relative relationship. In this scenario, instead of numerical values, populate the relevant fields in the output structure by indicating which entity is relatively 'higher' and which is 'lower', strictly following the specified format instructions.
+        Specifically, for 'category_key', identify the subject of comparison with its context, e.g., "the category of GDP growth" instead of just "entity". But the 'value_key' of all data items should keep the same.
+        For 'value_key', specify the exact context of the value being compared, e.g., "the GDP growth rate" instead of just "value". But the 'category_key' of all data items should keep the same.
+        The user intends to use a bar chart to represent the comparison. Please find the most suitable location for placing the bar chart and output the previous word in the recommended location.
+        \n${parser.getFormatInstructions()}\n${'insightType:' + textContent.type}\n${'User:' + textContent.text}
+        `
+  );
+  console.log('response:', response);
   return response as ExtractorType;
 
   // // const newResponse = TransformData(response);

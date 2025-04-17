@@ -4,6 +4,9 @@ import { SVG_HEIGHT, SVG_UNIT_WIDTH } from '../constants';
 import { ChartProps, DataSpec, InsightType } from '../types';
 import { Tooltip } from 'antd';
 
+const POSITIVE_INFINITY_PLACEHOLDER = 99999999;
+const NEGATIVE_INFINITY_PLACEHOLDER = -99999999;
+
 const VerticalBarChart: React.FC<ChartProps> = ({
   gistvisSpec,
   colorScale,
@@ -24,13 +27,31 @@ const VerticalBarChart: React.FC<ChartProps> = ({
     comparison: dataSpec.map((d: DataSpec) => d.value),
   };
 
-  const dataset = datasetMap[gistvisSpec.unitSegmentSpec.insightType] ?? [];
+  const baseDataset = datasetMap[gistvisSpec.unitSegmentSpec.insightType] ?? [];
 
-  const xScale = d3.scaleLinear().domain([0, dataset.length]).range([0, verticalBarChartWidth]);
-  const yScale = d3
-    .scaleLinear()
-    .domain([0, d3.max(dataset) ?? 1])
-    .range([SVG_HEIGHT, 0]);
+  const isSpecialComparisonCase =
+    gistvisSpec.unitSegmentSpec.insightType === 'comparison' &&
+    dataSpec.length === 2 &&
+    baseDataset.includes(POSITIVE_INFINITY_PLACEHOLDER) &&
+    baseDataset.includes(NEGATIVE_INFINITY_PLACEHOLDER);
+
+  let processedDataset: number[];
+  let yMax: number;
+
+  if (isSpecialComparisonCase) {
+    const HIGH_FIXED_VALUE = 10;
+    const LOW_FIXED_VALUE = 5;
+    processedDataset = baseDataset.map((val) =>
+      val === POSITIVE_INFINITY_PLACEHOLDER ? HIGH_FIXED_VALUE : LOW_FIXED_VALUE
+    );
+    yMax = HIGH_FIXED_VALUE;
+  } else {
+    processedDataset = baseDataset;
+    yMax = d3.max(processedDataset) ?? 1;
+  }
+
+  const xScale = d3.scaleLinear().domain([0, processedDataset.length]).range([0, verticalBarChartWidth]);
+  const yScale = d3.scaleLinear().domain([0, yMax]).range([SVG_HEIGHT, 0]);
 
   const knownCategories = dataSpec.map((d: DataSpec, i: number) => {
     const uniqueId = `${d.breakdown}-${d.feature}-${d.value}`;
@@ -39,13 +60,17 @@ const VerticalBarChart: React.FC<ChartProps> = ({
       opacity: isHovered ? 1 : 0.5,
       transition: 'opacity 0.3s',
     };
+    const valueForScale = processedDataset[i];
+    const barY = yScale(valueForScale);
+    const barHeight = SVG_HEIGHT - barY;
+
     return (
       <rect
         key={uniqueId}
         x={xScale(i)}
-        y={yScale(dataset[i])}
+        y={barY >= 0 ? barY : 0}
         width={SVG_UNIT_WIDTH}
-        height={SVG_HEIGHT - yScale(dataset[i])}
+        height={barHeight >= 0 ? barHeight : 0}
         fill={d.breakdown !== 'placeholder' ? colorScale(d.breakdown) : 'grey'}
         style={hoverStyle}
         onMouseOver={() => {
@@ -74,32 +99,74 @@ const VerticalBarChart: React.FC<ChartProps> = ({
       if (!currentCase) {
         return <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>Comparison</div>;
       }
-      const refCase = dataSpec.find((d) => d !== currentCase) || dataSpec[0];
-      const diff = Math.abs(currentCase.value - refCase.value);
-      if (refCase.breakdown === selectedEntity) {
+
+      const isSpecialTooltipCase =
+        dataSpec.length === 2 &&
+        ((dataSpec[0].value === POSITIVE_INFINITY_PLACEHOLDER && dataSpec[1].value === NEGATIVE_INFINITY_PLACEHOLDER) ||
+          (dataSpec[0].value === NEGATIVE_INFINITY_PLACEHOLDER && dataSpec[1].value === POSITIVE_INFINITY_PLACEHOLDER));
+
+      if (isSpecialTooltipCase) {
+        const highCase = dataSpec.find((d) => d.value === POSITIVE_INFINITY_PLACEHOLDER);
+        const lowCase = dataSpec.find((d) => d.value === NEGATIVE_INFINITY_PLACEHOLDER);
+
+        if (highCase && lowCase && currentCase) {
+          if (currentCase.value === POSITIVE_INFINITY_PLACEHOLDER) {
+            return (
+              <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+                <span style={{ color: colorScale(highCase.breakdown) }}>{highCase.breakdown}</span> is higher than{' '}
+                <span style={{ color: colorScale(lowCase.breakdown) }}>{lowCase.breakdown}</span>.
+              </div>
+            );
+          } else if (currentCase.value === NEGATIVE_INFINITY_PLACEHOLDER) {
+            return (
+              <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+                <span style={{ color: colorScale(lowCase.breakdown) }}>{lowCase.breakdown}</span> is lower than{' '}
+                <span style={{ color: colorScale(highCase.breakdown) }}>{highCase.breakdown}</span>.
+              </div>
+            );
+          }
+        }
+        // Fallback if cases not found correctly
         return (
-          <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
-            The difference between{' '}
-            <span style={{ color: colorScale(refCase.breakdown) }}>
-              {refCase.breakdown} ({refCase.value})
-            </span>{' '}
-            and {selectedEntity} ({currentCase.value}) is {diff}.
+          <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>
+            Comparison info unavailable
           </div>
         );
       } else {
-        return (
-          <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
-            The difference between{' '}
-            <span style={{ color: colorScale(refCase.breakdown) }}>
-              {refCase.breakdown} ({refCase.value})
-            </span>{' '}
-            and{' '}
-            <span style={{ color: colorScale(selectedEntity) }}>
-              {selectedEntity} ({currentCase.value})
-            </span>{' '}
-            is {diff}.
-          </div>
-        );
+        const refCase = dataSpec.find((d) => d !== currentCase) || dataSpec[0];
+        if (typeof currentCase.value !== 'number' || typeof refCase.value !== 'number') {
+          return (
+            <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'grey', fontWeight: 'bold' }}>
+              Comparison data invalid
+            </div>
+          );
+        }
+        const diff = Math.abs(currentCase.value - refCase.value);
+        if (refCase.breakdown === selectedEntity) {
+          return (
+            <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+              The difference between{' '}
+              <span style={{ color: colorScale(refCase.breakdown) }}>
+                {refCase.breakdown} ({refCase.value})
+              </span>{' '}
+              and {currentCase.breakdown} ({currentCase.value}) is {diff}.
+            </div>
+          );
+        } else {
+          return (
+            <div style={{ lineHeight: 1.1, fontSize: '14px', color: 'black', fontWeight: 'bold' }}>
+              The difference between{' '}
+              <span style={{ color: colorScale(refCase.breakdown) }}>
+                {refCase.breakdown} ({refCase.value})
+              </span>{' '}
+              and{' '}
+              <span style={{ color: colorScale(selectedEntity) }}>
+                {selectedEntity} ({currentCase.value})
+              </span>{' '}
+              is {diff}.
+            </div>
+          );
+        }
       }
     } else if (gistvisSpec.unitSegmentSpec.insightType === 'rank') {
       const rankData = dataSpec.find((d) => `${d.breakdown}-${d.feature}-${d.value}` === hoveredUniqueId);
