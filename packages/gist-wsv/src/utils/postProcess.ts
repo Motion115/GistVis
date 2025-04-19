@@ -30,14 +30,14 @@ export const getHighlightPos = (gistVisSpec: GistvisSpec, type: 'phrase' | 'enti
 };
 
 export const getUniqueEntities = (entityPos: EntitySpec[]) => {
-  return uniqBy(entityPos, 'entity').map(d => d.entity);
+  return uniqBy(entityPos, 'entity').map((d) => d.entity);
 };
 
 export const getNonOverlappingEntities = (entityPos: EntitySpec[]) => {
   // Filter out zero-length entities and sort by start position
-  const validEntities = entityPos.filter(entity => entity.postion.end > entity.postion.start);
+  const validEntities = entityPos.filter((entity) => entity.postion.end > entity.postion.start);
   const sortedEntityPos = sortBy(validEntities, ['postion.start']);
-  
+
   // Filter out overlapping entities using reduce
   const nonOverlappingEntities = sortedEntityPos.reduce((acc: EntitySpec[], entity: EntitySpec) => {
     if (acc.length === 0 || entity.postion.start >= acc[acc.length - 1].postion.end) {
@@ -98,6 +98,11 @@ export const getProductionVisSpec = (text: string, entityPos: EntitySpec[], disp
     contentArray.push({
       displayType: 'text',
       content: text.slice(endPos) + ' ',
+    });
+  } else if (lastEnd === text.length) {
+    contentArray.push({
+      displayType: 'word-scale-vis',
+      content: ' ',
     });
   }
   return contentArray;

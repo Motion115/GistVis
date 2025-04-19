@@ -12,7 +12,7 @@ export const SpecDescriptions = {
     'The definition of the value of the data item according to the context. If it does not exist or is uncertain, return an empty string',
   VALUE_VALUE_DESCRIPTION: {
     comparison:
-      'The value (only numbers) of the value of the data item. If it does not exist or is uncertain, return NAN',
+      "The value (only numbers or string of 'higher' and 'lower') of the value of the data item. If it does not exist or is uncertain, return NAN",
     extreme: 'The extreme (already converted into numbers).  If it does not exist or is uncertain, return NAN',
     proportion:
       'The value of proportion (already converted into decimals). If it does not exist or is uncertain, return NAN',
@@ -51,6 +51,10 @@ export const getZodFormatting = (insightType: InsightType) => {
           .transform((value) => {
             if (typeof value === 'string' && value.toUpperCase() === 'NAN') {
               return NaN;
+            } else if (typeof value === 'string' && value.toUpperCase() === 'HIGHER') {
+              return 99999999;
+            } else if (typeof value === 'string' && value.toUpperCase() === 'LOWER') {
+              return -99999999;
             } else {
               return parseValue(value);
             }
