@@ -8,6 +8,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import IntroPage from './introductionPage/IntroPage';
 import DemoPipeline from './demo/pipeline/DemoPipeline';
 import { ExpTester } from './modules/exp/components/ExpTester';
+import AnnotatorTest from './demo/testPage/AnnotatorTest';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path={`/interactive/:pageType/:pageId`} element={<InteractivePage />} />
           <Route path={`/llm_setting`} element={<LLMConfigurationPage />} />
           <Route path={`/exp-test`} element={<ExpTester />} />
+          <Route path={`/test/annotator`} element={<AnnotatorTest />} />
         </Routes>
       </Router>
     </>
