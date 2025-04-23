@@ -1,4 +1,4 @@
-import { GistvisSpec, InsightType, paragraphSpec } from '../components/types';
+import { DataSpec, GistvisSpec, InsightType, paragraphSpec } from '../components/types';
 import {
   ComparisonTextRenderer,
   ExtremeTextRenderer,
@@ -12,6 +12,68 @@ import { recommendValidTypes } from '../utils/utils';
 import FallBackCase from '../components/widgets/fallbackVis';
 import React from 'react';
 
+class DataSpecValidator {
+  private static checkTrendValidity(dataSpec: DataSpec[]): boolean {
+    return true;
+  }
+
+  private static checkComparisonValidity(dataSpec: DataSpec[]): boolean {
+    return dataSpec.length >= 2 && dataSpec.every(data => !isNaN(data.value));
+  }
+
+  private static checkProportionValidity(dataSpec: DataSpec[]): boolean {
+    const values = dataSpec.map(data => data.value).filter(val => !isNaN(val));
+    if (values.length === 0) 
+      return false;
+
+    const isZeroToOne = values.every(val => val >= 0 && val <= 1);
+    const isZeroToHundred = values.every(val => val >= 0 && val <= 100);
+    return isZeroToOne || isZeroToHundred;
+  }
+
+  private static checkExtremeOrValueValidity(dataSpec: DataSpec[]): boolean {
+    return dataSpec.every(data => 
+      data.space &&
+      data.feature &&
+      !isNaN(data.value)
+    );
+  }
+
+  private static checkRankValidity(dataSpec: DataSpec[]): boolean {
+    return dataSpec.length >= 2 && 
+           dataSpec.every(data => 
+             data.space &&
+             data.feature &&
+             !isNaN(data.value)
+           );
+  }
+
+  private static validatorMap: Record<InsightType, (dataSpec: DataSpec[]) => boolean> = {
+    trend: DataSpecValidator.checkTrendValidity,
+    comparison: DataSpecValidator.checkComparisonValidity,
+    proportion: DataSpecValidator.checkProportionValidity,
+    extreme: DataSpecValidator.checkExtremeOrValueValidity,
+    value: DataSpecValidator.checkExtremeOrValueValidity,
+    rank: DataSpecValidator.checkRankValidity,
+    noType: () => true
+  };
+
+  public static checkValidity(item: GistvisSpec): boolean {
+    const { insightType } = item.unitSegmentSpec;
+    
+    if (!item.dataSpec) {
+      return insightType === 'trend';
+    }
+    
+    if (item.dataSpec.length === 0) {
+      return insightType === 'trend';
+    }
+
+    const validator = this.validatorMap[insightType];
+    return validator ? validator(item.dataSpec) : true;
+  }
+}
+
 export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({ datafactSpec }) => {
   const renderMap = {
     noType: (item: GistvisSpec) => <PlainTextRenderer gistvisSpec={item} />,
@@ -23,58 +85,10 @@ export const GistvisVisualizer: React.FC<{ datafactSpec: paragraphSpec[] }> = ({
     value: (item: GistvisSpec) => <ValueTextRenderer gistvisSpec={item} />,
     fallback: (item: GistvisSpec) => <FallBackCase gistvisSpec={item} />,
   };
-  // console.log(JSON.stringify(datafactSpec, null, 2))
+   // console.log(JSON.stringify(datafactSpec, null, 2))
 
-  const checkDataspecValidity = (item: GistvisSpec) => {
-    const insightType = item.unitSegmentSpec.insightType;
-
-    if (!item.dataSpec) {
-      return insightType === 'trend';
-    }
-  
-    const dataSpec = item.dataSpec;
-    
-    if (dataSpec.length === 0) {
-      return insightType === 'trend';
-    }
-  
-    switch (insightType) {
-      case 'trend':
-        return true;
-        
-      case 'comparison':
-        return dataSpec.length >= 2 && 
-               dataSpec.every(data => !isNaN(data.value));
-        
-      case 'proportion':
-        const values = dataSpec.map(data => data.value).filter(val => !isNaN(val));
-        const hasValidValues = values.length > 0;
-                
-        if (!hasValidValues) 
-          return false;
-        const isZeroToOne = values.every(val => val >= 0 && val <= 1);
-        const isZeroToHundred = values.every(val => val >= 0 && val <= 100);        
-        return isZeroToOne || isZeroToHundred;            
-        
-      case 'extreme':
-      case 'value':
-        return dataSpec.every(data => 
-          data.space &&
-          data.feature &&
-          !isNaN(data.value)
-        );
-        
-      case 'rank':
-        return dataSpec.length >= 2 && 
-               dataSpec.every(data => 
-                 data.space &&
-                 data.feature &&
-                 !isNaN(data.value)
-               );
-        
-      default:
-        return true;
-    }
+  const checkDataspecValidity = (item: GistvisSpec): boolean => {
+    return DataSpecValidator.checkValidity(item);
   };
 
   return (
