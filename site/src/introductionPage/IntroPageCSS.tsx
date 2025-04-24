@@ -219,11 +219,11 @@ export const bibtexCardExtraButton: React.CSSProperties = {
 export const bibtexPreStyle: React.CSSProperties = {
   whiteSpace: 'pre-wrap',
   wordBreak: 'break-word',
-  background: '#282C34',
+  // background: '#282C34',
   padding: '20px',
   borderRadius: '8px',
-  fontSize: '18px',
+  fontSize: '16px',
   fontFamily: 'Consolas, "Courier New", monospace',
-  color: '#AB9EAB',
+  // color: '#AB9EAB',
   margin: 0,
 };

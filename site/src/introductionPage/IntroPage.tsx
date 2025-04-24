@@ -171,7 +171,14 @@ const IntroPage = () => {
   return (
     <ConfigProvider theme={THEME}>
       <Layout style={{ alignContent: 'center', margin: 'auto' }}>
-        <Header style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto', height: 'auto' }}>
+        <Header
+          style={{
+            backgroundColor: '#ffffff',
+            width: browserWidth > 650 ? '70%' : '90%',
+            margin: 'auto',
+            height: 'auto',
+          }}
+        >
           <Title style={GistVis}>GistVis</Title>
           <Title level={2} style={titleContent}>
             Automatic Generation of Word-scale Visualizations from Data-rich Documents
@@ -190,9 +197,9 @@ const IntroPage = () => {
                 Paper
               </Button>
             </Link>
-            <Link to="/home">
+            {/* <Link to="/home">
               <Button variant="outlined">Open GistVis</Button>
-            </Link>
+            </Link> */}
             <Link to="https://github.com/Motion115/GistVis" target="_blank">
               <Button variant="outlined" icon={<GithubOutlined />}>
                 GitHub
@@ -200,7 +207,7 @@ const IntroPage = () => {
             </Link>
           </Space>
         </Header>
-        <Content style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto' }}>
+        <Content style={{ backgroundColor: '#ffffff', width: browserWidth > 650 ? '70%' : '90%', margin: 'auto' }}>
           <Space direction="vertical" size="large" style={{ width: '100%' }}>
             {/* Introduction */}
             <Flex vertical align="center" style={{ marginTop: '2rem', padding: '1%' }}>
@@ -210,14 +217,16 @@ const IntroPage = () => {
                 preview={false}
                 style={{ width: '80%', maxWidth: '90rem', margin: '0 auto', padding: 'auto', display: 'flex' }}
               />
-              <Paragraph style={{ marginTop: '2rem', textAlign: 'justify', lineHeight: '1.4' }}>
-                GistVis is an innovative system that automatically generates word-scale visualizations to augment
-                data-rich documents, thereby enhancing document-centric analysis. By leveraging large language models
-                and design-driven techniques, GistVis decomposes the visualization process into four modular
-                stages—Discoverer, Annotator, Extractor, and Visualizer—to accurately extract, annotate, and render key
-                data insights directly from textual descriptions. This approach supports multiple data fact types such
-                as comparison, proportion, trend, rank, extreme, and value, and seamlessly integrates interactive visual
-                elements into the document to improve user comprehension and reduce cognitive load.
+              <Paragraph
+                style={{ marginTop: '2rem', textAlign: browserWidth > 650 ? 'justify' : 'left', lineHeight: '1.4' }}
+              >
+                GistVis is a research prototype that enhances data-rich documents by automatically generating word-scale
+                visualizations (WSV) directly within the text. Steering large language models (LLMs) with visualization
+                design knowledge, GistVis identifies key data insights, like trend, comparison, and rank, and transforms
+                them into interactive WSVs. Regarding implementation, GistVis applied a "pipes and filter architecture"
+                to ensure a visualization knowledge-driven modular pipeline (four modules: Discoverer, Annotator,
+                Extractor, and Visualizer). Evaluation on GistVis demonstrated that GistVis could not improve reader
+                performance in understanding data-rich documents, but significantly reduced their cognitive workload.
               </Paragraph>
             </Flex>
             {/* Overview */}
@@ -237,7 +246,7 @@ const IntroPage = () => {
                 </div>
                 {/* iframe youtube video */}
                 <iframe
-                  style={overviewVideo}
+                  style={{ ...overviewVideo, width: browserWidth > 650 ? '60%' : '100%' }}
                   src="https://www.youtube.com/embed/GmAQp_iuKrI"
                   title="GistVis Teaser Video"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -263,7 +272,13 @@ const IntroPage = () => {
                 <Image
                   src={pipelineImage}
                   alt="pipelineImage"
-                  style={{ width: '80%', maxWidth: '90rem', margin: 'auto', padding: 'auto', display: 'flex' }}
+                  style={{
+                    width: browserWidth > 650 ? '80%' : '100%',
+                    maxWidth: '90rem',
+                    margin: 'auto',
+                    padding: 'auto',
+                    display: 'flex',
+                  }}
                   preview={false}
                 />
               </Flex>
@@ -302,10 +317,16 @@ const IntroPage = () => {
                 <blockquote>Article source: Pew Research</blockquote>
               </Paragraph>
               <Space direction="vertical" align="center">
-                <div style={{ width: '90%', margin: 'auto', padding: 'auto' }}>
-                  <Flex style={{ maxHeight: '30rem', overflow: 'scroll' }}>
-                    {renderArticleContent(currentArticleIndex)}
-                    {renderArticleContent(currentArticleIndex + 6)}
+                <div style={{ width: browserWidth > 650 ? '90%' : '100%', margin: 'auto', padding: 'auto' }}>
+                  <Flex style={{ maxHeight: '30rem', overflow: 'scroll' }} wrap>
+                    {browserWidth > 650 && (
+                      <div style={{ width: browserWidth > 650 ? '50%' : '100%' }}>
+                        {renderArticleContent(currentArticleIndex)}
+                      </div>
+                    )}
+                    <div style={{ width: browserWidth > 650 ? '50%' : '100%' }}>
+                      {renderArticleContent(currentArticleIndex + 6)}
+                    </div>
                   </Flex>
                   <Pagination
                     defaultCurrent={1}
@@ -314,6 +335,7 @@ const IntroPage = () => {
                     pageSize={1}
                     onChange={(page: number, pageSize: number) => handlePageChange(page)}
                     style={{ margin: 'auto', padding: 'auto', justifyContent: 'center' }}
+                    simple={browserWidth < 650}
                   />
                 </div>
               </Space>
@@ -322,12 +344,19 @@ const IntroPage = () => {
             <div>
               <h1 style={divHead}>BibTex</h1>
               <Divider style={{ margin: 0 }} />
-              <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p>
-              <BibtexCard />
+              {/* <p style={divContent}>GistVis is currently conditionally accepted to ACM CHI 2025.</p> */}
+              <BibtexCard style={{ width: browserWidth > 650 ? '80%' : '100%' }} />
             </div>
           </Space>
         </Content>
-        <Footer style={{ backgroundColor: '#ffffff', width: '70%', margin: 'auto', height: '10rem' }}>
+        <Footer
+          style={{
+            backgroundColor: '#ffffff',
+            width: browserWidth > 650 ? '70%' : '90%',
+            margin: 'auto',
+            height: '10rem',
+          }}
+        >
           © Copyright GistVis Development Team
         </Footer>
       </Layout>

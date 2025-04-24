@@ -6,7 +6,7 @@ const THEME = {
     // colorPrimary: 'rgb(200, 200, 200)',
     colorBgLayout: '#ffffff',
     borderRadius: 4,
-    fontSize: 20,
+    fontSize: 18,
     lineHeight: 1.2,
     fontFamily:
       "Roberto, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'",
