@@ -21,11 +21,11 @@
   },
   {
     "content": "Government statistics show that in the initial processing of millions of encounters, 2.5 million people have been released into the U.S. and 2.8 million have been removed or expelled.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Some Republicans, however, have misleadingly suggested the number released into the country since Biden took office is much higher.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Republican presidential candidate Nikki Haley, the former U.S. ambassador to the United Nations, claimed last month that 8 million “have come in illegally” and “we have to send them back.” Florida Gov.",
@@ -41,11 +41,11 @@
   },
   {
     "content": "The same day on CNN’s “State of the Union,” Sen. Marco Rubio of Florida said that, conservatively, “3.3 million people have been released into the country who arrived here illegally.” But he also claimed that Biden had a policy of releasing “virtually 85, 90% of any migrant that crossed the border,” a percentage that would translate to well more than 3.3 million.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "Other Republicans have said 85% of migrants crossing illegally are being released, a figure that reportedly, according to the Border Patrol Union, was used by Department of Homeland Security Secretary Alejandro Mayorkas in early January. The 85% figure is close to accurate for apprehensions by Border Patrol for one month — December — but statistics for other months or Biden’s time in office are much lower, as we’ll explain later.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "DHS has released several spreadsheets of data on illegal immigration at the southern border. All of the figures in this story come from that data from the Office of Homeland Security Statistics, unless otherwise noted.",
@@ -85,7 +85,7 @@
   },
   {
     "content": "The DHS data show 6.5 million encounters at the U.S.-Mexico border in that time frame, a figure that includes both the 5.8 million apprehensions between legal ports of entry – the number typically used for illegal immigration – and a little more than 700,000 migrants who arrived at ports of entry without authorization to enter the U.S.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "Of those 6.5 million encounters by CBP, 2.5 million people have been released into the U.S. with notices to appear in immigration court or report to Immigration and Customs Enforcement in the future, or other classifications, such as parole.",
@@ -101,7 +101,7 @@
   },
   {
     "content": "The agency would not provide an updated estimate. However, a DHS spokesperson told us: “Under this Administration, the estimated annual apprehension rate has averaged 78%, identical to the rate of the prior Administration.”",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "That rate would support a gotaway figure of 1.6 million from February 2021 through October.",
@@ -129,7 +129,7 @@
   },
   {
     "content": "Total DHS repatriations through October amounted to 3.7 million, a figure that includes the 2.8 million removals directly from CBP, as well as removals by ICE.",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "CBP operates at the border – at ports of entry and between them — while ICE “is responsible for interior enforcement and for detention and removal operations,” DHS explains.",
@@ -141,7 +141,7 @@
   },
   {
     "content": "The total DHS repatriations of 3.7 million would support that. The figure is 57% of the 6.5 million total encounters.",
-    "candidateTypes": ["proportion", "value", "difference"]
+    "candidateTypes": ["proportion", "value", "comparison"]
   },
   {
     "content": "The one caveat is that the total repatriations could include some migrants who were apprehended crossing the border some time ago and later were arrested and removed by ICE.",
@@ -317,7 +317,7 @@
   },
   {
     "content": "Recent Customs and Border Protection figures of those trying to enter the country between ports of entry come close to that 85% number for December, when 77% of the nearly 250,000 apprehensions by Border Patrol were released with a notice to appear in court.",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "But the monthly figures vary.",
@@ -325,7 +325,7 @@
   },
   {
     "content": "In January, 57% were released with a notice to appear. From June, the first full month after Title 42 ended, through January, 64% of Border Patrol apprehensions were released.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "Again, these initial dispositions don’t indicate what ultimately happens.",
@@ -341,15 +341,15 @@
   },
   {
     "content": "Bier calculated release and removal rates for the last two years of former President Donald Trump’s term and the first 26 months of Biden’s, using DHS data, including the lifecycle report, ICE detention statistics and other figures published by the Republican majority on the House Judiciary Committee. Bier wrote in November that his work showed the Biden administration “has removed a higher percentage of arrested border crossers in its first two years than the Trump DHS did over its last two years. Moreover, migrants were more likely to be released after a border arrest under President Trump than under President Biden.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "While the raw numbers are much higher under Biden — 5 million encounters compared with 1.4 million under Trump in those time frames — the percentages for the two administrations were similar: 47% removed under Trump and 51% under Biden.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "Bier’s estimates are for illegal immigration between ports of entry. (As our bar graph above shows, both administrations had removal rates above 50% when Title 42 was being used to expel people.)",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "“These numbers highlight how difficult it was even for the most determined administration in US history to expel everyone who enters illegally,” Bier wrote.",
@@ -369,7 +369,7 @@
   },
   {
     "content": "A: Like all energy sources, wind farms have some negative environmental impacts. But getting energy from wind farms results in dramatically lower greenhouse gas emissions than getting it from fossil fuels.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Read the full question and answer View the Ask SciCheck archives Have a question? Ask us. Donate Now Because facts matter. SciCheck's COVID-19/Vaccination Project Preempting and exposing vaccination and COVID-19 misinformation. Proyecto de Vacunación/COVID-19 Precaviendo y exponiendo la desinformación sobre el COVID-19 y sus vacunas SciCheck Fact-checking science-based claims. Facebook Initiative Debunking viral claims. Players Guide 2024 The special interest groups behind the TV ads. Viral Spiral Don’t get spun by internet rumors. Sign Up Get free email alerts. Mailbag Letters from our readers. On the Air Our staff on TV and radio. NewsFeed Defenders A media literacy game to detect misinformation. ARCHIVES PRIVACY COPYRIGHT POLICY CONTACT US REPORT ACCESSIBILITY ISSUES AND GET HELP © Copyright 2024 FactCheck.org ® A Project of The Annenberg Public Policy Center of the University of Pennsylvania",
@@ -529,7 +529,7 @@
   },
   {
     "content": "But in 2022, only 7% of new fathers used some of their leave, compared to 70% of new mothers.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "Jean Chung Stella says her lifestyle makes it impossible to have children",
@@ -537,7 +537,7 @@
   },
   {
     "content": "Korean women are the most highly educated of those in OECD countries, and yet the country has the worst gender pay gap and a higher-than-average proportion of women out of work compared to men.",
-    "candidateTypes": ["difference", "extreme", "rank"]
+    "candidateTypes": ["comparison", "extreme", "rank"]
   },
   {
     "content": "Researchers say this proves they are being presented with a trade-off - have a career or have a family. Increasingly, they are choosing a career.",
@@ -597,7 +597,7 @@
   },
   {
     "content": "A 2022 study found that only 2% of parents did not pay for private tuition, while 94% said it was a financial burden.",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "As a teacher at one of these cram schools, Stella understands the burden all too well. She watches parents spend up to £700 ($890) per child a month, many of whom cannot afford it.",
@@ -897,7 +897,7 @@
   },
   {
     "content": "The US-based National Oceanic and Atmospheric Administration showed a daily sea surface temperature of 21 degrees Celsius (69.8 Fahrenheit) from early January, one degree more than during the same period 30 years ago.",
-    "candidateTypes": ["value", "difference", "trend"]
+    "candidateTypes": ["value", "comparison", "trend"]
   },
   {
     "content": "Man-made emissions have pushed the average temperature of oceans higher, leading to the melting of polar ice, rising sea levels, ocean acidification, marine heatwaves and more fiercely unpredictable weather.",
@@ -945,7 +945,7 @@
   },
   {
     "content": "However, fishermen who have fished here for decades complain that there are fewer good days than before.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "I used to be able to get 30 to 40kg [66 to 88lbs] of crabs in a day,” said Shafiee Rahmat, 63, who has been fishing for 50 years.",
@@ -1001,11 +1001,11 @@
   },
   {
     "content": "Potentially, each platform can net up to 100,000 ringgit ($20,920) a year in fish; a lot less risky than going out to sea.",
-    "candidateTypes": ["difference", "extreme", "value"]
+    "candidateTypes": ["comparison", "extreme", "value"]
   },
   {
     "content": "Ridhwan said that there were “many” now skirting the Johor coast, compared with only three or four a decade ago.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Fed up with the unrewarding waters, he has taken several breaks from the trade over the past 10 years, working odd jobs including as a delivery courier during the pandemic.",
@@ -1065,7 +1065,7 @@
   },
   {
     "content": "The World Health Organization estimates that 5.4 million people worldwide are bitten by snakes each year – half of those by venomous snakes, causing 100,000 deaths.",
-    "candidateTypes": ["proportion", "value", "difference"]
+    "candidateTypes": ["proportion", "value", "comparison"]
   },
   {
     "content": "Snakebites in South Asia contribute to almost 70 percent of these deaths.",
@@ -1129,7 +1129,7 @@
   },
   {
     "content": "Other species include the king cobra, which averages 3-3.6 metres in length but can grow as large as 5.4 metres.",
-    "candidateTypes": ["extreme", "value", "difference"]
+    "candidateTypes": ["extreme", "value", "comparison"]
   },
   {
     "content": "It is found in India and also in Nepal alongside the banded and common kraits, green pit vipers, checkered keelbacks and the Nepal kukri snake.",
@@ -1145,7 +1145,7 @@
   },
   {
     "content": "Of the 5.4 million snakebites which occur each year, 1.8 to 2.7 million result in “envenoming”.",
-    "candidateTypes": ["value", "proportion", "difference"]
+    "candidateTypes": ["value", "proportion", "comparison"]
   },
   {
     "content": "Envenoming is when the poison from a snakebite results in a possibly life-threatening disease.",
@@ -1197,7 +1197,7 @@
   },
   {
     "content": "Venomous snakebites can cause difficulty in breathing, an inability to open the eyes and cardiac problems. Symptoms can be felt quicker with some types of snakes – for example, Indian cobras – than others such as kraits.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "If a venomous snakebite is left untreated or is treated too late, it can result in paralysis, breathing difficulties, bleeding disorders and kidney failure. Sometimes, the tissue damage can be bad enough to merit the amputation of a limb, resulting in permanent disability. Snakebites that are left untreated or are treated too late can prove fatal as well.",
@@ -1345,7 +1345,7 @@
   },
   {
     "content": "Furthermore, killing snakes puts people at higher risk of being bitten. This is because the closer humans are to snakes, the more likely snakes are to act in defence and bite.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Dolia explained that king cobra bites are rare, at least in India. The few deaths that have been recorded due to envenoming by this snake have “usually occurred as a result of rescuers mishandling the snake”.",
@@ -1397,11 +1397,11 @@
   },
   {
     "content": "Electric cars and trucks are better than gas-fueled vehicles because over the course of their lifetime they emit fewer carbon emissions.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "EVs create 3,932 pounds of carbon equivalent per year, compared to 11,435 for gas powered vehicles, according to calculations from the US Department of Energy.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "While battery-powered cars don’t emit greenhouse gases from tailpipes, they aren’t completely “zero-emission” even if that’s their official label. There are still emissions created when the cars are built, when manufacturers create the cars’ large batteries, and when they charge. Decarbonization of the electric grid is a key component to cleaning up the air. Without a clean source of power like hydroelectric or solar, the benefit of having an electric car is much more limited.",
@@ -1417,11 +1417,11 @@
   },
   {
     "content": "Traffic is one of the biggest sources of carbon pollution in the country and accounts for 28% of the nation’s greenhouse gas emissions, according to US government data, followed by electricity production at 25%.",
-    "candidateTypes": ["rank", "proportion", "difference"]
+    "candidateTypes": ["rank", "proportion", "comparison"]
   },
   {
     "content": "Pollution is more dangerous for children since their bodies are still developing and they have small lungs. They tend to take in more air than adults because their breathing is quicker, and as a result, their lungs and bodies are exposed to even more pollution. Kids also tend to spend more time outside – in potentially polluted air – than adults typically do, the new report said.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Pollution can harm a child’s health even before birth. A pregnant person’s exposure can cause a baby to be born early or with a low birth weight, studies show.",
@@ -1469,7 +1469,7 @@
   },
   {
     "content": "Communities of color tend to live in more polluted areas, regardless of income, and neighborhoods where there are high concentrations of people with limited incomes tend to be more polluted, studies show. That exposure to pollution exacerbates existing health disparities.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "RELATED ARTICLE Ford says it has a ‘Skunk Works’ team trying to make lower-cost EVs",
@@ -1480,7 +1480,7 @@
     "candidateTypes": ["noType"]
   },
   {
-    "content": "Focusing on vehicles, in addition to green power, could make a big difference in pollution levels.",
+    "content": "Focusing on vehicles, in addition to green power, could make a big comparison in pollution levels.",
     "candidateTypes": ["noType"]
   },
   {
@@ -1665,7 +1665,7 @@
   },
   {
     "content": "But the long-term trend of human-caused global warming hums in the background, fueling longer droughts and fiercer heat waves, as well as heavier rains when they do arrive.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "“Climate change has made droughts increasingly severe due to the lack of water,” said UNAM’s Sarmiento. Added to this, high temperatures “have caused the water that is available in the Cutzamala system to evaporate,” she said.",
@@ -1801,11 +1801,11 @@
   },
   {
     "content": "Nvidia is already up about 60% so far this year, and the so-called Magnificent Seven stocks — Microsoft, Apple, Nvidia, Amazon, Google, Meta and Tesla – are up more than 13%.",
-    "candidateTypes": ["proportion", "distribution", "trend", "difference"]
+    "candidateTypes": ["proportion", "distribution", "trend", "comparison"]
   },
   {
     "content": "The S&P 500 is just 6.4% higher year-to-date, for comparison.",
-    "candidateTypes": ["trend", "proportion", "difference"]
+    "candidateTypes": ["trend", "proportion", "comparison"]
   },
   {
     "content": "JPMorgan CEO Jamie Dimon said on Monday that the AI boom was “the real deal.”",
@@ -1841,15 +1841,15 @@
   },
   {
     "content": "The S&P 500 is up more than 6% for the year, but when you equally weigh all of the stocks in the index, it’s up just 2.5%.",
-    "candidateTypes": ["trend", "proportion", "distribution", "difference"]
+    "candidateTypes": ["trend", "proportion", "distribution", "comparison"]
   },
   {
     "content": "Last year, the S&P 500 rose by 24.2%, but the equally-weighted index was up by just 11.6%.",
-    "candidateTypes": ["trend", "proportion", "distribution", "difference"]
+    "candidateTypes": ["trend", "proportion", "distribution", "comparison"]
   },
   {
     "content": "“That marked the first time since 1998 that the S&P 500 outpaced its equal-weighted version by more than 10 percentage points, back during the dot com bubble,” wrote Deutsche Bank analysts.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "Inflation also remains a worry for traders. While long-term numbers show that price growth is easing and one month does not make a trend, January data has shown some regression.",
@@ -1869,7 +1869,7 @@
   },
   {
     "content": "The report follows a hotter-than-expected CPI inflation reading earlier in February that prompted markets to fall.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Warren Buffett: Berkshire’s boom days may be over as his company approaches $1 trillion in value",
@@ -1893,7 +1893,7 @@
   },
   {
     "content": "Berkshire has about $167.6 billion in cash and equivalents, breaking last quarter’s record-high $157.2 billion.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "For the year, operating earnings rose to $37.3 billion, after setting a record of $30.8 billion in 2022.",
@@ -1917,7 +1917,7 @@
   },
   {
     "content": "Kellogg’s CEO: Let them eat Corn Flakes for dinner.“Let them eat Corn Flakes” appears to be Kellogg’s CEO Gary Pilnick’s advice to cash-strapped shoppers who are spending the highest portion of their income on food than at any point in the last 30 years.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "In an interview with CNBC last week, WK Kellogg CEO Pilnick said the company was advertising cereal for dinner to consumers looking for more affordable options. “Give chicken the night off,” the ad’s cheery tagline reads. WK Kellogg owns cereals such as Frosted Flakes, Froot Loops, Corn Flakes, Raisin Bran and others.",
@@ -1925,7 +1925,7 @@
   },
   {
     "content": "“The cereal category has always been quite affordable, and it tends to be a great destination when consumers are under pressure,” Pilnick said. “If you think about the cost of cereal for a family versus what they might otherwise do, that’s going to be much more affordable.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "His advice hasn’t landed well with people frustrated by spending 26% more on groceries since 2020; on social media the campaign is being seen as insensitive.",
@@ -1945,7 +1945,7 @@
   },
   {
     "content": "RELATED CNN BUSINESS VIDEOS What a huge drop for stocks may signal about U.S. economy Why the stock market is freaking out, but you shouldn’t Uncertainty among Americans grows continuously after weak jobs report US economy adds far fewer jobs than expected. CNN breaks down what that means World Africa Americas Asia Australia China Europe India Middle East United Kingdom US Politics SCOTUS Congress Facts First 2024 Elections Business Tech Media Calculators Videos Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Before the Bell Nightcap Opinion Political Op-Eds Social Commentary Health Life, But Better Fitness Food Sleep Mindfulness Relationships Entertainment Movies Television Celebrity Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities Style Arts Design Fashion Architecture Luxury Beauty Video Travel Destinations Food & Drink Stay News Videos Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio podcasts Science Space Life Unearthed Climate Solutions Weather Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes Weather Video Climate Ukraine-Russia War Israel-Hamas War Paris Olympics About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN Business FOLLOW CNN BUSINESS Sign in",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Most stock quote data provided by BATS. US market indices are shown in real time, except for the S&P 500 which is refreshed every two minutes. All times are ET. Factset: FactSet Research Systems Inc. All rights reserved. Chicago Mercantile: Certain market data is the property of Chicago Mercantile Exchange Inc. and its licensors. All rights reserved. Dow Jones: The Dow Jones branded indices are proprietary to and are calculated, distributed and marketed by DJI Opco, a subsidiary of S&P Dow Jones Indices LLC and have been licensed for use to S&P Opco, LLC and CNN. Standard & Poor’s and S&P are registered trademarks of Standard & Poor’s Financial Services LLC and Dow Jones is a registered trademark of Dow Jones Trademark Holdings LLC. All content of the Dow Jones branded indices Copyright S&P Dow Jones Indices LLC and/or its affiliates. Fair value provided by IndexArb.com. Market holidays and trading hours provided by Copp Clark Limited.",
@@ -1989,7 +1989,7 @@
   },
   {
     "content": "Bloomberg New Energy Finance, for instance, had projected sales of 1.7 million plug-in vehicles in 2023, but only 1.46 million ultimately sold.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "(BNEF’s figures include plug-in hybrids, but the large majority are fully electric vehicles.) The trend line isn’t slanting upward as sharply as many had predicted so the industry is lowering future estimates.",
@@ -2017,7 +2017,7 @@
   },
   {
     "content": "Besides being too expensive for the average buyer, selection is limited in terms of body style, said Corey Cantor, an industry analyst with Bloomberg New Energy Finance. The vast majority are relatively expensive SUVs, and there are few sedans or compact cars for customers who want something different.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "The target customer is also changing as selling more EVs means reaching outside a core of knowledgable EV enthusiasts.",
@@ -2029,7 +2029,7 @@
   },
   {
     "content": "This is why Ford recently cut prices for the Mach-E SUV and why Farley created a team to work on a less expensive EV engineering platform that will be the basis for future models.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Charging needed",
@@ -2113,7 +2113,7 @@
   },
   {
     "content": "For anyone working a minimum wage job in this new year, they will be paid more in 22 states and in at least 40 cities and counties across the country than they were in 2023.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "The higher hourly rates are due either to scheduled increases or lawmakers having indexed the minimum wage in their jurisdiction to inflation, most typically using the Consumer Price Index as their gauge.",
@@ -2121,11 +2121,11 @@
   },
   {
     "content": "As of January 1, seven states and the District of Columbia will have minimum wages of $15 or more, up from just four states plus DC last year.",
-    "candidateTypes": ["difference", "extreme", "value", "trend"]
+    "candidateTypes": ["comparison", "extreme", "value", "trend"]
   },
   {
     "content": "The newcomers to the category are Maryland, New Jersey and most of New York State (with the exception of New York City, Westchester and Long Island, which already had a $15 minimum in place and where the minimum wage is increasing to $16 in 2024).",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "The highest state minimum wage in 2024 will be Washington state, at $16.28, up from $15.74.",
@@ -2145,11 +2145,11 @@
   },
   {
     "content": "Cities, counties and some industries often trump state minimums",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "States’ minimum wage rates are often eclipsed by those in many of their own cities and counties.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Take the city of Tukwila, Washington, just south of Seattle.",
@@ -2177,7 +2177,7 @@
   },
   {
     "content": "They include Flagstaff, Arizona (to $17.40); Mountain View, California (to $18.85); Denver, Colorado (to $18.29) and Portland, Maine (to $15).",
-    "candidateTypes": ["difference", "value", "catagorial"]
+    "candidateTypes": ["comparison", "value", "catagorial"]
   },
   {
     "content": "And in some states, there are big sector-specific wage hikes on tap.",
@@ -2185,7 +2185,7 @@
   },
   {
     "content": "In California, for instance, starting in April, fast food workers must be paid at least $20 an hour, and on June 1, health care workers will start earning between $18 and $23 an hour depending on their role and the size and type of employer they work for — an hourly rate that will eventually reach $25.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "In New York City, app-based restaurant delivery workers (e.g., those working for Uber, Grubhub and DoorDash) now must be paid a minimum hourly rate of $17.96, which is set to increase to $19.96 by 2025.",
@@ -2209,7 +2209,7 @@
   },
   {
     "content": "The wage then was $1.60, which in today’s dollars would be $14.39.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "That $1.60 provided minimum wage workers with their greatest purchasing power, Sklar said.",
@@ -2225,7 +2225,7 @@
   },
   {
     "content": "For example, in Mississippi, where the minimum wage is just $7.25, a person would have to earn $15.30 an hour in Pike County just to pay for basic needs.",
-    "candidateTypes": ["difference", "extreme", "value"]
+    "candidateTypes": ["comparison", "extreme", "value"]
   },
   {
     "content": "But among child care workers, fast food cooks and cashiers in the state, the median wage (meaning half of people in those jobs earn less) ranges between $9.83 and $10.17 an hour, Sklar noted.",
@@ -2345,7 +2345,7 @@
   },
   {
     "content": "Adding a second led to seven more years, while adopting three habits prolonged life for men by 8.6 years.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "As the number of additional lifestyle changes climbed so did the benefits for men, adding up to nearly a quarter century of extra life.",
@@ -2353,23 +2353,23 @@
   },
   {
     "content": "Women saw huge leaps in life span as well, Nguyen said, although the numbers added up differently than for men.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Adopting just one healthy behavior added 3.5 years to a woman’s life, while two added eight years, three 12.6 years and embracing all the healthy habits extended a woman’s life by 22.6 years.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "How to spice up your pantry the Mediterranean way",
     "candidateTypes": ["noType"]
   },
   {
-    "content": "“Doing all eight had a synergistic effect, sort of an added boost to extend your life, but any small change made a difference,” Nguyen said.",
+    "content": "“Doing all eight had a synergistic effect, sort of an added boost to extend your life, but any small change made a comparison,” Nguyen said.",
     "candidateTypes": ["noType"]
   },
   {
     "content": "After adjusting for age, body mass index, sex, race and ethnicity, marital status, education level and family income level, the study found “an 87% relative reduction in all-cause mortality for those who adopted all eight lifestyle factors compared to those who adopted none,” Nguyen said.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "“An important strength of this analysis was that the population was highly diverse by race, ethnicity, and SES (socioeconomic status),” said senior study author and leading nutrition researcher Dr. Walter Willett, a professor of epidemiology and nutrition at the Harvard T.H. Chan School of Public Health and professor of medicine at Harvard Medical School.",
@@ -2401,7 +2401,7 @@
   },
   {
     "content": "Adding that one healthy behavior produced a 46% decrease in the risk of death from any cause when compared with those who did not exercise, Nguyen said.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "“We looked at whether they did light, moderate or vigorous activity compared to not doing anything and just sitting on the couch,” Nguyen said.",
@@ -2409,7 +2409,7 @@
   },
   {
     "content": "“People who lived longer did 7.5 metabolic equivalent hours of exercise a week.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "Just to give you a baseline — if you can walk up a flight of stairs without losing your breath, that’s four minutes of the 7.5.”",
@@ -2553,11 +2553,11 @@
   },
   {
     "content": "A recent study found people who experienced social isolation had a 32% higher risk of dying early from any cause compared with those who weren’t socially isolated.",
-    "candidateTypes": ["difference", "trend", "proportion"]
+    "candidateTypes": ["comparison", "trend", "proportion"]
   },
   {
     "content": "Participants who reported feeling lonely were 14% more likely to die early than those who did not.",
-    "candidateTypes": ["difference", "trend", "proportion"]
+    "candidateTypes": ["comparison", "trend", "proportion"]
   },
   {
     "content": "For decades, not having a college degree has often been a barrier for workers seeking a higher-level, better-paying job.",
@@ -2617,7 +2617,7 @@
   },
   {
     "content": "In 2022, only 27.6% of Black adults and 20.9% of Hispanics had one, compared to nearly 41.8% of non-Hispanic White population, according to Census data.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "After Floyd’s murder, Frazier co-founded the group OneTen.",
@@ -2649,7 +2649,7 @@
   },
   {
     "content": "OneTen’s hand in more than 100,000 job advancements is notable, but it is still well below the group’s goal of 1 million hires and promotions of non-degreed workers within 10 years.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "That may reflect what one recent study found: Not all employers who talk about skills-based hiring and remove degree requirements from job ads are actually hiring candidates without degrees.",
@@ -2673,7 +2673,7 @@
   },
   {
     "content": "Skills-based hiring boosts retention among non-degreed workers hired into roles that formerly asked for degrees,” they said.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Candidates hired into those roles received a 25% pay increase on average, the researchers added.",
@@ -2757,7 +2757,7 @@
   },
   {
     "content": "But the alarm that would attend plane crashes is notably absent. (During the same period, the flu killed an additional 1,201 seniors, and RSV killed 126.)",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "“It boggles my mind that there isn’t more outrage,” said Alice Bonner, 66, senior adviser for aging at the Institute for Healthcare Improvement.",
@@ -2793,7 +2793,7 @@
   },
   {
     "content": "Prejudice against older adults is nothing new, but “it feels more intense, more hostile” now than previously, said Karl Pillemer, 69, a professor of psychology and gerontology at Cornell University.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "“I think the pandemic helped reinforce images of older people as sick, frail and isolated — as people who aren’t like the rest of us,” he said.",
@@ -2917,7 +2917,7 @@
   },
   {
     "content": "“You are far more likely, statistically, to live past 100 than I am.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "If you don’t change society’s attitudes about aging, you will be condemned to lead the last third of your life in social, economic and cultural irrelevance.”",
@@ -2953,7 +2953,7 @@
   },
   {
     "content": "Such a tally pales in comparison to January’s whopping 353,000 job gains.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "But February’s estimated monthly total would still be nothing to scoff at.",
@@ -2985,11 +2985,11 @@
   },
   {
     "content": "The labor market is expected to cool further in 2024 from last year, when monthly gains averaged 254,667 jobs and from the roaring post-pandemic recovery years of 2022 and 2021, when job growth averaged 377,333 and 603,750 per month, respectively, Bureau of Labor Statistics data shows.",
-    "candidateTypes": ["difference", "value", "trend"]
+    "candidateTypes": ["comparison", "value", "trend"]
   },
   {
     "content": "Even so, the projected employment gains for February would be well above historical averages and the neutral rate of job growth needed to keep up with population growth (estimated between 70,000 to 100,000 jobs).",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Plus, if the job gains come in as expected and unemployment stays steady at 3.7%, it would continue what’s been the fifth-longest labor market expansion on record and continue a streak of sub-4% unemployment that hasn’t been seen since Nixon was in office.",
@@ -2997,11 +2997,11 @@
   },
   {
     "content": "“Compared to 2021 and 2022, the party has ended, and now people are feeling the hangover,” Ron Hetrick, senior economist for labor analytics firm Lightcast, said Wednesday in a statement.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "“People think things are terrible now, but looking at the economy as a whole, we’re not seeing that in the data — things are fantastic, but we lost track of what ‘fantastic’ was when we experienced something completely unrealistic in ‘21 and ‘22.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "What to watch in Friday’s report",
@@ -3101,7 +3101,7 @@
   },
   {
     "content": "Last month’s total landed slightly below economists’ expectations for a net gain of 150,000 jobs but above ADP’s January tally, which was upwardly revised to 111,000 hires.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "“The economy still seems to be chugging along, and hiring is keeping up that pace,” Nela Richardson, ADP’s chief economist, said during a call with reporters on Wednesday.",
@@ -3113,7 +3113,7 @@
   },
   {
     "content": "Still, the number of job openings — a closely watched measure of labor demand — remains well above pre-pandemic averages, highlighting the continued strength of the labor market.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In January, there were an estimated 8.86 million available jobs, down from the upwardly revised 8.89 million in December.",
@@ -3125,11 +3125,11 @@
   },
   {
     "content": "In February, US-based companies announced 84,638 job cuts, a 3% increase from January and up 9% from February 2023, according to data released Thursday by outplacement and executive coaching firm Challenger, Gray & Christmas.",
-    "candidateTypes": ["difference", "value", "trend"]
+    "candidateTypes": ["comparison", "value", "trend"]
   },
   {
     "content": "While the January-February tally is running about 8% below what was seen during the first two months of last year, Challenger noted that it’s the second-highest January-to-February total since 2009.",
-    "candidateTypes": ["value", "rank", "trend", "difference"]
+    "candidateTypes": ["value", "rank", "trend", "comparison"]
   },
   {
     "content": "“Businesses are aggressively slashing costs and embracing technological innovations, actions that are significantly reshaping staffing needs.”",
@@ -3157,7 +3157,7 @@
   },
   {
     "content": "Friday’s jobs report came in strong: the US economy added 261,000 new jobs in October, blowing away analyst expectations of 200,000, even as unemployment ticked up to 3.7%.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "But don’t let the jobs boom lull you into a false sense of employment security.",
@@ -3185,7 +3185,7 @@
   },
   {
     "content": "Late last month, Amazon forecast its revenue for the holiday quarter would be lighter than analysts had expected, causing its stock to fall sharply.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Shares of Amazon are down more than 47% this year.",
@@ -3345,7 +3345,7 @@
   },
   {
     "content": "Prices of goods from gasoline to food and cars could soar if trains halt.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "In addition, factories could be forced to shut temporarily due to parts shortages.",
@@ -3437,7 +3437,7 @@
   },
   {
     "content": "There are two routes – most hikers start from Viswema Village, about 22 kilometers (14 miles) south of Nagaland’s capital city Kohima, while the trailhead at Zakhama Village, about 18 kilometers (11 miles) from Kohima, is shorter but the ascent is sharper.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "The path climbs up rough-hewn stone steps and through a mix of chestnut, juniper, and oak thick forest, to reach the crest of the valley at 2,452 meters (8,045 feet) above sea level, where a riveting panorama unfolds.",
@@ -3449,7 +3449,7 @@
   },
   {
     "content": "Indian nationals must acquire an Inner Line Permit (ILP) to visit Nagaland, while foreign visitors must register themselves at the local Foreigner Registration Office (FRO) within 24 hours of arrival.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "An absolute humdinger of a route, this trek takes in three high passes of the Himalayas and seven glacier-fed lakes.",
@@ -3513,7 +3513,7 @@
   },
   {
     "content": "Crossing the icy waters of Markha River (a tributary of the mighty Zanskar River), seeing the ancient Buddhist monasteries and 6,400-meter (21,000 feet) Kang Yatse and 6,153-meter (20,187 feet) Stok Kangri peaks, and climbing up to the 5,200-meter (17,060 feet) Kongmaru La Pass are moments you’ll rave about for the rest of your life.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "There’s some wonderful wildlife too – blue sheep, Asiatic ibex, Himalayan marmot, Ladakhi urial and the endangered Eurasian brown bear all hang out in the park.",
@@ -3728,8 +3728,8 @@
     "candidateTypes": ["noType"]
   },
   {
-    "content": "Femi Oyebade, a Nigerian diasporan for more than 30 years and a Guinness beer connoisseur, assures me that there is a stark difference between Irish Guinness and Nigerian Guinness.",
-    "candidateTypes": ["difference"]
+    "content": "Femi Oyebade, a Nigerian diasporan for more than 30 years and a Guinness beer connoisseur, assures me that there is a stark comparison between Irish Guinness and Nigerian Guinness.",
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Chalk and cheese won’t suffice in defining the distance between the two.",
@@ -3749,7 +3749,7 @@
   },
   {
     "content": "The alcohol content of Nigerian Guinness is 7.5%, almost twice as strong as the Irish 4.2%.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Oyebade insists you can never drink Nigerian Foreign Extra Import and go back to Dublin dry stout. Never, ever.",
@@ -3809,7 +3809,7 @@
   },
   {
     "content": "We drink more Guinness than the Irish.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "And we were the first Guinness-brewing outpost of note, with a representative brew – not barley but maize, sorghum and a unique yeast –  created for our national palate.",
@@ -3905,7 +3905,7 @@
   },
   {
     "content": "Or it is a big stout, Odeku (60 centiliters), or a small stout, Lanko (33 centiliters).",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Lanko is so named because it sounds like “lanky” and Odeku sounds like an onomatopoeic neologism for someone stocky and strong.",
@@ -3913,7 +3913,7 @@
   },
   {
     "content": "It says something about the ubiquitousness of Guinness in Nigeria that our words for the drink have transcended the division of 500 languages and become big vs small, Odeku vs Lanko.",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "The size of the Guinness beer bottle you buy for a friend or new acquaintance points to how highly you esteem them.",
@@ -3929,7 +3929,7 @@
   },
   {
     "content": "An Odeku is twice the esteem of a Lanko or a Heineken. A Nigerian man flirting with a woman won’t buy her a big bottle of Guinness in a beer parlor; he will buy her a Lanko with a glass.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "But then, of course she can drink as many Lankos as she likes – enough to equal the Odekus – because the protocols of respectful courting have already been observed.",
@@ -4433,7 +4433,7 @@
   },
   {
     "content": "Future 4 days ago E. coli at swim site '20 times minimum standards'",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Very high E. coli levels are recorded at a site in Devon where hundreds of people are due to swim.",
@@ -4569,7 +4569,7 @@
   },
   {
     "content": "The 737 MAX family’s in-service reliability is above 99% and consistent with other commercial airplane models.”",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "Of course, many thousands of people board Max aircraft with no concerns. But do other passengers care?",
@@ -4581,7 +4581,7 @@
   },
   {
     "content": "The last time the Max was grounded – for 20 months, following the crash of Ethiopian Airlines flight 302 on a Max 8 in March 2019 – 25% of the 1,005 Americans questioned in a Reuters/Ipsos poll said that they had “not a lot” or “no” confidence in the aircraft – compared to 31% who did, and 44% who were unsure.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "After being “told about the aircraft’s safety issues,” a further 57% said they would be somewhat unlikely or not likely to fly in a Max, according to the report.",
@@ -4621,7 +4621,7 @@
   },
   {
     "content": "While planes were generally viewed to be as safe as cars or trains for means of transportation, fewer than two in 10 surveyed strongly agreed that planes are fault-free.",
-    "candidateTypes": ["difference", "proportion", "distribution"]
+    "candidateTypes": ["comparison", "proportion", "distribution"]
   },
   {
     "content": "If it’s Boeing, ‘I ain’t going’",
@@ -5033,7 +5033,7 @@
   },
   {
     "content": "More than 500,000 costumes from every era include Daniel Craig’s suits from his first James Bond star turn, the hit “Casino Royale;” and Oscar-winner Marion Cotillard’s gowns from “La Vie en Rose.”",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "Star Wars' locations that actually exist",
@@ -5309,7 +5309,7 @@
   },
   {
     "content": "Like its neighboring sister with a slightly shorter curfew (Balans Soho Society Restaurant), Balans was given a recent full-on facelift, but classic dishes such as the Infamous Balans Burger and 12 oz sirloin steak remain a fixture for the cafe.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "With the recent advent of the Night Tube, this fun and flirty 24-hour spot’s already seen an uptick on the amount of people arriving after midnight.",
@@ -5329,7 +5329,7 @@
   },
   {
     "content": "Though a majority of the late-night dining industry has seen a recent customer increase in the wee weekend hours, Phil Inzani, Polo Bar’s founder, finds the Night Tube service has created an opposite effect.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "“At Polo Bar, the busiest hours used to be after midnight… after a bar closes.",
@@ -5337,7 +5337,7 @@
   },
   {
     "content": "Now that the Tube is running much later, going home is less of a drudge – it’s quicker, easier and making it less tempting [for customers] to go for the nightcap!” Inzani says.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "VQ (“Vingt-Quatre”) Notting Hill is one of London’s newest additions to the city’s late-eats lineup, helping to address West London’s dearth of post-midnight dining options beyond Soho.",
@@ -5349,7 +5349,7 @@
   },
   {
     "content": "The caveat: though VQ’s other two branches run 24 hours a day, the Notting Hill location shuts its doors at 3 a.m.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "With a comforting amount of fat, Beigel Bake's salt beef bagel is one of the best late-night cheap eats.",
@@ -5357,7 +5357,7 @@
   },
   {
     "content": "Beigel Bake is widely considered one of the finest cheap-eats joints in the capital, and a prime grub spot for the many after-hours revelers spilling from Shoreditch’s bars and clubs.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "“No matter the time of day there seems to be a queue which gets quirkier as the night goes on,” says Kitchen Journeys blogger Madeleine Morrow on the no-frills, Brick Lane-based bakery.",
@@ -5453,7 +5453,7 @@
   },
   {
     "content": "The upmarket pizzeria is housed in a former tea warehouse turned trendy commercial space (Tea Building) and serves gourmet, individual-size pizzas such as “nduja, pickled peppers, red onion, scamorza” (£12 / $15) and “leeks, puzzone, egg, rosemary, cream” (£11 / $14).",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Beyond the wood oven pies, Pizza East also has antipasti selections and baked dishes from beef lasagne to salt-baked salmon.",
@@ -5501,7 +5501,7 @@
   },
   {
     "content": "After laying out her prosecutorial case against Trump, Harris cast the contest as “two different versions of what we see as the future of our country.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "And in her first public event since Biden dropped out of the race on Sunday, Harris earlier Monday officiated at an event on the White House lawn centering her in the imagery of the presidency.",
@@ -5525,7 +5525,7 @@
   },
   {
     "content": "Harris raked in more than $100 million between Sunday and Monday evening, a campaign official said, boasting more than 1.1 million unique donors – 62% of them first-time contributors.",
-    "candidateTypes": ["proportion", "value", "difference"]
+    "candidateTypes": ["proportion", "value", "comparison"]
   },
   {
     "content": "The vice president’s swift consolidation of power has been impressive.",
@@ -5605,7 +5605,7 @@
   },
   {
     "content": "“She’s had a lower approval rating than Joe Biden.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Harris is the least popular vice president in history – which is no surprise given her terrible record,” the memo said.",
@@ -5669,7 +5669,7 @@
   },
   {
     "content": "A CNN poll at the end of June showed, for instance, that in a hypothetical matchup against Trump, the vice president outpolled her boss among women voters, political independents and movable voters.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Such key voting blocs could be critical to the outcome of the election in the handful of swing states and districts likely to decide the race.",
@@ -5681,11 +5681,11 @@
   },
   {
     "content": "Now, suddenly, they are enjoying a generational transformation with a candidate who is nearly 20 years younger than the 78-year-old Republican nominee.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Former South Carolina Gov. Nikki Haley had tried during her GOP primary campaign to play the age card that the Democrats have now successfully deployed, saying the first party to “retire their 80-year-old” candidate would win the election.",
-    "candidateTypes": ["rank", "difference"]
+    "candidateTypes": ["rank", "comparison"]
   },
   {
     "content": "Democrats are now gleefully trying to reinforce the impression.",
@@ -5737,7 +5737,7 @@
   },
   {
     "content": "Harris paid a moving tribute to Biden, saying he had “surpassed the legacy of most presidents who have served two terms.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "She didn’t mention the election, but it hung over an event in which she allied with the youthful aspirations of young athletes and wrapped herself in the flag in predicting US triumphs at the Paris Olympics.",
@@ -6057,11 +6057,11 @@
   },
   {
     "content": "Despite those controversies, the group’s revenue has ballooned over the last decade.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "True the Vote pulled in just over $4 million between 2014 and 2019 but reported nearly $12 million in revenue between 2020 and 2022, the latest year of its publicly available financial reports.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "True the Vote has also faced allegations of financial wrongdoing.",
@@ -6105,7 +6105,7 @@
   },
   {
     "content": "Kamala Harris seems to have more appeal among voters of color and younger voters than Joe Biden did before he got out of the presidential race.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Take a look at our newly published CNN/SSRS poll.",
@@ -6113,11 +6113,11 @@
   },
   {
     "content": "Harris leads Trump among Black voters 78% to 15%.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Among these same voters (the poll recontacted the same respondents), Biden was ahead by a smaller 70% to 23% in CNN polling data from April and June.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "The same holds to a somewhat lesser degree among Hispanic voters.",
@@ -6125,19 +6125,19 @@
   },
   {
     "content": "Harris comes in at 47% to Trump’s 45%, while it was 50% for Trump to 41% for Biden among these same respondents in the April and June data.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Voters under the age of 35 demonstrate a similar shift.",
-    "candidateTypes": ["trend", "difference"]
+    "candidateTypes": ["trend", "comparison"]
   },
   {
     "content": "It’s Harris 47% to Trump’s 43% now.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In April and June, these same voters put Trump up 49% to 42% over Biden.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In some ways, none of these shifts are very surprising.",
@@ -6157,19 +6157,19 @@
   },
   {
     "content": "She is doing at least 5 points worse than Biden did among these same groups in the final 2020 polls.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Among Black voters, Biden led Trump 84% to 9% at the end of the 2020 campaign.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Even more notable is that Biden led among Hispanic voters by a 58% to 32% spread.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Finally, even as Harris has become a meme favorite among young voters, Biden’s 60% to 31% advantage over Trump at the end of the 2020 campaign is massively larger than where Harris is right now.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "This may seem like bad news for the Harris campaign, and, in one clear way, it is.",
@@ -6233,7 +6233,7 @@
   },
   {
     "content": "Rather, Harris now has a bunch of paths toward victory, while Biden’s options seemed to be closing rather quickly.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Multiple Supreme Court showdowns. Closed-door negotiations. And millions of dollars in litigation.",
@@ -6241,7 +6241,7 @@
   },
   {
     "content": "In North Carolina, newly empowered GOP state legislators took an aggressive approach with their map-drawing, crafting lines that are expected to allow their party to flip at least three seats now held by Democrats. But, in recently concluded redistricting in New York, Democrats, who had final say over the map, adopted a more modest position – essentially turning just one Republican-held seat a deeper shade of blue.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "In the South, Democrats are expected to gain two seats as a result of Voting Rights Act rulings out of Alabama and Louisiana. But a protracted battle over the congressional map in another Southern state, Georgia, has not changed the partisan balance of the state’s US House delegation heading into November.",
@@ -6261,7 +6261,7 @@
   },
   {
     "content": "(Although Republicans control the House by a narrow margin, under the map used in the 2022 midterm elections, 17 of those GOP lawmakers were elected in communities that backed President Joe Biden in 2020.)",
-    "candidateTypes": ["value", "difference", "distribution"]
+    "candidateTypes": ["value", "comparison", "distribution"]
   },
   {
     "content": "Here’s a state-by-state look at the recent redistricting disputes and where they stand:",
@@ -6305,7 +6305,7 @@
   },
   {
     "content": "Then, a ruling by the state’s highest court appeared to jeopardize those gains by potentially making it easier for Democrats to pick up as many as six GOP-held seats.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "In the end, however, the Democratic state lawmakers, who hold ultimate control of the redistricting process, settled on a map that made only modest adjustments to the status quo lines.",
@@ -6328,7 +6328,7 @@
     "candidateTypes": ["noType"]
   },
   {
-    "content": "Former New York Rep. John Faso, a Republican who had been a key player in litigation over redistricting, said the map drawn by Democrats “has no material differences from the current map.”",
+    "content": "Former New York Rep. John Faso, a Republican who had been a key player in litigation over redistricting, said the map drawn by Democrats “has no material comparisons from the current map.”",
     "candidateTypes": ["noType"]
   },
   {
@@ -6345,7 +6345,7 @@
   },
   {
     "content": "The state’s current House delegation is split 7-7 between Democrats and Republicans.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "RELATED ARTICLE Lawsuit seeks to block North Carolina congressional map, alleging it discriminates against minority voters",
@@ -6381,7 +6381,7 @@
   },
   {
     "content": "The high court’s 5-4 decision in June saw two conservatives, Chief Justice John Roberts and Justice Brett Kavanaugh, side with the three liberals to uphold the lower-court ruling. Their action kept intact a key pillar of the Voting Rights Act: that it’s illegal to draw maps that effectively keep Black voters from electing a candidate of their choice.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "The ruling reverberated around the country and affected the outcome of similar court cases underway in Louisiana and Georgia that centered on whether Republican-drawn maps improperly diluted Black political power in those states.",
@@ -6389,7 +6389,7 @@
   },
   {
     "content": "Given that Black voters in Alabama have traditionally backed Democrats, the party now stands a better chance of winning the newly reconfigured district and sending two of its members to Congress after November’s elections.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "The new map also could result in two Black US House members from Alabama serving together for the first time in state history.",
@@ -6405,11 +6405,11 @@
   },
   {
     "content": "The new map complied with an order issued by US District Judge Steve Jones to establish an additional Black-majority district. But it preserved the GOP’s 9-5 edge in Georgia’s US House delegation by moving the Atlanta-area district represented by﻿ Rep. Lucy McBath, a Black Democrat, farther into Republican territory.",
-    "candidateTypes": ["distribution", "difference"]
+    "candidateTypes": ["distribution", "comparison"]
   },
   {
     "content": "In a big win for Republicans, Jones in late December ruled that the new legislature-drawn map that preserved Republicans’ 9-5 advantage “fully complied” with his order.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "A separate federal case in Georgia challenges the congressional map on constitutional grounds.",
@@ -6461,7 +6461,7 @@
   },
   {
     "content": "Under its previous lines, the 6th District was a more competitive seat. (Democrat Amy McGrath came within 3 points of beating Barr in 2018; last year, Barr won a sixth term under the new lines by 29 points.)",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "South Carolina",
@@ -6489,7 +6489,7 @@
   },
   {
     "content": "At stake: a swing district along the US border with Mexico. If Republicans had prevailed, the 2nd District seat – now held by a Democratic Rep. Gabe Vasquez – could have become more favorable to Republicans.",
-    "candidateTypes": ["rank", "difference"]
+    "candidateTypes": ["rank", "comparison"]
   },
   {
     "content": "But a state judge in October upheld the map drawn by Democrats, and the New Mexico Supreme Court affirmed that ruling.",
@@ -6865,7 +6865,7 @@
   },
   {
     "content": "In 2023, the output value of new energy vehicles (NEVs) and new energy industries in Jiangsu increased by 19 percent and 14.5 percent respectively.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "The production of lithium-ion batteries for automobiles increased by 18.7 percent.",
@@ -6897,7 +6897,7 @@
   },
   {
     "content": "In 2023, the company achieved sales of more than 240 million yuan, more than double the figure in 2022.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "More than 90 percent of our company's sales come from overseas, with the Philippines, South Africa and the Middle East being the main markets, Zhou told me.",
@@ -6913,11 +6913,11 @@
   },
   {
     "content": "The second nickname is because of its strong economy. The first is because, while other provinces and regions in China usually act as a whole on a national level, the 13 cities in Jiangsu act separately.",
-    "candidateTypes": ["rank", "difference"]
+    "candidateTypes": ["rank", "comparison"]
   },
   {
     "content": "A typical example is they all sent their own medical support teams to Wuhan, Hubei Province in early 2020 at the start of the COVID-19 pandemic, while most other places only sent a provincial team.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Chinese netizens always make the joke that Jiangsu is loosely organized. But they also wonder how such a province holds so much energy for development.",
@@ -6925,7 +6925,7 @@
   },
   {
     "content": "My recent reflections may provide an answer: Jiangsu is loosely organized not because its 13 cities do not like each other or do not obey the orders of big brother Nanjing, the capital, but because they are blood brothers who are all hard-working and strong respectively so that they always compete and do not want to be the one \"holding back the family\" on the way of development.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "An example before the Spring Festival made more people come to know the unity of Jiangsu hidden in its loose organization. Heavy snow hit central and northern Jiangsu between February 1 and 6, sparking concerns among those wishing to drive through Jiangsu's highways.",
@@ -6949,7 +6949,7 @@
   },
   {
     "content": "RELATED ARTICLES 3 dead, 2 missing in factory explosion in East China’s Jiangsu; rescue efforts underway",
-    "candidateTypes": ["value", "difference", "distribution"]
+    "candidateTypes": ["value", "comparison", "distribution"]
   },
   {
     "content": "Three people have been killed and two are still missing in an explosion that occurred at an aluminum ...",
@@ -6985,7 +6985,7 @@
   },
   {
     "content": "The first half of the Spring Festival holidays has seen a clear boom in tourism compared to previous years, with many popular scenic spots reaching their maximum capacity.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "The thriving tourism market has elevated the festive atmosphere to new heights, and ushered in the return journeys on Wednesday – the fifth day of the holiday – amid the hustle and bustle.",
@@ -7009,7 +7009,7 @@
   },
   {
     "content": "Among them, the number of domestic medium- and long-distance tour package orders during the Spring Festival period has increased by over 150 percent compared with 2019, the number of room reservations in domestic high-star hotels increased by nearly 150 percent compared with 2019, and the booking volume of customized travel products has increased by nearly 800 percent compared with 2019.",
-    "candidateTypes": ["trend", "difference", "distribution"]
+    "candidateTypes": ["trend", "comparison", "distribution"]
   },
   {
     "content": "Cultural and artistic tours, ice and snow tours, rural tours, temple-themed tours, and ancient town tours have emerged as popular travel trends. Rural tourism activities such as hiking, fishing, and fruit picking have also attracted a large number of tourists for spring outings, according to Fliggy.",
@@ -7045,7 +7045,7 @@
   },
   {
     "content": "Data from travel platform Tongcheng showed that from February 10 to 13, hotel bookings for Singapore, Bangkok, Hong Kong and Macao have increased by more than 300 percent year-on-year, with Singapore hotel bookings soaring more than 800 percent on a yearly basis.",
-    "candidateTypes": ["trend", "difference", "distribution"]
+    "candidateTypes": ["trend", "comparison", "distribution"]
   },
   {
     "content": "According to data released by the Macao Special Administrative Region, during the first three days of the Spring Festival holidays, the region received 167,441 daily average passenger trips, a significant increase of 226 percent compared to the same period in 2023.",
@@ -7089,7 +7089,7 @@
   },
   {
     "content": "According to a report recently released by China’s Ministry of Transport, the overall journey during the first half of Spring Festival travel rush has been smooth and orderly, with the volume of inter-regional travelling reaching a new high for the same period in history.",
-    "candidateTypes": ["difference", "extreme", "trend"]
+    "candidateTypes": ["comparison", "extreme", "trend"]
   },
   {
     "content": "Traffic management departments in many places have put in place measures to ensure safe travel, including strengthened predictions, increased police deployment, enhanced traffic monitoring, crackdowns on illegal activities such as drink driving, and collaboration with meteorological and emergency departments to provide a safer traffic environment.",
@@ -7153,7 +7153,7 @@
   },
   {
     "content": "Currently, Chinese policymakers face a constraint as China's benchmark one-year loan prime rate (LPR) of 3.45 percent is much lower than the US' interest rate. Enlarging the gap will cause more capital to exit from Chinese market.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Nevertheless, China's central bank has more means at its disposal to propel the economy. Just as Pan stated, the PBC has policy tools to support the central government in selling more treasury bonds, which has been hailed by Chinese economists as necessary to stimulate fiscal spending and government investment at a time when the country is facing a pattern of negative monthly consumer price index (CPI) since October, indicating rising deflationary pressure.",
@@ -7217,11 +7217,11 @@
   },
   {
     "content": "In terms of industry breakdown, the value added in the primary sector surged to 8.98 trillion yuan, showing a robust 4.1 percent increase from the previous year. The secondary sector contributed significantly with 48.26 trillion yuan, marking a steady growth of 4.7 percent, while the tertiary sector added 68.82 trillion yuan, experiencing a notable 5.8 percent increase.",
-    "candidateTypes": ["trend", "difference", "distribution"]
+    "candidateTypes": ["trend", "comparison", "distribution"]
   },
   {
     "content": "Looking at the quarterly performance, the year-on-year GDP growth rates were 4.5 percent in the first quarter, 6.3 percent in the second quarter, 4.9 percent in the third quarter, and 5.2 percent in the fourth quarter.",
-    "candidateTypes": ["trend", "difference"]
+    "candidateTypes": ["trend", "comparison"]
   },
   {
     "content": "In 2023, China's total grain output reached 1.39 trillion jin (695 billion kilogram), an increase of 1.3 percent over the previous year, consistently exceeding 1.3 trillion jin for the ninth consecutive year.",
@@ -7233,7 +7233,7 @@
   },
   {
     "content": "In particular, that of the equipment manufacturing industry grew by 6.8 percent, 2.2 percentage points higher than that of the overall industrial enterprises above a designated size.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "The total retail sales of consumer goods recorded 47.15 trillion yuan, up 7.2 percent year-on-year.",
@@ -7245,7 +7245,7 @@
   },
   {
     "content": "The annual per capita disposable income of residents nationwide reached 39,218 yuan, marking a nominal growth of 6.3 percent compared to the previous year.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "Analysts have taken stock of highlights in the country's economic performance in 2023.",
@@ -7265,7 +7265,7 @@
   },
   {
     "content": "By shipping over 5 million automobiles overseas, the country is estimated to have overtaken Japan as the world's largest auto exporter in 2023.",
-    "candidateTypes": ["rank", "difference"]
+    "candidateTypes": ["rank", "comparison"]
   },
   {
     "content": "The annual national fixed-asset investment (excluding rural households) reached 50.3 trillion yuan, showing a growth of 3 percent compared to the previous year.",
@@ -7277,7 +7277,7 @@
   },
   {
     "content": "The high-tech industry investment emerged as a highlight, growing by 10.3 percent and surpassing the overall investment growth by 7.3 percentage points.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "Investments in high-tech manufacturing and high-tech services increased by 9.9 percent and 11.4 percent, respectively.",
@@ -7289,7 +7289,7 @@
   },
   {
     "content": "For instance, in the field of semiconductor technology, China has witnessed a decline in chip imports, yet its domestic production has not only been maintained but has also demonstrated higher efficiency, Tian said, stressing that it was an impressive progress in the face of an ongoing US blockade.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "China's global trade position is unassailable. Without the export of high-quality and low-cost technologically advanced products from China, many countries, especially developing and low-income nations, might face even more severe development challenges than they currently do, Tian added.",
@@ -7305,7 +7305,7 @@
   },
   {
     "content": "For the upcoming holidays, domestic travel bookings have grown over 7 times compared to the previous year, while both outbound and inbound travel bookings have increased by more than 10 times year-on-year, per data sent to the Global Times by online travel agency Trip.com on Tuesday.",
-    "candidateTypes": ["trend", "difference"]
+    "candidateTypes": ["trend", "comparison"]
   },
   {
     "content": "On Friday, the General Administration of Customs (GAC) released China's foreign trade data for 2023, revealing trends that exceeded expectations. Total trade grew 0.2 percent year-on-year to 41.76 trillion yuan.",
@@ -7409,7 +7409,7 @@
   },
   {
     "content": "China's auto output exceeded 30.16 million units in 2023, up 11.6 percent year-on-year, and sales exceeded 30.09 million units, up 12 percent, according to data the China Association of Automobile Manufacturers (CAAM) released on Thursday.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "Both output and sales set new records, ranking first in the world for 15 consecutive years, the CAAM said.",
@@ -7421,7 +7421,7 @@
   },
   {
     "content": "In particular, China produced 9.587 million NEVs in 2023, up 35.8 percent year-on-year.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "The production of intelligent cars can drive a lot of industries, including software, hardware, chips, sensors, industrial data and more. A car is a larger application terminal than a mobile phone, and can boost the development of many high-tech industries, and vice versa, Zhang said.",
@@ -7613,11 +7613,11 @@
   },
   {
     "content": "The water is hot enough to heat homes in winter, and cool enough to keep them mild when temperatures rise, with just 25% the carbon emissions of gas.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "\"It'll be cheaper than gas, too, by around 10%,\" Adams says, \"and we believe it will help bring new investment and jobs to the area.\"",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "The north-east of England has some of the country's lowest levels of economic activity, a legacy of pit closures in the 1980s and 1990s that fractured coal-mining communities, leaving them with high unemployment and few opportunities.",
@@ -7649,7 +7649,7 @@
   },
   {
     "content": "\"There is a data centre that ejects around 45C, enough to supply a nearby school, and a supermarket whose cooling provides enough heat for three hundred dwellings.\"",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "This local focus offers Heerlen a high level of energy self-sufficiency – which could be useful given that the Netherlands' is set to close its main source of domestic gas production by 2022.",
@@ -7705,7 +7705,7 @@
   },
   {
     "content": "Perhaps the greatest hurdle, however, is that which motivated the opening of the mines in the first place: money. The capital costs are much higher with mine water geothermal, though under the right conditions the energy generated can be cheaper than that from conventional sources.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Adam Black at Lanchester Wines hopes that the costs will fall as the technology develops and uptake increases, \"and if the energy authorities do their bit with regulation\".",
@@ -7809,11 +7809,11 @@
   },
   {
     "content": "The past New Year's Day holidays from December 30, 2023 to January 1, 2024 witnessed a total of 5.179 million trips made into and out of China, a 4.7-fold increase compared to the 2023 New Year's Day holidays and representing a travel volume return to 2019 levels.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "On December 1, 2023, China's new visa-free policy for inbound travelers from France, Germany, Italy, the Netherlands, Spain and Malaysia came into effect, following which about 214,000 inbound trips from those countries were made to China in December 2023, up 28.5 percent compared with November 2023.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Posting the number on social platform, Chinese Foreign Ministry spokesperson Hua Chunying wrote on Saturday: \"Welcome more travelers to China to discover our culture, scenery and food with ease and convenience.\"",
@@ -7853,7 +7853,7 @@
   },
   {
     "content": "The China Tourism Academy predicted in the latest report that the recovery of China's inbound and outbound tourism market will further accelerate in 2024, with the total number of inbound and outbound trips exceeding 264 million and international tourism revenue topping $107 billion.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Many people have scheduled their outbound travel plans for the upcoming winter vacation and Spring Festival holidays. Data from Tuniu Travel website shows that the booking volume for Spring Festival group tours has significantly increased compared to the same period last year, and the booking peak has also come earlier. ",
@@ -7869,7 +7869,7 @@
   },
   {
     "content": "Specifically, the proportion of those flights operated by Chinese airlines has recovered to 73.5 percent of the pre-pandemic level, compared with 48.1 percent by overseas carriers.",
-    "candidateTypes": ["difference", "proportion", "distribution"]
+    "candidateTypes": ["comparison", "proportion", "distribution"]
   },
   {
     "content": "Staff members welcome Chinese tourists at Suvarnabhumi airport in Bangkok, Thailand, Sept. 25, 2023. Thailand extended a warm welcome to the first batch of visa-exempt flights from China on Monday, marking the launch of the nation's fresh initiative to reinvigorate its Chinese tourist market. Photo: Xinhua",
@@ -7877,15 +7877,15 @@
   },
   {
     "content": "Looking at specific countries, scheduled international passenger flights now cover 67 countries and regions, seven fewer than before the pandemic.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Flight volume to 25 countries including the UK has exceeded pre-pandemic levels. ",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "In addition, compared with before the pandemic, there are six new countries including Kuwait, Serbia, Tanzania, Luxembourg, Papua New Guinea, and Nigeria that now have services from China.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Zhang said the bustling tourism market and frequent people-to-people exchange serve as a good sign for a more prosperous 2024. He noted that over the year, many Western media have spared no efforts to downplay China's economic performance, picturing it as a country whose economy is on decline.",
@@ -8113,7 +8113,7 @@
   },
   {
     "content": "Mirtschink and Duke shared their glowing reviews of the app while attending Trump’s recent rally in Rome, Georgia, where regular users of Truth Social were easy to come by. Outside of his MAGA movement, though, the social media site is struggling to find a wider audience. It is hemorrhaging users, and its traffic has plummeted. There were roughly 860,000 accounts active on the site as of November – a tiny blip compared with more mainstream platforms.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "And yet, on Friday, Digital World Acquisition Corp. approved a lucrative merger with Trump Media & Technology Group, Truth Social’s owner – one that is expected to deliver a multibillion-dollar windfall for the former president just as mounting legal troubles and judgments have compromised his business empire, personal wealth and campaign finances. It won’t bring immediate relief, though, as Trump is restricted from selling his shares for six months.",
@@ -8133,7 +8133,7 @@
   },
   {
     "content": "But as Trump’s foray as a social media mogul enters its third year, the app’s long-term viability – and purpose – remain unclear. Truth Social is not a serious threat to compete with, let alone eclipse, X, Facebook or YouTube – it’s not among the 100 most downloaded social media applications in the Apple App store – nor has it separated itself as their conservative alternative.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Trump Media’s management warned last year that the company was at risk of insolvency without a merger, and most analysts are skeptical of its current valuation above $6 billion.",
@@ -8161,7 +8161,7 @@
   },
   {
     "content": "Both platforms have since reinstated Trump’s account, though he posts almost exclusively to Truth Social.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Trump recently told a South Carolina audience he bought the name of his app for $2,100 from “a guy.”",
@@ -8213,7 +8213,7 @@
   },
   {
     "content": "Many Republican politicians and conservative have not joined Truth Social or they post infrequently.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Virginia Gov. Glenn Youngkin’s last post was in July 2022. Popular conservative podcast hosts Megyn Kelly, Ben Shapiro and Glenn Beck don’t appear to have active accounts. South Carolina Sen. Tim Scott only recently joined Truth Social – just as his name surfaced as a potential running mate to Trump.",
@@ -8253,7 +8253,7 @@
   },
   {
     "content": "The posts replicate Trump’s past social media usage – and style; he often posts in all-caps – but with only a fraction of the reach. On X, the site formerly known as Twitter now owned by billionaire Elon Musk, Trump has 87 million followers – 13 times his audience on Truth Social.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "RELATED ARTICLE The push to put Trump back in the White House is getting a boost from people he pardoned before leaving",
@@ -8313,7 +8313,7 @@
   },
   {
     "content": "Republican vice presidential candidate Sen. JD Vance is facing criticism over his previous comments about people without children, including one 2021 remark denouncing “childless cat ladies” in government and another in which he said that, in order to “tax the things that are bad and not tax the things that are good,” people without children should pay a higher tax rate than people with children.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Vance is now trying to turn the tables on the presumptive Democratic presidential nominee, Vice President Kamala Harris. In a Fox News interview that aired Sunday, Vance said, “I think a lot of parents and a lot of non-parents look at our public policy over the last four years and ask, ‘How did we get to this place? How did we get to a place where Kamala Harris is calling for an end to the child tax credit?’”",
@@ -8361,7 +8361,7 @@
   },
   {
     "content": "The temporary expansion – which increased the maximum amount of the credit, made the credit fully refundable so the lowest-income families could qualify and sent out half of the credit in monthly payments – was a major contributor to a steep decline in child poverty in 2021. Child poverty then spiked in 2022, roughly to pre-pandemic levels, after Congress allowed the expanded credit to expire against the wishes of Biden and Harris.",
-    "candidateTypes": ["difference", "proportion", "trend"]
+    "candidateTypes": ["comparison", "proportion", "trend"]
   },
   {
     "content": "A bipartisan House bill that would expand the child tax credit again has stalled in the Senate this year amid Republican opposition.",
@@ -8377,7 +8377,7 @@
   },
   {
     "content": "In a July 18 speech before Biden dropped out of the 2024 race, she said, “Whereas the last administration gave tax cuts to billionaires, we gave tax cuts to families through the child tax credit, which cut child poverty in America by half.” She touted the expansion again in a speech to a historically Black sorority after Biden dropped out, saying, “We believe in a future where no child has to grow up in poverty, which is why I helped pass the child tax credit, which cut child poverty in half and cut Black child poverty even more.”",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "CNN’s Tami Luhby contributed to this article.",
@@ -8405,7 +8405,7 @@
   },
   {
     "content": "Facts First: One of Harris’ claims about Project 2025 is false, while another is at least misleading. The Project 2025 document does not show that Trump intends to cut Social Security; the document barely discusses Social Security at all and does not propose cuts to the program. ",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In addition, contrary to Harris’ suggestion, Project 2025 does not call to “end” the Affordable Care Act or eliminate its protections for people with pre-existing conditions. The document does criticize the Affordable Care Act, especially the law’s expansion of Medicaid, but makes clear it is advocating changes to the law rather than terminating the law entirely.",
@@ -8433,7 +8433,7 @@
   },
   {
     "content": "But contrary to Harris’ claim that “when you read” the Project 2025 document “you will see” that Trump intends to cut Social Security, the lengthy document includes no call to cut Social Security. In fact, the document uses the words “Social Security” just 10 times, mostly in passing. Vought said the document calls for “no changes to Social Security.”",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Harris could fairly have noted that Trump himself has expressed openness, both in decades past and earlier this year, to cutting Social Security. When he was asked in a March interview about how he would handle Social Security, Medicare and Medicaid, he said, “There is a lot you can do in terms of entitlements, in terms of cutting and in terms of also the theft and the bad management of entitlements.” (He has since vowed not to cut “one penny” from Social Security or Medicare.)",
@@ -8497,7 +8497,7 @@
   },
   {
     "content": "Facts First: Johnson’s claims about dramatic increases in violence and crime are false, as is the convention video’s claim that there is a problem “everywhere” with “rising crime.” Official data published by the FBI shows violent crime dropped significantly in the US in 2023 and in the first quarter of 2024, though there were increases in some communities; violent crime is now lower than it was in 2020, President Donald Trump’s last calendar year in office.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Stefanik’s claim of a “violent crime crisis” under Biden is subjective, but she certainly did not acknowledge that the current numbers under Biden are superior to final Trump-era numbers.",
@@ -8505,7 +8505,7 @@
   },
   {
     "content": "Preliminary FBI data for 2023 showed a roughly 13% national decline in murder and a roughly 6% national decline in overall violent crime compared to 2022, bringing both murder and violent crime levels below where they were in 2020. And preliminary FBI data for the first quarter of 2024 showed an even steeper drop from the same quarter in 2023 – a roughly 26% decline in murder and roughly 15% decline in overall violent crime.",
-    "candidateTypes": ["trend", "difference"]
+    "candidateTypes": ["trend", "comparison"]
   },
   {
     "content": "There are limitations to the FBI-published data, which comes from local law enforcement – the numbers are preliminary, not all communities submitted data, and the submitted data usually has some initial errors – so these statistics may not precisely capture the size of the recent declines in crime. But these statistics and other data sources make it clear crime has indeed declined to some extent nationally, though not everywhere.",
@@ -8513,7 +8513,7 @@
   },
   {
     "content": "Crime data expert Jeff Asher, co-founder of the firm AH Datalytics, said that if the final 2023 figures show a decline in murder of at least 10% from 2022, this would be the fastest US decline “ever recorded.” And he noted that both the preliminary FBI-published data from the first quarter of 2024 and also “crime data collected from several independent sources point to an even larger decline in property and violent crime, including a substantially larger drop in murder, so far this year compared to 2023, though there is still time left in the year for those trends to change.”",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "From CNN’s Daniel Dale",
@@ -8529,7 +8529,7 @@
   },
   {
     "content": "Facts First: Scalise’s claims are misleading. The US under President Joe Biden is producing more crude oil than any country ever has. The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "US production of dry natural gas also hit a new high in 2023. So did US crude oil exports.",
@@ -8537,7 +8537,7 @@
   },
   {
     "content": "CNN’s Matt Egan reported in December that the US was exporting the same amount of crude oil, refined products and natural gas liquids as Saudi Arabia or Russia were producing, according to S&P Global Commodity Insights.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "None of this is to say that Biden is the reason that domestic oil production has increased; market factors are the key driver of companies’ investment and production decisions, and the Energy Information Administration has credited technological improvements in fracking and horizontal drilling technology that have made oil wells more productive. Egan reported in August: “The American Petroleum Institute, an oil trade group that has been critical of the Biden administration’s regulatory efforts, noted that approved federal permits and new federal acres leased have both fallen sharply under Biden.”",
@@ -8605,19 +8605,19 @@
   },
   {
     "content": "The current record low for the Black or African American unemployment rate, 4.8%, was set under Biden in April 2023. That beat the Trump-era low that was a record at the time, 5.3% in August 2019 and September 2019. (A cautionary note: This official data series goes back only to 1972.)",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "The Hispanic or Latino unemployment rate hit 3.9% under Biden in September 2022, tying the record low first set in 2019 under Trump.",
-    "candidateTypes": ["difference", "proportion", "value"]
+    "candidateTypes": ["comparison", "proportion", "value"]
   },
   {
     "content": "The unemployment rate among women hit 3.4% under Trump in September 2019 and October 2019, the lowest since the 1950s, but it fell to 3.3% under Biden in January 2023.",
-    "candidateTypes": ["difference", "proportion", "trend"]
+    "candidateTypes": ["comparison", "proportion", "trend"]
   },
   {
     "content": "The record set under Trump for Asian American unemployment, 2% in June 2019, has not been matched under Biden. The lowest Biden-era rate was 2.3% in July 2023.",
-    "candidateTypes": ["difference", "proportion", "trend"]
+    "candidateTypes": ["comparison", "proportion", "trend"]
   },
   {
     "content": "Rep. Stefanik claims that Biden presidency has led to the highest inflation of her lifetime",
@@ -8645,7 +8645,7 @@
   },
   {
     "content": "Facts First: It’s a significant exaggeration that fentanyl kills more than 100,000 Americans every year due to the country’s “open” borders. The number of overdose deaths involving synthetic opioids in 2023, including fentanyl, was approximately 75,000, according to estimated and provisional data.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "The US Centers for Disease Control and Prevention said in May that roughly 107,500 people in the US died from a drug overdose, but that is the total number of people who died from an overdose from any kind of drug.",
@@ -8653,19 +8653,19 @@
   },
   {
     "content": "Synthetic opioids, including fentanyl, were involved in the majority of those fatalities, making up nearly 70% of overdose deaths in 2023, but they did not account for all of them.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "In fact, compared with 2022, there were around 1,500 fewer overdose deaths involving fentanyl and other synthetic opioids in 2023. The estimated number of deaths involving cocaine and psychostimulants such as methamphetamines increased in 2023.",
-    "candidateTypes": ["trend", "difference"]
+    "candidateTypes": ["trend", "comparison"]
   },
   {
     "content": "Specifically, in 2023, there were 74,702 deaths from synthetic opioids, and most of those deaths were from fentanyl. By comparison, in 2022 the estimated number was 76,226, according to the CDC.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "It is also worth noting that fentanyl is largely smuggled by US citizens through legal ports of entry, rather than by migrants sneaking into the country. Contrary to frequent claims by Republicans, the border is not “open”; border officers have seized an increasing amount of illicit fentanyl, numbering in the hundreds of millions of pills, under Biden.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "From CNN’s Jen Christensen",
@@ -8685,7 +8685,7 @@
   },
   {
     "content": "Facts First: Trump’s claims are nonsense – slightly vaguer versions of his usual lies that the 2020 election was rigged and stolen and that Democrats are serial election cheaters. The 2020 election was highly secure; Trump lost fair and square to Joe Biden by an Electoral College margin of 306 to 232; there is no evidence of voter fraud even close to widespread enough to have changed the outcome in any state; and there is no basis for claiming that election cheating is the only thing at which Trump’s opponents excel.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "The Trump administration’s Cybersecurity and Infrastructure Security Agency, part of the Department of Homeland Security, said in a post-election November 2020 statement: “The November 3rd election was the most secure in American history.”",
@@ -8789,7 +8789,7 @@
   },
   {
     "content": "Trump began criticizing the war in 2003, after the invasion, and also said that year that American troops should not be withdrawn from Iraq. He emerged as an explicit opponent of the war in 2004, the year before Biden did.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "But Vance suggested Trump had been right on the invasion itself while Biden got it wrong, and there’s no basis for the claim that they were on opposing sides of the issue.",
@@ -8825,7 +8825,7 @@
   },
   {
     "content": "The US economy shed 140,000 jobs that month — a far worse outcome than economists predicted at the time.",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "Covid-19 infections had increased that month, prompting some states to take additional containment measures.",
@@ -8833,7 +8833,7 @@
   },
   {
     "content": "Trump was the first president since Herbert Hoover to leave office with fewer jobs than when he entered, largely because of the pandemic.",
-    "candidateTypes": ["difference", "extreme", "rank"]
+    "candidateTypes": ["comparison", "extreme", "rank"]
   },
   {
     "content": "RNC video makes outdated claim about US wages",
@@ -8845,11 +8845,11 @@
   },
   {
     "content": "“Under Biden, wages are going down while prices skyrocket,” the video said.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Facts first: The claim in the video is outdated. While inflation outpaced wages during the first half of the Biden administration, that reversed in the middle of last year.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "Inflation rose sharply during the early years of the Biden administration but has since slowed to an annual rate of 3% in June. In fact, prices fell in June for the first time since the start of the pandemic, according to the Bureau of Labor Statistics.",
@@ -8865,11 +8865,11 @@
   },
   {
     "content": "Republican National Committee chairman Michael Whatley said in his opening remarks at the party convention on Wednesday: “Our economy is not nearly as strong as it was four years ago.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Facts First: This is false. Four years ago, in mid-2020, the US economy was in dire straits because of the Covid-19 pandemic. For example, the June 2020 unemployment rate was 11%, well over double the June 2024 rate of 4.1%.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In late July 2020, the federal government announced that the US economy had just experienced its worst contraction on record – shrinking by an annual rate of 32.9% in the quarter running from April 2020 through June 2020.",
@@ -8877,7 +8877,7 @@
   },
   {
     "content": "We give politicians wide latitude to express opinions, and many Trump supporters have argued that the pre-pandemic economy under former Trump, in 2019 and prior, was stronger than the current Biden-era economy. That’s a matter of subjective debate. But it’s plainly inaccurate that the mid-2020 economy was superior to the current economy.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Newt Gingrich on the war in Afghanistan under Trump",
@@ -9029,11 +9029,11 @@
   },
   {
     "content": "Facts First: This claim needs context. Biden has stressed the importance of renewable energy during his administration, but the US under Biden is producing more crude oil than any country ever has.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "None of this is to say that Biden is the reason that domestic oil production has increased; market factors are the key driver of companies’ investment and production decisions, and the Energy Information Administration has credited technological improvements in fracking and horizontal drilling technology that have made oil wells more productive.",
@@ -9045,15 +9045,15 @@
   },
   {
     "content": "Rep. Ronny Jackson’s false claim of ‘record-high inflation’",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "Rep. Ronny Jackson of Texas claimed in his Republican National Convention speech on Wednesday that there has been “record-high inflation” under the Biden administration.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "Facts First: This is false. The record for US inflation, set in 1920, is 23.7%; the Biden-era peak was 9.1% in June 2022.",
-    "candidateTypes": ["extreme", "difference"]
+    "candidateTypes": ["extreme", "comparison"]
   },
   {
     "content": "Jackson could fairly say there was a four-decade high under Biden – that June 2022 figure was the highest since late 1981 – but there was nothing close to a new record.",
@@ -9185,7 +9185,7 @@
   },
   {
     "content": "The growing Indian diaspora is spending, saving and investing in a number of ways, both within India and across the world. According to the Reserve Bank of India, the bank accounts of non-resident Indians (NRIs) held in the country received $7.99bn (£6.27bn) between April 2022 and March 2023 – more than twice the $3.23bn (£2.54) in the prior fiscal year.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "They are young people in the 30s who still have decades of work life ahead, are super ambitious and aspirational and big corporations want to hire them – Amrita Datta",
@@ -9197,7 +9197,7 @@
   },
   {
     "content": "Datta adds many Indians in Germany are also moving into stock market trading, mutual funds and Bitcoin investments. An especially big factor in this mass capital movement is remittance payments back to India, which hit a record of $125bn (£98.2bn) in 2023, up from about $100bn (£78.5bn) the year before. These figures, says Balasubramanyam, are likely less than the actual sum – and only tell a sliver of the economic-impact story.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "\"It's not just remittances,\" he says, \"It's also the impact that people coming and going from the country bring economically. They come back, establish a firm, train people and then leave again. So the to-and-fro diaspora group has been contributing significantly to industry, including to the Indian IT industry and especially within pharmaceuticals.\"",
@@ -9217,7 +9217,7 @@
   },
   {
     "content": "They are using that spending power eagerly. Real estate investments account for a large portion, according to figures from New Delhi-based luxury real estate company DLF Ltd. NRIs purchased 20% of all homes sold by DLF between April and September 2023, up from 15% in the previous financial year. The pattern is global, with extensive demand for real estate also within the UK, Singapore and the Gulf.",
-    "candidateTypes": ["difference", "proportion", "trend"]
+    "candidateTypes": ["comparison", "proportion", "trend"]
   },
   {
     "content": "Strategic savings and investment choices also play a role in how capital is being retained and grown by this diaspora: something that Sharma identifies with. \"The sort of upbringing that many get in India is that once you finish your education and get a job, you have to start thinking about where you put that money into. So, the next obvious step is a savings plan,\" she says.",
@@ -9337,7 +9337,7 @@
   },
   {
     "content": "All but 1% of the world's population is exposed to unhealthy air that exceeds World Health Organization limits for pollutants.",
-    "candidateTypes": ["proportion", "difference"]
+    "candidateTypes": ["proportion", "comparison"]
   },
   {
     "content": "In parts of the world, air quality has rapidly improved through policies that aim to limit pollution. But elsewhere, gains in air quality are at risk of being lost.",
@@ -9357,7 +9357,7 @@
   },
   {
     "content": "Wildfire smoke is one of the factors driving this trend. One study of PM2.5 (see fact box: What is PM2.5?) from wildfire smoke found that levels had increased by up to five micrograms per cubic metre in the western US in the past decade – enough to reverse \"decades of policy-driven improvements in overall air quality\", the authors concluded.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "WHAT IS PM2.5?",
@@ -9365,7 +9365,7 @@
   },
   {
     "content": "PM2.5 is a type of air pollution made up of \"particulate matter\" measuring 2.5 micrometres across or less – roughly 30 times smaller than the width of a human hair.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "These tiny particles can be made up of a mixture of solid and liquid substances, varying in their chemical composition, including carbon, metals and organic compounds.",
@@ -9377,7 +9377,7 @@
   },
   {
     "content": "To put this in context – one study found that a quarter of the US's PM2.5 pollution was caused by wildfire smoke. In western regions, as much as half was caused by smoke. In 2023, large portions of the US saw significant dips in air quality and visibility as smoke from wildfires north of the Canadian border billowed across the continent. Canada experienced a record number of wildfires in 2023, with the area of land burned far outstripping any previous season.",
-    "candidateTypes": ["difference", "extreme", "proportion", "trend"]
+    "candidateTypes": ["comparison", "extreme", "proportion", "trend"]
   },
   {
     "content": "In May 2024, Canada saw an early start to its wildfires season as more than 130 blazes burned around the country.",
@@ -9425,7 +9425,7 @@
   },
   {
     "content": "Wildfire smoke has been found to be harmful to certain immune cells in the lungs, with a toxicity four times greater than particulates from other types of pollution. And it gets worse as smoke ages: one study found the toxicity of smoke doubled in the hours after it was first emitted, reaching a peak of four times greater toxicity.",
-    "candidateTypes": ["difference", "extreme", "value"]
+    "candidateTypes": ["comparison", "extreme", "value"]
   },
   {
     "content": "HOW TO PROTECT YOURSELF FROM WILDFIRE SMOKE",
@@ -9477,7 +9477,7 @@
   },
   {
     "content": "Children living in the most polluted areas, for example, are more than twice as likely to be considered obese.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "How dirty air is polluting our minds",
@@ -9521,7 +9521,7 @@
   },
   {
     "content": "Almost everyone in the world now breathes air that is polluted in some way. But those who are worst hit by air pollution are also those who are least able to be able to protect themselves or escape from it.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "An estimated 716 million people with the lowest incomes globally live in areas with unsafe levels of air pollution.",
@@ -9537,11 +9537,11 @@
   },
   {
     "content": "In the US, PM2.5 pollution is the largest environmental health threat, with black and minority groups facing greater exposure than non-Hispanic white people.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "The poorest regions in Europe too tend to experience levels of PM2.5 concentrations that are a third higher than the richest. (Read about the young people fighting the worst smog in Europe.)",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "You can read more about the story of how air pollution creates environmental inequality around the world in this in-depth feature by Kamala Thiagarajan.",
@@ -9609,7 +9609,7 @@
   },
   {
     "content": "We’ve also been told NOx gases – including nitrogen dioxide – are the biggest threat to health within cities. However, NOx is responsible for just 14% of deaths attributed to air pollution in Europe.",
-    "candidateTypes": ["difference", "extreme", "proportion", "rank"]
+    "candidateTypes": ["comparison", "extreme", "proportion", "rank"]
   },
   {
     "content": "The biggest killer of all never makes the headlines, isn’t regulated, and is barely talked about beyond niche scientific circles (despite their best efforts to change that narrative): it’s nanoparticles.",
@@ -9617,7 +9617,7 @@
   },
   {
     "content": "PM2.5 may be too small to see, being roughly 30 times smaller than the width of a human hair.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "But it’s a relative heavyweight.",
@@ -9625,7 +9625,7 @@
   },
   {
     "content": "PM2.5 stomps in at 2,500 nanometres (nm), while nanoparticles are 100nm or below.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "PM2.5 and PM10 (10,000nm) are killers in their own right, typically causing lung and respiratory conditions.",
@@ -9653,7 +9653,7 @@
   },
   {
     "content": "The device could count nanoparticles right down to 2nm (many times smaller than a human blood cell) by sucking in air, spraying alcohol onto the surface of the particles to make them visible and individually counting by laser beam.",
-    "candidateTypes": ["difference", "extreme", "value"]
+    "candidateTypes": ["comparison", "extreme", "value"]
   },
   {
     "content": "Influenced by work emerging from University of Rochester, New York, and the National Public Health Institute, Finland, Kaur had a hunch that counting these “ultrafine particles” could add some interesting data. She wasn’t wrong.",
@@ -9669,7 +9669,7 @@
   },
   {
     "content": "As the volunteers pounded the pavements, they were exposed to a minimum of 36,000 particles at a time, up to a maximum of 130,000.",
-    "candidateTypes": ["extreme", "difference"]
+    "candidateTypes": ["extreme", "comparison"]
   },
   {
     "content": "When they took the same route by bicycle (tricky, but not impossible, with all the equipment), the maximums and minimums went up by another 20,000.",
@@ -9680,20 +9680,20 @@
     "candidateTypes": ["extreme", "rank", "trend"]
   },
   {
-    "content": "The difference between walking by the kerbside of the road, and by the building side, on the same pavement – just a few short steps – was an average of 82,000 particles versus 69,000.",
-    "candidateTypes": ["difference"]
+    "content": "The comparison between walking by the kerbside of the road, and by the building side, on the same pavement – just a few short steps – was an average of 82,000 particles versus 69,000.",
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "The same readings registered no change in PM2.5.",
     "candidateTypes": ["noType"]
   },
   {
-    "content": "Around 2006, just as Kaur was stepping away from science – her findings having made no difference to how government authorities measured air pollution exposure – a doctoral student at the University of Cambridge picked up the baton. Prashant Kumar had already studied PM2.5 and PM10 for his Masters at the Indian Institute of Technology (IIT) in Delhi. But upon arriving in England for his PhD, “in discussions with my supervisors we found there as very little, or almost nothing, done on the understanding [of nanoparticles]: their measurements, the concentrations in different environments. So I took up that topic as a challenge.” His subsequent flurry of papers published from 2008 onwards have become seminal work on nanoparticle exposure, and led to his professorship at the University of Surrey.",
+    "content": "Around 2006, just as Kaur was stepping away from science – her findings having made no comparison to how government authorities measured air pollution exposure – a doctoral student at the University of Cambridge picked up the baton. Prashant Kumar had already studied PM2.5 and PM10 for his Masters at the Indian Institute of Technology (IIT) in Delhi. But upon arriving in England for his PhD, “in discussions with my supervisors we found there as very little, or almost nothing, done on the understanding [of nanoparticles]: their measurements, the concentrations in different environments. So I took up that topic as a challenge.” His subsequent flurry of papers published from 2008 onwards have become seminal work on nanoparticle exposure, and led to his professorship at the University of Surrey.",
     "candidateTypes": ["noType"]
   },
   {
     "content": "A cloud of a billion 10nm particles has the same mass as just one PM10 particle, but a combined surface area a million times larger",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "“The first study I carried out in 2008 was an exploratory analysis,” recalls Kumar. “When the exhaust fumes come out of vehicles, they come out as gases and cool into smaller [nano] particles.",
@@ -9701,7 +9701,7 @@
   },
   {
     "content": "Then they start to accumulate to make bigger particles. From the tailpipe you can get 10-to-the-power-of-six (one million) particles per centimetre cubed of air. On the road 100,000, by the roadside 10,000.”",
-    "candidateTypes": ["difference", "distribution"]
+    "candidateTypes": ["comparison", "distribution"]
   },
   {
     "content": "His studies found that up 90% of all particles by busy roads are nanoparticles below 100nm.",
@@ -9717,27 +9717,27 @@
   },
   {
     "content": "A football (or soccer ball, for North American readers) has a circumference of 70cm (28in) and a surface area of around 1,500 cm2 (91.5in2). A golf ball is obviously much smaller, with a circumference of about 13cm (5.2in), making its surface area 54cm2 (3.3in2).",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
-    "content": "By volume, you could fit 156 golf balls into the same space as a football, but the total surface area of all those golf balls would be 8,453cm2 – a substantial 6.9 square metres more than the football. On a nano-scale, that difference is amplified.",
-    "candidateTypes": ["difference"]
+    "content": "By volume, you could fit 156 golf balls into the same space as a football, but the total surface area of all those golf balls would be 8,453cm2 – a substantial 6.9 square metres more than the football. On a nano-scale, that comparison is amplified.",
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "A cloud of a billion 10nm particles has the same mass as just one PM10 particle, but a combined surface area a million times larger. And that surface area comes coated with toxic, unburnt fuel from vehicle exhausts.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Emmanuel Lafont People inside cars are thought to be subjected to more nanoparticles than those cycling or walking on the pavement (Credit: Emmanuel Lafont)",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Another of Kumar’s studies looked at the exposure of children being pushed in prams along the roadside of a small town. “We found that you get a high exposure when waiting at traffic lights, and children get a much higher exposure compared to adults…",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In some cases it was 20-30% higher exposure [at pram height compared to adult height].",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "Because their immune system is still developing, they are more vulnerable to the health impact.”",
@@ -9773,7 +9773,7 @@
   },
   {
     "content": "The team discovered a 30nm cut-off point; anything below that could be found swimming around in the bloodstream, but anything above that failed to get past the lungs.",
-    "candidateTypes": ["extreme", "difference"]
+    "candidateTypes": ["extreme", "comparison"]
   },
   {
     "content": "“Obviously with humans we couldn’t perform a biopsy, but with the mice we did”, says Raftis. “We found the biggest accumulations [of particles] in the lungs primarily, but the liver next, because your liver is where the blood passes through first…",
@@ -9813,7 +9813,7 @@
   },
   {
     "content": "The Global Burden of Diseases study estimates that air pollution could account for 21% of all deaths due tostroke and 24% of deaths from ischaemic heart disease.",
-    "candidateTypes": ["proportion", "distribution", "difference"]
+    "candidateTypes": ["proportion", "distribution", "comparison"]
   },
   {
     "content": "Traffic fumes had long been considered the smoking gun, but the bullet had proved elusive. Now, many think that the bullet is nanoparticles.",
@@ -9849,7 +9849,7 @@
   },
   {
     "content": "The solution for NOx and nanoparticles are also the same: replacing combustion with electrification. Electric cars still kick up road dust, but they emit no combustion-derived nanoparticles or NOx; and while power stations are needed to take the electricity, we spend far more time standing by roads than we do standing by power station chimneys (although this is all the more reason to rapidly move to 100% renewable energy). True zero-emissions transport, such as walking and cycling, are even better. The quicker we can make this transition, the more lives will be saved. In the interim, we also need to reduce our exposure by physically separating people from combustion-based traffic, via segregated cycle lanes, and green barriers – trees, hedges and climbing plants – inbetween pavements and roads.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "I stopped burning candles in my house. I don’t use or have a log burner at home, even though I like them... I always have the extraction on when I cook food – Jen Raftis",
@@ -9917,7 +9917,7 @@
   },
   {
     "content": "After two years of research and modelling, he returned to investigate. \"That's when we had the aha moment,\" he says. Using a net system to sample the surface of the ocean, he found six times as much plastic as plankton floating in the ocean.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "Moore had discovered the largest of five garbage patches around the world. Created by swirling ocean currents known as gyres, these act like a trash vortex, sucking in plastics and shifting constantly.",
@@ -9957,11 +9957,11 @@
   },
   {
     "content": "A 2018 study predicted at least 79,000 tonnes of ocean plastic are floating inside an area of 1.6 million sq km (618,000 sq miles) – a figure that is four to 16 times higher than previously reported.",
-    "candidateTypes": ["value", "difference"]
+    "candidateTypes": ["value", "comparison"]
   },
   {
     "content": "This is twice the size of Texas, or three times the size of France.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "In 2017, an advertising stunt for World Oceans Day contributed to this perception, by calling on the United Nations to rename the GPGP Trash Isles. The campaign rallied to make the area the world's 196th country, fit with its own flag, passports and currency.",
@@ -10053,7 +10053,7 @@
   },
   {
     "content": "\"The solution is 50% hardware and 50% software,\" Slat says. System 03 – the latest iteration – uses computer modelling to map high-density plastic hotspots and steer the removal technology.",
-    "candidateTypes": ["difference", "proportion"]
+    "candidateTypes": ["comparison", "proportion"]
   },
   {
     "content": "A long u-shaped, net-like barrier \"five school buses in length\" is dragged through patches of rubbish by two boats.",
@@ -10129,7 +10129,7 @@
   },
   {
     "content": "It breaks down in the atmosphere in just 12 years, which is much sooner than the centuries taken by CO2 – but it is also around 80 times more powerful over a 20-year time span.",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "With 60% of global methane emissions coming from human activities, reductions are essential to reaching the world's climate change targets.",
@@ -10161,11 +10161,11 @@
   },
   {
     "content": "Within agriculture, flooded rice fields account for 8% of total human-linked emissions, but belches and manure from livestock are the biggest contributors, with cattle the biggest single offenders.",
-    "candidateTypes": ["difference", "extreme", "proportion"]
+    "candidateTypes": ["comparison", "extreme", "proportion"]
   },
   {
     "content": "In California, the non-profit coalition Climate Trace found that one single cattle feedlot produced more methane than the state's biggest oil and gas fields.",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "\"If we don't reduce emissions from the food system we won't meet the 1.5C target,\" sums up Mario Herrero, a professor of sustainable food systems at Cornell University in New York, who oversaw the methane calculations used in the 2015 Paris Agreement on climate change. \"Animal numbers are increasing like crazy, thus methane is increasing. We have to reduce emissions from livestock.\"",
@@ -10180,7 +10180,7 @@
     "candidateTypes": ["noType"]
   },
   {
-    "content": "The rationale for focussing on oil and gas activities is that easy wins should be tackled first. \"If you're looking to have the biggest impact and make the biggest difference, it's reasonable to focus on oil and gas first,\" according to Mark Brownstein, a senior vice-president at the Environmental Defense Fund (EDF), the environmental non-profit funding MethaneSat and working in partnership with Google on the project. \"There's fewer actors involved than in agriculture,\" he told reporters. And \"there's also the resources there to solve it\".",
+    "content": "The rationale for focussing on oil and gas activities is that easy wins should be tackled first. \"If you're looking to have the biggest impact and make the biggest comparison, it's reasonable to focus on oil and gas first,\" according to Mark Brownstein, a senior vice-president at the Environmental Defense Fund (EDF), the environmental non-profit funding MethaneSat and working in partnership with Google on the project. \"There's fewer actors involved than in agriculture,\" he told reporters. And \"there's also the resources there to solve it\".",
     "candidateTypes": ["noType"]
   },
   {
@@ -10245,7 +10245,7 @@
   },
   {
     "content": "Getty Images One single cattle feedlot in California produces more methane than the state's biggest oil and gas fields (Credit: Getty Images) What would help clean up agricultural methane?",
-    "candidateTypes": ["difference", "extreme"]
+    "candidateTypes": ["comparison", "extreme"]
   },
   {
     "content": "There are some positive moves from industry to tackle the problem. A Dairy Methane Action Alliance has seen six of the world's largest dairy companies sign up to reducing their output, says Marcelo Mena, the former environment minister of Chile and now chief executive of the philanthropic Global Methane Hub. The meat sector, however, \"has not shown the same level of commitment, and needs to do a lot more\".",
@@ -10321,7 +10321,7 @@
   },
   {
     "content": "Bier calculated release and removal rates for the last two years of former President Donald Trump’s term and the first 26 months of Biden’s, using DHS data, including the lifecycle report, ICE detention statistics and other figures published by the Republican majority on the House Judiciary Committee. Bier wrote in November that his work showed the Biden administration “has removed a higher percentage of arrested border crossers in its first two years than the Trump DHS did over its last two years. Moreover, migrants were more likely to be released after a border arrest under President Trump than under President Biden.”",
-    "candidateTypes": ["difference"]
+    "candidateTypes": ["comparison"]
   },
   {
     "content": "“I used to be able to get 30 to 40kg [66 to 88lbs] of crabs in a day,” said Shafiee Rahmat, 63, who has been fishing for 50 years.",
@@ -10345,11 +10345,11 @@
   },
   {
     "content": "From Saturday to Monday, Macao recorded a total of 502,324 visitor arrivals, of which 364,742 were from the mainland. The region saw 217,541 visitor arrivals on Monday alone, which not only surpassed the highest single-day arrival record since 2023, but also became the second highest single-day record since the statistics were first compiled.",
-    "candidateTypes": ["difference", "extreme", "proportion", "rank", "value"]
+    "candidateTypes": ["comparison", "extreme", "proportion", "rank", "value"]
   },
   {
     "content": "On Tuesday, Thailand released a report on the country’s tourism for the period February 5-11, showing that the number of international tourists entering Thailand in this period amounted to 872,235, an increase of 102,227 from the previous week. The largest number of tourists came from China with 194,275, a 38 percent increase from the previous week and higher than the previously expected 177,000 tourists.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "China on Wednesday posted a robust GDP growth of 5.2 percent for 2023, successfully beating the government's pre-set yearly target of around 5 percent. This highlighted the strong internal dynamics of the world's second-largest economy and its significant potential for continuous expansion, even amid a turbulent international macroeconomic environment, continuing to drive global resurgence.",
@@ -10361,11 +10361,11 @@
   },
   {
     "content": "In 2023, China's annual GDP reached 126.06 trillion yuan ($17.52 trillion), registering a 5.2 percent growth compared to the previous year. Despite stiff headwinds, the national economy demonstrated resilience, achieving a new milestone in overall economic development, according to data released by the National Bureau of Statistics (NBS) on Wednesday.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "The annual value-added of the national industrial enterprises above a designated size increased by 4.6 percent compared to the previous year. In particular, that of the equipment manufacturing industry grew by 6.8 percent, 2.2 percentage points higher than that of the overall industrial enterprises above a designated size.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "The total retail sales of consumer goods recorded 47.15 trillion yuan, up 7.2 percent year-on-year. Spending in the services sector experienced rapid growth, with a year-on-year retail sales increase of 20 percent .",
@@ -10373,11 +10373,11 @@
   },
   {
     "content": "The annual national fixed-asset investment (excluding rural households) reached 50.3 trillion yuan, showing a growth of 3 percent compared to the previous year. Notably, investment in the manufacturing sector increased by 6.5 percent. The high-tech industry investment emerged as a highlight, growing by 10.3 percent and surpassing the overall investment growth by 7.3 percentage points. Investments in high-tech manufacturing and high-tech services increased by 9.9 percent and 11.4 percent, respectively.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "As the Spring Festival holidays approach, domestic travel, outbound and inbound travel bookings have all witnessed significant growth. For the upcoming holidays, domestic travel bookings have grown over 7 times compared to the previous year, while both outbound and inbound travel bookings have increased by more than 10 times year-on-year, per data sent to the Global Times by online travel agency Trip.com on Tuesday.",
-    "candidateTypes": ["difference", "trend"]
+    "candidateTypes": ["comparison", "trend"]
   },
   {
     "content": "While highlighting the lingering challenges, the real estate sector saw its investment decline by 9.6 percent. The national sales area of commercial residential buildings stood at 1.12 billion square meters, reflecting a decrease of 8.5 percent.",
@@ -10385,23 +10385,23 @@
   },
   {
     "content": "China exported 5.22 million vehicles in 2023, becoming a leading car exporter in the world. Of all vehicle exports, about one-third were new-energy vehicles (NEVs), totaling 1.773 million units, up 67.1 percent year-on-year, according to statistics the General Administration of Customs released on Friday.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "China's auto output exceeded 30.16 million units in 2023, up 11.6 percent year-on-year, and sales exceeded 30.09 million units, up 12 percent, according to data the China Association of Automobile Manufacturers (CAAM) released on Thursday. Both output and sales set new records, ranking first in the world for 15 consecutive years, the CAAM said.",
-    "candidateTypes": ["difference", "extreme", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "extreme", "proportion", "trend", "value"]
   },
   {
     "content": "In particular, China produced 9.587 million NEVs in 2023, up 35.8 percent year-on-year. Sales of NEVs reached 9.495 million units, up 37.9 percent, making the NEV penetration rate at 31.6 percent, according to the CAAM.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "Many people have scheduled their outbound travel plans for the upcoming winter vacation and Spring Festival holidays. Data from Tuniu Travel website shows that the booking volume for Spring Festival group tours has significantly increased compared to the same period last year, and the booking peak has also come earlier. Currently, the proportion of outbound travel bookings accounts for 34 percent, with popular destinations including Thailand, Singapore, Maldives, Russia, New Zealand, United Arab Emirates, Malaysia, Indonesia, and the Nordic countries, it showed.",
-    "candidateTypes": ["difference", "proportion", "rank", "trend"]
+    "candidateTypes": ["comparison", "proportion", "rank", "trend"]
   },
   {
     "content": "Looking at specific countries, scheduled international passenger flights now cover 67 countries and regions, seven fewer than before the pandemic. Flight volume to 25 countries including the UK has exceeded pre-pandemic levels. In addition, compared with before the pandemic, there are six new countries including Kuwait, Serbia, Tanzania, Luxembourg, Papua New Guinea, and Nigeria that now have services from China.",
-    "candidateTypes": ["difference", "value"]
+    "candidateTypes": ["comparison", "value"]
   },
   {
     "content": "Trump personally owes over $454 million stemming from the ruling made by Judge Arthur Engoron back in February. The figure balloons up to $463.9 million when including the money owed from his sons, Eric and Donald Jr., the Trump Organization and the interest that was accrued as of the date of the ruling.",
@@ -10425,27 +10425,27 @@
   },
   {
     "content": "Facts First: Scalise’s claims are misleading. The US under President Joe Biden is producing more crude oil than any country ever has. The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019. US production of dry natural gas also hit a new high in 2023. So did US crude oil exports.",
-    "candidateTypes": ["difference", "extreme", "rank"]
+    "candidateTypes": ["comparison", "extreme", "rank"]
   },
   {
     "content": "Typical family income grew by several thousand dollars during each of Trump’s first three years in office, before adjusting for inflation. But it fell by $1,660 in 2020, when the pandemic wreaked havoc on the US economy.",
-    "candidateTypes": ["difference", "trend", "value"]
+    "candidateTypes": ["comparison", "trend", "value"]
   },
   {
     "content": "Also, disposable incomes fell by 9.5% on an annualized basis in the fourth quarter of 2020, and the unemployment rate was 6.7% in December of that year.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "Facts First: This is false. Four years ago, in mid-2020, the US economy was in dire straits because of the Covid-19 pandemic. For example, the June 2020 unemployment rate was 11%, well over double the June 2024 rate of 4.1%. In late July 2020, the federal government announced that the US economy had just experienced its worst contraction on record – shrinking by an annual rate of 32.9% in the quarter running from April 2020 through June 2020.",
-    "candidateTypes": ["difference", "proportion", "trend", "value"]
+    "candidateTypes": ["comparison", "proportion", "trend", "value"]
   },
   {
     "content": "The world record was set by the US in 2023, according to the federal Energy Information Administration, averaging about 12.9 million barrels per day – exceeding the Trump-era record, an average of about 12.3 million barrels per day in 2019. US production of dry natural gas also hit a new high in 2023. So did US crude oil exports.",
-    "candidateTypes": ["difference", "extreme", "value"]
+    "candidateTypes": ["comparison", "extreme", "value"]
   },
   {
     "content": "Facts First: This is false. The record for US inflation, set in 1920, is 23.7%; the Biden-era peak was 9.1% in June 2022. Jackson could fairly say there was a four-decade high under Biden – that June 2022 figure was the highest since late 1981 – but there was nothing close to a new record.",
-    "candidateTypes": ["difference", "extreme", "proportion", "value"]
+    "candidateTypes": ["comparison", "extreme", "proportion", "value"]
   },
   {
     "content": "In the US, the world's largest economy based on GDP, Indians are emerging as the highest-earning ethnic minority group. Data from Pew Resarch Center in 2021 showed that amid a population of around 4.4 million, Indians born outside the US earn an average of $120,000 (£94,230) per year. South Asians more broadly account for a significant 29% of US Asian buying power – a whopping $381bn (£299bn) of economic influence.",
