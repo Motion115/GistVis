@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useRef } from 'react';
-import { Table, Form, InputNumber, Button, Card, Progress, ConfigProvider } from 'antd';
+import { Table, Form, InputNumber, Button, Card, Progress, ConfigProvider, Modal } from 'antd';
 import type { TableColumnsType } from 'antd';
 import { RestatementPipeline } from './RestatementPipeline';
 import MenuBar from '../commonElement/menuBar';
@@ -43,6 +43,8 @@ const AnnotatorTest: React.FC = () => {
   const [testData, setTestData] = useState<TestItem[]>([]);
   const [testResults, setTestResults] = useState<TestResult[]>([]);
   const [loading, setLoading] = useState(false);
+  const [countdown, setCountdown] = useState<number>(0);
+  const [isModalVisible, setIsModalVisible] = useState(false);
   const [paused, setPaused] = useState(false);
   const [progress, setProgress] = useState(0);
   const [isTesting, setIsTesting] = useState(false);
@@ -268,8 +270,22 @@ const AnnotatorTest: React.FC = () => {
         currentIndexRef.current = config.startIndex + i + config.concurrency;
         setProgress(Math.min(100, Math.round((i + config.concurrency) / targetData.length * 100)));
 
-        if (i + config.concurrency < targetData.length && isTesting && !pausedRef.current) {
+        if (i + config.concurrency < targetData.length && isTestingRef.current && !pausedRef.current) {
+          // 开始倒计时
+          const startTime = Date.now();
+          const countdownInterval = setInterval(() => {
+            const remaining = config.interval - (Date.now() - startTime);
+            if (remaining <= 0) {
+              clearInterval(countdownInterval);
+              setCountdown(0);
+            } else {
+              setCountdown(remaining);
+            }
+          }, 100);
+          
           await new Promise(resolve => setTimeout(resolve, config.interval));
+          clearInterval(countdownInterval);
+          setCountdown(0);
         }
       }
 
@@ -401,7 +417,72 @@ const AnnotatorTest: React.FC = () => {
                 </Button>
               )}
             </Form.Item>
+            <Form.Item>
+              <Button
+                onClick={() => setIsModalVisible(true)}
+                disabled={testResults.length === 0}
+              >
+                导出测试结果
+              </Button>
+            </Form.Item>
           </Form>
+
+          {/* 倒计时显示 */}
+          {isTestingRef.current && (
+            <div style={{ marginTop: 16 }}>
+              <Progress
+                type="circle"
+                percent={Math.round((countdown / config.interval) * 100)}
+                format={() => `${Math.ceil(countdown / 1000)}s`}
+                size={80}
+                status={paused ? "exception" : "active"}
+              />
+            </div>
+          )}
+
+          {/* 结果导出模态框 */}
+          <Modal
+            title="测试结果"
+            open={isModalVisible}
+            onOk={() => setIsModalVisible(false)}
+            onCancel={() => setIsModalVisible(false)}
+            width={800}
+          >
+            <div style={{ position: 'relative' }}>
+              <Button
+                style={{
+                  position: 'absolute',
+                  right: 0,
+                  top: 0,
+                  zIndex: 1
+                }}
+                onClick={() => {
+                  const text = testResults.map((result, idx) => (
+                    `${idx + 1};${result.index + 1};${result.expectedAnswer.join(',')};${result.testAnswer.join(',')};${result.isCorrect ? 1 : 0}`
+                  )).join('\n');
+                  navigator.clipboard.writeText(text).then(() => {
+                    alert('复制成功喵~');
+                  }).catch(err => {
+                    console.error('复制失败:', err);
+                    alert('复制失败了喵...');
+                  });
+                }}
+              >
+                复制到剪贴板
+              </Button>
+              <pre style={{
+                maxHeight: '60vh',
+                overflowY: 'auto',
+                whiteSpace: 'pre-wrap',
+                wordWrap: 'break-word',
+                paddingTop: '40px'
+              }}>
+                {testResults.map((result, idx) => (
+                  `${idx + 1};${result.index + 1};${result.expectedAnswer.join(',')};${result.testAnswer.join(',')};${result.isCorrect ? 1 : 0}\n`
+                )).join('')}
+              </pre>
+            </div>
+          </Modal>
         </Card>
 
         <Card title="统计信息" style={{ marginBottom: 32 }}>
