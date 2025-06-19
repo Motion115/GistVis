@@ -24,12 +24,19 @@ You can also check out some paragraphs and learn more about GistVis at [GistVis 
 If you find GistVis a fun project, please cite our paper: 
 
 ```bib
-@article{zou2025gistvis,
-    title = {GistVis: Automatic Generation of Word-scale Visualizations from Data-rich Documents},
+@inproceedings{zou2025gistvis,
     author = {Zou, Ruishi and Tang, Yinqi and Chen, Jingzhu and Lu, Siyu and Lu, Yan and Yang, Yingfan and Ye, Chen},
-    journal = {arXiv preprint arXiv:2502.03784},
-    year = {2025}
+    title = {GistVis: Automatic Generation of Word-scale Visualizations from Data-rich Documents},
+    year = {2025},
+    isbn = {9798400713941},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3706598.3713881},
+    doi = {10.1145/3706598.3713881},
+    booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
+    articleno = {679},
+    numpages = {18},
+    keywords = {Word-scale visualization, Automatic visualization, Natural language processing, Interactive article, Data document},
+    series = {CHI '25}
 }
 ```
-
-> This work is currently conditionally accepted to ACM CHI 2025.
