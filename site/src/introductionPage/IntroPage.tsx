@@ -14,7 +14,15 @@ import {
   Pagination,
   Divider,
 } from 'antd';
-import { GithubOutlined, FilePdfOutlined, LeftOutlined, RightOutlined, YoutubeOutlined } from '@ant-design/icons';
+import {
+  GithubOutlined,
+  FilePdfOutlined,
+  LeftOutlined,
+  RightOutlined,
+  YoutubeOutlined,
+  LinkOutlined,
+  DropboxOutlined,
+} from '@ant-design/icons';
 import {
   GistVis,
   overviewVideo,
@@ -185,16 +193,25 @@ const IntroPage = () => {
           </Title>
           <Paragraph style={authors}>
             <AuthorLinkComponent authorName="Ruishi Zou*" authorLink="https://motion115.github.io/" />,{' '}
-            <AuthorLinkComponent authorName="Yinqi Tang*" />, <AuthorLinkComponent authorName="Jingzhu Chen" />,{' '}
-            <AuthorLinkComponent authorName="Siyu Lu" />, <AuthorLinkComponent authorName="Yan Lu" />,{' '}
+            <AuthorLinkComponent authorName="Yinqi Tang*" />,{' '}
+            <AuthorLinkComponent
+              authorName="Jingzhu Chen"
+              authorLink="https://www.linkedin.com/in/jingzhu-chen-4b193b35a/"
+            />
+            , <AuthorLinkComponent authorName="Siyu Lu" />, <AuthorLinkComponent authorName="Yan Lu" />,{' '}
             <AuthorLinkComponent authorName="Yingfan Yang" />,{' '}
             <AuthorLinkComponent authorName="Chen Ye" authorLink="https://faculty.tongji.edu.cn/yechen/en/index.htm" />
           </Paragraph>
           <Paragraph style={authors}>* Equal contribution</Paragraph>
           <Space align="center" wrap style={{ justifyContent: 'center', display: 'flex' }}>
-            <Link to="https://doi.org/10.48550/arXiv.2502.03784" target="_blank">
+            <Link to="https://dl.acm.org/doi/10.1145/3706598.3713881" target="_blank">
               <Button variant="filled" icon={<FilePdfOutlined />}>
                 Paper
+              </Button>
+            </Link>
+            <Link to="https://doi.org/10.48550/arXiv.2502.03784" target="_blank">
+              <Button variant="filled" icon={<LinkOutlined />}>
+                Preprint
               </Button>
             </Link>
             {/* <Link to="/home">
@@ -203,6 +220,14 @@ const IntroPage = () => {
             <Link to="https://github.com/Motion115/GistVis" target="_blank">
               <Button variant="outlined" icon={<GithubOutlined />}>
                 GitHub
+              </Button>
+            </Link>
+            <Link
+              to="https://drive.google.com/drive/folders/1VcPWke5GMDScmv0KLc-4NyuKNQwZ36eS?usp=sharing"
+              target="_blank"
+            >
+              <Button variant="outlined" icon={<DropboxOutlined />}>
+                Materials
               </Button>
             </Link>
           </Space>
@@ -225,8 +250,9 @@ const IntroPage = () => {
                 design knowledge, GistVis identifies key data insights, like trend, comparison, and rank, and transforms
                 them into interactive WSVs. Regarding implementation, GistVis applied a "pipes and filter architecture"
                 to ensure a visualization knowledge-driven modular pipeline (four modules: Discoverer, Annotator,
-                Extractor, and Visualizer). Evaluation on GistVis demonstrated that GistVis could not improve reader
-                performance in understanding data-rich documents, but significantly reduced their cognitive workload.
+                Extractor, and Visualizer). Evaluation on GistVis demonstrated that GistVis did not reveal notable
+                improvement in helping readers understand data-rich documents, but significantly reduced their cognitive
+                workload.
               </Paragraph>
             </Flex>
             {/* Overview */}
